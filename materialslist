@@ -1,8 +1,10 @@
 <div data-repeat="first in Sub_Offers__r" data-sort="SO_Sub_Offer_Sequence__c">
   <table style="width: 100%; margin: 10px 0px; border-top: 1px solid #000000; height: 25px;">
-    <caption style="text-align: left;"><span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-      <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Main_Offer_Description__c">Total Security</span><br/></span>
-    <span data-hide-if="first.SO_Sub_Offer_Description__c IS BLANK">[first.SO_Sub_Offer_Description__c]<br/></span></caption>
+    <caption style="text-align: left;">
+      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Main_Offer_Description__c">Total Security</span><br/></span>
+      <span data-hide-if="first.SO_Sub_Offer_Description__c IS BLANK">[first.SO_Sub_Offer_Description__c]<br/></span>
+    </caption>
     <thead style="margin-bottom: 5px;">
       <tr style="height: 25px; border-bottom: 1px solid #000000;">
         <!--position header-->
