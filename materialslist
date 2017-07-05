@@ -361,7 +361,7 @@
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material1.type = 'SP' OR material1.Is_Service = 1">
-                              <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0">
+                              <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">
                                 <span data-show-if="material1.Is_Option = 1">(</span>
                                 <span class="number">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span>
                                 <span data-show-if="material1.Is_Option = 1">)</span>
@@ -380,9 +380,9 @@
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 40px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material1.Is_Option = 1">(</span>
-                            <span data-show-if="material1.type = 'SP' OR material1.Is_Service = 1">
+                            <span data-show-if="material1.type = 'SP' OR material1.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">
                               <span data-show-if="material1.Mat_Disc_Pct lte 0"></span>
-                              <span class="number" data-show-if="material1.Mat_Disc_Pct gt 0">[material1.Mat_Disc_Pct]</span>
+                              <span class="number" data-show-if="material1.Mat_Disc_Pct gt 0 ">[material1.Mat_Disc_Pct]</span>
                             </span>
                             <span data-show-if="material1.type != 'SP' AND material1.Is_Service != 1">
                               <span class="number" data-show-if="material1.Mat_Disc_Pct1 gt 0">[material1.Mat_Disc_Pct1]</span>
@@ -397,7 +397,7 @@
                             <span data-show-if="material1.Is_Option = 1">(</span>
                             <span data-show-if="material1.type = 'SP' OR material1.Is_Service = 1">
                               <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND material1.Mat_Serv_Sales = 0"></span>
-                              <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span>
+                              <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span>
                             </span>
                             <span data-show-if="material1.type != 'SP' AND material1.Is_Service != 1">
                               <span class="number" data-show-if="material1.Mat_Calc_Unit_Sales != 0">[material1.Mat_Calc_Unit_Sales]</span>
@@ -415,7 +415,7 @@
                             <span data-show-if="material1.Is_Option = 1">(</span>
                             <span data-show-if="material1.type = 'SP' OR material1.Is_Service = 1">
                               <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                              <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span>
+                              <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material1.Mat_Serv_Sales]</span>
                             </span>
                             <span data-show-if="material1.type != 'SP' AND material1.Is_Service != 1">
                               <span data-show-if="material1.Mat_Calc_Unit_Sales_hidden = 0"></span>
@@ -430,7 +430,7 @@
                             <span data-show-if="material1.Is_Option = 1">(</span>
                             <span data-show-if="material1.type = 'SP' OR material1.Is_Service = 1">
                               <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                              <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span>
+                              <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material1.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material1.Mat_Serv_Sales]</span>
                             </span>
                             <span data-show-if="material1.type != 'SP' AND material1.Is_Service != 1">
                               <span data-show-if="material1.Mat_Tot_Org_Sales = 0"></span>
@@ -793,7 +793,7 @@
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material2.type = 'SP' OR material2.Is_Service = 1">
-                                <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0">
+                                <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">
                                   <span data-show-if="material2.Is_Option = 1">(</span>
                                   <span class="number">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span>
                                   <span data-show-if="material2.Is_Option = 1">)</span>
@@ -814,7 +814,7 @@
                               <span data-show-if="material2.Is_Option = 1">(</span>
                               <span data-show-if="material2.type = 'SP' OR material2.Is_Service = 1">
                                 <span data-show-if="material2.Mat_Disc_Pct lte 0"></span>
-                                <span class="number" data-show-if="material2.Mat_Disc_Pct gt 0">[material2.Mat_Disc_Pct]</span>
+                                <span class="number" data-show-if="material2.Mat_Disc_Pct gt 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material2.Mat_Disc_Pct]</span>
                               </span>
                               <span data-show-if="material2.type != 'SP' AND material2.Is_Service != 1">
                                 <span class="number" data-show-if="material2.Mat_Disc_Pct1 gt 0">[material2.Mat_Disc_Pct1]</span>
@@ -829,7 +829,7 @@
                               <span data-show-if="material2.Is_Option = 1">(</span>
                               <span data-show-if="material2.type = 'SP' OR material2.Is_Service = 1">
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND material2.Mat_Serv_Sales = 0"></span>
-                                <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span>
+                                <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span>
                               </span>
                               <span data-show-if="material2.type != 'SP' AND material2.Is_Service != 1">
                                 <span class="number" data-show-if="material2.Mat_Calc_Unit_Sales != 0">[material2.Mat_Calc_Unit_Sales]</span>
@@ -847,7 +847,7 @@
                               <span data-show-if="material2.Is_Option = 1">(</span>
                               <span data-show-if="material2.type = 'SP' OR material2.Is_Service = 1">
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales]</span>
+                                <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material2.Mat_Serv_Sales]</span>
                               </span>
                               <span data-show-if="material2.type != 'SP' AND material2.Is_Service != 1">
                                 <span data-show-if="material2.Mat_Calc_Unit_Sales_hidden = 0"></span>
@@ -862,7 +862,7 @@
                               <span data-show-if="material2.Is_Option = 1">(</span>
                               <span data-show-if="material2.type = 'SP' OR material2.Is_Service = 1">
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales]</span>
+                                <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material2.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material2.Mat_Serv_Sales]</span>
                               </span>
                               <span data-show-if="material2.type != 'SP' AND material2.Is_Service != 1">
                                 <span data-show-if="material2.Mat_Tot_Org_Sales = 0"></span>
@@ -1235,7 +1235,7 @@
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material3.type = 'SP' OR material3.Is_Service = 1">
-                                  <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0">
+                                  <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">
                                     <span data-show-if="material3.Is_Option = 1">(</span>
                                     <span class="number">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span>
                                     <span data-show-if="material3.Is_Option = 1">)</span>
@@ -1256,7 +1256,7 @@
                                 <span data-show-if="material3.Is_Option = 1">(</span>
                                 <span data-show-if="material3.type = 'SP' OR material3.Is_Service = 1">
                                   <span data-show-if="material3.Mat_Disc_Pct lte 0"></span>
-                                  <span class="number" data-show-if="material3.Mat_Disc_Pct gt 0">[material3.Mat_Disc_Pct]</span>
+                                  <span class="number" data-show-if="material3.Mat_Disc_Pct gt 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material3.Mat_Disc_Pct]</span>
                                 </span>
                                 <span data-show-if="material3.type != 'SP' AND material3.Is_Service != 1">
                                   <span class="number" data-show-if="material3.Mat_Disc_Pct1 gt 0">[material3.Mat_Disc_Pct1]</span>
@@ -1271,7 +1271,7 @@
                                 <span data-show-if="material3.Is_Option = 1">(</span>
                                 <span data-show-if="material3.type = 'SP' OR material3.Is_Service = 1">
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND material3.Mat_Serv_Sales = 0"></span>
-                                  <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span>
+                                  <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span>
                                 </span>
                                 <span data-show-if="material3.type != 'SP' AND material3.Is_Service != 1">
                                   <span class="number" data-show-if="material3.Mat_Calc_Unit_Sales != 0">[material3.Mat_Calc_Unit_Sales]</span>
@@ -1289,7 +1289,7 @@
                                 <span data-show-if="material3.Is_Option = 1">(</span>
                                 <span data-show-if="material3.type = 'SP' OR material3.Is_Service = 1">
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                  <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span>
+                                  <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material3.Mat_Serv_Sales]</span>
                                 </span>
                                 <span data-show-if="material3.type != 'SP' AND material3.Is_Service != 1">
                                   <span data-show-if="material3.Mat_Calc_Unit_Sales_hidden = 0"></span>
@@ -1304,7 +1304,7 @@
                                 <span data-show-if="material3.Is_Option = 1">(</span>
                                 <span data-show-if="material3.type = 'SP' OR material3.Is_Service = 1">
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                  <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span>
+                                  <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material3.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material3.Mat_Serv_Sales]</span>
                                 </span>
                                 <span data-show-if="material3.type != 'SP' AND material3.Is_Service != 1">
                                   <span data-show-if="material3.Mat_Tot_Org_Sales = 0"></span>
@@ -1666,7 +1666,7 @@
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material4.type = 'SP' OR material4.Is_Service = 1">
-                                    <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0">
+                                    <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">
                                       <span data-show-if="material4.Is_Option = 1">(</span>
                                       <span class="number">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span>
                                       <span data-show-if="material4.Is_Option = 1">)</span>
@@ -1687,7 +1687,7 @@
                                   <span data-show-if="material4.Is_Option = 1">(</span>
                                   <span data-show-if="material4.type = 'SP' OR material4.Is_Service = 1">
                                     <span data-show-if="material4.Mat_Disc_Pct lte 0"></span>
-                                    <span class="number" data-show-if="material4.Mat_Disc_Pct gt 0">[material4.Mat_Disc_Pct]</span>
+                                    <span class="number" data-show-if="material4.Mat_Disc_Pct gt 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material4.Mat_Disc_Pct]</span>
                                   </span>
                                   <span data-show-if="material4.type != 'SP' AND material4.Is_Service != 1">
                                     <span class="number" data-show-if="material4.Mat_Disc_Pct1 gt 0">[material4.Mat_Disc_Pct1]</span>
@@ -1702,7 +1702,7 @@
                                   <span data-show-if="material4.Is_Option = 1">(</span>
                                   <span data-show-if="material4.type = 'SP' OR material4.Is_Service = 1">
                                     <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND material4.Mat_Serv_Sales = 0"></span>
-                                    <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span>
+                                    <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span>
                                   </span>
                                   <span data-show-if="material4.type != 'SP' AND material4.Is_Service != 1">
                                     <span class="number" data-show-if="material4.Mat_Calc_Unit_Sales != 0">[material4.Mat_Calc_Unit_Sales]</span>
@@ -1720,7 +1720,7 @@
                                   <span data-show-if="material4.Is_Option = 1">(</span>
                                   <span data-show-if="material4.type = 'SP' OR material4.Is_Service = 1">
                                     <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                    <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span>
+                                    <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material4.Mat_Serv_Sales]</span>
                                   </span>
                                   <span data-show-if="material4.type != 'SP' AND material4.Is_Service != 1">
                                     <span data-show-if="material4.Mat_Calc_Unit_Sales_hidden = 0"></span>
@@ -1735,7 +1735,7 @@
                                   <span data-show-if="material4.Is_Option = 1">(</span>
                                   <span data-show-if="material4.type = 'SP' OR material4.Is_Service = 1">
                                     <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                    <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span>
+                                    <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material4.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material4.Mat_Serv_Sales]</span>
                                   </span>
                                   <span data-show-if="material4.type != 'SP' AND material4.Is_Service != 1">
                                     <span data-show-if="material4.Mat_Tot_Org_Sales = 0"></span>
@@ -2097,7 +2097,7 @@
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                     <span data-show-if="material5.type = 'SP' OR material5.Is_Service = 1">
-                                      <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0">
+                                      <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">
                                         <span data-show-if="material5.Is_Option = 1">(</span>
                                         <span class="number">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span>
                                         <span data-show-if="material5.Is_Option = 1">)</span>
@@ -2121,7 +2121,7 @@
                                       <span class="number" data-show-if="material5.Mat_Disc_Pct gt 0">[material5.Mat_Disc_Pct]</span>
                                     </span>
                                     <span data-show-if="material5.type != 'SP' AND material5.Is_Service != 1">
-                                      <span class="number" data-show-if="material5.Mat_Disc_Pct1 gt 0">[material5.Mat_Disc_Pct1]</span>
+                                      <span class="number" data-show-if="material5.Mat_Disc_Pct1 gt 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material5.Mat_Disc_Pct1]</span>
                                       <span data-show-if="material5.Mat_Disc_Pct1 lte 0"></span>
                                     </span>
                                     <span data-show-if="material5.Is_Option = 1">)</span>
@@ -2133,7 +2133,7 @@
                                     <span data-show-if="material5.Is_Option = 1">(</span>
                                     <span data-show-if="material5.type = 'SP' OR material5.Is_Service = 1">
                                       <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND material5.Mat_Serv_Sales = 0"></span>
-                                      <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span>
+                                      <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span>
                                     </span>
                                     <span data-show-if="material5.type != 'SP' AND material5.Is_Service != 1">
                                       <span class="number" data-show-if="material5.Mat_Calc_Unit_Sales != 0">[material5.Mat_Calc_Unit_Sales]</span>
@@ -2151,7 +2151,7 @@
                                     <span data-show-if="material5.Is_Option = 1">(</span>
                                     <span data-show-if="material5.type = 'SP' OR material5.Is_Service = 1">
                                       <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                      <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span>
+                                      <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material5.Mat_Serv_Sales]</span>
                                     </span>
                                     <span data-show-if="material5.type != 'SP' AND material5.Is_Service != 1">
                                       <span data-show-if="material5.Mat_Calc_Unit_Sales_hidden = 0"></span>
@@ -2166,7 +2166,7 @@
                                     <span data-show-if="material5.Is_Option = 1">(</span>
                                     <span data-show-if="material5.type = 'SP' OR material5.Is_Service = 1">
                                       <span data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false'"></span>
-                                      <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span>
+                                      <span class="number" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND material5.Mat_Serv_Sales != 0 AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'true'">[material5.Mat_Serv_Sales]</span>
                                     </span>
                                     <span data-show-if="material5.type != 'SP' AND material5.Is_Service != 1">
                                       <span data-show-if="material5.Mat_Tot_Org_Sales = 0"></span>
