@@ -343,7 +343,7 @@
                             <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
                               [material1.Mat_Sales_Text_CP7]
                             </span>
-                            <!--MuY: Maybe ISBLANK is not working if it is not existing!-->
+                            <!--MuY: Maybe ISBLANK is not working if it is not existing! or we have an issue with HTML class-->
                             <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS BLANK">[material1.Mat_Sales_Text]</span>
                             <span><br/><br/></span>
                           </span>
