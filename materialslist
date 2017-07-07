@@ -289,9 +289,7 @@
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                            <span>
-                              <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                              [material.ItemName]</span>
+                            <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                           </span>
                         </td>
                         <!---reference column material1 services-->
@@ -423,9 +421,7 @@
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                          <span>
-                            <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                            [material.ItemName]</span>
+                          <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                         </span>
                       </td>
                       <!---reference column material1 non-services-->
@@ -658,9 +654,7 @@
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                              <span>
-                                <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                                [material.ItemName]</span>
+                              <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                             </span>
                           </td>
                           <!---reference column material2 services-->
@@ -791,9 +785,7 @@
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                            <span>
-                              <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                              [material.ItemName]</span>
+                            <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                           </span>
                         </td>
                         <!---reference column material2 non-services-->
@@ -1036,9 +1028,7 @@
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                                <span>
-                                  <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                                  [material.ItemName]</span>
+                                <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                               </span>
                             </td>
                             <!---reference column material3 services-->
@@ -1169,9 +1159,7 @@
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                              <span>
-                                <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                                [material.ItemName]</span>
+                              <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                             </span>
                           </td>
                           <!---reference column material3 non-services-->
@@ -1403,9 +1391,7 @@
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                                  <span>
-                                    <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                                    [material.ItemName]</span>
+                                  <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                                 </span>
                               </td>
                               <!---reference column material4 services-->
@@ -1536,9 +1522,7 @@
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                                <span>
-                                  <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                                  [material.ItemName]</span>
+                                <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                               </span>
                             </td>
                             <!---reference column material4 non-services-->
@@ -1770,9 +1754,7 @@
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span>
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                                    <span>
-                                      <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                                      [material.ItemName]</span>
+                                    <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                                   </span>
                                 </td>
                                 <!---reference column material5 services-->
@@ -1903,9 +1885,7 @@
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
-                                  <span>
-                                    <span>[INDEX(first)].[INCREMENT(material_counter)]</span>
-                                    [material.ItemName]</span>
+                                  <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                                 </span>
                               </td>
                               <!---reference column material5 non-services-->
