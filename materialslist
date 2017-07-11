@@ -498,6 +498,7 @@
                             <span class="number" data-show-if="material1.Is_Option = 1">(</span>
                             <span class="number">[material1.Mat_Org_Sales]</span>
                             <span data-show-if="material1.Is_Option = 1">)</span>
+                          </span>
                         </span>
                       </td>
                       <!-- discount column material1--->
