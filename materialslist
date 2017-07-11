@@ -412,6 +412,7 @@
                   </table>
                 </div>
               </div>
+              <!--start of material1 non-services-->
               <div data-show-if="material1.type != 'SP' AND material1.Is_Service = 0">
                 <table style="width: 100%; margin: 0px 0px 6px; height: 21px;">
                   <tbody>
@@ -493,19 +494,18 @@
                       <!--gross price column material1-->
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                         <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-                            <span data-show-if="material1.Mat_Org_Sales != 0">
-                              <span class="number" data-show-if="material1.Is_Option = 1">(</span>
-                              <span class="number">[material1.Mat_Org_Sales]</span>
-                              <span data-show-if="material1.Is_Option = 1">)</span>
-                            </span>
+                          <span data-show-if="material1.Mat_Org_Sales != 0">
+                            <span class="number" data-show-if="material1.Is_Option = 1">(</span>
+                            <span class="number">[material1.Mat_Org_Sales]</span>
+                            <span data-show-if="material1.Is_Option = 1">)</span>
                         </span>
                       </td>
                       <!-- discount column material1--->
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 40px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
-                            <span class="number" data-show-if="material1.Mat_Disc_Pct1 gt 0">[material1.Mat_Disc_Pct1]</span>
-                            <span data-show-if="material1.Mat_Disc_Pct1 lte 0"></span>
+                          <span class="number" data-show-if="material1.Mat_Disc_Pct1 gt 0">[material1.Mat_Disc_Pct1]</span>
+                          <span data-show-if="material1.Mat_Disc_Pct1 lte 0"></span>
                           <span data-show-if="material1.Is_Option = 1">)</span>
                         </span>
                       </td>
@@ -513,8 +513,8 @@
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                         <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
-                            <span class="number" data-show-if="material1.Mat_Calc_Unit_Sales != 0">[material1.Mat_Calc_Unit_Sales]</span>
-                            <span data-show-if="material1.Mat_Calc_Unit_Sales = 0"></span>
+                          <span class="number" data-show-if="material1.Mat_Calc_Unit_Sales != 0">[material1.Mat_Calc_Unit_Sales]</span>
+                          <span data-show-if="material1.Mat_Calc_Unit_Sales = 0"></span>
                           <span data-show-if="material1.Is_Option = 1">)</span>
                         </span>
                       </td>
@@ -525,8 +525,8 @@
                         class="number">
                         <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
-                            <span data-show-if="material1.Mat_Calc_Unit_Sales_hidden = 0"></span>
-                            <span class="number" data-show-if="material1.Mat_Calc_Unit_Sales_hidden != 0">[material1.Mat_Calc_Unit_Sales_hidden]</span>
+                          <span data-show-if="material1.Mat_Calc_Unit_Sales_hidden = 0"></span>
+                          <span class="number" data-show-if="material1.Mat_Calc_Unit_Sales_hidden != 0">[material1.Mat_Calc_Unit_Sales_hidden]</span>
                           <span data-show-if="material1.Is_Option = 1">)</span>
                         </span>
                       </td>
@@ -534,8 +534,8 @@
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                         <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
-                            <span data-show-if="material1.Mat_Tot_Org_Sales = 0"></span>
-                            <span class="number" data-show-if="material1.Mat_Tot_Org_Sales != 0">[material1.Mat_Tot_Org_Sales]</span>
+                          <span data-show-if="material1.Mat_Tot_Org_Sales = 0"></span>
+                          <span class="number" data-show-if="material1.Mat_Tot_Org_Sales != 0">[material1.Mat_Tot_Org_Sales]</span>
                           <span data-show-if="material1.Is_Option = 1">)</span>
                         </span>
                       </td>
@@ -776,6 +776,7 @@
                     </table>
                   </div>
                 </div>
+                <!--start of material2 non-services-->
                 <div data-show-if="material2.type != 'SP' AND material2.Is_Service = 0">
                   <table style="width: 100%; margin: 0px 0px 6px; height: 21px;">
                     <tbody>
@@ -856,19 +857,19 @@
                         <!--gross price column material2-->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-                              <span data-show-if="material2.Mat_Org_Sales != 0">
-                                <span class="number" data-show-if="material2.Is_Option = 1">(</span>
-                                <span class="number">[material2.Mat_Org_Sales]</span>
-                                <span data-show-if="material2.Is_Option = 1">)</span>
-                              </span>
+                            <span data-show-if="material2.Mat_Org_Sales != 0">
+                              <span class="number" data-show-if="material2.Is_Option = 1">(</span>
+                              <span class="number">[material2.Mat_Org_Sales]</span>
+                              <span data-show-if="material2.Is_Option = 1">)</span>
+                            </span>
                           </span>
                         </td>
                         <!-- discount column material2--->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 40px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
-                              <span class="number" data-show-if="material2.Mat_Disc_Pct1 gt 0">[material2.Mat_Disc_Pct1]</span>
-                              <span data-show-if="material2.Mat_Disc_Pct1 lte 0"></span>
+                            <span class="number" data-show-if="material2.Mat_Disc_Pct1 gt 0">[material2.Mat_Disc_Pct1]</span>
+                            <span data-show-if="material2.Mat_Disc_Pct1 lte 0"></span>
                             <span data-show-if="material2.Is_Option = 1">)</span>
                           </span>
                         </td>
@@ -876,8 +877,8 @@
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
-                              <span class="number" data-show-if="material2.Mat_Calc_Unit_Sales != 0">[material2.Mat_Calc_Unit_Sales]</span>
-                              <span data-show-if="material2.Mat_Calc_Unit_Sales = 0"></span>
+                            <span class="number" data-show-if="material2.Mat_Calc_Unit_Sales != 0">[material2.Mat_Calc_Unit_Sales]</span>
+                            <span data-show-if="material2.Mat_Calc_Unit_Sales = 0"></span>
                             <span data-show-if="material2.Is_Option = 1">)</span>
                           </span>
                         </td>
@@ -888,8 +889,8 @@
                           class="number">
                           <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
-                              <span data-show-if="material2.Mat_Calc_Unit_Sales_hidden = 0"></span>
-                              <span class="number" data-show-if="material2.Mat_Calc_Unit_Sales_hidden != 0">[material2.Mat_Calc_Unit_Sales_hidden]</span>
+                            <span data-show-if="material2.Mat_Calc_Unit_Sales_hidden = 0"></span>
+                            <span class="number" data-show-if="material2.Mat_Calc_Unit_Sales_hidden != 0">[material2.Mat_Calc_Unit_Sales_hidden]</span>
                             <span data-show-if="material2.Is_Option = 1">)</span>
                           </span>
                         </td>
@@ -897,8 +898,8 @@
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                           <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
-                              <span data-show-if="material2.Mat_Tot_Org_Sales = 0"></span>
-                              <span class="number" data-show-if="material2.Mat_Tot_Org_Sales != 0">[material2.Mat_Tot_Org_Sales]</span>
+                            <span data-show-if="material2.Mat_Tot_Org_Sales = 0"></span>
+                            <span class="number" data-show-if="material2.Mat_Tot_Org_Sales != 0">[material2.Mat_Tot_Org_Sales]</span>
                             <span data-show-if="material2.Is_Option = 1">)</span>
                           </span>
                         </td>
@@ -1150,6 +1151,7 @@
                       </table>
                     </div>
                   </div>
+                  <!--start of material3 non-services-->
                   <div data-show-if="material3.type != 'SP' AND material3.Is_Service = 0">
                     <table style="width: 100%; margin: 0px 0px 6px; height: 21px;">
                       <tbody>
@@ -1230,10 +1232,10 @@
                           <!--gross price column material3-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-                                <span data-show-if="material3.Mat_Org_Sales != 0">
-                                  <span class="number" data-show-if="material3.Is_Option = 1">(</span>
-                                  <span class="number">[material3.Mat_Org_Sales]</span>
-                                  <span data-show-if="material3.Is_Option = 1">)</span>
+                              <span data-show-if="material3.Mat_Org_Sales != 0">
+                                <span class="number" data-show-if="material3.Is_Option = 1">(</span>
+                                <span class="number">[material3.Mat_Org_Sales]</span>
+                                <span data-show-if="material3.Is_Option = 1">)</span>
                               </span>
                             </span>
                           </td>
@@ -1241,17 +1243,17 @@
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 40px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
-                                <span class="number" data-show-if="material3.Mat_Disc_Pct1 gt 0">[material3.Mat_Disc_Pct1]</span>
-                                <span data-show-if="material3.Mat_Disc_Pct1 lte 0"></span>
-                              </span>
-                              <span data-show-if="material3.Is_Option = 1">)</span>
+                              <span class="number" data-show-if="material3.Mat_Disc_Pct1 gt 0">[material3.Mat_Disc_Pct1]</span>
+                              <span data-show-if="material3.Mat_Disc_Pct1 lte 0"></span>
+                            </span>
+                            <span data-show-if="material3.Is_Option = 1">)</span>
                           </td>
                           <!--net price column material3-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
-                                <span class="number" data-show-if="material3.Mat_Calc_Unit_Sales != 0">[material3.Mat_Calc_Unit_Sales]</span>
-                                <span data-show-if="material3.Mat_Calc_Unit_Sales = 0"></span>
+                              <span class="number" data-show-if="material3.Mat_Calc_Unit_Sales != 0">[material3.Mat_Calc_Unit_Sales]</span>
+                              <span data-show-if="material3.Mat_Calc_Unit_Sales = 0"></span>
                               <span data-show-if="material3.Is_Option = 1">)</span>
                             </span>
                           </td>
@@ -1262,8 +1264,8 @@
                             class="number">
                             <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
-                                <span data-show-if="material3.Mat_Calc_Unit_Sales_hidden = 0"></span>
-                                <span class="number" data-show-if="material3.Mat_Calc_Unit_Sales_hidden != 0">[material3.Mat_Calc_Unit_Sales_hidden]</span>
+                              <span data-show-if="material3.Mat_Calc_Unit_Sales_hidden = 0"></span>
+                              <span class="number" data-show-if="material3.Mat_Calc_Unit_Sales_hidden != 0">[material3.Mat_Calc_Unit_Sales_hidden]</span>
                               <span data-show-if="material3.Is_Option = 1">)</span>
                             </span>
                           </td>
@@ -1271,8 +1273,8 @@
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                             <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
-                                <span data-show-if="material3.Mat_Tot_Org_Sales = 0"></span>
-                                <span class="number" data-show-if="material3.Mat_Tot_Org_Sales != 0">[material3.Mat_Tot_Org_Sales]</span>
+                              <span data-show-if="material3.Mat_Tot_Org_Sales = 0"></span>
+                              <span class="number" data-show-if="material3.Mat_Tot_Org_Sales != 0">[material3.Mat_Tot_Org_Sales]</span>
                               <span data-show-if="material3.Is_Option = 1">)</span>
                             </span>
                           </td>
@@ -1513,6 +1515,7 @@
                         </table>
                       </div>
                     </div>
+                    <!--start of material4 non-services-->
                     <div data-show-if="material4.type != 'SP' AND material4.Is_Service = 0">
                       <table style="width: 100%; margin: 0px 0px 6px; height: 21px;">
                         <tbody>
@@ -1593,19 +1596,19 @@
                             <!--gross price column material4-->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-                                  <span data-show-if="material4.Mat_Org_Sales != 0">
-                                    <span class="number" data-show-if="material4.Is_Option = 1">(</span>
-                                    <span class="number">[material4.Mat_Org_Sales]</span>
-                                    <span data-show-if="material4.Is_Option = 1">)</span>
-                                  </span>
+                                <span data-show-if="material4.Mat_Org_Sales != 0">
+                                  <span class="number" data-show-if="material4.Is_Option = 1">(</span>
+                                  <span class="number">[material4.Mat_Org_Sales]</span>
+                                  <span data-show-if="material4.Is_Option = 1">)</span>
+                                </span>
                               </span>
                             </td>
                             <!-- discount column material4--->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 40px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
-                                  <span class="number" data-show-if="material4.Mat_Disc_Pct1 gt 0">[material4.Mat_Disc_Pct1]</span>
-                                  <span data-show-if="material4.Mat_Disc_Pct1 lte 0"></span>
+                                <span class="number" data-show-if="material4.Mat_Disc_Pct1 gt 0">[material4.Mat_Disc_Pct1]</span>
+                                <span data-show-if="material4.Mat_Disc_Pct1 lte 0"></span>
                                 <span data-show-if="material4.Is_Option = 1">)</span>
                               </span>
                             </td>
@@ -1613,8 +1616,8 @@
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
-                                  <span class="number" data-show-if="material4.Mat_Calc_Unit_Sales != 0">[material4.Mat_Calc_Unit_Sales]</span>
-                                  <span data-show-if="material4.Mat_Calc_Unit_Sales = 0"></span>
+                                <span class="number" data-show-if="material4.Mat_Calc_Unit_Sales != 0">[material4.Mat_Calc_Unit_Sales]</span>
+                                <span data-show-if="material4.Mat_Calc_Unit_Sales = 0"></span>
                                 <span data-show-if="material4.Is_Option = 1">)</span>
                               </span>
                             </td>
@@ -1625,8 +1628,8 @@
                               class="number">
                               <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
-                                  <span data-show-if="material4.Mat_Calc_Unit_Sales_hidden = 0"></span>
-                                  <span class="number" data-show-if="material4.Mat_Calc_Unit_Sales_hidden != 0">[material4.Mat_Calc_Unit_Sales_hidden]</span>
+                                <span data-show-if="material4.Mat_Calc_Unit_Sales_hidden = 0"></span>
+                                <span class="number" data-show-if="material4.Mat_Calc_Unit_Sales_hidden != 0">[material4.Mat_Calc_Unit_Sales_hidden]</span>
                                 <span data-show-if="material4.Is_Option = 1">)</span>
                               </span>
                             </td>
@@ -1634,8 +1637,8 @@
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                               <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
-                                  <span data-show-if="material4.Mat_Tot_Org_Sales = 0"></span>
-                                  <span class="number" data-show-if="material4.Mat_Tot_Org_Sales != 0">[material4.Mat_Tot_Org_Sales]</span>
+                                <span data-show-if="material4.Mat_Tot_Org_Sales = 0"></span>
+                                <span class="number" data-show-if="material4.Mat_Tot_Org_Sales != 0">[material4.Mat_Tot_Org_Sales]</span>
                                 <span data-show-if="material4.Is_Option = 1">)</span>
                               </span>
                             </td>
@@ -1876,6 +1879,7 @@
                           </table>
                         </div>
                       </div>
+                      <!--start of material5 non-services-->
                       <div data-show-if="material5.type != 'SP' AND material5.Is_Service = 0">
                         <table style="width: 100%; margin: 0px 0px 6px; height: 21px;">
                           <tbody>
@@ -1956,19 +1960,19 @@
                               <!--gross price column material5-->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-                                    <span data-show-if="material5.Mat_Org_Sales != 0">
-                                      <span class="number" data-show-if="material5.Is_Option = 1">(</span>
-                                      <span class="number">[material5.Mat_Org_Sales]</span>
-                                      <span data-show-if="material5.Is_Option = 1">)</span>
-                                    </span>
+                                  <span data-show-if="material5.Mat_Org_Sales != 0">
+                                    <span class="number" data-show-if="material5.Is_Option = 1">(</span>
+                                    <span class="number">[material5.Mat_Org_Sales]</span>
+                                    <span data-show-if="material5.Is_Option = 1">)</span>
+                                  </span>
                                 </span>
                               </td>
                               <!-- discount column material5--->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 40px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
-                                    <span class="number" data-show-if="material5.Mat_Disc_Pct1 gt 0">[material5.Mat_Disc_Pct1]</span>
-                                    <span data-show-if="material5.Mat_Disc_Pct1 lte 0"></span>
+                                  <span class="number" data-show-if="material5.Mat_Disc_Pct1 gt 0">[material5.Mat_Disc_Pct1]</span>
+                                  <span data-show-if="material5.Mat_Disc_Pct1 lte 0"></span>
                                   <span data-show-if="material5.Is_Option = 1">)</span>
                                 </span>
                               </td>
@@ -1976,8 +1980,8 @@
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
-                                    <span class="number" data-show-if="material5.Mat_Calc_Unit_Sales != 0">[material5.Mat_Calc_Unit_Sales]</span>
-                                    <span data-show-if="material5.Mat_Calc_Unit_Sales = 0"></span>
+                                  <span class="number" data-show-if="material5.Mat_Calc_Unit_Sales != 0">[material5.Mat_Calc_Unit_Sales]</span>
+                                  <span data-show-if="material5.Mat_Calc_Unit_Sales = 0"></span>
                                   <span data-show-if="material5.Is_Option = 1">)</span>
                                 </span>
                               </td>
@@ -1988,8 +1992,8 @@
                                 class="number">
                                 <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
-                                    <span data-show-if="material5.Mat_Calc_Unit_Sales_hidden = 0"></span>
-                                    <span class="number" data-show-if="material5.Mat_Calc_Unit_Sales_hidden != 0">[material5.Mat_Calc_Unit_Sales_hidden]</span>
+                                  <span data-show-if="material5.Mat_Calc_Unit_Sales_hidden = 0"></span>
+                                  <span class="number" data-show-if="material5.Mat_Calc_Unit_Sales_hidden != 0">[material5.Mat_Calc_Unit_Sales_hidden]</span>
                                   <span data-show-if="material5.Is_Option = 1">)</span>
                                 </span>
                               </td>
@@ -1997,8 +2001,8 @@
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                                 <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
-                                    <span data-show-if="material5.Mat_Tot_Org_Sales = 0"></span>
-                                    <span class="number" data-show-if="material5.Mat_Tot_Org_Sales != 0">[material5.Mat_Tot_Org_Sales]</span>
+                                  <span data-show-if="material5.Mat_Tot_Org_Sales = 0"></span>
+                                  <span class="number" data-show-if="material5.Mat_Tot_Org_Sales != 0">[material5.Mat_Tot_Org_Sales]</span>
                                   <span data-show-if="material5.Is_Option = 1">)</span>
                                 </span>
                               </td>
