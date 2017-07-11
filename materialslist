@@ -168,7 +168,7 @@
     <!-- In order to have the header break across pages, we had to wrap the content of the materials list in a table. The tbody of this table begins below -->
     <tbody>
       <tr>
-        <td colspan="8">
+        <td colspan="8" style="margin: 0; padding: 0;">
           <!-- comment: the first data-repeat will loop through Sub_Offers__r array. This is then followed by a folder1 data-repeat that will loop through the cartLines array associated to the affiliated cart -->
           <div data-repeat="folder1 in first.cart.cartLines" data-filter="type = 'FO'">
             <table style="width: 100%; margin: 0px 0px 6px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder1.Is_Service_Folder = 1">
