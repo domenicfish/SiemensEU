@@ -426,7 +426,7 @@
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prodotti netto</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Mat&eacute;riel net</span>
           </td>
-          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_NULL]</td>
+          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
           <td style="width: 60px; height: 21px; text-align: right; vertical-align: middle;"></td>
           <td style="width: 80px; height: 21px; text-align: right;"></td>
