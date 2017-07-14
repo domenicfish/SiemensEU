@@ -138,8 +138,7 @@
         </th>
         <!--total net price header -->
         <th style="height: 25px; width: 110px; background-color: #ffffff; vertical-align: top; text-align: right;">
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total net
-            <br/>price</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris i alt
             <br/>eksl. Moms</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum
@@ -148,10 +147,9 @@
             <br/>čist&aacute; cena</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. total
             <br/>Neto</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total netto</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix total
-            <br/>net</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale<br/>netto</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix total</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale<br/>
             netto prijs</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix
