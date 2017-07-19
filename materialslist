@@ -178,11 +178,13 @@
                 <tr style="height: 21px; vertical-align: middle;">
                   <!--position column folder1-->
                   <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #808080; text-align: left; vertical-align: middle;">
+                    <span data-show-if="folder1.Is_Option = 1">(</span>
                     <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder1.Special_Number]</span>
                     <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                       <span>[outline_number]</span>
                       <span>[suboffer.Name]</span>
                     </span>
+                    <span data-show-if="folder1.Is_Option = 1">)</span>
                   </td>
                   <!--reference column folder1-->
                   <td style="height: 21px; background-color: #808080; text-align: left; vertical-align: middle;">
@@ -289,10 +291,12 @@
                       <tr style="height: 21px; vertical-align: middle;">
                         <!-- position column material1 -->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                          <span data-show-if="material1.Is_Option = 1">(</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                             <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                           </span>
+                          <span data-show-if="material1.Is_Option = 1">)</span>
                         </td>
                         <!---reference column material1 services-->
                         <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -339,7 +343,9 @@
                           </span>
                           <!--- Swiss specific services description -->
                           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                            <span class="html"><b>[material1.Short_Description]</b></span><br/>
+                            <span class="html">
+                              <b>[material1.Short_Description]</b>
+                            </span><br/>
                             <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
                               [material1.Mat_Sales_Text_CP7]
                             </span>
@@ -431,10 +437,12 @@
                     <tr style="height: 21px; vertical-align: middle;">
                       <!-- position column material1 -->
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                        <span data-show-if="material1.Is_Option = 1">(</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                           <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                         </span>
+                        <span data-show-if="material1.Is_Option = 1">)</span>
                       </td>
                       <!---reference column material1 non-services-->
                       <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -457,7 +465,9 @@
                               </span>
                             </span>
                             <span data-show-if="material1.Conf_Id LIKE 'cp_FreeText' OR material1.Conf_Id LIKE 'cp_ManualPosition' OR material1.Conf_Id LIKE 'cpGenericItem'">
-                              <span class="html"><b>[material1.Short_Description]</b></span>
+                              <span class="html">
+                                <b>[material1.Short_Description]</b>
+                              </span>
                             </span>
                             <span data-show-if="material1.Conf_Id IS BLANK">
                               <span class="html">[material1.Short_Description]</span>
@@ -564,11 +574,13 @@
                   <tr style="height: 21px; vertical-align: middle;">
                     <!--position column folder2-->
                     <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #a6a6a6; text-align: left; vertical-align: middle;">
+                      <span data-show-if="folder2.Is_Option = 1">(</span>
                       <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder2.Special_Number]</span>
                       <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                         <span>[outline_number]</span>
                         <span>[suboffer.Name]</span>
                       </span>
+                      <span data-show-if="folder2.Is_Option = 1">)</span>
                     </td>
                     <!--reference column folder2-->
                     <td style="height: 21px; background-color: #a6a6a6; text-align: left; vertical-align: middle;">
@@ -664,10 +676,12 @@
                         <tr style="height: 21px; vertical-align: middle;">
                           <!-- position column material2 services-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                            <span data-show-if="material2.Is_Option = 1">(</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                               <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                             </span>
+                            <span data-show-if="material2.Is_Option = 1">)</span>
                           </td>
                           <!---reference column material2 services-->
                           <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -714,7 +728,9 @@
                             </span>
                             <!--- Swiss specific services description -->
                             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                              <b><span class="html">[material2.Short_Description]</span></b><br/>
+                              <b>
+                                <span class="html">[material2.Short_Description]</span>
+                              </b><br/>
                               <span class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
                                 [material2.Mat_Sales_Text_CP7]
                               </span>
@@ -806,10 +822,12 @@
                       <tr style="height: 21px; vertical-align: middle;">
                         <!-- position column material2 -->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                          <span data-show-if="material2.Is_Option = 1">(</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                             <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                           </span>
+                          <span data-show-if="material2.Is_Option = 1">)</span>
                         </td>
                         <!---reference column material2 non-services-->
                         <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -832,7 +850,9 @@
                                 </span>
                               </span>
                               <span data-show-if="material2.Conf_Id LIKE 'cp_FreeText' OR material2.Conf_Id LIKE 'cp_ManualPosition' OR material2.Conf_Id LIKE 'cpGenericItem'">
-                                <b><span class="html">[material2.Short_Description]</span></b>
+                                <b>
+                                  <span class="html">[material2.Short_Description]</span>
+                                </b>
                               </span>
                               <span data-show-if="material2.Conf_Id IS BLANK">
                                 <span class="html">[material2.Short_Description]</span>
@@ -938,11 +958,13 @@
                     <tr style="height: 21px; vertical-align: middle;">
                       <!--position column folder3-->
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
+                        <span data-show-if="folder3.Is_Option = 1">(</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder3.Special_Number]</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                           <span>[outline_number]</span>
                           <span>[suboffer.Name]</span>
                         </span>
+                        <span data-show-if="folder3.Is_Option = 1">)</span>
                       </td>
                       <!--reference column folder3-->
                       <td style="height: 21px; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
@@ -1049,10 +1071,12 @@
                           <tr style="height: 21px; vertical-align: middle;">
                             <!-- position column material3 -->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                              <span data-show-if="material3.Is_Option = 1">(</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                                 <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                               </span>
+                              <span data-show-if="material3.Is_Option = 1">)</span>
                             </td>
                             <!---reference column material3 services-->
                             <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -1099,7 +1123,9 @@
                               </span>
                               <!--- Swiss specific services description -->
                               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                                <b><span class="html">[material3.Short_Description]</span></b><br/>
+                                <b>
+                                  <span class="html">[material3.Short_Description]</span>
+                                </b><br/>
                                 <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
                                   [material3.Mat_Sales_Text_CP7]
                                 </span>
@@ -1191,10 +1217,12 @@
                         <tr style="height: 21px; vertical-align: middle;">
                           <!-- position column material3 -->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                            <span data-show-if="material3.Is_Option = 1">(</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                               <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                             </span>
+                            <span data-show-if="material3.Is_Option = 1">)</span>
                           </td>
                           <!---reference column material3 non-services-->
                           <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -1217,7 +1245,9 @@
                                   </span>
                                 </span>
                                 <span data-show-if="material3.Conf_Id LIKE 'cp_FreeText' OR material3.Conf_Id LIKE 'cp_ManualPosition' OR material3.Conf_Id LIKE 'cpGenericItem'">
-                                  <b><span class="html">[material3.Short_Description]</span></b>
+                                  <b>
+                                    <span class="html">[material3.Short_Description]</span>
+                                  </b>
                                 </span>
                                 <span data-show-if="material3.Conf_Id IS BLANK">
                                   <span class="html">[material3.Short_Description]</span>
@@ -1323,11 +1353,13 @@
                       <tr style="height: 21px; vertical-align: middle;">
                         <!--position column folder4-->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #d9d9d9; text-align: left; vertical-align: middle;">
+                          <span data-show-if="folder4.Is_Option = 1">(</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder4.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                             <span>[outline_number]</span>
                             <span>[suboffer.Name]</span>
                           </span>
+                          <span data-show-if="folder4.Is_Option = 1">)</span>
                         </td>
                         <!--reference column folder4-->
                         <td style="height: 21px; background-color: #d9d9d9; text-align: left; vertical-align: middle;">
@@ -1423,10 +1455,12 @@
                             <tr style="height: 21px; vertical-align: middle;">
                               <!-- position column material4 services-->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                                <span data-show-if="material4.Is_Option = 1">(</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                                   <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                                 </span>
+                                <span data-show-if="material4.Is_Option = 1">)</span>
                               </td>
                               <!---reference column material4 services-->
                               <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -1473,7 +1507,9 @@
                                 </span>
                                 <!--- Swiss specific services description -->
                                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                                  <b><span class="html">[material4.Short_Description]</span></b><br/>
+                                  <b>
+                                    <span class="html">[material4.Short_Description]</span>
+                                  </b><br/>
                                   <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
                                     [material4.Mat_Sales_Text_CP7]
                                   </span>
@@ -1565,10 +1601,12 @@
                           <tr style="height: 21px; vertical-align: middle;">
                             <!-- position column material4 -->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                              <span data-show-if="material4.Is_Option = 1">(</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                                 <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                               </span>
+                              <span data-show-if="material4.Is_Option = 1">)</span>
                             </td>
                             <!---reference column material4 non-services-->
                             <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -1591,7 +1629,9 @@
                                     </span>
                                   </span>
                                   <span data-show-if="material4.Conf_Id LIKE 'cp_FreeText' OR material4.Conf_Id LIKE 'cp_ManualPosition' OR material4.Conf_Id LIKE 'cpGenericItem'">
-                                    <b><span class="html">[material4.Short_Description]</span></b>
+                                    <b>
+                                      <span class="html">[material4.Short_Description]</span>
+                                    </b>
                                   </span>
                                   <span data-show-if="material4.Conf_Id IS BLANK">
                                     <span class="html">[material4.Short_Description]</span>
@@ -1697,11 +1737,13 @@
                         <tr style="height: 21px; vertical-align: middle;">
                           <!--position column folder5-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #f2f2f2; text-align: left; vertical-align: middle;">
+                            <span data-show-if="folder5.Is_Option = 1">(</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder5.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                               <span>[outline_number]</span>
                               <span>[suboffer.Name]</span>
                             </span>
+                            <span data-show-if="folder5.Is_Option = 1">(</span>
                           </td>
                           <!--reference column folder5-->
                           <td style="height: 21px; background-color: #f2f2f2; text-align: left; vertical-align: middle;">
@@ -1797,10 +1839,12 @@
                               <tr style="height: 21px; vertical-align: middle;">
                                 <!-- position column material5 services-->
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                                  <span data-show-if="material5.Is_Option = 1">(</span>
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span>
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                                     <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                                   </span>
+                                  <span data-show-if="material5.Is_Option = 1">)</span>
                                 </td>
                                 <!---reference column material5 services-->
                                 <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -1847,7 +1891,9 @@
                                   </span>
                                   <!--- Swiss specific services description -->
                                   <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                                    <b><span class="html">[material5.Short_Description]</span></b><br/>
+                                    <b>
+                                      <span class="html">[material5.Short_Description]</span>
+                                    </b><br/>
                                     <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
                                       [material5.Mat_Sales_Text_CP7]
                                     </span>
@@ -1939,10 +1985,12 @@
                             <tr style="height: 21px; vertical-align: middle;">
                               <!-- position column material5 -->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                                <span data-show-if="material5.Is_Option = 1">(</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
                                   <span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span>
                                 </span>
+                                <span data-show-if="material5.Is_Option = 1">)</span>
                               </td>
                               <!---reference column material5 non-services-->
                               <td style="height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
@@ -1965,7 +2013,9 @@
                                       </span>
                                     </span>
                                     <span data-show-if="material5.Conf_Id LIKE 'cp_FreeText' OR material5.Conf_Id LIKE 'cp_ManualPosition' OR material5.Conf_Id LIKE 'cpGenericItem'">
-                                      <b><span class="html">[material5.Short_Description]</span></b>
+                                      <b>
+                                        <span class="html">[material5.Short_Description]</span>
+                                      </b>
                                     </span>
                                     <span data-show-if="material5.Conf_Id IS BLANK">
                                       <span class="html">[material5.Short_Description]</span>
