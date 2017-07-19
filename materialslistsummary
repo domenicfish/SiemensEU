@@ -218,7 +218,12 @@
         </td>
         <!-- total net price column -->
         <td style="width: 110px; height: 21px; text-align: right;" class="number" data-repeat="totalcells in suboffer.cart.totalCells">
-          <span class="number" data-hide-if="totalcells.TC_Mat_Tot_Org_Sales lte 0">[suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
+          <span class="number" data-hide-if="totalcells.TC_Mat_Tot_Org_Sales lte 0 AND Custom1__c_MO_Country_Origin__c NLIKE 'CH'">[suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
+          <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended' AND Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'No' AND Custom1__c_MO_Country_Origin__c LIKE 'CH'">
+            <span data-show-if="suboffer.OfferType__c lt 51 AND Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
+              <span class="number" data-hide-if="totalcells.TC_Mat_Tot_Org_Sales lte 0 AND Custom1__c_MO_Country_Origin__c NLIKE 'CH'">[suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
+            </span>
+          </span>
         </td>
       </tr>
     </tbody>
@@ -552,10 +557,11 @@ comment out-->
       </tbody>
     </table>
   </div>
-  <table>
+  <!--Start of Total Section Material-->
+  <table data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
     <tbody>
-      <!-- Start of User Changes (Overwrite Mat Sales Price)-->
-      <tr style="height: 21px;" data-show-if="suboffer.SQTotalUserMatPrice__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
+      <!-- Start of User Changes (Material)-->
+      <tr style="height: 21px;" data-show-if="suboffer.SQTotalUserMatPrice__c gt 0 OR suboffer.SQUserMatDiscountPercent__c gt 0 OR suboffer.SQUserMatDiscount__c gt 0">
         <td style="height: 21px; text-align: left; vertical-align: middle;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus&auml;tzlicher Rabatt</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
@@ -572,73 +578,33 @@ comment out-->
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lis&auml;alennus</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Extra rabatt</span>
-
         </td>
         <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
         <td style="width: 30px; height: 21px; text-align: right;"></td>
         <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">
-          <!--[((suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQTotalUserMatPrice__c) / suboffer.TC_Mat_Calc_Tot_Sales__c) * 100]-->
+          <!-- Start of User Changes (Overwrite Mat Discount %)-->
+          <span data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0">[suboffer.SQUserMatDiscountPercent__c]</span>
         </td>
-        <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQTotalUserMatPrice__c]</td>
-        <td class="number" style="width: 80px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.SQTotalUserMatPrice__c]</td>
-      </tr>
-      <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="suboffer.SQTotalUserMatPrice__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
-        <td style="height: 21px;">
-          <strong>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Apparate</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total mat&eacute;riels</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total mat&eacute;riels</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale apparecchiature</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Material</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Komponenter i alt</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum materiell</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Materi&aacute;l celkem</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Material</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de materialen
-            </span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total mat&eacute;riels</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de materialen
-            </span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Materiaali yhteens&auml;</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Material</span>
-          </strong>
+        <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">
+          <!-- Start of User Changes (Overwrite Mat Sales Price)-->
+          <span data-show-if="suboffer.SQTotalUserMatPrice__c gt 0">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQTotalUserMatPrice__c]</span>
+          <!-- Start of User Changes (Overwrite Mat Discount %)-->
+          <span data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0">[suboffer.TC_Mat_Calc_Tot_Sales__c * suboffer.SQUserMatDiscountPercent__c / 100]</span>
+          <!-- Start of User Changes (Overwrite Mat Discount Currency Amount)-->
+          <span data-show-if="suboffer.SQUserMatDiscount__c gt 0">[suboffer.SQUserMatDiscount__c]</span>
         </td>
-        <td style="width: 100px;"></td>
-        <td style="width: 30px;"></td>
-        <td style="width: 60px; height: 21px; text-align: right;" class="number"></td>
-        <td style="width: 80px;"></td>
-        <td style="width: 110px;">
-          <strong>
-            <span style="text-align: right;" class="number">[suboffer.SQTotalUserMatPrice__c]</span>
-          </strong>
+        <td class="number" style="width: 80px; height: 21px; text-align: right; vertical-align: middle;">
+          <!-- Start of User Changes (Overwrite Mat Sales Price)-->
+          <span data-show-if="suboffer.SQTotalUserMatPrice__c gt 0">[suboffer.SQTotalUserMatPrice__c]</span>
+          <!-- Start of User Changes (Overwrite Mat Discount %)-->
+          <span data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.TC_Mat_Calc_Tot_Sales__c * suboffer.SQUserMatDiscountPercent__c / 100]</span>
+          <!-- Start of User Changes (Overwrite Mat Discount Currency Amount)-->
+          <span data-show-if="suboffer.SQUserMatDiscount__c gt 0">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQUserMatDiscount__c]</span>
         </td>
       </tr>
-      <!-- Start of User Changes (Overwrite Mat Discount %)-->
-      <tr style="height: 21px;" data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
-        <td style="height: 21px; vertical-align: middle; text-align: left;">
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus&auml;tzlicher Rabatt (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso addizionale (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Additional Discount (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Yderligere rabat (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Tillegsrabatt (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Dodatečn&aacute; sleva (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento adicional (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lis&auml;alennus (%)</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Extra rabatt</span>
 
-        </td>
-        <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
-        <td style="width: 30px; height: 21px; text-align: right;"></td>
-        <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.SQUserMatDiscountPercent__c]</td>
-        <td class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.TC_Mat_Calc_Tot_Sales__c * suboffer.SQUserMatDiscountPercent__c / 100]</td>
-        <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.TC_Mat_Calc_Tot_Sales__c * suboffer.SQUserMatDiscountPercent__c / 100]</td>
-      </tr>
-      <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
+      <!--Total Apparate-->
+      <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="suboffer.TC_Mat_Calc_Tot_Sales__c gt 0">
         <td style="height: 21px;" colspan="5">
           <strong>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Apparate</span>
@@ -657,18 +623,51 @@ comment out-->
             </span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Materiaali yhteens&auml;</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Material</span>
-
           </strong>
         </td>
-        <td style="width: 110px; height: 21px; text-align: right;" class="number">
+        <td style="width: 110px;">
           <strong>
-            <span class="number">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.TC_Mat_Calc_Tot_Sales__c * suboffer.SQUserMatDiscountPercent__c / 100]</span>
+            <!--Overwrite Mat Sales Price-->
+            <span data-show-if="suboffer.SQTotalUserMatPrice__c IS NOT BLANK" style="text-align: right;" class="number">[suboffer.SQTotalUserMatPrice__c]</span>
+            <!--Overwrite Mat Discount %-->
+            <span data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0" style="text-align: right;" class="number">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.TC_Mat_Calc_Tot_Sales__c * suboffer.SQUserMatDiscountPercent__c / 100]</span>
+            <!--Overwrite Mat Discount Currency Amount-->
+            <span data-show-if="suboffer.SQUserMatDiscount__c IS NOT BLANK" style="text-align: right;" class="number">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQUserMatDiscount__c]</span>
+            <!--No Discount Given-->
+            <span data-hide-if="suboffer.SQTotalUserMatPrice__c IS NOT BLANK OR suboffer.SQUserMatDiscountPercent__c gt 0 OR suboffer.SQUserMatDiscount__c IS NOT BLANK" style="text-align: right;" class="number">[suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
           </strong>
         </td>
       </tr>
-      <!-- Start of User Changes (Overwrite Mat Discount Currency Amount)-->
-      <tr style="height: 21px;" data-show-if="suboffer.SQUserMatDiscount__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
-        <td style="height: 21px; vertical-align: middle; text-align: left;">
+    </tbody>
+  </table>
+  <!--Start of Total Section Services-->
+  <table data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'">
+    <tbody>
+      <!--Services needs to be shown if any discount is applied-->
+      <tr style="height: 21px;" data-show-if="suboffer.SQTotalUserServPrice__c gt 0 OR suboffer.SQUserServDiscountPercent__c gt 0 OR suboffer.SQUserServDiscount__c gt 0">
+        <td style="height: 21px;" colspan="5">
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Dienstleistungen</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prestazioni</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Services</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Serviceydelser</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Tjenester</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Služby</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Servicios</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Prestaties</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Prestaties</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Yhteens&auml;</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Tjänster</span>
+        </td>
+        <td style="width: 110px; height: 21px; text-align: right;" class="number">
+          <span data-hide-if="suboffer.TC_Mat_Serv_Sales__c lte 0" class="number">[suboffer.TC_Mat_Serv_Sales__c]</span>
+        </td>
+      </tr>
+      <!-- Start of User Changes (Services)-->
+      <tr style="height: 21px;" data-show-if="suboffer.SQTotalUserServPrice__c gt 0 OR suboffer.SQUserServDiscountPercent__c gt 0 OR suboffer.SQUserServDiscount__c gt 0">
+        <td style="height: 21px; text-align: left; vertical-align: middle;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus&auml;tzlicher Rabatt</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
@@ -684,473 +683,306 @@ comment out-->
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lis&auml;alennus</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Extra rabatt</span>
-
         </td>
         <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
         <td style="width: 30px; height: 21px; text-align: right;"></td>
         <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">
-          <!--[suboffer.SQUserMatDiscount__c / suboffer.TC_Mat_Calc_Tot_Sales__c * 100]-->
+          <!-- Start of User Changes (Overwrite Serv Discount %)-->
+          <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0">[suboffer.SQUserServDiscountPercent__c]</span>
         </td>
-        <td class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.SQUserMatDiscount__c]</td>
-        <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQUserMatDiscount__c]</td>
+        <td class="number" style="width: 80px; height: 21px; text-align: right;">
+          <!-- Start of User Changes (Overwrite Serv Sales Price)-->
+          <span data-show-if="suboffer.SQTotalUserServPrice__c gt 0">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQTotalUserServPrice__c]</span>
+          <!-- Start of User Changes (Overwrite Serv Discount %)-->
+          <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0">[suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</span>
+          <!-- Start of User Changes (Overwrite Serv Discount Currency Amount)-->
+          <span data-show-if="suboffer.SQUserServDiscount__c gt 0">[suboffer.SQUserServDiscount__c]</span>
+        </td>
+        <td class="number" style="width: 110px; height: 21px; text-align: right;">
+          <!-- Start of User Changes (Overwrite Serv Sales Price)-->
+          <span data-show-if="suboffer.SQTotalUserServPrice__c gt 0">[suboffer.SQTotalUserServPrice__c]</span>
+          <!-- Start of User Changes (Overwrite Serv Discount %)-->
+          <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0">[suboffer.TC_Mat_Serv_Sales__c - suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</span>
+          <!-- Start of User Changes (Overwrite Serv Discount Currency Amount)-->
+          <span data-show-if="suboffer.SQUserServDiscount__c gt 0">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQUserServDiscount__c]</span>
+        </td>
       </tr>
-      <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="suboffer.SQUserMatDiscount__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
+      <!--total services row -->
+      <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="suboffer.TC_Mat_Serv_Sales__c gt 0">
         <td style="height: 21px;" colspan="5">
           <strong>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Apparate</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total mat&eacute;riels</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total mat&eacute;riels</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale apparecchiature</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Material</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Komponenter i alt</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum materiell</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Materi&aacute;l celkem</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Material</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de materialen
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Dienstleistungen</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale prestazioni</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Services</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Serviceydelser i alt</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum tjenester</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Služby celkem</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Servicio</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total prestations</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Ty&ouml;t yhteens&auml;</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Tjänster</span>
+          </strong>
+        </td>
+        <td style="width: 110px; height: 21px; text-align: right;" class="number">
+          <strong>
+            <!--Overwrite Serv Sales Price-->
+            <span data-show-if="suboffer.SQTotalUserServPrice__c IS NOT BLANK" class="number">[suboffer.SQTotalUserServPrice__c]</span>
+            <!--Overwrite Serv Discount %-->
+            <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0" class="number">[suboffer.TC_Mat_Serv_Sales__c - suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</span>
+            <!--Overwrite Serv Discount Currency Amount-->
+            <span data-show-if="suboffer.SQUserServDiscount__c gt 0" class="number">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQUserServDiscount__c]</span>
+
+            <!--No discount given-->
+            <span data-hide-if="suboffer.SQTotalUserServPrice__c IS NOT BLANK OR suboffer.SQUserServDiscountPercent__c gt 0 OR suboffer.SQUserServDiscount__c gt 0" class="number">[suboffer.TC_Mat_Serv_Sales__c]</span>
+          </strong>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <!--Start of Overwriting Full SubOffer Sales Price or any other discount given-->
+      <tr style="height: 21px;" data-show-if="suboffer.Override_Total_Sales_Price__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
+        <!--Add Override_Mat_Margin OR Override_Serv_Margin gt 0-->
+        <td style="height: 21px; text-align: left; vertical-align: middle;">
+          <span>Additional Discount (any other discount given)</span>
+        </td>
+        <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
+        <td style="width: 30px; height: 21px; text-align: right;"></td>
+        <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">[((suboffer.SO_Total_Sales_Price__c - suboffer.SQTotalPrice__c) / suboffer.SO_Total_Sales_Price__c) * 100]</td>
+        <td class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.SO_Total_Sales_Price__c - suboffer.SQTotalPrice__c]</td>
+        <td data-hide-if="suboffer.SQTotalPrice__c lte 0" class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.SQTotalPrice__c]</td>
+      </tr>
+      <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="suboffer.Override_Total_Sales_Price__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
+        <td style="height: 21px;" colspan="5">
+          <strong>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Suboffer</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Sous-offre</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Sous-offre</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale Suboffer</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Suboffer</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Del-tilbud Moms</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum Delsum</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Podnab&iacute;dka Cena</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Suboferta</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal Deelofferte</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Sous-offre</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal Deelofferte</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Ty&ouml;t alatarjous</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Suboffer</span>
+          </strong>
+        </td>
+        <td style="width: 110px; height: 21px; text-align: right;" class="number">
+          <strong>
+            <span data-hide-if="suboffer.SQTotalPrice__c lte 0" class="number">[suboffer.SQTotalPrice__c]</span>
+          </strong>
+        </td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="height: 21px;" colspan="5">
+          <strong>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">I alt</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum
             </span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total mat&eacute;riels</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de materialen
-            </span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Materiaali yhteens&auml;</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Material</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkem</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Yhteens&auml;</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total</span>
+          </strong>
+        </td>
+        <td data-repeat="totalcells in suboffer.cart.totalCells" style="width: 110px; height: 21px; text-align: right;">
+          <span class="number" data-show-if="suboffer.SQTotalPrice__c gte 0">
+            <strong>
+              <span data-hide-if="suboffer.SQTotalPrice__c lte 0" class="number">[suboffer.SQTotalPrice__c]</span>
+            </strong>
           </span>
-
-        </strong>
-      </td>
-      <td style="width: 110px; height: 21px; text-align: right;" class="number">
-        <strong>
-          <span class="number">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQUserMatDiscount__c]</span>
-        </strong>
-      </td>
-    </tr>
-    <!-- start of services -->
-    <tr style="height: 21px;" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended' AND suboffer.SQTotalUserServPrice__c gt 0">
-      <td style="height: 21px;" colspan="5">
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Dienstleistungen</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prestazioni</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Services</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Serviceydelser</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Tjenester</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Služby</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Servicios</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Prestaties</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Prestaties</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Yhteens&auml;</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Tjänster</span>
-
-      </td>
-      <td style="width: 110px; height: 21px; text-align: right;" class="number">
-        <span data-hide-if="suboffer.TC_Mat_Serv_Sales__c lte 0" class="number">[suboffer.TC_Mat_Serv_Sales__c]</span>
-      </td>
-    </tr>
-    <!-- Start of User Changes (Overwrite Serv Sales Price)-->
-    <tr style="height: 21px;" data-show-if="suboffer.SQTotalUserServPrice__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-      <td style="height: 21px; text-align: left; vertical-align: middle;">
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus&auml;tzlicher Rabatt</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso addizionale
-        </span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Additional Discount</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Yderligere rabat</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Tillegsrabatt</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Dodatečn&aacute; sleva</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento adicional</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lis&auml;alennus</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Extra rabatt</span>
-      </td>
-      <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
-      <td style="width: 30px; height: 21px; text-align: right;"></td>
-      <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">
-        <!--[((suboffer.TC_Mat_Serv_Sales__c - suboffer.SQTotalUserServPrice__c) / suboffer.TC_Mat_Serv_Sales__c) * 100]-->
-      </td>
-      <td class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQTotalUserServPrice__c]</td>
-      <td data-hide-if="suboffer.SQTotalUserServPrice__c lte 0" class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.SQTotalUserServPrice__c]</td>
-    </tr>
-    <!--total services row -->
-    <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
-      <td style="height: 21px;" colspan="5">
-        <strong>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Dienstleistungen</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale prestazioni</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Services</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Serviceydelser i alt</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum tjenester</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Služby celkem</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Servicio</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Ty&ouml;t yhteens&auml;</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Tjänster</span>
-        </strong>
-      </td>
-      <td style="width: 110px; height: 21px; text-align: right;" class="number">
-        <strong>
-          <span data-show-if="suboffer.SQTotalUserServPrice__c IS NOT BLANK" class="number">[suboffer.SQTotalUserServPrice__c]</span>
-          <span data-hide-if="suboffer.SQTotalUserServPrice__c IS NOT BLANK" class="number">[suboffer.TC_Mat_Serv_Sales__c]</span>
-        </strong>
-      </td>
-    </tr>
-    <!-- Start of User Changes (Overwrite Serv Discount %)-->
-    <tr style="height: 21px;" data-show-if="suboffer.SQUserServDiscountPercent__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-      <td style="height: 21px; vertical-align: middle; text-align: left;">
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus&auml;tzlicher Rabatt (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso addizionale (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Additional Discount (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Yderligere rabat (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Tillegsrabatt (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Dodatečn&aacute; sleva (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento adicional (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lis&auml;alennus (%)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Extra rabatt</span>
-      </td>
-      <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
-      <td style="width: 30px; height: 21px; text-align: right;"></td>
-      <td data-hide-if="suboffer.SQUserServDiscountPercent__c lte 0" class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.SQUserServDiscountPercent__c]</td>
-      <td class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</td>
-      <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.TC_Mat_Serv_Sales__c - suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</td>
-    </tr>
-    <tr
-      style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;"
-      data-show-if="suboffer.SQUserServDiscountPercent__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-      <td style="height: 21px;" colspan="5">
-        <strong>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Dienstleistungen</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale prestazioni</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Services</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Serviceydelser i alt</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum tjenester</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Služby celkem</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Servicio</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Ty&ouml;t yhteens&auml;</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Tjänster</span>
-        </strong>
-      </td>
-      <td style="width: 110px; height: 21px; text-align: right;" class="number">
-        <strong>
-          <span class="number">[suboffer.TC_Mat_Serv_Sales__c - suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</span>
-        </strong>
-      </td>
-    </tr>
-    <!-- Start of User Changes (Overwrite Serv Discount Currency Amount)-->
-    <tr style="height: 21px;" data-show-if="suboffer.SQUserServDiscount__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-      <td style="height: 21px; vertical-align: middle; text-align: left;">
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus&auml;tzlicher Rabatt</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso addizionale
-        </span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Additional Discount</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Yderligere rabat</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Tillegsrabatt</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Dodatečn&aacute; sleva</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento adicional</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise suppl&eacute;mentaire</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Extra korting</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lis&auml;alennus</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Extra rabatt</span>
-      </td>
-      <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
-      <td style="width: 30px; height: 21px; text-align: right;"></td>
-      <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">
-        <span data-show-if="suboffer.SQUserServDiscount__c IS BLANK">[suboffer.SQUserServDiscount__c / suboffer.TC_Mat_Serv_Sales__c * 100]</span>
-      </td>
-      <td data-hide-if="suboffer.SQUserServDiscount__c lte 0" class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.SQUserServDiscount__c]</td>
-      <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQUserServDiscount__c]</td>
-    </tr>
-  </tbody>
-</table>
-<table data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p></p>
+</div>
+<table style="width: 100%; height: 21px;">
   <tbody>
-    <tr
-      style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;"
-      data-show-if="suboffer.SQUserServDiscount__c gt 0 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
-      <td style="height: 21px;" colspan="5">
+    <tr style="height: 21px;">
+      <td style="height: 21px; background-color: #a0a0a0;" colspan="6">
+        <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
+          <strong>{{Custom1__c_MO_Main_Offer_Description__c}}</strong>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 21px;" data-show-if="Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0 OR Custom1__c_SO_Total_Margin__c gt 0">
+      <td style="height: 21px; " colspan="5">
         <strong>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Dienstleistungen</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale prestazioni</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Services</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Serviceydelser i alt</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum tjenester</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Služby celkem</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Servicio</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total prestations</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van de prestaties</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Ty&ouml;t yhteens&auml;</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Tjänster</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Projekt (excl. MwSt.)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total projet (hors TVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total projet (hors TVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale progetto (IVA exclusa)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total project (Taxes excluded)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Samlet pris i alt eksl. Moms (Kr.)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum prosjekt (eks. mva)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Projekt celkem (bez DPH)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total proyecto (sin IVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van het project (exclusief BTW)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total projet (hors TVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van het project (exclusief BTW)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Koko projekti (sis. ALV)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total projekt (excl. Moms)
+          </span>
         </strong>
       </td>
-      <td style="width: 110px; height: 21px; text-align: right;" class="number">
+      <td style="width: 110px; height: 21px; text-align: right; ">
         <strong>
-          <span class="number">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQUserServDiscount__c]</span>
+          {{number_to_currency(custom1__c_so_sales_price__c, :precision=&gt;2, :unit=&gt;'')}}
         </strong>
       </td>
     </tr>
-  </tbody>
-</table>
-<table>
-  <tbody>
-    <!--Start of Overwriting Full SubOffer Sales Price or any other discount given-->
-    <tr style="height: 21px;" data-show-if="suboffer.Override_Total_Sales_Price__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-      <!--Add Override_Mat_Margin OR Override_Serv_Margin gt 0-->
-      <td style="height: 21px; text-align: left; vertical-align: middle;">
-        <span>Additional Discount (any other discount given)</span>
+    <tr style="height: 21px; border-bottom: 1px solid #000000;" data-show-if="Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0">
+      <td style="height: 21px;" colspan="3">
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Projektrabatt</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso progetto</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Project Discount</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Projekt rabat</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Prosjektrabatt</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Sleva na projekt</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento de Proyecto</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Project korting</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Project korting</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Projektialennus</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Projekt rabatt</span>
+
       </td>
-      <td style="width: 100px; height: 21px; text-align: right; vertical-align: middle;"></td>
-      <td style="width: 30px; height: 21px; text-align: right;"></td>
-      <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">[((suboffer.SO_Total_Sales_Price__c - suboffer.SQTotalPrice__c) / suboffer.SO_Total_Sales_Price__c) * 100]</td>
-      <td class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.SO_Total_Sales_Price__c - suboffer.SQTotalPrice__c]</td>
-      <td data-hide-if="suboffer.SQTotalPrice__c lte 0" class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.SQTotalPrice__c]</td>
-    </tr>
-    <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="suboffer.Override_Total_Sales_Price__c gt 0 AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
-      <td style="height: 21px;" colspan="5">
-        <strong>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Suboffer</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Sous-offre</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Sous-offre</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale Suboffer</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total Suboffer</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Del-tilbud Moms</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum Delsum</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Podnab&iacute;dka Cena</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total Suboferta</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal Deelofferte</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total Sous-offre</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal Deelofferte</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Ty&ouml;t alatarjous</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total Suboffer</span>
-        </strong>
+
+      <td style="width: 60px; height: 21px; text-align: right;">
+        <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
+          <span data-show-if="Custom1__c_Project_Discount__c gt 0">
+            {{number_to_currency(custom1__c_project_discount__c, :precision=&gt;2, :unit=&gt;'')}}
+          </span>
+        </span>
       </td>
-      <td style="width: 110px; height: 21px; text-align: right;" class="number">
-        <strong>
-          <span data-hide-if="suboffer.SQTotalPrice__c lte 0" class="number">[suboffer.SQTotalPrice__c]</span>
-        </strong>
+      <td style="width: 80px; height: 21px; text-align: right;">
+        <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
+          {{number_to_currency((custom1__c_so_sales_price__c - custom1__c_tot_salesprice_calc__c), :precision=&gt;2, :unit=&gt;'')}}
+        </span>
       </td>
+      <td style="width: 110px; height: 21px; text-align: right;"></td>
     </tr>
     <tr style="height: 21px;">
       <td style="height: 21px;" colspan="5">
         <strong>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">I alt</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum
-          </span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkem</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Yhteens&auml;</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total (excl. MwSt)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (hors TVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (hors TVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale (IVA exclusa)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Final price (Taxes excluded)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Samlet pris (eksl. moms)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum (eks. mva)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute; cena (bez DPH)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total oferta (sin IVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (exclusief BTW)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (hors TVA)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (exclusief BTW)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Koko projekti (ilman ALV)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt pris (excl. Moms)</span>
+
         </strong>
       </td>
-      <td data-repeat="totalcells in suboffer.cart.totalCells" style="width: 110px; height: 21px; text-align: right;">
-        <span class="number" data-show-if="suboffer.SQTotalPrice__c gte 0">
-          <strong>
-            <span data-hide-if="suboffer.SQTotalPrice__c lte 0" class="number">[suboffer.SQTotalPrice__c]</span>
-          </strong>
+      <td style="width: 110px; height: 21px; text-align: right;">
+        <strong>
+          {{number_to_currency(custom1__c_tot_salesprice_calc__c, :precision=&gt;2, :unit=&gt;'')}}
+        </strong>
+      </td>
+    </tr>
+    <tr data-show-if="Custom1__c_VAT_PercentNew__c gt 0 AND Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'" style="height: 21px;">
+      <td style="height: 21px;" colspan="5">
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">MwSt.</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TVA</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TVA</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">IVA</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">VAT</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Moms</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">MVA</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">DPH</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">IVA</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">BTW</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TVA</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">BTW</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">ALV</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Moms</span>
+
+        {{number_to_currency(custom1__c_vat_percentnew__c.to_i, :unit=&gt;'')}}%</td>
+      <td style="width: 110px; height: 21px; text-align: right;">
+        <span>
+          {{number_to_currency(custom1__c_vat__c, :precision=&gt;2, :unit=&gt;'')}}
         </span>
       </td>
     </tr>
+    <tr style="height: 21px;" data-show-if="Custom1__c_Recycling_Tax__c gt 0 AND Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'">
+      <td style="height: 21px;" colspan="5">
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Recycling Tax</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Taxe recyclage</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Taxe recyclage</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Tassa di riciclaggio</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Recycling Tax</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Milj&oslash;omkostning</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Milj&oslash;avgift</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Recyklačn&iacute; poplatky</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Tasa de reciclaje</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Bijdrage Recupel/Bebat</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Contribution Recupel/Bebat</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Bijdrage Recupel/Bebat</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Kierr&auml;tysmaksu</span>
+        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Återvinnings avgift</span>
+
+      </td>
+      <td style="width: 110px; height: 21px; text-align: right;">
+        <span>
+          {{number_to_currency(custom1__c_recycling_tax__c, :precision=&gt;2, :unit=&gt;'')}}
+        </span>
+      </td>
+    </tr>
+    <tr data-show-if="Custom1__c_Recycling_Tax__c gt 0 OR Custom1__c_VAT_PercentNew__c gt 0" style="height: 21px;">
+      <td data-show-if="Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'" style="height: 21px; border-top: 1px solid #000000;" colspan="5">
+        <strong>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total (incl. MwSt)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (TVA incluse)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (TVA incluse)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale (IVA inclusa)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Final price (Taxes included)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Samlet pris (inkl. moms)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum (inkl. mva)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute; cena (s DPH)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total oferta (IVA includio)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (inclusief BTW)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (TVA incluse)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (inclusief BTW)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lopullinen hinta (sis. ALV)</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt pris (excl. Moms)</span>
+
+        </strong>
+      </td>
+      <td data-show-if="Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'" style="width: 110px; height: 21px; text-align: right; border-top: 1px solid #000000;">
+        <strong>
+          {{number_to_currency(custom1__c_mo_total__c, :precision=&gt;2, :unit=&gt;'')}}
+        </strong>
+      </td>
+    </tr>
   </tbody>
-</table>
-<p></p>
-</div>
-<table style="width: 100%; height: 21px;">
-<tbody>
-  <tr style="height: 21px;">
-    <td style="height: 21px; background-color: #a0a0a0;" colspan="6">
-      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-        <strong>{{Custom1__c_MO_Main_Offer_Description__c}}</strong>
-      </span>
-    </td>
-  </tr>
-  <tr style="height: 21px;" data-show-if="Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0 OR Custom1__c_SO_Total_Margin__c gt 0">
-    <td style="height: 21px; " colspan="5">
-      <strong>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Projekt (excl. MwSt.)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total projet (hors TVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total projet (hors TVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale progetto (IVA exclusa)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total project (Taxes excluded)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Samlet pris i alt eksl. Moms (Kr.)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum prosjekt (eks. mva)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Projekt celkem (bez DPH)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total proyecto (sin IVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van het project (exclusief BTW)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Total projet (hors TVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totaal van het project (exclusief BTW)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Koko projekti (sis. ALV)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Total projekt (excl. Moms)
-        </span>
-      </strong>
-    </td>
-    <td style="width: 110px; height: 21px; text-align: right; ">
-      <strong>
-        {{number_to_currency(custom1__c_so_sales_price__c, :precision=&gt;2, :unit=&gt;'')}}
-      </strong>
-    </td>
-  </tr>
-  <tr style="height: 21px; border-bottom: 1px solid #000000;" data-show-if="Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0">
-    <td style="height: 21px;" colspan="3">
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Projektrabatt</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso progetto</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Project Discount</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Projekt rabat</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Prosjektrabatt</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Sleva na projekt</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento de Proyecto</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Project korting</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Project korting</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Projektialennus</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Projekt rabatt</span>
-
-    </td>
-
-    <td style="width: 60px; height: 21px; text-align: right;">
-      <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
-        <span data-show-if="Custom1__c_Project_Discount__c gt 0">
-          {{number_to_currency(custom1__c_project_discount__c, :precision=&gt;2, :unit=&gt;'')}}
-        </span>
-      </span>
-    </td>
-    <td style="width: 80px; height: 21px; text-align: right;">
-      <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
-        {{number_to_currency((custom1__c_so_sales_price__c - custom1__c_tot_salesprice_calc__c), :precision=&gt;2, :unit=&gt;'')}}
-      </span>
-    </td>
-    <td style="width: 110px; height: 21px; text-align: right;"></td>
-  </tr>
-  <tr style="height: 21px;">
-    <td style="height: 21px;" colspan="5">
-      <strong>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total (excl. MwSt)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (hors TVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (hors TVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale (IVA exclusa)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Final price (Taxes excluded)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Samlet pris (eksl. moms)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum (eks. mva)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute; cena (bez DPH)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total oferta (sin IVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (exclusief BTW)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (hors TVA)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (exclusief BTW)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Koko projekti (ilman ALV)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt pris (excl. Moms)</span>
-
-      </strong>
-    </td>
-    <td style="width: 110px; height: 21px; text-align: right;">
-      <strong>
-        {{number_to_currency(custom1__c_tot_salesprice_calc__c, :precision=&gt;2, :unit=&gt;'')}}
-      </strong>
-    </td>
-  </tr>
-  <tr data-show-if="Custom1__c_VAT_PercentNew__c gt 0 AND Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'" style="height: 21px;">
-    <td style="height: 21px;" colspan="5">
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">MwSt.</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TVA</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TVA</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">IVA</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">VAT</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Moms</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">MVA</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">DPH</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">IVA</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">BTW</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TVA</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">BTW</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">ALV</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Moms</span>
-
-      {{number_to_currency(custom1__c_vat_percentnew__c.to_i, :unit=&gt;'')}}%</td>
-    <td style="width: 110px; height: 21px; text-align: right;">
-      <span>
-        {{number_to_currency(custom1__c_vat__c, :precision=&gt;2, :unit=&gt;'')}}
-      </span>
-    </td>
-  </tr>
-  <tr style="height: 21px;" data-show-if="Custom1__c_Recycling_Tax__c gt 0 AND Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'">
-    <td style="height: 21px;" colspan="5">
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Recycling Tax</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Taxe recyclage</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Taxe recyclage</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Tassa di riciclaggio</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Recycling Tax</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Milj&oslash;omkostning</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Milj&oslash;avgift</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Recyklačn&iacute; poplatky</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Tasa de reciclaje</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Bijdrage Recupel/Bebat</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Contribution Recupel/Bebat</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Bijdrage Recupel/Bebat</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Kierr&auml;tysmaksu</span>
-      <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Återvinnings avgift</span>
-
-    </td>
-    <td style="width: 110px; height: 21px; text-align: right;">
-      <span>
-        {{number_to_currency(custom1__c_recycling_tax__c, :precision=&gt;2, :unit=&gt;'')}}
-      </span>
-    </td>
-  </tr>
-  <tr data-show-if="Custom1__c_Recycling_Tax__c gt 0 OR Custom1__c_VAT_PercentNew__c gt 0" style="height: 21px;">
-    <td data-show-if="Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'" style="height: 21px; border-top: 1px solid #000000;" colspan="5">
-      <strong>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total (incl. MwSt)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (TVA incluse)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (TVA incluse)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale (IVA inclusa)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Final price (Taxes included)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Samlet pris (inkl. moms)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum (inkl. mva)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute; cena (s DPH)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Total oferta (IVA includio)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (inclusief BTW)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAL FINAL (TVA incluse)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Eindtotaal (inclusief BTW)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lopullinen hinta (sis. ALV)</span>
-        <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt pris (excl. Moms)</span>
-
-      </strong>
-    </td>
-    <td data-show-if="Custom1__c_Generic_DocGen__r_Print_VAT__c LIKE 'true'" style="width: 110px; height: 21px; text-align: right; border-top: 1px solid #000000;">
-      <strong>
-        {{number_to_currency(custom1__c_mo_total__c, :precision=&gt;2, :unit=&gt;'')}}
-      </strong>
-    </td>
-  </tr>
-</tbody>
 </table>
 
 <!-- Add three Optional statements after Joe has finished the Has_Option Xpath expression:
