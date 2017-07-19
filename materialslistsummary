@@ -71,7 +71,7 @@
 
           <!--discount % header for net -->
           <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
-            <span data-show-if="suboffer.SQUserMatDiscountPercent__c IS NOT BLANK OR suboffer.SQUserMatDiscount__c IS NOT BLANK OR suboffer.SQTotalUserMatPrice__c IS NOT BLANK">
+            <span data-show-if="suboffer.SQUserMatDiscountPercent__c IS NOT BLANK OR suboffer.SQUserMatDiscount__c IS NOT BLANK OR suboffer.SQTotalUserMatPrice__c IS NOT BLANK OR Custom1__c_Project_Discount__c gt 0">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Discount</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
@@ -116,7 +116,7 @@
 
           <!--discount amount header for net -->
           <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
-            <span data-show-if="suboffer.SQUserMatDiscountPercent__c IS NOT BLANK OR suboffer.SQUserMatDiscount__c IS NOT BLANK OR suboffer.SQTotalUserMatPrice__c IS NOT BLANK">
+            <span data-show-if="suboffer.SQUserMatDiscountPercent__c IS NOT BLANK OR suboffer.SQUserMatDiscount__c IS NOT BLANK OR suboffer.SQTotalUserMatPrice__c IS NOT BLANK Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0 OR Custom1__c_SO_Total_Margin__c gt 0">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Discount</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
@@ -1021,14 +1021,14 @@
     </td>
 
     <td style="width: 60px; height: 21px; text-align: right;">
-      <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short' AND Custom1__c_MO_Country_Origin__c = 'BE'">
+      <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
         <span data-show-if="Custom1__c_Project_Discount__c gt 0">
-          {{number_to_currency((custom1__c_so_sales_price__c - custom1__c_tot_salesprice_calc__c) * 100 / custom1__c_so_sales_price__c, :precision=&gt;2, :unit=&gt;'')}}
+          {{number_to_currency(custom1__c_project_discount__c, :precision=&gt;2, :unit=&gt;'')}}
         </span>
       </span>
     </td>
     <td style="width: 80px; height: 21px; text-align: right;">
-      <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short' AND Custom1__c_MO_Country_Origin__c = 'BE'">
+      <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
         {{number_to_currency((custom1__c_so_sales_price__c - custom1__c_tot_salesprice_calc__c), :precision=&gt;2, :unit=&gt;'')}}
       </span>
     </td>
