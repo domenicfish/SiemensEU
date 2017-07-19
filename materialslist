@@ -1,4 +1,4 @@
-<!--Services adjusted with service hours, it's BE specific... sorry-->
+<!--Services adjusted with service hours-->
 <div data-repeat="first in Sub_Offers__r" data-sort="SO_Sub_Offer_Sequence__c">
   <table style="width: 100%; margin: 10px 0px; border-top: 1px solid #000000; height: 25px;">
     <caption style="text-align: left;">
@@ -9,21 +9,23 @@
     <thead style="margin-bottom: 5px;">
       <tr style="height: 25px; border-bottom: 1px solid #000000;">
         <!--position header-->
-        <th style="height: 25px; width: 70px; background-color: #ffffff; vertical-align: middle; text-align: left;" data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'">
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Position</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Position</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Posisjon</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Pozice</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Posici&oacute;n</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Position</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Posizione</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Kohta</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Position</span>
+        <th style="height: 25px; width: 70px; background-color: #ffffff; vertical-align: middle; text-align: left;">
+          <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'">
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Position</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Position</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Posisjon</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Pozice</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Posici&oacute;n</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Position</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Posizione</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Kohta</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Position</span>
+          </span>
         </th>
         <!--reference header-->
         <th style="height: 25px; background-color: #ffffff; vertical-align: middle; text-align: left;">
@@ -327,7 +329,7 @@
                                     </span>
                                   </span>
                                 </span>
-                                <span  class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
                                   [material1.Mat_Sales_Text_CP7]
                                 </span>
                                 <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS BLANK">[material1.Mat_Sales_Text]</span>
@@ -338,7 +340,7 @@
                           <!--- Swiss specific services description -->
                           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                             <b>[material1.Short_Description]</b><br/>
-                            <span  class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
+                            <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
                               [material1.Mat_Sales_Text_CP7]
                             </span>
                             <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS BLANK">[material1.Mat_Sales_Text]</span>
@@ -351,26 +353,26 @@
                         <!--- quantity column material1 services-->
                         <td style="width: 30px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material1.Is_Hide_Qty = 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                            <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-show-if="material1.Is_Option = 1">(</span>
-                              <span class="number" data-precision="0" data-show-if="material1.Serv_Calc_Qty gt 0">[material1.Serv_Calc_Qty]</span>
-                              <span data-show-if="material1.Is_Option = 1">)</span>
+                            <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-show-if="material1.Is_Option = 1">(</span>
+                                <span class="number" data-precision="0" data-show-if="material1.Serv_Calc_Qty gt 0">[material1.Serv_Calc_Qty]</span>
+                                <span data-show-if="material1.Is_Option = 1">)</span>
+                              </span>
                             </span>
-</span>
                           </span>
                         </td>
                         <!--gross price column material1 services-->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material1.Mat_Serv_Sales != 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-show-if="material1.Is_Option = 1">(</span>
-                                <span class="number">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span>
-                                <span data-show-if="material1.Is_Option = 1">)</span>
+                              <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-show-if="material1.Is_Option = 1">(</span>
+                                  <span class="number">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span>
+                                  <span data-show-if="material1.Is_Option = 1">)</span>
+                                </span>
                               </span>
-</span>
                             </span>
                           </span>
                         </td>
@@ -381,13 +383,13 @@
                         <!--net price column material1 services-->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                            <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-show-if="material1.Is_Option = 1">(</span>
-                              <span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span>
-                              <span data-show-if="material1.Is_Option = 1">)</span>
+                            <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-show-if="material1.Is_Option = 1">(</span>
+                                <span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span>
+                                <span data-show-if="material1.Is_Option = 1">)</span>
+                              </span>
                             </span>
-</span>
                           </span>
                         </td>
                         <!---total net price column material1 services-->
@@ -396,25 +398,25 @@
                           style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                           class="number">
                           <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                            <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-show-if="material1.Is_Option = 1">(</span>
-                              <span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span>
-                              <span data-show-if="material1.Is_Option = 1">)</span>
+                            <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-show-if="material1.Is_Option = 1">(</span>
+                                <span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span>
+                                <span data-show-if="material1.Is_Option = 1">)</span>
+                              </span>
                             </span>
-</span>
                           </span>
                         </td>
                         <!--total gross price column material1 services-->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                           <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                            <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-show-if="material1.Is_Option = 1">(</span>
-                              <span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span>
-                              <span data-show-if="material1.Is_Option = 1">)</span>
+                            <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-show-if="material1.Is_Option = 1">(</span>
+                                <span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span>
+                                <span data-show-if="material1.Is_Option = 1">)</span>
+                              </span>
                             </span>
-</span>
                           </span>
                         </td>
                       </tr>
@@ -479,7 +481,7 @@
                                 </span>
                               </span>
                             </span>
-                            <span  class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
+                            <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
                               [material1.Mat_Sales_Text_CP7]
                             </span>
                             <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS BLANK">[material1.Mat_Sales_Text]</span>
@@ -702,10 +704,10 @@
                                       </span>
                                     </span>
                                   </span>
-                                  <span  class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                  <span class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
                                     [material2.Mat_Sales_Text_CP7]
                                   </span>
-                                  <span  class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK">[material2.Mat_Sales_Text]</span>
+                                  <span class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK">[material2.Mat_Sales_Text]</span>
                                   <span><br/><br/></span>
                                 </span>
                               </span>
@@ -713,10 +715,10 @@
                             <!--- Swiss specific services description -->
                             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                               <b>[material2.Short_Description]</b><br/>
-                              <span  class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
+                              <span class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
                                 [material2.Mat_Sales_Text_CP7]
                               </span>
-                              <span  class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK">[material2.Mat_Sales_Text]</span>
+                              <span class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK">[material2.Mat_Sales_Text]</span>
                               <span><br/><br/></span>
                             </span>
                             <!--Start of Export Controls text -->
@@ -726,26 +728,26 @@
                           <!--- quantity column material2 services-->
                           <td style="width: 30px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material2.Is_Hide_Qty = 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-show-if="material2.Is_Option = 1">(</span>
-                                <span class="number" data-precision="0" data-show-if="material2.Serv_Calc_Qty gt 0">[material2.Serv_Calc_Qty]</span>
-                                <span data-show-if="material2.Is_Option = 1">)</span>
+                              <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-show-if="material2.Is_Option = 1">(</span>
+                                  <span class="number" data-precision="0" data-show-if="material2.Serv_Calc_Qty gt 0">[material2.Serv_Calc_Qty]</span>
+                                  <span data-show-if="material2.Is_Option = 1">)</span>
+                                </span>
                               </span>
-</span>
                             </span>
                           </td>
                           <!--gross price column material2 services-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material2.Mat_Serv_Sales != 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-show-if="material2.Is_Option = 1">(</span>
-                                  <span class="number">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span>
-                                  <span data-show-if="material2.Is_Option = 1">)</span>
+                                <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-show-if="material2.Is_Option = 1">(</span>
+                                    <span class="number">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span>
+                                    <span data-show-if="material2.Is_Option = 1">)</span>
+                                  </span>
                                 </span>
-</span>
                               </span>
                             </span>
                           </td>
@@ -756,13 +758,13 @@
                           <!--net price column material2 services-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-show-if="material2.Is_Option = 1">(</span>
-                                <span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span>
-                                <span data-show-if="material2.Is_Option = 1">)</span>
+                              <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-show-if="material2.Is_Option = 1">(</span>
+                                  <span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span>
+                                  <span data-show-if="material2.Is_Option = 1">)</span>
+                                </span>
                               </span>
-</span>
                             </span>
                           </td>
                           <!---total net price column material2 services-->
@@ -771,25 +773,25 @@
                             style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                             class="number">
                             <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-show-if="material2.Is_Option = 1">(</span>
-                                <span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales]</span>
-                                <span data-show-if="material2.Is_Option = 1">)</span>
+                              <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-show-if="material2.Is_Option = 1">(</span>
+                                  <span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales]</span>
+                                  <span data-show-if="material2.Is_Option = 1">)</span>
+                                </span>
                               </span>
-</span>
                             </span>
                           </td>
                           <!--total gross price column material2 services-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                             <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                              <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-show-if="material2.Is_Option = 1">(</span>
-                                <span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales]</span>
-                                <span data-show-if="material2.Is_Option = 1">)</span>
+                              <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-show-if="material2.Is_Option = 1">(</span>
+                                  <span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales]</span>
+                                  <span data-show-if="material2.Is_Option = 1">)</span>
+                                </span>
                               </span>
-</span>
                             </span>
                           </td>
                         </tr>
@@ -854,10 +856,10 @@
                                   </span>
                                 </span>
                               </span>
-                              <span  class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
+                              <span class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
                                 [material2.Mat_Sales_Text_CP7]
                               </span>
-                              <span  class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK">[material2.Mat_Sales_Text]</span>
+                              <span class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK">[material2.Mat_Sales_Text]</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'Long text'"><br/><br/></span>
                             </span>
                           </span>
@@ -1087,10 +1089,10 @@
                                         </span>
                                       </span>
                                     </span>
-                                    <span  class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                    <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
                                       [material3.Mat_Sales_Text_CP7]
                                     </span>
-                                    <span  class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK">[material3.Mat_Sales_Text]</span>
+                                    <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK">[material3.Mat_Sales_Text]</span>
                                     <span><br/><br/></span>
                                   </span>
                                 </span>
@@ -1098,10 +1100,10 @@
                               <!--- Swiss specific services description -->
                               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                 <b>[material3.Short_Description]</b><br/>
-                                <span  class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
                                   [material3.Mat_Sales_Text_CP7]
                                 </span>
-                                <span  class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK">[material3.Mat_Sales_Text]</span>
+                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK">[material3.Mat_Sales_Text]</span>
                                 <span><br/><br/></span>
                               </span>
                               <!--Start of Export Controls text -->
@@ -1111,27 +1113,27 @@
                             <!--- quantity column material3 services-->
                             <td style="width: 30px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material3.Is_Hide_Qty = 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-show-if="material3.Is_Option = 1">(</span>
-                                  <span class="number" data-precision="0" data-show-if="material3.Serv_Calc_Qty gt 0">[material3.Serv_Calc_Qty]</span>
-                                  <span data-show-if="material3.Is_Option = 1">)</span>
+                                <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-show-if="material3.Is_Option = 1">(</span>
+                                    <span class="number" data-precision="0" data-show-if="material3.Serv_Calc_Qty gt 0">[material3.Serv_Calc_Qty]</span>
+                                    <span data-show-if="material3.Is_Option = 1">)</span>
+                                  </span>
                                 </span>
-</span>
                               </span>
                             </td>
                             <!--gross price column material3 services-->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material3.Mat_Serv_Sales != 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-show-if="material3.Is_Option = 1">(</span>
-                                    <span class="number">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span>
-                                    <span data-show-if="material3.Is_Option = 1">)</span>
+                                  <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-show-if="material3.Is_Option = 1">(</span>
+                                      <span class="number">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span>
+                                      <span data-show-if="material3.Is_Option = 1">)</span>
+                                    </span>
                                   </span>
                                 </span>
-</span>
                               </span>
                             </td>
                             <!-- discount column material3 services--->
@@ -1141,13 +1143,13 @@
                             <!--net price column material3 services-->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-show-if="material3.Is_Option = 1">(</span>
-                                  <span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span>
-                                  <span data-show-if="material3.Is_Option = 1">)</span>
+                                <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-show-if="material3.Is_Option = 1">(</span>
+                                    <span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span>
+                                    <span data-show-if="material3.Is_Option = 1">)</span>
+                                  </span>
                                 </span>
-</span>
                               </span>
                             </td>
                             <!---total net price column material3 services-->
@@ -1156,25 +1158,25 @@
                               style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                               class="number">
                               <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-show-if="material3.Is_Option = 1">(</span>
-                                  <span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span>
-                                  <span data-show-if="material3.Is_Option = 1">)</span>
+                                <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-show-if="material3.Is_Option = 1">(</span>
+                                    <span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span>
+                                    <span data-show-if="material3.Is_Option = 1">)</span>
+                                  </span>
                                 </span>
-</span>
                               </span>
                             </td>
                             <!--total gross price column material3 services-->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                               <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-show-if="material3.Is_Option = 1">(</span>
-                                  <span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span>
-                                  <span data-show-if="material3.Is_Option = 1">)</span>
+                                <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-show-if="material3.Is_Option = 1">(</span>
+                                    <span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span>
+                                    <span data-show-if="material3.Is_Option = 1">)</span>
+                                  </span>
                                 </span>
-</span>
                               </span>
                             </td>
                           </tr>
@@ -1239,10 +1241,10 @@
                                     </span>
                                   </span>
                                 </span>
-                                <span  class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
                                   [material3.Mat_Sales_Text_CP7]
                                 </span>
-                                <span  class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK">[material3.Mat_Sales_Text]</span>
+                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK">[material3.Mat_Sales_Text]</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'Long text'"><br/><br/></span>
                               </span>
                             </span>
@@ -1461,10 +1463,10 @@
                                           </span>
                                         </span>
                                       </span>
-                                      <span  class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                      <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
                                         [material4.Mat_Sales_Text_CP7]
                                       </span>
-                                      <span  class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK">[material4.Mat_Sales_Text]</span>
+                                      <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK">[material4.Mat_Sales_Text]</span>
                                       <span><br/><br/></span>
                                     </span>
                                   </span>
@@ -1472,10 +1474,10 @@
                                 <!--- Swiss specific services description -->
                                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                   <b>[material4.Short_Description]</b><br/>
-                                  <span  class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
                                     [material4.Mat_Sales_Text_CP7]
                                   </span>
-                                  <span  class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK">[material4.Mat_Sales_Text]</span>
+                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK">[material4.Mat_Sales_Text]</span>
                                   <span><br/><br/></span>
                                 </span>
                                 <!--Start of Export Controls text -->
@@ -1485,27 +1487,27 @@
                               <!--- quantity column material4 services-->
                               <td style="width: 30px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material4.Is_Hide_Qty = 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-show-if="material4.Is_Option = 1">(</span>
-                                    <span class="number" data-precision="0" data-show-if="material4.Serv_Calc_Qty gt 0">[material4.Serv_Calc_Qty]</span>
-                                    <span data-show-if="material4.Is_Option = 1">)</span>
+                                  <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-show-if="material4.Is_Option = 1">(</span>
+                                      <span class="number" data-precision="0" data-show-if="material4.Serv_Calc_Qty gt 0">[material4.Serv_Calc_Qty]</span>
+                                      <span data-show-if="material4.Is_Option = 1">)</span>
+                                    </span>
                                   </span>
-</span>
                                 </span>
                               </td>
                               <!--gross price column material4 services-->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-show-if="material4.Mat_Serv_Sales != 0">
-                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                      <span data-show-if="material4.Is_Option = 1">(</span>
-                                      <span class="number">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span>
-                                      <span data-show-if="material4.Is_Option = 1">)</span>
+                                  <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-show-if="material4.Mat_Serv_Sales != 0">
+                                      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                        <span data-show-if="material4.Is_Option = 1">(</span>
+                                        <span class="number">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span>
+                                        <span data-show-if="material4.Is_Option = 1">)</span>
+                                      </span>
                                     </span>
                                   </span>
-</span>
                                 </span>
                               </td>
                               <!-- discount column material4 services--->
@@ -1515,13 +1517,13 @@
                               <!--net price column material4 services-->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-show-if="material4.Is_Option = 1">(</span>
-                                    <span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span>
-                                    <span data-show-if="material4.Is_Option = 1">)</span>
+                                  <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-show-if="material4.Is_Option = 1">(</span>
+                                      <span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span>
+                                      <span data-show-if="material4.Is_Option = 1">)</span>
+                                    </span>
                                   </span>
-</span>
                                 </span>
                               </td>
                               <!---total net price column material4 services-->
@@ -1530,25 +1532,25 @@
                                 style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                 class="number">
                                 <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-show-if="material4.Is_Option = 1">(</span>
-                                    <span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span>
-                                    <span data-show-if="material4.Is_Option = 1">)</span>
+                                  <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-show-if="material4.Is_Option = 1">(</span>
+                                      <span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span>
+                                      <span data-show-if="material4.Is_Option = 1">)</span>
+                                    </span>
                                   </span>
-</span>
                                 </span>
                               </td>
                               <!--total gross price column material4 services-->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                                 <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                  <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-show-if="material4.Is_Option = 1">(</span>
-                                    <span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span>
-                                    <span data-show-if="material4.Is_Option = 1">)</span>
+                                  <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-show-if="material4.Is_Option = 1">(</span>
+                                      <span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span>
+                                      <span data-show-if="material4.Is_Option = 1">)</span>
+                                    </span>
                                   </span>
-</span>
                                 </span>
                               </td>
                             </tr>
@@ -1613,10 +1615,10 @@
                                       </span>
                                     </span>
                                   </span>
-                                  <span  class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
                                     [material4.Mat_Sales_Text_CP7]
                                   </span>
-                                  <span  class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK">[material4.Mat_Sales_Text]</span>
+                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK">[material4.Mat_Sales_Text]</span>
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'Long text'"><br/><br/></span>
                                 </span>
                               </span>
@@ -1835,10 +1837,10 @@
                                             </span>
                                           </span>
                                         </span>
-                                        <span  class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                        <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
                                           [material5.Mat_Sales_Text_CP7]
                                         </span>
-                                        <span  class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK">[material5.Mat_Sales_Text]</span>
+                                        <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK">[material5.Mat_Sales_Text]</span>
                                         <span><br/><br/></span>
                                       </span>
                                     </span>
@@ -1846,10 +1848,10 @@
                                   <!--- Swiss specific services description -->
                                   <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                     <b>[material5.Short_Description]</b><br/>
-                                    <span  class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
                                       [material5.Mat_Sales_Text_CP7]
                                     </span>
-                                    <span  class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK">[material5.Mat_Sales_Text]</span>
+                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK">[material5.Mat_Sales_Text]</span>
                                     <span><br/><br/></span>
                                   </span>
                                   <!--Start of Export Controls text -->
@@ -1859,27 +1861,27 @@
                                 <!--- quantity column material5 services-->
                                 <td style="width: 30px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <span data-show-if="material5.Is_Hide_Qty = 0">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                      <span data-show-if="material5.Is_Option = 1">(</span>
-                                      <span class="number" data-precision="0" data-show-if="material5.Serv_Calc_Qty gt 0">[material5.Serv_Calc_Qty]</span>
-                                      <span data-show-if="material5.Is_Option = 1">)</span>
+                                    <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                        <span data-show-if="material5.Is_Option = 1">(</span>
+                                        <span class="number" data-precision="0" data-show-if="material5.Serv_Calc_Qty gt 0">[material5.Serv_Calc_Qty]</span>
+                                        <span data-show-if="material5.Is_Option = 1">)</span>
+                                      </span>
                                     </span>
-</span>
                                   </span>
                                 </td>
                                 <!--gross price column material5 services-->
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-show-if="material5.Mat_Serv_Sales != 0">
-                                      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                        <span data-show-if="material5.Is_Option = 1">(</span>
-                                        <span class="number">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span>
-                                        <span data-show-if="material5.Is_Option = 1">)</span>
+                                    <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-show-if="material5.Mat_Serv_Sales != 0">
+                                        <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                          <span data-show-if="material5.Is_Option = 1">(</span>
+                                          <span class="number">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span>
+                                          <span data-show-if="material5.Is_Option = 1">)</span>
+                                        </span>
                                       </span>
                                     </span>
-</span>
                                   </span>
                                 </td>
                                 <!-- discount column material5 services--->
@@ -1889,13 +1891,13 @@
                                 <!--net price column material5 services-->
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                      <span data-show-if="material5.Is_Option = 1">(</span>
-                                      <span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span>
-                                      <span data-show-if="material5.Is_Option = 1">)</span>
+                                    <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                        <span data-show-if="material5.Is_Option = 1">(</span>
+                                        <span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span>
+                                        <span data-show-if="material5.Is_Option = 1">)</span>
+                                      </span>
                                     </span>
-</span>
                                   </span>
                                 </td>
                                 <!---total net price column material5 services-->
@@ -1904,25 +1906,25 @@
                                   style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                   class="number">
                                   <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                      <span data-show-if="material5.Is_Option = 1">(</span>
-                                      <span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span>
-                                      <span data-show-if="material5.Is_Option = 1">)</span>
+                                    <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                        <span data-show-if="material5.Is_Option = 1">(</span>
+                                        <span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span>
+                                        <span data-show-if="material5.Is_Option = 1">)</span>
+                                      </span>
                                     </span>
-</span>
                                   </span>
                                 </td>
                                 <!--total gross price column material5 services-->
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 70px; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                                   <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                    <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
-                                      <span data-show-if="material5.Is_Option = 1">(</span>
-                                      <span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span>
-                                      <span data-show-if="material5.Is_Option = 1">)</span>
+                                    <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
+                                        <span data-show-if="material5.Is_Option = 1">(</span>
+                                        <span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span>
+                                        <span data-show-if="material5.Is_Option = 1">)</span>
+                                      </span>
                                     </span>
-</span>
                                   </span>
                                 </td>
                               </tr>
@@ -1987,10 +1989,10 @@
                                         </span>
                                       </span>
                                     </span>
-                                    <span  class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
                                       [material5.Mat_Sales_Text_CP7]
                                     </span>
-                                    <span  class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK">[material5.Mat_Sales_Text]</span>
+                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK">[material5.Mat_Sales_Text]</span>
                                     <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'Long text'"><br/><br/></span>
                                   </span>
                                 </span>
