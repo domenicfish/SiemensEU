@@ -311,7 +311,7 @@
                                     <span data-show-if="material1.Market_Facing_Nr IS NOT BLANK"><br/></span>
                                   </span>
                                 </span>
-                                [material1.Short_Description]
+                                <span class="html">[material1.Short_Description]</span>
                               </span>
                             </span>
                             <!---start of long (sales) text --->
@@ -339,7 +339,7 @@
                           </span>
                           <!--- Swiss specific services description -->
                           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                            <b>[material1.Short_Description]</b><br/>
+                            <span class="html"><b>[material1.Short_Description]</b></span><br/>
                             <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
                               [material1.Mat_Sales_Text_CP7]
                             </span>
@@ -457,10 +457,10 @@
                               </span>
                             </span>
                             <span data-show-if="material1.Conf_Id LIKE 'cp_FreeText' OR material1.Conf_Id LIKE 'cp_ManualPosition' OR material1.Conf_Id LIKE 'cpGenericItem'">
-                              <b>[material1.Short_Description]</b>
+                              <span class="html"><b>[material1.Short_Description]</b></span>
                             </span>
                             <span data-show-if="material1.Conf_Id IS BLANK">
-                              [material1.Short_Description]
+                              <span class="html">[material1.Short_Description]</span>
                             </span>
                           </span>
                         </span>
@@ -686,7 +686,7 @@
                                       <span data-show-if="material2.Market_Facing_Nr IS NOT BLANK"><br/></span>
                                     </span>
                                   </span>
-                                  [material2.Short_Description]
+                                  <span class="html">[material2.Short_Description]</span>
                                 </span>
                               </span>
                               <!---start of long (sales) text --->
@@ -714,7 +714,7 @@
                             </span>
                             <!--- Swiss specific services description -->
                             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                              <b>[material2.Short_Description]</b><br/>
+                              <b><span class="html">[material2.Short_Description]</span></b><br/>
                               <span class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
                                 [material2.Mat_Sales_Text_CP7]
                               </span>
@@ -832,10 +832,10 @@
                                 </span>
                               </span>
                               <span data-show-if="material2.Conf_Id LIKE 'cp_FreeText' OR material2.Conf_Id LIKE 'cp_ManualPosition' OR material2.Conf_Id LIKE 'cpGenericItem'">
-                                <b>[material2.Short_Description]</b>
+                                <b><span class="html">[material2.Short_Description]</span></b>
                               </span>
                               <span data-show-if="material2.Conf_Id IS BLANK">
-                                [material2.Short_Description]
+                                <span class="html">[material2.Short_Description]</span>
                               </span>
                             </span>
                           </span>
@@ -1071,7 +1071,7 @@
                                         <span data-show-if="material3.Market_Facing_Nr IS NOT BLANK"><br/></span>
                                       </span>
                                     </span>
-                                    [material3.Short_Description]
+                                    <span class="html">[material3.Short_Description]</span>
                                   </span>
                                 </span>
                                 <!---start of long (sales) text --->
@@ -1099,7 +1099,7 @@
                               </span>
                               <!--- Swiss specific services description -->
                               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                                <b>[material3.Short_Description]</b><br/>
+                                <b><span class="html">[material3.Short_Description]</span></b><br/>
                                 <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
                                   [material3.Mat_Sales_Text_CP7]
                                 </span>
@@ -1217,10 +1217,10 @@
                                   </span>
                                 </span>
                                 <span data-show-if="material3.Conf_Id LIKE 'cp_FreeText' OR material3.Conf_Id LIKE 'cp_ManualPosition' OR material3.Conf_Id LIKE 'cpGenericItem'">
-                                  <b>[material3.Short_Description]</b>
+                                  <b><span class="html">[material3.Short_Description]</span></b>
                                 </span>
                                 <span data-show-if="material3.Conf_Id IS BLANK">
-                                  [material3.Short_Description]
+                                  <span class="html">[material3.Short_Description]</span>
                                 </span>
                               </span>
                             </span>
@@ -1445,7 +1445,7 @@
                                           <span data-show-if="material4.Market_Facing_Nr IS NOT BLANK"><br/></span>
                                         </span>
                                       </span>
-                                      [material4.Short_Description]
+                                      <span class="html">[material4.Short_Description]</span>
                                     </span>
                                   </span>
                                   <!---start of long (sales) text --->
@@ -1473,7 +1473,7 @@
                                 </span>
                                 <!--- Swiss specific services description -->
                                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                                  <b>[material4.Short_Description]</b><br/>
+                                  <b><span class="html">[material4.Short_Description]</span></b><br/>
                                   <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
                                     [material4.Mat_Sales_Text_CP7]
                                   </span>
@@ -1591,10 +1591,10 @@
                                     </span>
                                   </span>
                                   <span data-show-if="material4.Conf_Id LIKE 'cp_FreeText' OR material4.Conf_Id LIKE 'cp_ManualPosition' OR material4.Conf_Id LIKE 'cpGenericItem'">
-                                    <b>[material4.Short_Description]</b>
+                                    <b><span class="html">[material4.Short_Description]</span></b>
                                   </span>
                                   <span data-show-if="material4.Conf_Id IS BLANK">
-                                    [material4.Short_Description]
+                                    <span class="html">[material4.Short_Description]</span>
                                   </span>
                                 </span>
                               </span>
@@ -1819,7 +1819,7 @@
                                             <span data-show-if="material5.Market_Facing_Nr IS NOT BLANK"><br/></span>
                                           </span>
                                         </span>
-                                        [material5.Short_Description]
+                                        <span class="html">[material5.Short_Description]</span>
                                       </span>
                                     </span>
                                     <!---start of long (sales) text --->
@@ -1847,7 +1847,7 @@
                                   </span>
                                   <!--- Swiss specific services description -->
                                   <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                                    <b>[material5.Short_Description]</b><br/>
+                                    <b><span class="html">[material5.Short_Description]</span></b><br/>
                                     <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
                                       [material5.Mat_Sales_Text_CP7]
                                     </span>
@@ -1965,10 +1965,10 @@
                                       </span>
                                     </span>
                                     <span data-show-if="material5.Conf_Id LIKE 'cp_FreeText' OR material5.Conf_Id LIKE 'cp_ManualPosition' OR material5.Conf_Id LIKE 'cpGenericItem'">
-                                      <b>[material5.Short_Description]</b>
+                                      <b><span class="html">[material5.Short_Description]</span></b>
                                     </span>
                                     <span data-show-if="material5.Conf_Id IS BLANK">
-                                      [material5.Short_Description]
+                                      <span class="html">[material5.Short_Description]</span>
                                     </span>
                                   </span>
                                 </span>
