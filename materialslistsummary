@@ -116,7 +116,8 @@
 
           <!--discount amount header for net -->
           <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
-            <span data-show-if="suboffer.SQUserMatDiscountPercent__c IS NOT BLANK OR suboffer.SQUserMatDiscount__c IS NOT BLANK OR suboffer.SQTotalUserMatPrice__c IS NOT BLANK Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0 OR Custom1__c_SO_Total_Margin__c gt 0">
+            <span
+              data-show-if="suboffer.SQUserMatDiscountPercent__c IS NOT BLANK OR suboffer.SQUserMatDiscount__c IS NOT BLANK OR suboffer.SQTotalUserMatPrice__c IS NOT BLANK Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0 OR Custom1__c_SO_Total_Margin__c gt 0">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Discount</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
@@ -430,7 +431,8 @@
           <td style="width: 80px; height: 21px; text-align: right;"></td>
           <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.cart.Mat_Tot_Sales_after_disc2_NULL]</td>
         </tr>
-        <!-- NULL Base discount -->
+        <!--comment out
+
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_NULL gt 0 AND Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'">
           <td style="height: 21px; padding-left: 75px;">
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Grundrabatt</span>
@@ -443,7 +445,7 @@
           <td class="number" style="width: 80px; height: 21px; text-align: right;">[suboffer.cart.Mat_Tot_Org_Sales_NULL - suboffer.cart.Mat_Tot_Sales_after_disc1_NULL]</td>
           <td style="width: 110px; height: 21px; text-align: right;"></td>
         </tr>
-        <!-- NULL Object discount -->
+
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc2_NULL gt 0 AND Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'">
           <td style="height: 21px; padding-left: 75px;">
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Objektrabatt</span>
@@ -457,7 +459,9 @@
           <td style="width: 110px; height: 21px; text-align: right;"></td>
         </tr>
 
-        <!-- Non-Discountable Title -->
+comment out-->
+        <!--comment out
+         Non-Discountable Title
         <tr style="height: 21px;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'">
           <td style="height: 21px; padding-left: 35px;">
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
@@ -466,13 +470,16 @@
           </td>
           <td colspan="5"></td>
         </tr>
+comment out-->
 
         <!--non discountable SWL -->
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_SWL = 0 AND suboffer.cart.Disc1_SWL IS NOT BLANK AND suboffer.cart.Disc2_SWL = 0 AND suboffer.cart.Disc2_SWL IS NOT BLANK">
           <td style="height: 21px; padding-left: 35px;">
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            </span>
             SWL</td>
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_SWL]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
@@ -483,10 +490,13 @@
         <!--non discountable FDV -->
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_FDV = 0 AND suboffer.cart.Disc1_FDV IS NOT BLANK AND suboffer.cart.Disc2_FDV = 0 AND suboffer.cart.Disc2_FDV IS NOT BLANK">
           <td style="height: 21px; padding-left: 35px;">
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            </span>
             FDV</td>
+
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_FDV]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
           <td style="width: 60px; height: 21px; text-align: right; vertical-align: middle;"></td>
@@ -496,10 +506,13 @@
         <!--non discountable SYM -->
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_SYM = 0 AND suboffer.cart.Disc1_SYM IS NOT BLANK AND suboffer.cart.Disc2_SYM = 0 AND suboffer.cart.Disc2_SYM IS NOT BLANK">
           <td style="height: 21px; padding-left: 35px;">
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            </span>
             SYM</td>
+
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_SYM]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
           <td style="width: 60px; height: 21px; text-align: right; vertical-align: middle;"></td>
@@ -509,9 +522,11 @@
         <!--non discountable THD -->
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_THD = 0 AND suboffer.cart.Disc1_THD IS NOT BLANK AND suboffer.cart.Disc2_THD = 0 AND suboffer.cart.Disc2_THD IS NOT BLANK">
           <td style="height: 21px; padding-left: 35px;">
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            </span>
             THD</td>
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_THD]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
@@ -522,9 +537,11 @@
         <!--non discountable CAB -->
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_CAB IS BLANK AND suboffer.cart.Disc2_CAB IS BLANK">
           <td style="height: 21px; padding-left: 35px;">
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
+            </span>
             CAB</td>
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_CAB]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
@@ -707,7 +724,7 @@
       </td>
     </tr>
     <!-- start of services -->
-    <tr style="height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' OR Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
+    <tr style="height: 21px;" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended' AND suboffer.SQTotalUserServPrice__c gt 0">
       <td style="height: 21px;" colspan="5">
         <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Dienstleistungen</span>
         <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations</span>
@@ -757,9 +774,7 @@
       <td data-hide-if="suboffer.SQTotalUserServPrice__c lte 0" class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.SQTotalUserServPrice__c]</td>
     </tr>
     <!--total services row -->
-    <tr
-      style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;"
-      data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND suboffer.SQTotalUserServPrice__c gt 0">
+    <tr style="height: 21px; border-bottom: 1px solid #000000; border-top: 1px solid #000000;" data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short'">
       <td style="height: 21px;" colspan="5">
         <strong>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total Dienstleistungen</span>
@@ -781,6 +796,7 @@
       <td style="width: 110px; height: 21px; text-align: right;" class="number">
         <strong>
           <span data-show-if="suboffer.SQTotalUserServPrice__c IS NOT BLANK" class="number">[suboffer.SQTotalUserServPrice__c]</span>
+          <span data-hide-if="suboffer.SQTotalUserServPrice__c IS NOT BLANK" class="number">[suboffer.TC_Mat_Serv_Sales__c]</span>
         </strong>
       </td>
     </tr>
