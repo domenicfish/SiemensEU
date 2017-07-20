@@ -751,24 +751,30 @@
         <td style="width: 30%; height: 21px;" colspan="2">
           <em>
             <strong>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Material Based Services</span>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">DL aus Attributen</span>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ricapitolazione ore dal materiale</span>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Configurateur</span>
+              <span style="font-size: 12px;">
+                <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Material Based Services</span>
+                <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">DL aus Attributen</span>
+                <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ricapitolazione ore dal materiale</span>
+                <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Configurateur</span>
+              </span>
             </strong>
           </em>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          <span style="font-size: 10px;">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right;" class="number">?</td>
+
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
+        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
+
       </tr>
     </tbody>
   </table>
@@ -778,41 +784,51 @@
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
-            <span>[cart1.Short_Description]</span>
+            <span style="font-size: 9px;" class="html">[cart1.Short_Description]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_UCS]</span>
+            <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Origin_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Add_Serv_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Add_Serv_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Item_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Item_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Calc_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Cost]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Cost]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Disc_Pct1]</span>
+            <span style="font-size: 9px;">
+              <span class="number" data-show-if="cart1.Mat_Serv_Sales gt 0">[(cart1.Mat_Org_Sales - cart1.Mat_Serv_Sales) / cart1.Mat_Org_Sales * 100]</span>
+              <span class="number" data-show-if="cart1.Mat_Serv_Sales lte 0">[cart1.Mat_Disc_Pct1]</span>
+            </span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Marg_Pct]</span>
+            <span style="font-size: 9px;">
+              <span class="number" data-show-if="cart1.Mat_Marg_Pct gt 0">[cart1.Mat_Marg_Pct]</span>
+              <span class="number" data-show-if="cart1.Mat_Marg_Pct lte 0">[(1 - (cart1.Mat_Serv_Cost / cart1.Mat_Serv_Sales)) * 100]</span>
+            </span>
           </td>
           <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Sales]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Sales]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Change_Log]</span>
+            <span style="font-size: 9px;">[cart1.Serv_Change_Log]</span>
           </td>
         </tr>
       </tbody>
@@ -823,41 +839,51 @@
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
-              <span>[cart2.Short_Description]</span>
+              <span style="font-size: 9px;" class="html">[cart2.Short_Description]</span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_UCS]</span>
+              <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Origin_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Add_Serv_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Add_Serv_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Item_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Item_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Calc_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
-            <td style="width: 9%; heigqqht: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Cost]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+            <td style="width: 9%; height: 21.6563px; text-align: right;">
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span style="font-size: 9px;" class="number">[cart2.Mat_Serv_Cost]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Disc_Pct1]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales gt 0">[(cart2.Mat_Org_Sales - cart2.Mat_Serv_Sales) / cart2.Mat_Org_Sales * 100]</span>
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Marg_Pct]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+                <span class="number" data-show-if="cart2.Mat_Marg_Pct lte 0">[(1 - (cart2.Mat_Serv_Cost / cart2.Mat_Serv_Sales)) * 100]</span>
+              </span>
             </td>
             <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Sales]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span class="number">[cart2.Mat_Serv_Sales]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Change_Log]</span>
+              <span style="font-size: 9px;">[cart2.Serv_Change_Log]</span>
             </td>
           </tr>
         </tbody>
@@ -868,41 +894,47 @@
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
-                <span>[cart3.Short_Description]</span>
+                <span style="font-size: 9px;" class="html">[cart3.Short_Description]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_UCS]</span>
+                <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Origin_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Add_Serv_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Add_Serv_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Item_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Item_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Calc_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Cost]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Cost]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Disc_Pct1]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales gt 0">[(cart3.Mat_Org_Sales - cart3.Mat_Serv_Sales) / cart3.Mat_Org_Sales * 100]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales lte 0">[cart3.Mat_Disc_Pct1]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct gt 0">[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct lte 0">[(1 - (cart3.Mat_Serv_Cost / cart3.Mat_Serv_Sales)) * 100]</span>
               </td>
               <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Sales]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Sales]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Change_Log]</span>
+                <span style="font-size: 9px;">[cart3.Serv_Change_Log]</span>
               </td>
             </tr>
           </tbody>
@@ -912,41 +944,47 @@
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
-                  <span>[cart4.Short_Description]</span>
+                  <span style="font-size: 9px;" class="html">[cart4.Short_Description]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_UCS]</span>
+                  <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Origin_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Add_Serv_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Add_Serv_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Item_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Item_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Calc_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Cost]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Cost]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Disc_Pct1]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales gt 0">[(cart4.Mat_Org_Sales - cart4.Mat_Serv_Sales) / cart4.Mat_Org_Sales * 100]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales lte 0">[cart4.Mat_Disc_Pct1]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct gt 0">[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct lte 0">[(1 - (cart4.Mat_Serv_Cost / cart4.Mat_Serv_Sales)) * 100]</span>
                 </td>
                 <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Sales]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Sales]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Change_Log]</span>
+                  <span style="font-size: 9px;">[cart4.Serv_Change_Log]</span>
                 </td>
               </tr>
             </tbody>
@@ -957,90 +995,51 @@
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
-                    <span>[cart5.Short_Description]</span>
+                    <span style="font-size: 9px;" class="html">[cart5.Short_Description]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_UCS]</span>
+                    <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Origin_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Add_Serv_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Add_Serv_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Item_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Item_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Calc_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Cost]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Cost]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Disc_Pct1]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales gt 0">[(cart5.Mat_Org_Sales - cart5.Mat_Serv_Sales) / cart5.Mat_Org_Sales * 100]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales lte 0">[cart5.Mat_Disc_Pct1]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct gt 0">[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct lte 0">[(1 - (cart5.Mat_Serv_Cost / cart5.Mat_Serv_Sales)) * 100]</span>
                   </td>
                   <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Sales]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Sales]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Change_Log]</span>
+                    <span style="font-size: 9px;">[cart5.Serv_Change_Log]</span>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <div data-repeat="cart6 in cart5.cartLines">
-              <table data-show-if="cart6.type = 'SP' AND cart6.Serv_Line_Type LIKE 'CALCULATED'">
-                <tbody>
-                  <tr style="height: 21.6563px;">
-                    <td style="width: 25%; height: 21.6563px; text-align: left;">
-                      <span>[cart6.Short_Description]</span>
-                    </td>
-                    <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_UCS]</span>
-                    </td>
-                    <td style="width: 7%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Serv_Origin_Qty]</span>
-                    </td>
-                    <td style="width: 7%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Serv_Add_Serv_Qty]</span>
-                    </td>
-                    <td style="width: 6%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Item_Qty]</span>
-                    </td>
-                    <td style="width: 6%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Serv_Calc_Qty]</span>
-                    </td>
-                    <td style="width: 9%; height: 21.6563px; text-align: right;">
-                      <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Cost]</span>
-                      <span data-show-if="cart6.Is_Option = '1'">)</span>
-                    </td>
-                    <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Disc_Pct1]</span>
-                    </td>
-                    <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Marg_Pct]</span>
-                    </td>
-                    <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                      <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Sales]</span>
-                      <span data-show-if="cart6.Is_Option = '1'">)</span>
-                    </td>
-                    <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Serv_Change_Log]</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </div>
         </div>
       </div>
@@ -1053,25 +1052,29 @@
 
       <tr style="height: 21px;">
         <td style="width: 30%; height: 21px;" colspan="2">
-          <em>
-            <strong>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Additional Services & Activities</span>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zusätzliche DL</span>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prestazioni supplementari</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations additionnelles</span>
-            </strong>
-          </em>
+          <span style="font-size: 12px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Additional Services & Activities</span>
+                <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zusätzliche DL</span>
+                <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prestazioni supplementari</span>
+                <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prestations additionnelles</span>
+              </strong>
+            </em>
+          </span>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          <span style="font-size: 10px;">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right;" class="number">?</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
+        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
       </tr>
     </tbody>
@@ -1082,41 +1085,47 @@
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
-            <span>[cart1.Short_Description]</span>
+            <span style="font-size: 9px;" class="html">[cart1.Short_Description]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_UCS]</span>
+            <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Origin_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Add_Serv_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Add_Serv_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Item_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Item_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Calc_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Cost]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Cost]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Disc_Pct1]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales gt 0">[(cart1.Mat_Org_Sales - cart1.Mat_Serv_Sales) / cart1.Mat_Org_Sales * 100]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales lte 0">[cart1.Mat_Disc_Pct1]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct gt 0">[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct lte 0">[(1 - (cart1.Mat_Serv_Cost / cart1.Mat_Serv_Sales)) * 100]</span>
           </td>
           <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Sales]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Sales]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Change_Log]</span>
+            <span style="font-size: 9px;">[cart1.Serv_Change_Log]</span>
           </td>
         </tr>
       </tbody>
@@ -1127,41 +1136,51 @@
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
-              <span>[cart2.Short_Description]</span>
+              <span style="font-size: 9px;" class="html">[cart2.Short_Description]</span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_UCS]</span>
+              <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Origin_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Add_Serv_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Add_Serv_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Item_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Item_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Calc_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
-            <td style="width: 9%; heigqqht: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Cost]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+            <td style="width: 9%; height: 21.6563px; text-align: right;">
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span style="font-size: 9px;" class="number">[cart2.Mat_Serv_Cost]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Disc_Pct1]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales gt 0">[(cart2.Mat_Org_Sales - cart2.Mat_Serv_Sales) / cart2.Mat_Org_Sales * 100]</span>
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Marg_Pct]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+                <span class="number" data-show-if="cart2.Mat_Marg_Pct lte 0">[(1 - (cart2.Mat_Serv_Cost / cart2.Mat_Serv_Sales)) * 100]</span>
+              </span>
             </td>
             <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Sales]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span class="number">[cart2.Mat_Serv_Sales]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Change_Log]</span>
+              <span style="font-size: 9px;">[cart2.Serv_Change_Log]</span>
             </td>
           </tr>
         </tbody>
@@ -1172,41 +1191,47 @@
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
-                <span>[cart3.Short_Description]</span>
+                <span style="font-size: 9px;" class="html">[cart3.Short_Description]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_UCS]</span>
+                <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Origin_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Add_Serv_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Add_Serv_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Item_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Item_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Calc_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Cost]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Cost]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Disc_Pct1]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales gt 0">[(cart3.Mat_Org_Sales - cart3.Mat_Serv_Sales) / cart3.Mat_Org_Sales * 100]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales lte 0">[cart3.Mat_Disc_Pct1]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct gt 0">[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct lte 0">[(1 - (cart3.Mat_Serv_Cost / cart3.Mat_Serv_Sales)) * 100]</span>
               </td>
               <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Sales]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Sales]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Change_Log]</span>
+                <span style="font-size: 9px;">[cart3.Serv_Change_Log]</span>
               </td>
             </tr>
           </tbody>
@@ -1216,41 +1241,47 @@
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
-                  <span>[cart4.Short_Description]</span>
+                  <span style="font-size: 9px;" class="html">[cart4.Short_Description]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_UCS]</span>
+                  <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Origin_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Add_Serv_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Add_Serv_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Item_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Item_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Calc_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Cost]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Cost]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Disc_Pct1]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales gt 0">[(cart4.Mat_Org_Sales - cart4.Mat_Serv_Sales) / cart4.Mat_Org_Sales * 100]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales lte 0">[cart4.Mat_Disc_Pct1]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct gt 0">[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct lte 0">[(1 - (cart4.Mat_Serv_Cost / cart4.Mat_Serv_Sales)) * 100]</span>
                 </td>
                 <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Sales]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Sales]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Change_Log]</span>
+                  <span style="font-size: 9px;">[cart4.Serv_Change_Log]</span>
                 </td>
               </tr>
             </tbody>
@@ -1261,41 +1292,47 @@
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
-                    <span>[cart5.Short_Description]</span>
+                    <span style="font-size: 9px;" class="html">[cart5.Short_Description]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_UCS]</span>
+                    <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Origin_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Add_Serv_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Add_Serv_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Item_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Item_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Calc_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Cost]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Cost]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Disc_Pct1]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales gt 0">[(cart5.Mat_Org_Sales - cart5.Mat_Serv_Sales) / cart5.Mat_Org_Sales * 100]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales lte 0">[cart5.Mat_Disc_Pct1]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct gt 0">[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct lte 0">[(1 - (cart5.Mat_Serv_Cost / cart5.Mat_Serv_Sales)) * 100]</span>
                   </td>
                   <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Sales]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Sales]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Change_Log]</span>
+                    <span style="font-size: 9px;">[cart5.Serv_Change_Log]</span>
                   </td>
                 </tr>
               </tbody>
@@ -1324,18 +1361,20 @@
                     </td>
                     <td style="width: 9%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Cost]</span>
+                      <span class="number">[cart6.Mat_Serv_Cost]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Disc_Pct1]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales gt 0">[(cart6.Mat_Org_Sales - cart6.Mat_Serv_Sales) / cart6.Mat_Org_Sales * 100]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales lte 0">[cart6.Mat_Disc_Pct1]</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct gt 0">[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct lte 0">[(1 - (cart6.Mat_Serv_Cost / cart6.Mat_Serv_Sales)) * 100]</span>
                     </td>
                     <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Sales]</span>
+                      <span class="number">[cart6.Mat_Serv_Sales]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
@@ -1367,15 +1406,17 @@
           </em>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          <span style="font-size: 10px;">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right;" class="number">?</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
+        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
       </tr>
     </tbody>
@@ -1386,41 +1427,47 @@
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
-            <span>[cart1.Short_Description]</span>
+            <span style="font-size: 9px;" class="html">[cart1.Short_Description]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_UCS]</span>
+            <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Origin_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Add_Serv_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Add_Serv_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Item_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Item_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Calc_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Cost]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Cost]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Disc_Pct1]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales gt 0">[(cart1.Mat_Org_Sales - cart1.Mat_Serv_Sales) / cart1.Mat_Org_Sales * 100]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales lte 0">[cart1.Mat_Disc_Pct1]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct gt 0">[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct lte 0">[(1 - (cart1.Mat_Serv_Cost / cart1.Mat_Serv_Sales)) * 100]</span>
           </td>
           <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Sales]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Sales]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Change_Log]</span>
+            <span style="font-size: 9px;">[cart1.Serv_Change_Log]</span>
           </td>
         </tr>
       </tbody>
@@ -1431,41 +1478,51 @@
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
-              <span>[cart2.Short_Description]</span>
+              <span style="font-size: 9px;" class="html">[cart2.Short_Description]</span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_UCS]</span>
+              <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Origin_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Add_Serv_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Add_Serv_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Item_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Item_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Calc_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
-            <td style="width: 9%; heigqqht: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Cost]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+            <td style="width: 9%; height: 21.6563px; text-align: right;">
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span style="font-size: 9px;" class="number">[cart2.Mat_Serv_Cost]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Disc_Pct1]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales gt 0">[(cart2.Mat_Org_Sales - cart2.Mat_Serv_Sales) / cart2.Mat_Org_Sales * 100]</span>
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Marg_Pct]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+                <span class="number" data-show-if="cart2.Mat_Marg_Pct lte 0">[(1 - (cart2.Mat_Serv_Cost / cart2.Mat_Serv_Sales)) * 100]</span>
+              </span>
             </td>
             <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Sales]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span class="number">[cart2.Mat_Serv_Sales]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Change_Log]</span>
+              <span style="font-size: 9px;">[cart2.Serv_Change_Log]</span>
             </td>
           </tr>
         </tbody>
@@ -1476,41 +1533,47 @@
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
-                <span>[cart3.Short_Description]</span>
+                <span style="font-size: 9px;" class="html">[cart3.Short_Description]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_UCS]</span>
+                <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Origin_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Add_Serv_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Add_Serv_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Item_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Item_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Calc_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Cost]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Cost]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Disc_Pct1]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales gt 0">[(cart3.Mat_Org_Sales - cart3.Mat_Serv_Sales) / cart3.Mat_Org_Sales * 100]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales lte 0">[cart3.Mat_Disc_Pct1]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct gt 0">[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct lte 0">[(1 - (cart3.Mat_Serv_Cost / cart3.Mat_Serv_Sales)) * 100]</span>
               </td>
               <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Sales]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Sales]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Change_Log]</span>
+                <span style="font-size: 9px;">[cart3.Serv_Change_Log]</span>
               </td>
             </tr>
           </tbody>
@@ -1520,41 +1583,47 @@
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
-                  <span>[cart4.Short_Description]</span>
+                  <span style="font-size: 9px;" class="html">[cart4.Short_Description]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_UCS]</span>
+                  <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Origin_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Add_Serv_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Add_Serv_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Item_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Item_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Calc_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Cost]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Cost]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Disc_Pct1]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales gt 0">[(cart4.Mat_Org_Sales - cart4.Mat_Serv_Sales) / cart4.Mat_Org_Sales * 100]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales lte 0">[cart4.Mat_Disc_Pct1]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct gt 0">[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct lte 0">[(1 - (cart4.Mat_Serv_Cost / cart4.Mat_Serv_Sales)) * 100]</span>
                 </td>
                 <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Sales]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Sales]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Change_Log]</span>
+                  <span style="font-size: 9px;">[cart4.Serv_Change_Log]</span>
                 </td>
               </tr>
             </tbody>
@@ -1565,41 +1634,47 @@
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
-                    <span>[cart5.Short_Description]</span>
+                    <span style="font-size: 9px;" class="html">[cart5.Short_Description]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_UCS]</span>
+                    <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Origin_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Add_Serv_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Add_Serv_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Item_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Item_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Calc_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Cost]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Cost]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Disc_Pct1]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales gt 0">[(cart5.Mat_Org_Sales - cart5.Mat_Serv_Sales) / cart5.Mat_Org_Sales * 100]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales lte 0">[cart5.Mat_Disc_Pct1]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct gt 0">[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct lte 0">[(1 - (cart5.Mat_Serv_Cost / cart5.Mat_Serv_Sales)) * 100]</span>
                   </td>
                   <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Sales]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Sales]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Change_Log]</span>
+                    <span style="font-size: 9px;">[cart5.Serv_Change_Log]</span>
                   </td>
                 </tr>
               </tbody>
@@ -1628,18 +1703,20 @@
                     </td>
                     <td style="width: 9%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Cost]</span>
+                      <span class="number">[cart6.Mat_Serv_Cost]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Disc_Pct1]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales gt 0">[(cart6.Mat_Org_Sales - cart6.Mat_Serv_Sales) / cart6.Mat_Org_Sales * 100]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales lte 0">[cart6.Mat_Disc_Pct1]</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct gt 0">[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct lte 0">[(1 - (cart6.Mat_Serv_Cost / cart6.Mat_Serv_Sales)) * 100]</span>
                     </td>
                     <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Sales]</span>
+                      <span class="number">[cart6.Mat_Serv_Sales]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
@@ -1671,15 +1748,17 @@
           </em>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          <span style="font-size: 10px;">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right;" class="number">?</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
+        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
       </tr>
     </tbody>
@@ -1690,41 +1769,47 @@
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
-            <span>[cart1.Short_Description]</span>
+            <span style="font-size: 9px;" class="html">[cart1.Short_Description]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_UCS]</span>
+            <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Origin_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Add_Serv_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Add_Serv_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Item_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Item_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Calc_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Cost]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Cost]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Disc_Pct1]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales gt 0">[(cart1.Mat_Org_Sales - cart1.Mat_Serv_Sales) / cart1.Mat_Org_Sales * 100]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales lte 0">[cart1.Mat_Disc_Pct1]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct gt 0">[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct lte 0">[(1 - (cart1.Mat_Serv_Cost / cart1.Mat_Serv_Sales)) * 100]</span>
           </td>
           <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Sales]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Sales]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Change_Log]</span>
+            <span style="font-size: 9px;">[cart1.Serv_Change_Log]</span>
           </td>
         </tr>
       </tbody>
@@ -1735,41 +1820,51 @@
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
-              <span>[cart2.Short_Description]</span>
+              <span style="font-size: 9px;" class="html">[cart2.Short_Description]</span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_UCS]</span>
+              <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Origin_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Add_Serv_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Add_Serv_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Item_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Item_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Calc_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
-            <td style="width: 9%; heigqqht: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Cost]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+            <td style="width: 9%; height: 21.6563px; text-align: right;">
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span style="font-size: 9px;" class="number">[cart2.Mat_Serv_Cost]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Disc_Pct1]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales gt 0">[(cart2.Mat_Org_Sales - cart2.Mat_Serv_Sales) / cart2.Mat_Org_Sales * 100]</span>
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Marg_Pct]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+                <span class="number" data-show-if="cart2.Mat_Marg_Pct lte 0">[(1 - (cart2.Mat_Serv_Cost / cart2.Mat_Serv_Sales)) * 100]</span>
+              </span>
             </td>
             <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Sales]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span class="number">[cart2.Mat_Serv_Sales]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Change_Log]</span>
+              <span style="font-size: 9px;">[cart2.Serv_Change_Log]</span>
             </td>
           </tr>
         </tbody>
@@ -1780,41 +1875,47 @@
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
-                <span>[cart3.Short_Description]</span>
+                <span style="font-size: 9px;" class="html">[cart3.Short_Description]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_UCS]</span>
+                <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Origin_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Add_Serv_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Add_Serv_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Item_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Item_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Calc_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Cost]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Cost]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Disc_Pct1]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales gt 0">[(cart3.Mat_Org_Sales - cart3.Mat_Serv_Sales) / cart3.Mat_Org_Sales * 100]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales lte 0">[cart3.Mat_Disc_Pct1]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct gt 0">[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct lte 0">[(1 - (cart3.Mat_Serv_Cost / cart3.Mat_Serv_Sales)) * 100]</span>
               </td>
               <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Sales]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Sales]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Change_Log]</span>
+                <span style="font-size: 9px;">[cart3.Serv_Change_Log]</span>
               </td>
             </tr>
           </tbody>
@@ -1824,41 +1925,47 @@
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
-                  <span>[cart4.Short_Description]</span>
+                  <span style="font-size: 9px;" class="html">[cart4.Short_Description]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_UCS]</span>
+                  <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Origin_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Add_Serv_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Add_Serv_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Item_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Item_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Calc_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Cost]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Cost]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Disc_Pct1]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales gt 0">[(cart4.Mat_Org_Sales - cart4.Mat_Serv_Sales) / cart4.Mat_Org_Sales * 100]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales lte 0">[cart4.Mat_Disc_Pct1]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct gt 0">[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct lte 0">[(1 - (cart4.Mat_Serv_Cost / cart4.Mat_Serv_Sales)) * 100]</span>
                 </td>
                 <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Sales]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Sales]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Change_Log]</span>
+                  <span style="font-size: 9px;">[cart4.Serv_Change_Log]</span>
                 </td>
               </tr>
             </tbody>
@@ -1869,41 +1976,47 @@
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
-                    <span>[cart5.Short_Description]</span>
+                    <span style="font-size: 9px;" class="html">[cart5.Short_Description]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_UCS]</span>
+                    <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Origin_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Add_Serv_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Add_Serv_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Item_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Item_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Calc_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Cost]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Cost]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Disc_Pct1]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales gt 0">[(cart5.Mat_Org_Sales - cart5.Mat_Serv_Sales) / cart5.Mat_Org_Sales * 100]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales lte 0">[cart5.Mat_Disc_Pct1]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct gt 0">[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct lte 0">[(1 - (cart5.Mat_Serv_Cost / cart5.Mat_Serv_Sales)) * 100]</span>
                   </td>
                   <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Sales]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Sales]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Change_Log]</span>
+                    <span style="font-size: 9px;">[cart5.Serv_Change_Log]</span>
                   </td>
                 </tr>
               </tbody>
@@ -1932,18 +2045,20 @@
                     </td>
                     <td style="width: 9%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Cost]</span>
+                      <span class="number">[cart6.Mat_Serv_Cost]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Disc_Pct1]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales gt 0">[(cart6.Mat_Org_Sales - cart6.Mat_Serv_Sales) / cart6.Mat_Org_Sales * 100]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales lte 0">[cart6.Mat_Disc_Pct1]</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct gt 0">[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct lte 0">[(1 - (cart6.Mat_Serv_Cost / cart6.Mat_Serv_Sales)) * 100]</span>
                     </td>
                     <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Sales]</span>
+                      <span class="number">[cart6.Mat_Serv_Sales]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
@@ -1975,15 +2090,17 @@
           </em>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          <span style="font-size: 10px;">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
+          </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right;" class="number">?</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
+        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
       </tr>
     </tbody>
@@ -1994,41 +2111,47 @@
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
-            <span>[cart1.Short_Description]</span>
+            <span style="font-size: 9px;" class="html">[cart1.Short_Description]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_UCS]</span>
+            <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Origin_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Add_Serv_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Add_Serv_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Item_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Item_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Calc_Qty]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Cost]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Cost]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Disc_Pct1]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales gt 0">[(cart1.Mat_Org_Sales - cart1.Mat_Serv_Sales) / cart1.Mat_Org_Sales * 100]</span>
+            <span class="number" data-show-if="cart1.Mat_Serv_Sales lte 0">[cart1.Mat_Disc_Pct1]</span>
           </td>
           <td style="width: 5%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct gt 0">[cart1.Mat_Marg_Pct]</span>
+            <span class="number" data-show-if="cart1.Mat_Marg_Pct lte 0">[(1 - (cart1.Mat_Serv_Cost / cart1.Mat_Serv_Sales)) * 100]</span>
           </td>
           <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-            <span data-show-if="cart1.Is_Option = '1'">(</span>
-            <span>[cart1.Mat_Serv_Sales]</span>
-            <span data-show-if="cart1.Is_Option = '1'">)</span>
+            <span style="font-size: 9px;">
+              <span data-show-if="cart1.Is_Option = '1'">(</span>
+              <span class="number">[cart1.Mat_Serv_Sales]</span>
+              <span data-show-if="cart1.Is_Option = '1'">)</span>
+            </span>
           </td>
           <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-            <span>[cart1.Serv_Change_Log]</span>
+            <span style="font-size: 9px;">[cart1.Serv_Change_Log]</span>
           </td>
         </tr>
       </tbody>
@@ -2039,41 +2162,51 @@
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
-              <span>[cart2.Short_Description]</span>
+              <span style="font-size: 9px;" class="html">[cart2.Short_Description]</span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_UCS]</span>
+              <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Origin_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Add_Serv_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Add_Serv_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Item_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Item_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Calc_Qty]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
-            <td style="width: 9%; heigqqht: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Cost]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+            <td style="width: 9%; height: 21.6563px; text-align: right;">
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span style="font-size: 9px;" class="number">[cart2.Mat_Serv_Cost]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Disc_Pct1]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales gt 0">[(cart2.Mat_Org_Sales - cart2.Mat_Serv_Sales) / cart2.Mat_Org_Sales * 100]</span>
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+              </span>
             </td>
             <td style="width: 5%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Mat_Marg_Pct]</span>
+              <span style="font-size: 9px;">
+                <span class="number" data-show-if="cart2.Mat_Serv_Sales lte 0">[cart2.Mat_Disc_Pct1]</span>
+                <span class="number" data-show-if="cart2.Mat_Marg_Pct lte 0">[(1 - (cart2.Mat_Serv_Cost / cart2.Mat_Serv_Sales)) * 100]</span>
+              </span>
             </td>
             <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-              <span data-show-if="cart2.Is_Option = '1'">(</span>
-              <span>[cart2.Mat_Serv_Sales]</span>
-              <span data-show-if="cart2.Is_Option = '1'">)</span>
+              <span style="font-size: 9px;">
+                <span data-show-if="cart2.Is_Option = '1'">(</span>
+                <span class="number">[cart2.Mat_Serv_Sales]</span>
+                <span data-show-if="cart2.Is_Option = '1'">)</span>
+              </span>
             </td>
             <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-              <span>[cart2.Serv_Change_Log]</span>
+              <span style="font-size: 9px;">[cart2.Serv_Change_Log]</span>
             </td>
           </tr>
         </tbody>
@@ -2084,41 +2217,47 @@
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
-                <span>[cart3.Short_Description]</span>
+                <span style="font-size: 9px;" class="html">[cart3.Short_Description]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_UCS]</span>
+                <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Origin_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Add_Serv_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Add_Serv_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Item_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Item_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Calc_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Cost]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Cost]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Disc_Pct1]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales gt 0">[(cart3.Mat_Org_Sales - cart3.Mat_Serv_Sales) / cart3.Mat_Org_Sales * 100]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Serv_Sales lte 0">[cart3.Mat_Disc_Pct1]</span>
               </td>
               <td style="width: 5%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct gt 0">[cart3.Mat_Marg_Pct]</span>
+                <span style="font-size: 9px;" class="number" data-show-if="cart3.Mat_Marg_Pct lte 0">[(1 - (cart3.Mat_Serv_Cost / cart3.Mat_Serv_Sales)) * 100]</span>
               </td>
               <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                <span data-show-if="cart3.Is_Option = '1'">(</span>
-                <span>[cart3.Mat_Serv_Sales]</span>
-                <span data-show-if="cart3.Is_Option = '1'">)</span>
+                <span style="font-size: 9px;">
+                  <span data-show-if="cart3.Is_Option = '1'">(</span>
+                  <span class="number">[cart3.Mat_Serv_Sales]</span>
+                  <span data-show-if="cart3.Is_Option = '1'">)</span>
+                </span>
               </td>
               <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                <span>[cart3.Serv_Change_Log]</span>
+                <span style="font-size: 9px;">[cart3.Serv_Change_Log]</span>
               </td>
             </tr>
           </tbody>
@@ -2128,41 +2267,47 @@
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
-                  <span>[cart4.Short_Description]</span>
+                  <span style="font-size: 9px;" class="html">[cart4.Short_Description]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_UCS]</span>
+                  <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Origin_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Add_Serv_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Add_Serv_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Item_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Item_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Calc_Qty]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Cost]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Cost]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Disc_Pct1]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales gt 0">[(cart4.Mat_Org_Sales - cart4.Mat_Serv_Sales) / cart4.Mat_Org_Sales * 100]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Serv_Sales lte 0">[cart4.Mat_Disc_Pct1]</span>
                 </td>
                 <td style="width: 5%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct gt 0">[cart4.Mat_Marg_Pct]</span>
+                  <span style="font-size: 9px;" class="number" data-show-if="cart4.Mat_Marg_Pct lte 0">[(1 - (cart4.Mat_Serv_Cost / cart4.Mat_Serv_Sales)) * 100]</span>
                 </td>
                 <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                  <span data-show-if="cart4.Is_Option = '1'">(</span>
-                  <span>[cart4.Mat_Serv_Sales]</span>
-                  <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  <span style="font-size: 9px;">
+                    <span data-show-if="cart4.Is_Option = '1'">(</span>
+                    <span class="number">[cart4.Mat_Serv_Sales]</span>
+                    <span data-show-if="cart4.Is_Option = '1'">)</span>
+                  </span>
                 </td>
                 <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                  <span>[cart4.Serv_Change_Log]</span>
+                  <span style="font-size: 9px;">[cart4.Serv_Change_Log]</span>
                 </td>
               </tr>
             </tbody>
@@ -2173,41 +2318,47 @@
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
-                    <span>[cart5.Short_Description]</span>
+                    <span style="font-size: 9px;" class="html">[cart5.Short_Description]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_UCS]</span>
+                    <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Origin_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Add_Serv_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Add_Serv_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Item_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Item_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Calc_Qty]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Cost]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Cost]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Disc_Pct1]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales gt 0">[(cart5.Mat_Org_Sales - cart5.Mat_Serv_Sales) / cart5.Mat_Org_Sales * 100]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Serv_Sales lte 0">[cart5.Mat_Disc_Pct1]</span>
                   </td>
                   <td style="width: 5%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct gt 0">[cart5.Mat_Marg_Pct]</span>
+                    <span style="font-size: 9px;" class="number" data-show-if="cart5.Mat_Marg_Pct lte 0">[(1 - (cart5.Mat_Serv_Cost / cart5.Mat_Serv_Sales)) * 100]</span>
                   </td>
                   <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
-                    <span data-show-if="cart5.Is_Option = '1'">(</span>
-                    <span>[cart5.Mat_Serv_Sales]</span>
-                    <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    <span style="font-size: 9px;">
+                      <span data-show-if="cart5.Is_Option = '1'">(</span>
+                      <span class="number">[cart5.Mat_Serv_Sales]</span>
+                      <span data-show-if="cart5.Is_Option = '1'">)</span>
+                    </span>
                   </td>
                   <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
-                    <span>[cart5.Serv_Change_Log]</span>
+                    <span style="font-size: 9px;">[cart5.Serv_Change_Log]</span>
                   </td>
                 </tr>
               </tbody>
@@ -2236,18 +2387,20 @@
                     </td>
                     <td style="width: 9%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Cost]</span>
+                      <span class="number">[cart6.Mat_Serv_Cost]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Disc_Pct1]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales gt 0">[(cart6.Mat_Org_Sales - cart6.Mat_Serv_Sales) / cart6.Mat_Org_Sales * 100]</span>
+                      <span class="number" data-show-if="cart6.Mat_Serv_Sales lte 0">[cart6.Mat_Disc_Pct1]</span>
                     </td>
                     <td style="width: 5%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct gt 0">[cart6.Mat_Marg_Pct]</span>
+                      <span class="number" data-show-if="cart6.Mat_Marg_Pct lte 0">[(1 - (cart6.Mat_Serv_Cost / cart6.Mat_Serv_Sales)) * 100]</span>
                     </td>
                     <td style="width: 12.1099%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
-                      <span>[cart6.Mat_Serv_Sales]</span>
+                      <span class="number">[cart6.Mat_Serv_Sales]</span>
                       <span data-show-if="cart6.Is_Option = '1'">)</span>
                     </td>
                     <td style="width: 11.8901%; height: 21.6563px; text-align: right;">
@@ -2546,7 +2699,7 @@
       <tbody>
         <tr style="height: 12px; text-align: left;">
           <td style="width: 36%; height: 11px;">
-            <span style="font-size: 9px;">[cart1.Short_Description]</span>
+            <span class="html" style="font-size: 9px;">[cart1.Short_Description]</span>
           </td>
           <td style="width: 19.6159%; height: 11px; text-align: center;">
             <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
@@ -2555,7 +2708,7 @@
             <span style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 25%; height: 11px; text-align: right;">
-            <span style="font-size: 9px;">[cart1.Mat_Serv_Cost]</span>
+            <span class="number" style="font-size: 9px;">[cart1.Mat_Serv_Cost]</span>
           </td>
         </tr>
       </tbody>
@@ -2566,7 +2719,7 @@
         <tbody>
           <tr style="height: 12px; text-align: left;">
             <td style="width: 36%; height: 11px;">
-              <span style="font-size: 9px;">[cart2.Short_Description]</span>
+              <span class="html" style="font-size: 9px;">[cart2.Short_Description]</span>
             </td>
             <td style="width: 19.6159%; height: 11px; text-align: center;">
               <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
@@ -2575,7 +2728,7 @@
               <span style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
             <td style="width: 25%; height: 11px; text-align: right;">
-              <span style="font-size: 9px;">[cart2.Mat_Serv_Cost]</span>
+              <span class="number" style="font-size: 9px;">[cart2.Mat_Serv_Cost]</span>
             </td>
           </tr>
         </tbody>
@@ -2587,16 +2740,16 @@
           <tbody>
             <tr style="height: 12px; text-align: left;">
               <td style="width: 36%; height: 11px;">
-                <span style="font-size: 9px;">[cart3.Short_Description]</span>
+                <span class="html" style="font-size: 9px;">[cart3.Short_Description]</span>
               </td>
               <td style="width: 19.6159%; height: 11px; text-align: center;">
                 <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 17.3841%; height: 11px; text-align: center;">
-                <span style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 25%; height: 11px; text-align: right;">
-                <span style="font-size: 9px;">[cart3.Mat_Serv_Cost]</span>
+                <span class="number" style="font-size: 9px;">[cart3.Mat_Serv_Cost]</span>
               </td>
             </tr>
           </tbody>
@@ -2608,7 +2761,7 @@
             <tbody>
               <tr style="height: 12px; text-align: left;">
                 <td style="width: 36%; height: 11px;">
-                  <span style="font-size: 9px;">[cart4.Short_Description]</span>
+                  <span class="html" style="font-size: 9px;">[cart4.Short_Description]</span>
                 </td>
                 <td style="width: 19.6159%; height: 11px; text-align: center;">
                   <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
@@ -2617,7 +2770,7 @@
                   <span style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 25%; height: 11px; text-align: right;">
-                  <span style="font-size: 9px;">[cart4.Mat_Serv_Cost]</span>
+                  <span class="number" style="font-size: 9px;">[cart4.Mat_Serv_Cost]</span>
                 </td>
               </tr>
             </tbody>
@@ -2629,7 +2782,7 @@
               <tbody>
                 <tr style="height: 12px; text-align: left;">
                   <td style="width: 36%; height: 11px;">
-                    <span style="font-size: 9px;">[cart5.Short_Description]</span>
+                    <span class="html" style="font-size: 9px;">[cart5.Short_Description]</span>
                   </td>
                   <td style="width: 19.6159%; height: 11px; text-align: center;">
                     <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
@@ -2638,7 +2791,7 @@
                     <span style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 25%; height: 11px; text-align: right;">
-                    <span style="font-size: 9px;">[cart5.Mat_Serv_Cost]</span>
+                    <span class="number" style="font-size: 9px;">[cart5.Mat_Serv_Cost]</span>
                   </td>
                 </tr>
               </tbody>
@@ -2649,7 +2802,7 @@
                 <tbody>
                   <tr style="height: 12px; text-align: left;">
                     <td style="width: 36%; height: 11px;">
-                      <span style="font-size: 9px;">[cart6.Short_Description]</span>
+                      <span class="html" style="font-size: 9px;">[cart6.Short_Description]</span>
                     </td>
                     <td style="width: 19.6159%; height: 11px; text-align: center;">
                       <span style="font-size: 9px;">[cart6.Mat_UCS]</span>
@@ -2658,7 +2811,7 @@
                       <span style="font-size: 9px;">[cart6.Serv_Calc_Qty]</span>
                     </td>
                     <td style="width: 25%; height: 11px; text-align: right;">
-                      <span style="font-size: 9px;">[cart6.Mat_Serv_Cost]</span>
+                      <span class="number" style="font-size: 9px;">[cart6.Mat_Serv_Cost]</span>
                     </td>
                   </tr>
                 </tbody>
@@ -2670,7 +2823,7 @@
                   <tbody>
                     <tr style="height: 12px; text-align: left;">
                       <td style="width: 36%; height: 11px;">
-                        <span style="font-size: 9px;">[cart7.Short_Description]</span>
+                        <span class="html" style="font-size: 9px;">[cart7.Short_Description]</span>
                       </td>
                       <td style="width: 19.6159%; height: 11px; text-align: center;">
                         <span style="font-size: 9px;">[cart7.Mat_UCS]</span>
@@ -2679,7 +2832,7 @@
                         <span style="font-size: 9px;">[cart7.Serv_Calc_Qty]</span>
                       </td>
                       <td style="width: 25%; height: 11px; text-align: right;">
-                        <span style="font-size: 9px;">[cart7.Mat_Serv_Cost]</span>
+                        <span class="number" style="font-size: 9px;">[cart7.Mat_Serv_Cost]</span>
                       </td>
                     </tr>
                   </tbody>
@@ -2847,7 +3000,7 @@
 <tbody>
 <tr style="height: 21px;">
   <td style="width: 35%; height: 21px; background-color: #808080; text-align: left;">
-    <span style="font-size: 7px;">[folder1.Short_Description]</span>
+    <span class="html" style="font-size: 7px;">[folder1.Short_Description]</span>
   </td>
   <td style="width: 30%; height: 21px; background-color: #808080; text-align: left;">
     <span style="font-size: 7px;">&nbsp;</span>
@@ -2876,31 +3029,31 @@
       <span style="font-size: 7px;">[material1.Market_Facing_Nr]</span>
     </td>
     <td style="width: 15%; height: 21px;">
-      <span style="font-size: 7px;">[material1.ItemSheet]</span>
+      <span class="html" style="font-size: 7px;">[material1.ItemSheet]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span style="font-size: 7px;">[material1.Mat_Unit_Cost]</span>
+      <span class="number" style="font-size: 7px;">[material1.Mat_Unit_Cost]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span style="font-size: 7px;">[material1.Mat_Org_Sales]</span>
+      <span class="number" style="font-size: 7px;">[material1.Mat_Org_Sales]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span style="font-size: 7px;">[material1.Mat_Tot_Org_Sales]</span>
+      <span class="number" style="font-size: 7px;">[material1.Mat_Tot_Org_Sales]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
       <span class="integer" style="font-size: 7px;">[material1.Item_Qty]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span style="font-size: 7px;">[material1.Mat_Cost_Discount]</span>
+      <span class="number" style="font-size: 7px;">[material1.Mat_Cost_Discount]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span style="font-size: 7px;">[material1.Mat_Marg_Pct]</span>
+      <span class="number" style="font-size: 7px;">[material1.Mat_Marg_Pct]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span style="font-size: 7px;">[material1.Mat_Calc_Tot_Cost]</span>
+      <span class="number" style="font-size: 7px;">[material1.Mat_Calc_Tot_Cost]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span style="font-size: 7px;">[material1.Mat_Calc_Tot_Sales]</span>
+      <span class="number" style="font-size: 7px;">[material1.Mat_Calc_Tot_Sales]</span>
     </td>
   </tr>
 </tbody>
@@ -2914,10 +3067,10 @@
         <span style="font-size: 7px;">[materials.Market_Facing_Nr]</span>
       </td>
       <td style="width: 15%; height: 21px;">
-        <span style="font-size: 7px;">[materials.ItemSheet]</span>
+        <span class="html" style="font-size: 7px;">[materials.ItemSheet]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
+        <span class="html" style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;"></td>
       <td style="width: 10%; height: 21px; text-align: right;"></td>
@@ -2927,7 +3080,7 @@
       <td style="width: 10%; height: 21px; text-align: right;"></td>
       <td style="width: 10%; height: 21px; text-align: right;"></td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+        <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;"></td>
     </tr>
@@ -2941,7 +3094,7 @@
 <tbody>
   <tr style="height: 21px;">
     <td style="width: 35%; height: 21px; background-color: #a6a6a6; text-align: left;">
-      <span style="font-size: 7px;">[folder2.Short_Description]</span>
+      <span class="html" style="font-size: 7px;">[folder2.Short_Description]</span>
     </td>
     <td style="width: 30%; height: 21px; background-color: #a6a6a6; text-align: left;">
       <span style="font-size: 7px;">&nbsp;</span>
@@ -2970,31 +3123,31 @@
         <span style="font-size: 7px;">[material2.Market_Facing_Nr]</span>
       </td>
       <td style="width: 15%; height: 21px;">
-        <span style="font-size: 7px;">[material2.ItemSheet]</span>
+        <span class="html" style="font-size: 7px;">[material2.ItemSheet]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[material2.Mat_Unit_Cost]</span>
+        <span class="number" style="font-size: 7px;">[material2.Mat_Unit_Cost]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[material2.Mat_Org_Sales]</span>
+        <span class="number" style="font-size: 7px;">[material2.Mat_Org_Sales]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[material2.Mat_Tot_Org_Sales]</span>
+        <span class="number" style="font-size: 7px;">[material2.Mat_Tot_Org_Sales]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
         <span class="integer" style="font-size: 7px;">[material2.Item_Qty]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[material2.Mat_Cost_Discount]</span>
+        <span class="number" style="font-size: 7px;">[material2.Mat_Cost_Discount]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[material2.Mat_Marg_Pct]</span>
+        <span class="number" style="font-size: 7px;">[material2.Mat_Marg_Pct]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[material2.Mat_Calc_Tot_Cost]</span>
+        <span class="number" style="font-size: 7px;">[material2.Mat_Calc_Tot_Cost]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span style="font-size: 7px;">[material2.Mat_Calc_Tot_Sales]</span>
+        <span class="number" style="font-size: 7px;">[material2.Mat_Calc_Tot_Sales]</span>
       </td>
     </tr>
   </tbody>
@@ -3008,10 +3161,10 @@
           <span style="font-size: 7px;">[materials.Market_Facing_Nr]</span>
         </td>
         <td style="width: 15%; height: 21px;">
-          <span style="font-size: 7px;">[materials.ItemSheet]</span>
+          <span class="html" style="font-size: 7px;">[materials.ItemSheet]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
+          <span class="html" style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;"></td>
         <td style="width: 10%; height: 21px; text-align: right;"></td>
@@ -3021,7 +3174,7 @@
         <td style="width: 10%; height: 21px; text-align: right;"></td>
         <td style="width: 10%; height: 21px; text-align: right;"></td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+          <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;"></td>
       </tr>
@@ -3035,7 +3188,7 @@
   <tbody>
     <tr style="height: 21px;">
       <td style="width: 35%; height: 21px; background-color: #bfbfbf; text-align: left;">
-        <span style="font-size: 7px;">[folder3.Short_Description]</span>
+        <span class="html" style="font-size: 7px;">[folder3.Short_Description]</span>
       </td>
       <td style="width: 30%; height: 21px; background-color: #bfbfbf; text-align: left;">
         <span style="font-size: 7px;">&nbsp;</span>
@@ -3064,31 +3217,31 @@
           <span style="font-size: 7px;">[material3.Market_Facing_Nr]</span>
         </td>
         <td style="width: 15%; height: 21px;">
-          <span style="font-size: 7px;">[material3.ItemSheet]</span>
+          <span class="html" style="font-size: 7px;">[material3.ItemSheet]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[material3.Mat_Unit_Cost]</span>
+          <span class="number" style="font-size: 7px;">[material3.Mat_Unit_Cost]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[material3.Mat_Org_Sales]</span>
+          <span class="number" style="font-size: 7px;">[material3.Mat_Org_Sales]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[material3.Mat_Tot_Org_Sales]</span>
+          <span class="number" style="font-size: 7px;">[material3.Mat_Tot_Org_Sales]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
           <span class="integer" style="font-size: 7px;">[material3.Item_Qty]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[material3.Mat_Cost_Discount]</span>
+          <span class="number" style="font-size: 7px;">[material3.Mat_Cost_Discount]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[material3.Mat_Marg_Pct]</span>
+          <span class="number" style="font-size: 7px;">[material3.Mat_Marg_Pct]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[material3.Mat_Calc_Tot_Cost]</span>
+          <span class="number" style="font-size: 7px;">[material3.Mat_Calc_Tot_Cost]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span style="font-size: 7px;">[material3.Mat_Calc_Tot_Sales]</span>
+          <span class="number" style="font-size: 7px;">[material3.Mat_Calc_Tot_Sales]</span>
         </td>
       </tr>
     </tbody>
@@ -3102,10 +3255,10 @@
             <span style="font-size: 7px;">[materials.Market_Facing_Nr]</span>
           </td>
           <td style="width: 15%; height: 21px;">
-            <span style="font-size: 7px;">[materials.ItemSheet]</span>
+            <span class="html" style="font-size: 7px;">[materials.ItemSheet]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
+            <span class="html" style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;"></td>
           <td style="width: 10%; height: 21px; text-align: right;"></td>
@@ -3115,7 +3268,7 @@
           <td style="width: 10%; height: 21px; text-align: right;"></td>
           <td style="width: 10%; height: 21px; text-align: right;"></td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+            <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;"></td>
         </tr>
@@ -3129,7 +3282,7 @@
     <tbody>
       <tr style="height: 21px;">
         <td style="width: 35%; height: 21px; background-color: #d9d9d9; text-align: left;">
-          <span style="font-size: 7px;">[folder4.Short_Description]</span>
+          <span class="html" style="font-size: 7px;">[folder4.Short_Description]</span>
         </td>
         <td style="width: 30%; height: 21px; background-color: #d9d9d9; text-align: left;">
           <span style="font-size: 7px;">&nbsp;</span>
@@ -3158,31 +3311,31 @@
             <span style="font-size: 7px;">[material4.Market_Facing_Nr]</span>
           </td>
           <td style="width: 15%; height: 21px;">
-            <span style="font-size: 7px;">[material4.ItemSheet]</span>
+            <span class="html" style="font-size: 7px;">[material4.ItemSheet]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[material4.Mat_Unit_Cost]</span>
+            <span class="number" style="font-size: 7px;">[material4.Mat_Unit_Cost]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[material4.Mat_Org_Sales]</span>
+            <span class="number" style="font-size: 7px;">[material4.Mat_Org_Sales]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[material4.Mat_Tot_Org_Sales]</span>
+            <span class="number" style="font-size: 7px;">[material4.Mat_Tot_Org_Sales]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
             <span class="integer" style="font-size: 7px;">[material4.Item_Qty]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[material4.Mat_Cost_Discount]</span>
+            <span class="number" style="font-size: 7px;">[material4.Mat_Cost_Discount]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[material4.Mat_Marg_Pct]</span>
+            <span class="number" style="font-size: 7px;">[material4.Mat_Marg_Pct]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[material4.Mat_Calc_Tot_Cost]</span>
+            <span class="number" style="font-size: 7px;">[material4.Mat_Calc_Tot_Cost]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span style="font-size: 7px;">[material4.Mat_Calc_Tot_Sales]</span>
+            <span class="number" class="number" style="font-size: 7px;">[material4.Mat_Calc_Tot_Sales]</span>
           </td>
         </tr>
       </tbody>
@@ -3196,10 +3349,10 @@
               <span style="font-size: 7px;">[materials.Market_Facing_Nr]</span>
             </td>
             <td style="width: 15%; height: 21px;">
-              <span style="font-size: 7px;">[materials.ItemSheet]</span>
+              <span class="html" style="font-size: 7px;">[materials.ItemSheet]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
+              <span class="html" style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;"></td>
             <td style="width: 10%; height: 21px; text-align: right;"></td>
@@ -3209,7 +3362,7 @@
             <td style="width: 10%; height: 21px; text-align: right;"></td>
             <td style="width: 10%; height: 21px; text-align: right;"></td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+              <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;"></td>
           </tr>
@@ -3223,7 +3376,7 @@
       <tbody>
         <tr style="height: 21px;">
           <td style="width: 35%; height: 21px; background-color: #f2f2f2; text-align: left;">
-            <span style="font-size: 7px;">[folder5.Short_Description]</span>
+            <span class="html" style="font-size: 7px;">[folder5.Short_Description]</span>
           </td>
           <td style="width: 30%; height: 21px; background-color: #f2f2f2; text-align: left;">
             <span style="font-size: 7px;">&nbsp;</span>
@@ -3252,31 +3405,31 @@
               <span style="font-size: 7px;">[material5.Market_Facing_Nr]</span>
             </td>
             <td style="width: 15%; height: 21px;">
-              <span style="font-size: 7px;">[material5.ItemSheet]</span>
+              <span class="html" style="font-size: 7px;">[material5.ItemSheet]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[material5.Mat_Unit_Cost]</span>
+              <span class="number" style="font-size: 7px;">[material5.Mat_Unit_Cost]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[material5.Mat_Org_Sales]</span>
+              <span class="number" style="font-size: 7px;">[material5.Mat_Org_Sales]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[material5.Mat_Tot_Org_Sales]</span>
+              <span class="number" style="font-size: 7px;">[material5.Mat_Tot_Org_Sales]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
               <span class="integer" style="font-size: 7px;">[material5.Item_Qty]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[material5.Mat_Cost_Discount]</span>
+              <span class="number" style="font-size: 7px;">[material5.Mat_Cost_Discount]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[material5.Mat_Marg_Pct]</span>
+              <span class="number" style="font-size: 7px;">[material5.Mat_Marg_Pct]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[material5.Mat_Calc_Tot_Cost]</span>
+              <span class="number" style="font-size: 7px;">[material5.Mat_Calc_Tot_Cost]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span style="font-size: 7px;">[material5.Mat_Calc_Tot_Sales]</span>
+              <span class="number" style="font-size: 7px;">[material5.Mat_Calc_Tot_Sales]</span>
             </td>
           </tr>
         </tbody>
@@ -3290,10 +3443,10 @@
                 <span style="font-size: 7px;">[materials.Market_Facing_Nr]</span>
               </td>
               <td style="width: 15%; height: 21px;">
-                <span style="font-size: 7px;">[materials.ItemSheet]</span>
+                <span class="html" style="font-size: 7px;">[materials.ItemSheet]</span>
               </td>
               <td style="width: 10%; height: 21px; text-align: right;">
-                <span style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
+                <span class="html" style="font-size: 7px;">[materials.Mat_Unit_Cost]</span>
               </td>
               <td style="width: 10%; height: 21px; text-align: right;"></td>
               <td style="width: 10%; height: 21px; text-align: right;"></td>
@@ -3303,7 +3456,7 @@
               <td style="width: 10%; height: 21px; text-align: right;"></td>
               <td style="width: 10%; height: 21px; text-align: right;"></td>
               <td style="width: 10%; height: 21px; text-align: right;">
-                <span style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+                <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
               </td>
               <td style="width: 10%; height: 21px; text-align: right;"></td>
             </tr>
