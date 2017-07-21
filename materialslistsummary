@@ -178,7 +178,7 @@
         </td>
       </tr>
       <!--material row -->
-      <tr data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'" style="height: 21px;">
+      <tr data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short' OR suboffer.TC_Mat_Disc_Pct__c lte 0" style="height: 21px;">
         <!---material/reference column -->
         <td style="height: 21px;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Apparate</span>
@@ -236,7 +236,7 @@
       <tbody>
         <!-- SWL Material -->
         <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_SWL gt 0 OR suboffer.cart.Disc2_SWL gt 0">
-          <td style="height: 21px; padding-left: 35px;">SWL Material</td>
+          <td style="height: 21px; padding-left: 35px;">Software Licenses</td>
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_SWL]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
           <td style="width: 60px; height: 21px; text-align: right; vertical-align: middle;"></td>
@@ -480,14 +480,14 @@ comment out-->
 comment out-->
 
         <!--non discountable SWL -->
-        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_SWL = 0 AND suboffer.cart.Disc1_SWL IS NOT BLANK AND suboffer.cart.Disc2_SWL = 0 AND suboffer.cart.Disc2_SWL IS NOT BLANK">
+        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_SWL IS BLANK AND suboffer.cart.Disc2_SWL IS BLANK AND suboffer.cart.Mat_Tot_Org_Sales_SWL gt 0">
           <td style="height: 21px; padding-left: 35px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Net'">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Aucune remise d&eacute;ductible</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nessun sconto concesso</span>
             </span>
-            SWL</td>
+            Software Licenses</td>
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_SWL]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
           <td style="width: 60px; height: 21px; text-align: right; vertical-align: middle;"></td>
@@ -495,7 +495,7 @@ comment out-->
           <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.cart.Mat_Tot_Sales_after_disc2_SWL]</td>
         </tr>
         <!--non discountable FDV -->
-        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_FDV = 0 AND suboffer.cart.Disc1_FDV IS NOT BLANK AND suboffer.cart.Disc2_FDV = 0 AND suboffer.cart.Disc2_FDV IS NOT BLANK">
+        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_FDV IS BLANK AND suboffer.cart.Disc2_FDV IS BLANK AND suboffer.cart.Mat_Tot_Org_Sales_FDV gt 0">
           <td style="height: 21px; padding-left: 35px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Net'">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
@@ -514,7 +514,7 @@ comment out-->
           <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.cart.Mat_Tot_Sales_after_disc2_FDV]</td>
         </tr>
         <!--non discountable SYM -->
-        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_SYM = 0 AND suboffer.cart.Disc1_SYM IS NOT BLANK AND suboffer.cart.Disc2_SYM = 0 AND suboffer.cart.Disc2_SYM IS NOT BLANK">
+        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_SYM IS BLANK AND suboffer.cart.Disc2_SYM IS BLANK AND suboffer.cart.Mat_Tot_Org_Sales_SYM gt 0">
           <td style="height: 21px; padding-left: 35px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Net'">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
@@ -533,7 +533,7 @@ comment out-->
           <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.cart.Mat_Tot_Sales_after_disc2_SYM]</td>
         </tr>
         <!--non discountable THD -->
-        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_THD = 0 AND suboffer.cart.Disc1_THD IS NOT BLANK AND suboffer.cart.Disc2_THD = 0 AND suboffer.cart.Disc2_THD IS NOT BLANK">
+        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_THD IS BLANK AND suboffer.cart.Disc2_THD IS BLANK AND suboffer.cart.Mat_Tot_Org_Sales_THD gt 0">
           <td style="height: 21px; padding-left: 35px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Net'">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
@@ -551,7 +551,7 @@ comment out-->
           <td class="number" style="width: 110px; height: 21px; text-align: right;">[suboffer.cart.Mat_Tot_Sales_after_disc2_THD]</td>
         </tr>
         <!--non discountable CAB -->
-        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_CAB IS BLANK AND suboffer.cart.Disc2_CAB IS BLANK">
+        <tr style="height: 21px;" data-show-if="suboffer.cart.Disc1_CAB IS BLANK AND suboffer.cart.Disc2_CAB IS BLANK AND suboffer.cart.Mat_Tot_Org_Sales_CAB gt 0">
           <td style="height: 21px; padding-left: 35px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Net'">
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 8'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Nicht rabattberechtigt</span>
@@ -605,7 +605,7 @@ comment out-->
           <!-- Start of User Changes (Overwrite Mat Discount %)-->
           <span data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0" class="number" data-precision="2">[suboffer.TC_Mat_Calc_Tot_Sales__c * suboffer.SQUserMatDiscountPercent__c / 100]</span>
           <!-- Start of User Changes (Overwrite Mat Discount Currency Amount)-->
-          <span data-show-if="suboffer.SQUserMatDiscount__c gt 0" class="number" data-precision="2">[suboffer.SQUserMatDiscount__c]</span>
+          <span data-show-if="suboffer.SQUserMatDiscount__c gt 0" class="number">[suboffer.SQUserMatDiscount__c]</span>
         </td>
         <td class="number" style="width: 110px; height: 21px; text-align: right; vertical-align: middle;">
           <!--comment out
@@ -705,15 +705,15 @@ comment out-->
         <td style="width: 30px; height: 21px; text-align: right;"></td>
         <td class="number" style="width: 60px; height: 21px; text-align: right; vertical-align: middle;">
           <!-- Start of User Changes (Overwrite Serv Discount %)-->
-          <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0" class="number">[suboffer.SQUserServDiscountPercent__c]</span>
+          <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0" class="number" data-precision="2">[suboffer.SQUserServDiscountPercent__c]</span>
         </td>
-        <td class="number" style="width: 80px; height: 21px; text-align: right;">
+        <td class="number" data-precision="2" style="width: 80px; height: 21px; text-align: right;">
           <!-- Start of User Changes (Overwrite Serv Sales Price)-->
-          <span data-show-if="suboffer.SQTotalUserServPrice__c gt 0" class="number">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQTotalUserServPrice__c]</span>
+          <span data-show-if="suboffer.SQTotalUserServPrice__c gt 0" class="number" data-precision="2">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQTotalUserServPrice__c]</span>
           <!-- Start of User Changes (Overwrite Serv Discount %)-->
-          <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0" class="number">[suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</span>
+          <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0" class="number" data-precision="2">[suboffer.TC_Mat_Serv_Sales__c * suboffer.SQUserServDiscountPercent__c / 100]</span>
           <!-- Start of User Changes (Overwrite Serv Discount Currency Amount)-->
-          <span data-show-if="suboffer.SQUserServDiscount__c gt 0" class="number">[suboffer.SQUserServDiscount__c]</span>
+          <span data-show-if="suboffer.SQUserServDiscount__c gt 0" class="number" data-precision="2">[suboffer.SQUserServDiscount__c]</span>
         </td>
         <td class="number" style="width: 110px; height: 21px; text-align: right;">
           <!--comment out
