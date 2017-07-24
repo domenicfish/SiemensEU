@@ -32,9 +32,9 @@
             cena<br/>({{Custom1__c_CurrencyIsoCode}})</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Tarifa</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c LIKE 'CH'">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">brutto<br/>({{Custom1__c_CurrencyIsoCode}})</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix<br/>Catalogue<br/>({{Custom1__c_CurrencyIsoCode}})</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Listino<br/>({{Custom1__c_CurrencyIsoCode}})</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Brutto {{Custom1__c_CurrencyIsoCode}}</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix Catalogue {{Custom1__c_CurrencyIsoCode}}</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Listino {{Custom1__c_CurrencyIsoCode}}</span>
           </span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Bruto prijs<br/>({{Custom1__c_CurrencyIsoCode}})</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix brut<br/>({{Custom1__c_CurrencyIsoCode}})</span>
@@ -66,7 +66,7 @@
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Korting</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Alennus</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Rabatt</span>
-            <br/>(%)
+            %
           </span>
 
           <!--discount % header for net -->
@@ -86,7 +86,7 @@
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Korting</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Alennus</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Rabatt</span>
-              <br/>(%)
+              %
             </span>
           </span>
 
@@ -111,7 +111,7 @@
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Korting</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Alennus</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Rabatt</span>
-            <br/>({{Custom1__c_CurrencyIsoCode}})
+            {{Custom1__c_CurrencyIsoCode}}
           </span>
 
           <!--discount amount header for net -->
@@ -132,7 +132,7 @@
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Korting</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Alennus</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Rabatt</span>
-              <br/>({{Custom1__c_CurrencyIsoCode}})
+              {{Custom1__c_CurrencyIsoCode}}
             </span>
           </span>
 
@@ -164,7 +164,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt
             <br/>netto pris</span>
 
-          <br/>({{Custom1__c_CurrencyIsoCode}})</th>
+          {{Custom1__c_CurrencyIsoCode}}</th>
       </tr>
     </thead>
   </table>
