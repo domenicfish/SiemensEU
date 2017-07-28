@@ -586,7 +586,7 @@
               </div>
             </div>
             <!--start of folder2 -->
-            <div data-repeat="folder2 in folder1.cartLines" data-filter="type = 'FO'" style="page-break-inside: avoid;">
+            <div data-repeat="folder2 in folder1.cartLines" data-filter="type = 'FO'" >
               <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder2.Is_Service_Folder = 1">
                 <tbody>
                   <tr style="height: 21px; vertical-align: middle;">
@@ -970,7 +970,7 @@
                 </div>
               </div>
               <!-- folder3 -->
-              <div data-repeat="folder3 in folder2.cartLines" data-filter="type = 'FO'" style="page-break-inside: avoid;">
+              <div data-repeat="folder3 in folder2.cartLines" data-filter="type = 'FO'" >
                 <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder3.Is_Service_Folder = 1">
                   <tbody>
                     <tr style="height: 21px; vertical-align: middle;">
@@ -1365,7 +1365,7 @@
                   </div>
                 </div>
                 <!--folder 4--->
-                <div data-repeat="folder4 in folder3.cartLines" data-filter="type = 'FO'" style="page-break-inside: avoid;">
+                <div data-repeat="folder4 in folder3.cartLines" data-filter="type = 'FO'" >
                   <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder4.Is_Service_Folder = 1">
                     <tbody>
                       <tr style="height: 21px; vertical-align: middle;">
@@ -1749,7 +1749,7 @@
                     </div>
                   </div>
                   <!---folder 5--->
-                  <div data-repeat="folder5 in folder4.cartLines" data-filter="type = 'FO'" style="page-break-inside: avoid;">
+                  <div data-repeat="folder5 in folder4.cartLines" data-filter="type = 'FO'" >
                     <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder5.Is_Service_Folder = 1">
                       <tbody>
                         <tr style="height: 21px; vertical-align: middle;">
