@@ -281,7 +281,7 @@
                         </span>
                       </td>
                       <!--description column material1 non-services-->
-                      <td style="background-color: #ffffff; text-align: left; vertical-align: top;">
+                      <td style="width: 34%; background-color: #ffffff; text-align: left; vertical-align: top;">
                         <!--start of Short text -->
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'Short text' OR material1.Conf_Id LIKE 'cp_FreeText' OR material1.Conf_Id LIKE 'cp_ManualPosition' OR material1.Conf_Id LIKE 'cpGenericItem'">
                           <span data-show-if="material1.Is_Hide_Desc != 1">
