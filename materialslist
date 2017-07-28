@@ -487,7 +487,7 @@
                                 <b>[material1.Short_Description]</b>
                               </span>
                             </span>
-                            <span data-show-if="material1.Conf_Id IS BLANK">
+                            <span data-show-if="material1.Conf_Id IS BLANK OR material1.Conf_Id LIKE 'cp_BOM'">
                               <span class="html">[material1.Short_Description]</span>
                             </span>
                           </span>
@@ -872,7 +872,7 @@
                                   <span class="html">[material2.Short_Description]</span>
                                 </b>
                               </span>
-                              <span data-show-if="material2.Conf_Id IS BLANK">
+                              <span data-show-if="material2.Conf_Id IS BLANK OR material2.Conf_Id LIKE 'cp_BOM'">
                                 <span class="html">[material2.Short_Description]</span>
                               </span>
                             </span>
@@ -1267,7 +1267,7 @@
                                     <span class="html">[material3.Short_Description]</span>
                                   </b>
                                 </span>
-                                <span data-show-if="material3.Conf_Id IS BLANK">
+                                <span data-show-if="material3.Conf_Id IS BLANK OR material3.Conf_Id LIKE 'cp_BOM'">
                                   <span class="html">[material3.Short_Description]</span>
                                 </span>
                               </span>
@@ -1651,7 +1651,7 @@
                                       <span class="html">[material4.Short_Description]</span>
                                     </b>
                                   </span>
-                                  <span data-show-if="material4.Conf_Id IS BLANK">
+                                  <span data-show-if="material4.Conf_Id IS BLANK OR material4.Conf_Id LIKE 'cp_BOM'">
                                     <span class="html">[material4.Short_Description]</span>
                                   </span>
                                 </span>
@@ -2035,7 +2035,7 @@
                                         <span class="html">[material5.Short_Description]</span>
                                       </b>
                                     </span>
-                                    <span data-show-if="material5.Conf_Id IS BLANK">
+                                    <span data-show-if="material5.Conf_Id IS BLANK OR material5.Conf_Id LIKE 'cp_BOM'">
                                       <span class="html">[material5.Short_Description]</span>
                                     </span>
                                   </span>
