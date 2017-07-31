@@ -28,7 +28,7 @@
           </span>
         </th>
         <!--reference header-->
-        <th style="height: 25px; width: 42.9%; background-color: #ffffff; vertical-align: middle; text-align: left;">
+        <th style="height: 25px; width: 50.9%; background-color: #ffffff; vertical-align: middle; text-align: left;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Reference</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Materiale</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Referanse</span>
@@ -45,7 +45,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Referens</span>
         </th>
         <!--quantity header-->
-        <th style="height: 25px; width: 4.1%; background-color: #ffffff; vertical-align: middle; text-align: right;">
+        <th style="height: 25px; width: 5%; background-color: #ffffff; vertical-align: middle; text-align: right;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Qty</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Antal</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Antall</span>
@@ -85,7 +85,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Brutto
             <br/>pris</span><br/>(<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode">EUR</span>)</th>
         <!--discount % header-->
-        <th style="height: 25px; width: 5.5%; background-color: #ffffff; vertical-align: middle; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'">
+        <th style="height: 25px; width: 6.5%; background-color: #ffffff; vertical-align: middle; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Discount</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
@@ -195,7 +195,7 @@
               <tbody>
                 <tr style="height: 21px; vertical-align: middle;">
                   <!--position column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #808080; text-align: left; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #808080; text-align: left; vertical-align: middle;">
                     <span data-show-if="folder1.Is_Option = 1">(</span>
                     <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder1.Special_Number]</span>
                     <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -205,7 +205,7 @@
                     <span data-show-if="folder1.Is_Option = 1">)</span>
                   </td>
                   <!--reference column folder1-->
-                  <td style="height: 21px; width: 42.9%; background-color: #808080; text-align: left; vertical-align: middle;">
+                  <td style="height: 21px; width: 50.9%; background-color: #808080; text-align: left; vertical-align: middle;">
                     <span data-show-if="folder1.Short_Description IS NOT BLANK">
                       <strong>[folder1.Short_Description]</strong>
                     </span>
@@ -214,13 +214,13 @@
                     </span>
                   </td>
                   <!--quantity column folder1-->
-                  <td style="width: 4.1%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
+                  <td style="width: 4.5%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
                     <span data-show-if="folder1.Is_Option = 1">(</span>
                     <span class="number" data-precision="0" data-hide-if="folder1.Text_Qty lte 0 OR folder1.Text_Qty IS BLANK">[folder1.Text_Qty]</span>
                     <span data-show-if="folder1.Is_Option = 1">)</span>
                   </td>
                   <!--gross price column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 9.5%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 8%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
                     <span style="text-align: right; vertical-align: middle;" data-hide-if="folder1.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                       <span data-show-if="folder1.Is_Service_Folder = 1">
                         <span data-show-if="folder1.Mat_Serv_Sales IS NOT BLANK AND folder1.Mat_Serv_Sales gt 0">
@@ -241,7 +241,7 @@
                     </span>
                   </td>
                   <!--discount column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
                     <span data-hide-if="folder1.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                       <span data-show-if="folder1.Mat_Disc_Pct1 IS NOT BLANK">
                         <span data-show-if="folder1.Is_Service_Folder = 1">
@@ -261,7 +261,7 @@
                     </span>
                   </td>
                   <!--net price column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 9.5%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 8%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;">
                     <div data-repeat="fields in first.cart.fields" data-scope="first">
                       <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder1.Is_Service_Folder = 0">
                         <span data-hide-if="folder1.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
@@ -275,7 +275,7 @@
                   <!--total net price column folder1-->
                   <td
                     data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'"
-                    style="width: 9.5%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;"
+                    style="width: 8%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;"
                     class="number">
                     <div data-repeat="fields in first.cart.fields" data-scope="first">
                       <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder1.Is_Service_Folder = 0">
@@ -288,7 +288,7 @@
                     </div>
                   </td>
                   <!--total gross price column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;" class="number">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #808080; text-align: right; vertical-align: middle;" class="number">
                     <div data-repeat="fields in first.cart.fields" data-scope="first">
                       <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder1.Is_Service_Folder = 0">
                         <span data-show-if="folder1.Is_Option = 1">(</span>
@@ -308,7 +308,7 @@
                     <tbody>
                       <tr style="height: 21px; vertical-align: middle;">
                         <!-- position column material1 -->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                           <span data-show-if="material1.Is_Option = 1">(</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -317,7 +317,7 @@
                           <span data-show-if="material1.Is_Option = 1">)</span>
                         </td>
                         <!---reference column material1 services-->
-                        <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                        <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                           <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                             <!---start of MFN --->
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
@@ -375,7 +375,7 @@
                             AL: [material1.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material1.Mat_EECN]<br/></span>
                         </td>
                         <!--- quantity column material1 services-->
-                        <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material1.Is_Hide_Qty = 0">
                             <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                               <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -387,7 +387,7 @@
                           </span>
                         </td>
                         <!--gross price column material1 services-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material1.Mat_Serv_Sales != 0">
                               <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -401,11 +401,11 @@
                           </span>
                         </td>
                         <!-- discount column material1 services--->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <!-- Discount not applicable for Service Items-->
                         </td>
                         <!--net price column material1 services-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                               <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -419,7 +419,7 @@
                         <!---total net price column material1 services-->
                         <td
                           data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                          style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                          style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                           class="number">
                           <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -432,7 +432,7 @@
                           </span>
                         </td>
                         <!--total gross price column material1 services-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                           <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                               <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -454,7 +454,7 @@
                   <tbody>
                     <tr style="height: 21px; vertical-align: middle;">
                       <!-- position column material1 -->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                         <span data-show-if="material1.Is_Option = 1">(</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -463,7 +463,7 @@
                         <span data-show-if="material1.Is_Option = 1">)</span>
                       </td>
                       <!---reference column material1 non-services-->
-                      <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                      <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                         <!---start of MFN --->
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
                           <span data-hide-if="material1.Conf_Id = 'cp_FreeText' OR material1.Conf_Id = 'cp_ManualPosition' OR material1.Conf_Id = 'cpGenericItem'">
@@ -522,7 +522,7 @@
                         <!---Export Control -->
                       </td>
                       <!--- quantity column material1 non-services-->
-                      <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                      <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                         <span data-show-if="material1.Is_Hide_Qty = 0">
                           <span data-hide-if="material1.Conf_Id LIKE 'cp_FreeText'">
                             <span data-show-if="material1.Is_Option = 1">(</span>
@@ -532,7 +532,7 @@
                         </span>
                       </td>
                       <!--gross price column material1-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                         <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Mat_Org_Sales != 0">
                             <span class="number" data-show-if="material1.Is_Option = 1">(</span>
@@ -542,7 +542,7 @@
                         </span>
                       </td>
                       <!-- discount column material1--->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
                           <span class="number" data-show-if="material1.Mat_Disc_Pct1 gt 0">[material1.Mat_Disc_Pct1]</span>
@@ -551,7 +551,7 @@
                         </span>
                       </td>
                       <!--net price column material1-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                         <span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
                           <span class="number" data-show-if="material1.Mat_Calc_Unit_Sales != 0">[material1.Mat_Calc_Unit_Sales]</span>
@@ -562,7 +562,7 @@
                       <!---total net price column material1-->
                       <td
                         data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                        style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                        style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                         class="number">
                         <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
@@ -572,7 +572,7 @@
                         </span>
                       </td>
                       <!--total gross price column material1-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                         <span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                           <span data-show-if="material1.Is_Option = 1">(</span>
                           <span data-show-if="material1.Mat_Tot_Org_Sales = 0"></span>
@@ -591,7 +591,7 @@
                 <tbody>
                   <tr style="height: 21px; vertical-align: middle;">
                     <!--position column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #a6a6a6; text-align: left; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #a6a6a6; text-align: left; vertical-align: middle;">
                       <span data-show-if="folder2.Is_Option = 1">(</span>
                       <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder2.Special_Number]</span>
                       <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -601,7 +601,7 @@
                       <span data-show-if="folder2.Is_Option = 1">)</span>
                     </td>
                     <!--reference column folder2-->
-                    <td style="height: 21px; width: 42.9%; background-color: #a6a6a6; text-align: left; vertical-align: middle;">
+                    <td style="height: 21px; width: 50.9%; background-color: #a6a6a6; text-align: left; vertical-align: middle;">
                       <span data-show-if="folder2.Short_Description IS NOT BLANK">
                         <strong>[folder2.Short_Description]</strong>
                       </span>
@@ -610,13 +610,13 @@
                       </span>
                     </td>
                     <!--quantity column folder2-->
-                    <td style="width: 4.1%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
+                    <td style="width: 4.5%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
                       <span data-show-if="folder2.Is_Option = 1">(</span>
                       <span data-hide-if="folder2.Text_Qty IS BLANK OR folder2.Text_Qty lte 0" class="number" data-precision="0">[folder2.Text_Qty]</span>
                       <span data-show-if="folder2.Is_Option = 1">)</span>
                     </td>
                     <!--gross price column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
                       <span data-hide-if="folder2.Text_Qty IS BLANK  OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Is_Service_Folder = 1">
                           <span data-show-if="folder2.Mat_Serv_Sales IS NOT BLANK">
@@ -638,7 +638,7 @@
                       </span>
                     </td>
                     <!--discount column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
                       <span data-hide-if="folder2.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Mat_Disc_Pct1 IS NOT BLANK AND folder2.Mat_Disc_Pct1 gt 0">
                           <span data-show-if="folder2.Is_Service_Folder = 1">
@@ -658,7 +658,7 @@
                       </span>
                     </td>
                     <!--net price column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;">
                       <span data-hide-if="folder2.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Is_Option = 1">(</span>
                         <span class="number">[folder2.Tot_Mat_Serv_Sales / folder2.Text_Qty]</span>
@@ -668,7 +668,7 @@
                     <!--total net price column folder2-->
                     <td
                       data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                      style="width: 9.5%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;"
+                      style="width: 8%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;"
                       class="number">
                       <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Is_Option = 1">(</span>
@@ -677,7 +677,7 @@
                       </span>
                     </td>
                     <!--total gross price column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;" class="number">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #a6a6a6; text-align: right; vertical-align: middle;" class="number">
                       <span class="number" data-show-if="folder2.Is_Option = 1">(</span>
                       <span class="number">[folder2.Mat_Serv_Sales + folder2.Mat_Tot_Org_Sales]</span>
                       <span class="number" data-show-if="folder2.Is_Option = 1">)</span>
@@ -693,7 +693,7 @@
                       <tbody>
                         <tr style="height: 21px; vertical-align: middle;">
                           <!-- position column material2 services-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <span data-show-if="material2.Is_Option = 1">(</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -702,7 +702,7 @@
                             <span data-show-if="material2.Is_Option = 1">)</span>
                           </td>
                           <!---reference column material2 services-->
-                          <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                          <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                               <!---start of MFN --->
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
@@ -760,7 +760,7 @@
                               AL: [material2.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material2.Mat_EECN]<br/></span>
                           </td>
                           <!--- quantity column material2 services-->
-                          <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material2.Is_Hide_Qty = 0">
                               <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                 <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -772,7 +772,7 @@
                             </span>
                           </td>
                           <!--gross price column material2 services-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material2.Mat_Serv_Sales != 0">
                                 <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -786,11 +786,11 @@
                             </span>
                           </td>
                           <!-- discount column material2 services--->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <!-- Discount not applicable for Service Items-->
                           </td>
                           <!--net price column material2 services-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                 <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -804,7 +804,7 @@
                           <!---total net price column material2 services-->
                           <td
                             data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                            style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                            style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                             class="number">
                             <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -817,7 +817,7 @@
                             </span>
                           </td>
                           <!--total gross price column material2 services-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                             <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                 <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -839,7 +839,7 @@
                     <tbody>
                       <tr style="height: 21px; vertical-align: middle;">
                         <!-- position column material2 -->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                           <span data-show-if="material2.Is_Option = 1">(</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -848,7 +848,7 @@
                           <span data-show-if="material2.Is_Option = 1">)</span>
                         </td>
                         <!---reference column material2 non-services-->
-                        <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                        <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                           <!---start of MFN --->
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
                             <span data-hide-if="material2.Conf_Id = 'cp_FreeText' OR material2.Conf_Id = 'cp_ManualPosition' OR material2.Conf_Id = 'cpGenericItem'">
@@ -906,7 +906,7 @@
                             AL: [material2.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material2.Mat_EECN]<br/></span>
                         </td>
                         <!--- quantity column material2 non-services-->
-                        <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material2.Is_Hide_Qty = 0">
                             <span data-hide-if="material2.Conf_Id LIKE 'cp_FreeText'">
                               <span data-show-if="material2.Is_Option = 1">(</span>
@@ -916,7 +916,7 @@
                           </span>
                         </td>
                         <!--gross price column material2-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Mat_Org_Sales != 0">
                               <span class="number" data-show-if="material2.Is_Option = 1">(</span>
@@ -926,7 +926,7 @@
                           </span>
                         </td>
                         <!-- discount column material2--->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
                             <span class="number" data-show-if="material2.Mat_Disc_Pct1 gt 0">[material2.Mat_Disc_Pct1]</span>
@@ -935,7 +935,7 @@
                           </span>
                         </td>
                         <!--net price column material2-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                           <span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
                             <span class="number" data-show-if="material2.Mat_Calc_Unit_Sales != 0">[material2.Mat_Calc_Unit_Sales]</span>
@@ -946,7 +946,7 @@
                         <!---total net price column material2-->
                         <td
                           data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                          style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                          style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                           class="number">
                           <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
@@ -956,7 +956,7 @@
                           </span>
                         </td>
                         <!--total gross price column material2-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                           <span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                             <span data-show-if="material2.Is_Option = 1">(</span>
                             <span data-show-if="material2.Mat_Tot_Org_Sales = 0"></span>
@@ -975,7 +975,7 @@
                   <tbody>
                     <tr style="height: 21px; vertical-align: middle;">
                       <!--position column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
                         <span data-show-if="folder3.Is_Option = 1">(</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder3.Special_Number]</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -985,7 +985,7 @@
                         <span data-show-if="folder3.Is_Option = 1">)</span>
                       </td>
                       <!--reference column folder3-->
-                      <td style="height: 21px; width: 42.9%; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
+                      <td style="height: 21px; width: 50.9%; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
                         <span data-show-if="folder3.Short_Description IS NOT BLANK">
                           <strong>[folder3.Short_Description]</strong>
                         </span>
@@ -994,13 +994,13 @@
                         </span>
                       </td>
                       <!--quantity column folder3-->
-                      <td style="width: 4.1%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
+                      <td style="width: 4.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                         <span data-show-if="folder3.Is_Option = 1">(</span>
                         <span class="number" data-precision="0" data-hide-if="folder3.Text_Qty lte 0 OR folder3.Text_Qty IS BLANK">[folder3.Text_Qty]</span>
                         <span data-show-if="folder3.Is_Option = 1">)</span>
                       </td>
                       <!--gross price column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                         <span style="text-align: right; vertical-align: middle;" data-hide-if="folder3.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                           <span data-show-if="folder3.Is_Service_Folder = 1">
                             <span data-show-if="folder3.Mat_Serv_Sales IS NOT BLANK AND folder3.Mat_Serv_Sales gt 0">
@@ -1021,7 +1021,7 @@
                         </span>
                       </td>
                       <!--discount column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                         <span data-hide-if="folder3.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                           <span data-show-if="folder3.Mat_Disc_Pct1 IS NOT BLANK">
                             <span data-show-if="folder3.Is_Service_Folder = 1">
@@ -1041,7 +1041,7 @@
                         </span>
                       </td>
                       <!--net price column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                         <div data-repeat="fields in first.cart.fields" data-scope="first">
                           <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder3.Is_Service_Folder = 0">
                             <span data-hide-if="folder3.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
@@ -1055,7 +1055,7 @@
                       <!--total net price column folder3-->
                       <td
                         data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'"
-                        style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;"
+                        style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;"
                         class="number">
                         <div data-repeat="fields in first.cart.fields" data-scope="first">
                           <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder3.Is_Service_Folder = 0">
@@ -1068,7 +1068,7 @@
                         </div>
                       </td>
                       <!--total gross price column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;" class="number">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;" class="number">
                         <div data-repeat="fields in first.cart.fields" data-scope="first">
                           <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder3.Is_Service_Folder = 0">
                             <span data-show-if="folder3.Is_Option = 1">(</span>
@@ -1088,7 +1088,7 @@
                         <tbody>
                           <tr style="height: 21px; vertical-align: middle;">
                             <!-- position column material3 -->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <span data-show-if="material3.Is_Option = 1">(</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1097,7 +1097,7 @@
                               <span data-show-if="material3.Is_Option = 1">)</span>
                             </td>
                             <!---reference column material3 services-->
-                            <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                            <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                 <!---start of MFN --->
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
@@ -1155,7 +1155,7 @@
                                 AL: [material3.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material3.Mat_EECN]<br/></span>
                             </td>
                             <!--- quantity column material3 services-->
-                            <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material3.Is_Hide_Qty = 0">
                                 <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                   <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1167,7 +1167,7 @@
                               </span>
                             </td>
                             <!--gross price column material3 services-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material3.Mat_Serv_Sales != 0">
                                   <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1181,11 +1181,11 @@
                               </span>
                             </td>
                             <!-- discount column material3 services--->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <!-- Discount not applicable for Service Items-->
                             </td>
                             <!--net price column material3 services-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                   <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1199,7 +1199,7 @@
                             <!---total net price column material3 services-->
                             <td
                               data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                              style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                              style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                               class="number">
                               <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1212,7 +1212,7 @@
                               </span>
                             </td>
                             <!--total gross price column material3 services-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                               <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                   <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1234,7 +1234,7 @@
                       <tbody>
                         <tr style="height: 21px; vertical-align: middle;">
                           <!-- position column material3 -->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <span data-show-if="material3.Is_Option = 1">(</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1243,7 +1243,7 @@
                             <span data-show-if="material3.Is_Option = 1">)</span>
                           </td>
                           <!---reference column material3 non-services-->
-                          <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                          <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <!---start of MFN --->
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
                               <span data-hide-if="material3.Conf_Id = 'cp_FreeText' OR material3.Conf_Id = 'cp_ManualPosition' OR material3.Conf_Id = 'cpGenericItem'">
@@ -1301,7 +1301,7 @@
                               AL: [material3.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material3.Mat_EECN]<br/></span>
                           </td>
                           <!--- quantity column material3 non-services-->
-                          <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material3.Is_Hide_Qty = 0">
                               <span data-hide-if="material3.Conf_Id LIKE 'cp_FreeText'">
                                 <span data-show-if="material3.Is_Option = 1">(</span>
@@ -1311,7 +1311,7 @@
                             </span>
                           </td>
                           <!--gross price column material3-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Mat_Org_Sales != 0">
                                 <span class="number" data-show-if="material3.Is_Option = 1">(</span>
@@ -1321,7 +1321,7 @@
                             </span>
                           </td>
                           <!-- discount column material3--->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
                               <span class="number" data-show-if="material3.Mat_Disc_Pct1 gt 0">[material3.Mat_Disc_Pct1]</span>
@@ -1330,7 +1330,7 @@
                             <span data-show-if="material3.Is_Option = 1">)</span>
                           </td>
                           <!--net price column material3-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                             <span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
                               <span class="number" data-show-if="material3.Mat_Calc_Unit_Sales != 0">[material3.Mat_Calc_Unit_Sales]</span>
@@ -1341,7 +1341,7 @@
                           <!---total net price column material3-->
                           <td
                             data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                            style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                            style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                             class="number">
                             <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
@@ -1351,7 +1351,7 @@
                             </span>
                           </td>
                           <!--total gross price column material3-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                             <span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                               <span data-show-if="material3.Is_Option = 1">(</span>
                               <span data-show-if="material3.Mat_Tot_Org_Sales = 0"></span>
@@ -1370,7 +1370,7 @@
                     <tbody>
                       <tr style="height: 21px; vertical-align: middle;">
                         <!--position column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #d9d9d9; text-align: left; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #d9d9d9; text-align: left; vertical-align: middle;">
                           <span data-show-if="folder4.Is_Option = 1">(</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder4.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1380,7 +1380,7 @@
                           <span data-show-if="folder4.Is_Option = 1">)</span>
                         </td>
                         <!--reference column folder4-->
-                        <td style="height: 21px; width: 42.9%; background-color: #d9d9d9; text-align: left; vertical-align: middle;">
+                        <td style="height: 21px; width: 50.9%; background-color: #d9d9d9; text-align: left; vertical-align: middle;">
                           <span data-show-if="folder4.Short_Description IS NOT BLANK">
                             <strong>[folder4.Short_Description]</strong>
                           </span>
@@ -1389,13 +1389,13 @@
                           </span>
                         </td>
                         <!--quantity column folder4-->
-                        <td style="width: 4.1%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
+                        <td style="width: 4.5%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
                           <span data-show-if="folder4.Is_Option = 1">(</span>
                           <span data-hide-if="folder4.Text_Qty IS BLANK OR folder4.Text_Qty lte 0" class="number" data-precision="0">[folder4.Text_Qty]</span>
                           <span data-show-if="folder4.Is_Option = 1">)</span>
                         </td>
                         <!--gross price column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
                           <span data-hide-if="folder4.Text_Qty IS BLANK  OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Is_Service_Folder = 1">
                               <span data-show-if="folder4.Mat_Serv_Sales IS NOT BLANK">
@@ -1417,7 +1417,7 @@
                           </span>
                         </td>
                         <!--discount column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
                           <span data-hide-if="folder4.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Mat_Disc_Pct1 IS NOT BLANK AND folder4.Mat_Disc_Pct1 gt 0">
                               <span data-show-if="folder4.Is_Service_Folder = 1">
@@ -1437,7 +1437,7 @@
                           </span>
                         </td>
                         <!--net price column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;">
                           <span data-hide-if="folder4.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Is_Option = 1">(</span>
                             <span class="number">[folder4.Tot_Mat_Serv_Sales / folder4.Text_Qty]</span>
@@ -1447,7 +1447,7 @@
                         <!--total net price column folder4-->
                         <td
                           data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                          style="width: 9.5%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;"
+                          style="width: 8%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;"
                           class="number">
                           <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Is_Option = 1">(</span>
@@ -1456,7 +1456,7 @@
                           </span>
                         </td>
                         <!--total gross price column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;" class="number">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #d9d9d9; text-align: right; vertical-align: middle;" class="number">
                           <span class="number" data-show-if="folder4.Is_Option = 1">(</span>
                           <span class="number">[folder4.Mat_Serv_Sales + folder4.Mat_Tot_Org_Sales]</span>
                           <span class="number" data-show-if="folder4.Is_Option = 1">)</span>
@@ -1472,7 +1472,7 @@
                           <tbody>
                             <tr style="height: 21px; vertical-align: middle;">
                               <!-- position column material4 services-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1481,7 +1481,7 @@
                                 <span data-show-if="material4.Is_Option = 1">)</span>
                               </td>
                               <!---reference column material4 services-->
-                              <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                              <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                   <!---start of MFN --->
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
@@ -1539,7 +1539,7 @@
                                   AL: [material4.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material4.Mat_EECN]<br/></span>
                               </td>
                               <!--- quantity column material4 services-->
-                              <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material4.Is_Hide_Qty = 0">
                                   <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                     <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1551,7 +1551,7 @@
                                 </span>
                               </td>
                               <!--gross price column material4 services-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                     <span data-show-if="material4.Mat_Serv_Sales != 0">
@@ -1565,11 +1565,11 @@
                                 </span>
                               </td>
                               <!-- discount column material4 services--->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <!-- Discount not applicable for Service Items-->
                               </td>
                               <!--net price column material4 services-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                     <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1583,7 +1583,7 @@
                               <!---total net price column material4 services-->
                               <td
                                 data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                                style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                                style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                 class="number">
                                 <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1596,7 +1596,7 @@
                                 </span>
                               </td>
                               <!--total gross price column material4 services-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                                 <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                     <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1618,7 +1618,7 @@
                         <tbody>
                           <tr style="height: 21px; vertical-align: middle;">
                             <!-- position column material4 -->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <span data-show-if="material4.Is_Option = 1">(</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span>
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1627,7 +1627,7 @@
                               <span data-show-if="material4.Is_Option = 1">)</span>
                             </td>
                             <!---reference column material4 non-services-->
-                            <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                            <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <!---start of MFN --->
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
                                 <span data-hide-if="material4.Conf_Id = 'cp_FreeText' OR material4.Conf_Id = 'cp_ManualPosition' OR material4.Conf_Id = 'cpGenericItem'">
@@ -1685,7 +1685,7 @@
                                 AL: [material4.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material4.Mat_EECN]<br/></span>
                             </td>
                             <!--- quantity column material4 non-services-->
-                            <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material4.Is_Hide_Qty = 0">
                                 <span data-hide-if="material4.Conf_Id LIKE 'cp_FreeText'">
                                   <span data-show-if="material4.Is_Option = 1">(</span>
@@ -1695,7 +1695,7 @@
                               </span>
                             </td>
                             <!--gross price column material4-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Mat_Org_Sales != 0">
                                   <span class="number" data-show-if="material4.Is_Option = 1">(</span>
@@ -1705,7 +1705,7 @@
                               </span>
                             </td>
                             <!-- discount column material4--->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
                                 <span class="number" data-show-if="material4.Mat_Disc_Pct1 gt 0">[material4.Mat_Disc_Pct1]</span>
@@ -1714,7 +1714,7 @@
                               </span>
                             </td>
                             <!--net price column material4-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                               <span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
                                 <span class="number" data-show-if="material4.Mat_Calc_Unit_Sales != 0">[material4.Mat_Calc_Unit_Sales]</span>
@@ -1725,7 +1725,7 @@
                             <!---total net price column material4-->
                             <td
                               data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                              style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                              style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                               class="number">
                               <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
@@ -1735,7 +1735,7 @@
                               </span>
                             </td>
                             <!--total gross price column material4-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                               <span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                 <span data-show-if="material4.Is_Option = 1">(</span>
                                 <span data-show-if="material4.Mat_Tot_Org_Sales = 0"></span>
@@ -1754,7 +1754,7 @@
                       <tbody>
                         <tr style="height: 21px; vertical-align: middle;">
                           <!--position column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #f2f2f2; text-align: left; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #f2f2f2; text-align: left; vertical-align: middle;">
                             <span data-show-if="folder5.Is_Option = 1">(</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder5.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1764,7 +1764,7 @@
                             <span data-show-if="folder5.Is_Option = 1">(</span>
                           </td>
                           <!--reference column folder5-->
-                          <td style="height: 21px; width: 42.9%; background-color: #f2f2f2; text-align: left; vertical-align: middle;">
+                          <td style="height: 21px; width: 50.9%; background-color: #f2f2f2; text-align: left; vertical-align: middle;">
                             <span data-show-if="folder5.Short_Description IS NOT BLANK">
                               <strong>[folder5.Short_Description]</strong>
                             </span>
@@ -1773,13 +1773,13 @@
                             </span>
                           </td>
                           <!--quantity column folder5-->
-                          <td style="width: 4.1%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
+                          <td style="width: 4.5%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
                             <span data-show-if="folder5.Is_Option = 1">(</span>
                             <span data-hide-if="folder5.Text_Qty IS BLANK OR folder5.Text_Qty lte 0" class="number" data-precision="0">[folder5.Text_Qty]</span>
                             <span data-show-if="folder5.Is_Option = 1">)</span>
                           </td>
                           <!--gross price column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
                             <span data-hide-if="folder5.Text_Qty IS BLANK  OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Is_Service_Folder = 1">
                                 <span data-show-if="folder5.Mat_Serv_Sales IS NOT BLANK">
@@ -1801,7 +1801,7 @@
                             </span>
                           </td>
                           <!--discount column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
                             <span data-hide-if="folder5.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Mat_Disc_Pct1 IS NOT BLANK AND folder5.Mat_Disc_Pct1 gt 0">
                                 <span data-show-if="folder5.Is_Service_Folder = 1">
@@ -1821,7 +1821,7 @@
                             </span>
                           </td>
                           <!--net price column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;">
                             <span data-hide-if="folder5.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Is_Option = 1">(</span>
                               <span class="number">[folder5.Tot_Mat_Serv_Sales / folder5.Text_Qty]</span>
@@ -1831,7 +1831,7 @@
                           <!--total net price column folder5-->
                           <td
                             data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                            style="width: 9.5%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;"
+                            style="width: 8%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;"
                             class="number">
                             <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Is_Option = 1">(</span>
@@ -1840,7 +1840,7 @@
                             </span>
                           </td>
                           <!--total gross price column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;" class="number">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #f2f2f2; text-align: right; vertical-align: middle;" class="number">
                             <span class="number" data-show-if="folder5.Is_Option = 1">(</span>
                             <span class="number">[folder5.Mat_Serv_Sales + folder5.Mat_Tot_Org_Sales]</span>
                             <span class="number" data-show-if="folder5.Is_Option = 1">)</span>
@@ -1856,7 +1856,7 @@
                             <tbody>
                               <tr style="height: 21px; vertical-align: middle;">
                                 <!-- position column material5 services-->
-                                <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                                <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span>
                                   <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1865,7 +1865,7 @@
                                   <span data-show-if="material5.Is_Option = 1">)</span>
                                 </td>
                                 <!---reference column material5 services-->
-                                <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                                <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                                   <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                     <!---start of MFN --->
                                     <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
@@ -1923,7 +1923,7 @@
                                     AL: [material5.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material5.Mat_EECN]<br/></span>
                                 </td>
                                 <!--- quantity column material5 services-->
-                                <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                                <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <span data-show-if="material5.Is_Hide_Qty = 0">
                                     <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                       <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1935,7 +1935,7 @@
                                   </span>
                                 </td>
                                 <!--gross price column material5 services-->
-                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                     <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                       <span data-show-if="material5.Mat_Serv_Sales != 0">
@@ -1949,11 +1949,11 @@
                                   </span>
                                 </td>
                                 <!-- discount column material5 services--->
-                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <!-- Discount not applicable for Service Items-->
                                 </td>
                                 <!--net price column material5 services-->
-                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                   <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                     <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                       <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1967,7 +1967,7 @@
                                 <!---total net price column material5 services-->
                                 <td
                                   data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                                  style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                                  style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                   class="number">
                                   <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                     <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -1980,7 +1980,7 @@
                                   </span>
                                 </td>
                                 <!--total gross price column material5 services-->
-                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                                   <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                     <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                       <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
@@ -2002,7 +2002,7 @@
                           <tbody>
                             <tr style="height: 21px; vertical-align: middle;">
                               <!-- position column material5 -->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <span data-show-if="material5.Is_Option = 1">(</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span>
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -2011,7 +2011,7 @@
                                 <span data-show-if="material5.Is_Option = 1">)</span>
                               </td>
                               <!---reference column material5 non-services-->
-                              <td style="height: 21px; width: 42.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
+                              <td style="height: 21px; width: 50.9%; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <!---start of MFN --->
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
                                   <span data-hide-if="material5.Conf_Id = 'cp_FreeText' OR material5.Conf_Id = 'cp_ManualPosition' OR material5.Conf_Id = 'cpGenericItem'">
@@ -2069,7 +2069,7 @@
                                   AL: [material5.Mat_AL] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ECCN: [material5.Mat_EECN]<br/></span>
                               </td>
                               <!--- quantity column material5 non-services-->
-                              <td style="width: 4.1%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td style="width: 4.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material5.Is_Hide_Qty = 0">
                                   <span data-hide-if="material5.Conf_Id LIKE 'cp_FreeText'">
                                     <span data-show-if="material5.Is_Option = 1">(</span>
@@ -2079,7 +2079,7 @@
                                 </span>
                               </td>
                               <!--gross price column material5-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Mat_Org_Sales != 0">
                                     <span class="number" data-show-if="material5.Is_Option = 1">(</span>
@@ -2089,7 +2089,7 @@
                                 </span>
                               </td>
                               <!-- discount column material5--->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 5.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
                                   <span class="number" data-show-if="material5.Mat_Disc_Pct1 gt 0">[material5.Mat_Disc_Pct1]</span>
@@ -2098,7 +2098,7 @@
                                 </span>
                               </td>
                               <!--net price column material5-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;">
                                 <span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
                                   <span class="number" data-show-if="material5.Mat_Calc_Unit_Sales != 0">[material5.Mat_Calc_Unit_Sales]</span>
@@ -2109,7 +2109,7 @@
                               <!---total net price column material5-->
                               <td
                                 data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                                style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
+                                style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                 class="number">
                                 <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
@@ -2119,7 +2119,7 @@
                                 </span>
                               </td>
                               <!--total gross price column material5-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
+                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number">
                                 <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
                                   <span data-show-if="material5.Is_Option = 1">(</span>
                                   <span data-show-if="material5.Mat_Tot_Org_Sales = 0"></span>
