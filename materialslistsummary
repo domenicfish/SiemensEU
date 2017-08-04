@@ -143,30 +143,19 @@
         <!--total net price header -->
         <th style="height: 25px; width: 110px; background-color: #ffffff; vertical-align: top; text-align: right;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris i alt
-            <br/>eksl. Moms</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum
-            <br/>nettopris</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute;
-            <br/>čist&aacute; cena</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. total
-            <br/>Neto</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris i alt eksl. Moms</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum nettopris</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute; čist&aacute; cena</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. total Neto</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix total</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale<br/>
-            netto prijs</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix
-            <br/>total net</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix
-            <br/>net total</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale<br/>
-            netto prijs</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Netto<br/>
-            yhteens&auml;</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt
-            <br/>netto pris</span>
-
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale netto prijs</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix total net</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix net total</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale netto prijs</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Netto yhteens&auml;</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt netto pris</span>
           {{Custom1__c_CurrencyIsoCode}}</th>
       </tr>
     </thead>
