@@ -195,7 +195,7 @@
               <tbody>
                 <tr style="height: 21px; vertical-align: middle;">
                   <!--position column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #8E8E8E; text-align: left; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #A1A1A1; text-align: left; vertical-align: middle;">
                     <span data-show-if="folder1.Is_Option = 1">(</span>
                     <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder1.Special_Number]</span>
                     <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -205,7 +205,7 @@
                     <span data-show-if="folder1.Is_Option = 1">)</span>
                   </td>
                   <!--reference column folder1-->
-                  <td style="height: 21px; width: 50.9%; background-color: #8E8E8E; text-align: left; vertical-align: middle;">
+                  <td style="height: 21px; width: 50.9%; background-color: #A1A1A1; text-align: left; vertical-align: middle;">
                     <span data-show-if="folder1.Short_Description IS NOT BLANK">
                       <strong>[folder1.Short_Description]</strong>
                     </span>
@@ -214,13 +214,13 @@
                     </span>
                   </td>
                   <!--quantity column folder1-->
-                  <td style="width: 4.5%; height: 21px; background-color: #8E8E8E; text-align: right; vertical-align: middle;">
+                  <td style="width: 4.5%; height: 21px; background-color: #A1A1A1; text-align: right; vertical-align: middle;">
                     <span data-show-if="folder1.Is_Option = 1">(</span>
                     <span class="number" data-precision="0" data-hide-if="folder1.Text_Qty lte 0 OR folder1.Text_Qty IS BLANK">[folder1.Text_Qty]</span>
                     <span data-show-if="folder1.Is_Option = 1">)</span>
                   </td>
                   <!--gross price column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 8%; height: 21px; background-color: #8E8E8E; text-align: right; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 8%; height: 21px; background-color: #A1A1A1; text-align: right; vertical-align: middle;">
                     <span style="text-align: right; vertical-align: middle;" data-hide-if="folder1.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                       <span data-show-if="folder1.Is_Service_Folder = 1">
                         <span data-show-if="folder1.Mat_Serv_Sales IS NOT BLANK AND folder1.Mat_Serv_Sales gt 0">
@@ -241,7 +241,7 @@
                     </span>
                   </td>
                   <!--discount column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #8E8E8E; text-align: right; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #A1A1A1; text-align: right; vertical-align: middle;">
                     <span data-hide-if="folder1.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                       <span data-show-if="folder1.Mat_Disc_Pct1 IS NOT BLANK">
                         <span data-show-if="folder1.Is_Service_Folder = 1">
@@ -261,7 +261,7 @@
                     </span>
                   </td>
                   <!--net price column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 8%; height: 21px; background-color: #8E8E8E; text-align: right; vertical-align: middle;">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 8%; height: 21px; background-color: #A1A1A1; text-align: right; vertical-align: middle;">
                     <div data-repeat="fields in first.cart.fields" data-scope="first">
                       <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder1.Is_Service_Folder = 0">
                         <span data-hide-if="folder1.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
@@ -275,7 +275,7 @@
                   <!--total net price column folder1-->
                   <td
                     data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'"
-                    style="width: 8%; height: 21px; background-color: #8E8E8E; text-align: right; vertical-align: middle;"
+                    style="width: 8%; height: 21px; background-color: #A1A1A1; text-align: right; vertical-align: middle;"
                     class="number">
                     <div data-repeat="fields in first.cart.fields" data-scope="first">
                       <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder1.Is_Service_Folder = 0">
@@ -288,7 +288,7 @@
                     </div>
                   </td>
                   <!--total gross price column folder1-->
-                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #8E8E8E; text-align: right; vertical-align: middle;" class="number">
+                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #A1A1A1; text-align: right; vertical-align: middle;" class="number">
                     <div data-repeat="fields in first.cart.fields" data-scope="first">
                       <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder1.Is_Service_Folder = 0">
                         <span data-show-if="folder1.Is_Option = 1">(</span>
@@ -591,7 +591,7 @@
                 <tbody>
                   <tr style="height: 21px; vertical-align: middle;">
                     <!--position column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #a9a9a9; text-align: left; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
                       <span data-show-if="folder2.Is_Option = 1">(</span>
                       <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder2.Special_Number]</span>
                       <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -601,7 +601,7 @@
                       <span data-show-if="folder2.Is_Option = 1">)</span>
                     </td>
                     <!--reference column folder2-->
-                    <td style="height: 21px; width: 50.9%; background-color: #a9a9a9; text-align: left; vertical-align: middle;">
+                    <td style="height: 21px; width: 50.9%; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
                       <span data-show-if="folder2.Short_Description IS NOT BLANK">
                         <strong>[folder2.Short_Description]</strong>
                       </span>
@@ -610,13 +610,13 @@
                       </span>
                     </td>
                     <!--quantity column folder2-->
-                    <td style="width: 4.5%; height: 21px; background-color: #a9a9a9; text-align: right; vertical-align: middle;">
+                    <td style="width: 4.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                       <span data-show-if="folder2.Is_Option = 1">(</span>
                       <span data-hide-if="folder2.Text_Qty IS BLANK OR folder2.Text_Qty lte 0" class="number" data-precision="0">[folder2.Text_Qty]</span>
                       <span data-show-if="folder2.Is_Option = 1">)</span>
                     </td>
                     <!--gross price column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #a9a9a9; text-align: right; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                       <span data-hide-if="folder2.Text_Qty IS BLANK  OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Is_Service_Folder = 1">
                           <span data-show-if="folder2.Mat_Serv_Sales IS NOT BLANK">
@@ -638,7 +638,7 @@
                       </span>
                     </td>
                     <!--discount column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #a9a9a9; text-align: right; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                       <span data-hide-if="folder2.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Mat_Disc_Pct1 IS NOT BLANK AND folder2.Mat_Disc_Pct1 gt 0">
                           <span data-show-if="folder2.Is_Service_Folder = 1">
@@ -658,7 +658,7 @@
                       </span>
                     </td>
                     <!--net price column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #a9a9a9; text-align: right; vertical-align: middle;">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;">
                       <span data-hide-if="folder2.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Is_Option = 1">(</span>
                         <span class="number">[folder2.Tot_Mat_Serv_Sales / folder2.Text_Qty]</span>
@@ -668,7 +668,7 @@
                     <!--total net price column folder2-->
                     <td
                       data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                      style="width: 8%; height: 21px; background-color: #a9a9a9; text-align: right; vertical-align: middle;"
+                      style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;"
                       class="number">
                       <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                         <span data-show-if="folder2.Is_Option = 1">(</span>
@@ -677,7 +677,7 @@
                       </span>
                     </td>
                     <!--total gross price column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #a9a9a9; text-align: right; vertical-align: middle;" class="number">
+                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;" class="number">
                       <span class="number" data-show-if="folder2.Is_Option = 1">(</span>
                       <span class="number">[folder2.Mat_Serv_Sales + folder2.Mat_Tot_Org_Sales]</span>
                       <span class="number" data-show-if="folder2.Is_Option = 1">)</span>
@@ -975,7 +975,7 @@
                   <tbody>
                     <tr style="height: 21px; vertical-align: middle;">
                       <!--position column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #b7b7b7; text-align: left; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #dddddd; text-align: left; vertical-align: middle;">
                         <span data-show-if="folder3.Is_Option = 1">(</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder3.Special_Number]</span>
                         <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -985,7 +985,7 @@
                         <span data-show-if="folder3.Is_Option = 1">)</span>
                       </td>
                       <!--reference column folder3-->
-                      <td style="height: 21px; width: 50.9%; background-color: #b7b7b7; text-align: left; vertical-align: middle;">
+                      <td style="height: 21px; width: 50.9%; background-color: #dddddd; text-align: left; vertical-align: middle;">
                         <span data-show-if="folder3.Short_Description IS NOT BLANK">
                           <strong>[folder3.Short_Description]</strong>
                         </span>
@@ -994,13 +994,13 @@
                         </span>
                       </td>
                       <!--quantity column folder3-->
-                      <td style="width: 4.5%; height: 21px; background-color: #b7b7b7; text-align: right; vertical-align: middle;">
+                      <td style="width: 4.5%; height: 21px; background-color: #dddddd; text-align: right; vertical-align: middle;">
                         <span data-show-if="folder3.Is_Option = 1">(</span>
                         <span class="number" data-precision="0" data-hide-if="folder3.Text_Qty lte 0 OR folder3.Text_Qty IS BLANK">[folder3.Text_Qty]</span>
                         <span data-show-if="folder3.Is_Option = 1">)</span>
                       </td>
                       <!--gross price column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 8%; height: 21px; background-color: #b7b7b7; text-align: right; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 8%; height: 21px; background-color: #dddddd; text-align: right; vertical-align: middle;">
                         <span style="text-align: right; vertical-align: middle;" data-hide-if="folder3.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                           <span data-show-if="folder3.Is_Service_Folder = 1">
                             <span data-show-if="folder3.Mat_Serv_Sales IS NOT BLANK AND folder3.Mat_Serv_Sales gt 0">
@@ -1021,7 +1021,7 @@
                         </span>
                       </td>
                       <!--discount column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #b7b7b7; text-align: right; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #dddddd; text-align: right; vertical-align: middle;">
                         <span data-hide-if="folder3.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                           <span data-show-if="folder3.Mat_Disc_Pct1 IS NOT BLANK">
                             <span data-show-if="folder3.Is_Service_Folder = 1">
@@ -1041,7 +1041,7 @@
                         </span>
                       </td>
                       <!--net price column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 8%; height: 21px; background-color: #b7b7b7; text-align: right; vertical-align: middle;">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="width: 8%; height: 21px; background-color: #dddddd; text-align: right; vertical-align: middle;">
                         <div data-repeat="fields in first.cart.fields" data-scope="first">
                           <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder3.Is_Service_Folder = 0">
                             <span data-hide-if="folder3.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
@@ -1055,7 +1055,7 @@
                       <!--total net price column folder3-->
                       <td
                         data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'"
-                        style="width: 8%; height: 21px; background-color: #b7b7b7; text-align: right; vertical-align: middle;"
+                        style="width: 8%; height: 21px; background-color: #dddddd; text-align: right; vertical-align: middle;"
                         class="number">
                         <div data-repeat="fields in first.cart.fields" data-scope="first">
                           <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder3.Is_Service_Folder = 0">
@@ -1068,7 +1068,7 @@
                         </div>
                       </td>
                       <!--total gross price column folder3-->
-                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #b7b7b7; text-align: right; vertical-align: middle;" class="number">
+                      <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #dddddd; text-align: right; vertical-align: middle;" class="number">
                         <div data-repeat="fields in first.cart.fields" data-scope="first">
                           <div data-hide-if="fields.OrderInfoTab.structureMode LIKE 'Catalog' AND Custom1__c_MO_Country_Origin__c = 'CH' AND folder3.Is_Service_Folder = 0">
                             <span data-show-if="folder3.Is_Option = 1">(</span>
@@ -1370,7 +1370,7 @@
                     <tbody>
                       <tr style="height: 21px; vertical-align: middle;">
                         <!--position column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #d4d4d4; text-align: left; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #eeeeee; text-align: left; vertical-align: middle;">
                           <span data-show-if="folder4.Is_Option = 1">(</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder4.Special_Number]</span>
                           <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1380,7 +1380,7 @@
                           <span data-show-if="folder4.Is_Option = 1">)</span>
                         </td>
                         <!--reference column folder4-->
-                        <td style="height: 21px; width: 50.9%; background-color: #d4d4d4; text-align: left; vertical-align: middle;">
+                        <td style="height: 21px; width: 50.9%; background-color: #eeeeee; text-align: left; vertical-align: middle;">
                           <span data-show-if="folder4.Short_Description IS NOT BLANK">
                             <strong>[folder4.Short_Description]</strong>
                           </span>
@@ -1389,13 +1389,13 @@
                           </span>
                         </td>
                         <!--quantity column folder4-->
-                        <td style="width: 4.5%; height: 21px; background-color: #d4d4d4; text-align: right; vertical-align: middle;">
+                        <td style="width: 4.5%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;">
                           <span data-show-if="folder4.Is_Option = 1">(</span>
                           <span data-hide-if="folder4.Text_Qty IS BLANK OR folder4.Text_Qty lte 0" class="number" data-precision="0">[folder4.Text_Qty]</span>
                           <span data-show-if="folder4.Is_Option = 1">)</span>
                         </td>
                         <!--gross price column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #d4d4d4; text-align: right; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;">
                           <span data-hide-if="folder4.Text_Qty IS BLANK  OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Is_Service_Folder = 1">
                               <span data-show-if="folder4.Mat_Serv_Sales IS NOT BLANK">
@@ -1417,7 +1417,7 @@
                           </span>
                         </td>
                         <!--discount column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #d4d4d4; text-align: right; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;">
                           <span data-hide-if="folder4.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Mat_Disc_Pct1 IS NOT BLANK AND folder4.Mat_Disc_Pct1 gt 0">
                               <span data-show-if="folder4.Is_Service_Folder = 1">
@@ -1437,7 +1437,7 @@
                           </span>
                         </td>
                         <!--net price column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #d4d4d4; text-align: right; vertical-align: middle;">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;">
                           <span data-hide-if="folder4.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Is_Option = 1">(</span>
                             <span class="number">[folder4.Tot_Mat_Serv_Sales / folder4.Text_Qty]</span>
@@ -1447,7 +1447,7 @@
                         <!--total net price column folder4-->
                         <td
                           data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                          style="width: 8%; height: 21px; background-color: #d4d4d4; text-align: right; vertical-align: middle;"
+                          style="width: 8%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;"
                           class="number">
                           <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                             <span data-show-if="folder4.Is_Option = 1">(</span>
@@ -1456,7 +1456,7 @@
                           </span>
                         </td>
                         <!--total gross price column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #d4d4d4; text-align: right; vertical-align: middle;" class="number">
+                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;" class="number">
                           <span class="number" data-show-if="folder4.Is_Option = 1">(</span>
                           <span class="number">[folder4.Mat_Serv_Sales + folder4.Mat_Tot_Org_Sales]</span>
                           <span class="number" data-show-if="folder4.Is_Option = 1">)</span>
@@ -1754,7 +1754,7 @@
                       <tbody>
                         <tr style="height: 21px; vertical-align: middle;">
                           <!--position column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #e1e1e1; text-align: left; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 8%; height: 21px; background-color: #f8f8f8; text-align: left; vertical-align: middle;">
                             <span data-show-if="folder5.Is_Option = 1">(</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder5.Special_Number]</span>
                             <span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'">
@@ -1764,7 +1764,7 @@
                             <span data-show-if="folder5.Is_Option = 1">(</span>
                           </td>
                           <!--reference column folder5-->
-                          <td style="height: 21px; width: 50.9%; background-color: #e1e1e1; text-align: left; vertical-align: middle;">
+                          <td style="height: 21px; width: 50.9%; background-color: #f8f8f8; text-align: left; vertical-align: middle;">
                             <span data-show-if="folder5.Short_Description IS NOT BLANK">
                               <strong>[folder5.Short_Description]</strong>
                             </span>
@@ -1773,13 +1773,13 @@
                             </span>
                           </td>
                           <!--quantity column folder5-->
-                          <td style="width: 4.5%; height: 21px; background-color: #e1e1e1; text-align: right; vertical-align: middle;">
+                          <td style="width: 4.5%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;">
                             <span data-show-if="folder5.Is_Option = 1">(</span>
                             <span data-hide-if="folder5.Text_Qty IS BLANK OR folder5.Text_Qty lte 0" class="number" data-precision="0">[folder5.Text_Qty]</span>
                             <span data-show-if="folder5.Is_Option = 1">)</span>
                           </td>
                           <!--gross price column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #e1e1e1; text-align: right; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" style="width: 8%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;">
                             <span data-hide-if="folder5.Text_Qty IS BLANK  OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Is_Service_Folder = 1">
                                 <span data-show-if="folder5.Mat_Serv_Sales IS NOT BLANK">
@@ -1801,7 +1801,7 @@
                             </span>
                           </td>
                           <!--discount column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #e1e1e1; text-align: right; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;">
                             <span data-hide-if="folder5.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Mat_Disc_Pct1 IS NOT BLANK AND folder5.Mat_Disc_Pct1 gt 0">
                                 <span data-show-if="folder5.Is_Service_Folder = 1">
@@ -1821,7 +1821,7 @@
                             </span>
                           </td>
                           <!--net price column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #e1e1e1; text-align: right; vertical-align: middle;">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 8%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;">
                             <span data-hide-if="folder5.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Is_Option = 1">(</span>
                               <span class="number">[folder5.Tot_Mat_Serv_Sales / folder5.Text_Qty]</span>
@@ -1831,7 +1831,7 @@
                           <!--total net price column folder5-->
                           <td
                             data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
-                            style="width: 8%; height: 21px; background-color: #e1e1e1; text-align: right; vertical-align: middle;"
+                            style="width: 8%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;"
                             class="number">
                             <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'">
                               <span data-show-if="folder5.Is_Option = 1">(</span>
@@ -1840,7 +1840,7 @@
                             </span>
                           </td>
                           <!--total gross price column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #e1e1e1; text-align: right; vertical-align: middle;" class="number">
+                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 8%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;" class="number">
                             <span class="number" data-show-if="folder5.Is_Option = 1">(</span>
                             <span class="number">[folder5.Mat_Serv_Sales + folder5.Mat_Tot_Org_Sales]</span>
                             <span class="number" data-show-if="folder5.Is_Option = 1">)</span>
