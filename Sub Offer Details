@@ -2999,22 +2999,22 @@
 <table>
 <tbody>
 <tr style="height: 21px;">
-  <td style="width: 35%; height: 21px; background-color: #808080; text-align: left;">
+  <td style="width: 35%; height: 21px; background-color: #a1a1a1; text-align: left;">
     <span class="html" style="font-size: 7px;">[folder1.Short_Description]</span>
   </td>
-  <td style="width: 30%; height: 21px; background-color: #808080; text-align: left;">
+  <td style="width: 30%; height: 21px; background-color: #a1a1a1; text-align: left;">
     <span style="font-size: 7px;">&nbsp;</span>
   </td>
-  <td class="number" style="width: 10%; height: 21px; background-color: #808080; text-align: right;">
+  <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
     <span style="font-size: 7px;">[folder1.Mat_Cost_Discount]</span>
   </td>
-  <td class="number" style="width: 10%; height: 21px; background-color: #808080; text-align: right;">
+  <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
     <span style="font-size: 7px;">[folder1.Mat_Marg_Pct]</span>
   </td>
-  <td class="number" style="width: 10%; height: 21px; background-color: #808080; text-align: right;">
+  <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
     <span style="font-size: 7px;">[folder1.Mat_Calc_Tot_Cost]</span>
   </td>
-  <td class="number" style="width: 10%; height: 21px; background-color: #808080; text-align: right;">
+  <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
     <span style="font-size: 7px;">[folder1.Mat_Calc_Tot_Sales]</span>
   </td>
 </tr>
@@ -3093,22 +3093,22 @@
 <table>
 <tbody>
   <tr style="height: 21px;">
-    <td style="width: 35%; height: 21px; background-color: #a6a6a6; text-align: left;">
+    <td style="width: 35%; height: 21px; background-color: #dddddd; text-align: left;">
       <span class="html" style="font-size: 7px;">[folder2.Short_Description]</span>
     </td>
-    <td style="width: 30%; height: 21px; background-color: #a6a6a6; text-align: left;">
+    <td style="width: 30%; height: 21px; background-color: #dddddd; text-align: left;">
       <span style="font-size: 7px;">&nbsp;</span>
     </td>
-    <td class="number" style="width: 10%; height: 21px; background-color: #a6a6a6; text-align: right;">
+    <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
       <span style="font-size: 7px;">[folder2.Mat_Cost_Discount]</span>
     </td>
-    <td class="number" style="width: 10%; height: 21px; background-color: #a6a6a6; text-align: right;">
+    <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
       <span style="font-size: 7px;">[folder2.Mat_Marg_Pct]</span>
     </td>
-    <td class="number" style="width: 10%; height: 21px; background-color: #a6a6a6; text-align: right;">
+    <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
       <span style="font-size: 7px;">[folder2.Mat_Calc_Tot_Cost]</span>
     </td>
-    <td class="number" style="width: 10%; height: 21px; background-color: #a6a6a6; text-align: right;">
+    <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
       <span style="font-size: 7px;">[folder2.Mat_Calc_Tot_Sales]</span>
     </td>
   </tr>
@@ -3187,22 +3187,22 @@
 <table>
   <tbody>
     <tr style="height: 21px;">
-      <td style="width: 35%; height: 21px; background-color: #bfbfbf; text-align: left;">
+      <td style="width: 35%; height: 21px; background-color: #dddddd; text-align: left;">
         <span class="html" style="font-size: 7px;">[folder3.Short_Description]</span>
       </td>
-      <td style="width: 30%; height: 21px; background-color: #bfbfbf; text-align: left;">
+      <td style="width: 30%; height: 21px; background-color: #dddddd; text-align: left;">
         <span style="font-size: 7px;">&nbsp;</span>
       </td>
-      <td class="number" style="width: 10%; height: 21px; background-color: #bfbfbf; text-align: right;">
+      <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
         <span style="font-size: 7px;">[folder3.Mat_Cost_Discount]</span>
       </td>
-      <td class="number" style="width: 10%; height: 21px; background-color: #bfbfbf; text-align: right;">
+      <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
         <span style="font-size: 7px;">[folder3.Mat_Marg_Pct]</span>
       </td>
-      <td class="number" style="width: 10%; height: 21px; background-color: #bfbfbf; text-align: right;">
+      <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
         <span style="font-size: 7px;">[folder3.Mat_Calc_Tot_Cost]</span>
       </td>
-      <td class="number" style="width: 10%; height: 21px; background-color: #bfbfbf; text-align: right;">
+      <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
         <span style="font-size: 7px;">[folder3.Mat_Calc_Tot_Sales]</span>
       </td>
     </tr>
@@ -3281,22 +3281,22 @@
   <table>
     <tbody>
       <tr style="height: 21px;">
-        <td style="width: 35%; height: 21px; background-color: #d9d9d9; text-align: left;">
+        <td style="width: 35%; height: 21px; background-color: #eeeeee; text-align: left;">
           <span class="html" style="font-size: 7px;">[folder4.Short_Description]</span>
         </td>
-        <td style="width: 30%; height: 21px; background-color: #d9d9d9; text-align: left;">
+        <td style="width: 30%; height: 21px; background-color: #eeeeee; text-align: left;">
           <span style="font-size: 7px;">&nbsp;</span>
         </td>
-        <td class="number" style="width: 10%; height: 21px; background-color: #d9d9d9; text-align: right;">
+        <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
           <span style="font-size: 7px;">[folder4.Mat_Cost_Discount]</span>
         </td>
-        <td class="number" style="width: 10%; height: 21px; background-color: #d9d9d9; text-align: right;">
+        <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
           <span style="font-size: 7px;">[folder4.Mat_Marg_Pct]</span>
         </td>
-        <td class="number" style="width: 10%; height: 21px; background-color: #d9d9d9; text-align: right;">
+        <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
           <span style="font-size: 7px;">[folder4.Mat_Calc_Tot_Cost]</span>
         </td>
-        <td class="number" style="width: 10%; height: 21px; background-color: #d9d9d9; text-align: right;">
+        <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
           <span style="font-size: 7px;">[folder4.Mat_Calc_Tot_Sales]</span>
         </td>
       </tr>
@@ -3375,22 +3375,22 @@
     <table>
       <tbody>
         <tr style="height: 21px;">
-          <td style="width: 35%; height: 21px; background-color: #f2f2f2; text-align: left;">
+          <td style="width: 35%; height: 21px; background-color: #f8f8f8; text-align: left;">
             <span class="html" style="font-size: 7px;">[folder5.Short_Description]</span>
           </td>
-          <td style="width: 30%; height: 21px; background-color: #f2f2f2; text-align: left;">
+          <td style="width: 30%; height: 21px; background-color: #f8f8f8; text-align: left;">
             <span style="font-size: 7px;">&nbsp;</span>
           </td>
-          <td class="number" style="width: 10%; height: 21px; background-color: #f2f2f2; text-align: right;">
+          <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
             <span style="font-size: 7px;">[folder5.Mat_Cost_Discount]</span>
           </td>
-          <td class="number" style="width: 10%; height: 21px; background-color: #f2f2f2; text-align: right;">
+          <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
             <span style="font-size: 7px;">[folder5.Mat_Marg_Pct]</span>
           </td>
-          <td class="number" style="width: 10%; height: 21px; background-color: #f2f2f2; text-align: right;">
+          <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
             <span style="font-size: 7px;">[folder5.Mat_Calc_Tot_Cost]</span>
           </td>
-          <td class="number" style="width: 10%; height: 21px; background-color: #f2f2f2; text-align: right;">
+          <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
             <span style="font-size: 7px;">[folder5.Mat_Calc_Tot_Sales]</span>
           </td>
         </tr>
