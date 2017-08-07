@@ -236,7 +236,7 @@
           </span>
         </td>
         <td style="width: 11%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -250,7 +250,7 @@
           </span>
         </td>
         <td style="width: 6%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -264,7 +264,7 @@
           </span>
         </td>
         <td style="width: 6%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -278,7 +278,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -292,7 +292,7 @@
           </span>
         </td>
         <td style="width: 11%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -306,7 +306,7 @@
           </span>
         </td>
         <td style="width: 11%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -320,7 +320,7 @@
           </span>
         </td>
         <td style="width: 11.0376%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -334,7 +334,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -348,7 +348,7 @@
           </span>
         </td>
         <td style="width: 12%; height: 21px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">
@@ -400,7 +400,7 @@
         </td>
         <td style="width: 23%; height: 21px;" colspan="3"></td>
         <td class="number" style="width: 10%; height: 21px; text-align: right;">[name.Project_Promotion__c]</td>
-        <td style="width: 55.0376%; height: 21px; border-right-color: #ffffff; border-bottom-color: #ffffff;" colspan="5"></td>
+        <td style="width: 55.0376%; height: 21px;  border-bottom-color: #ffffff; border-right-color: #ffffff;" colspan="5"></td>
       </tr>
       <tr style="height: 21px;">
         <td style="width: 12%; height: 21px;">
@@ -422,7 +422,7 @@
         <td style="width: 10%; height: 21px; text-align: right;">
           <span class="number">[name.SO_Total_Cost_Price__c]</span>
         </td>
-        <td style="width: 65.0376%; height: 21px; border-right-color: #ffffff; border-bottom-color: #ffffff;" colspan="6"></td>
+        <td style="width: 65.0376%; height: 21px;  border-bottom-color: #ffffff; border-right-color: #ffffff;" colspan="6"></td>
       </tr>
     </tbody>
   </table>
@@ -533,13 +533,13 @@
           <em>
             <strong>
               <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Additional discount
-                {{Custom1_CurrencyIsoCode}}</span>
+                {{Custom1__c_CurrencyIsoCode}}</span>
               <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zusätzlicher Rabatt
-                {{Custom1_CurrencyIsoCode}}</span>
+                {{Custom1__c_CurrencyIsoCode}}</span>
               <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso aggiuntivo
-                {{Custom1_CurrencyIsoCode}}</span>
+                {{Custom1__c_CurrencyIsoCode}}</span>
               <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise additionnelle
-                {{Custom1_CurrencyIsoCode}}</span>
+                {{Custom1__c_CurrencyIsoCode}}</span>
             </strong>
           </em>
         </td>
@@ -615,7 +615,7 @@
         </td>
         <td class="number" style="width: 25%; height: 21px; text-align: right;">[name.SO_Total_Sales_Price__c]</td>
         <td class="number" style="width: 25%; height: 21px; text-align: right;">[name.TC_Mat_Calc_Tot_Sales__c]</td>
-        <td style="width: 25%; height: 21px; text-align: right;">[name.TC_Mat_Serv_Sales__c]</td>
+        <td class="number" style="width: 25%; height: 21px; text-align: right;">[name.TC_Mat_Serv_Sales__c]</td>
       </tr>
       <tr style="height: 10px;">
         <td style="width: 25%; height: 21px;">
@@ -667,7 +667,7 @@
   <p></p>
 
   <!-- beginning of services tables -->
-  <table style="width: 100%; ">
+  <table style="width: 100%;">
     <tbody>
       <tr style="height: 21px;">
         <td style="width: 25%; height: 21px; background-color: #ece9dc;">
@@ -686,69 +686,69 @@
       </tr>
       <tr style="height: 21px;">
         <td style="width: 25%; height: 21px; text-align: left;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Description</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Beschreibung</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Descrizione</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Description</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Description</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Beschreibung</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Descrizione</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Description</span>
         </td>
         <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;">UCS</td>
         <td style="width: 7%; height: 21px; text-align: right;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Ori. Qty</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Ger. DL</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prest.calc.</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté. Ori.</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Ori. Qty</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Ger. DL</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prest.calc.</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté. Ori.</span>
         </td>
         <td style="width: 7%; height: 21px; text-align: right;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Add Qty</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus. DL</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prest.sup.</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté. Ajout.</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Add Qty</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Zus. DL</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prest.sup.</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté. Ajout.</span>
         </td>
         <td style="width: 6%; height: 21px; text-align: right; font-size: 10px;">Fact</td>
         <td style="width: 6%; height: 21px; text-align: right;">
           <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Calc Qty</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Kalk.</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Somma</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté. Calc.</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Kalk.</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Somma</span>
+          <span style="font-size: 8px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté. Calc.</span>
         </td>
         <td style="width: 9%; height: 21px; text-align: right;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Cost price</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Kosten</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Costi</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Coût</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Cost price</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Kosten</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Costi</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Coût</span>
         </td>
         <td style="width: 5%; height: 21px; text-align: right;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Disc</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Rabatt</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribas</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remis</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Disc</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Rabatt</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribas</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remis</span>
         </td>
         <td style="width: 5%; height: 21px; text-align: right;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">GM</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">GM</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">GM</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Marge</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">GM</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">GM</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">GM</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Marge</span>
         </td>
         <td style="width: 12.1099%; height: 21px; text-align: right;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Sales price</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Verkaufspreis</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prezzo di vendita</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix de vente</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Sales price</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Verkaufspreis</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prezzo di vendita</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix de vente</span>
         </td>
         <td style="width: 11.8901%; height: 21px; text-align: right;">
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Change Log</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Begründung</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Motivazione</span>
-          <span style="font-size: 10px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Raison</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Change Log</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Begründung</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Motivazione</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Raison</span>
         </td>
       </tr>
     </tbody>
   </table>
   <!-- material based services table -->
-  <table>
+  <table style="width: 100%;">
     <tbody>
       <tr style="height: 21px;">
-        <td style="width: 30%; height: 21px;" colspan="2">
+        <td style="width: 30%; height: 21px;">
           <em>
             <strong>
               <span style="font-size: 12px;">
@@ -760,21 +760,19 @@
             </strong>
           </em>
         </td>
-        <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span style="font-size: 10px;">
+        <td style="width: 26%; height: 21px; text-align: center;">
+          <span style="font-size: 9px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
           </span>
         </td>
-
         <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
         <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
-        <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
-
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 11.8901%; height: 21px; text-align: right;"></td>
       </tr>
     </tbody>
   </table>
@@ -1064,7 +1062,7 @@
           </span>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
@@ -1074,14 +1072,14 @@
         <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
         <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
-        <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 11.8901%; height: 21px; text-align: right; "></td>
       </tr>
     </tbody>
   </table>
   <!-- start of repeating Additional Services & Activities table / rows -->
   <div data-repeat="cart1 in name.cart.cartLines">
-    <table data-show-if="cart1.type = 'SP' AND cart1.Serv_Line_Type LIKE 'ADDITIONAL'">
+    <table data-show-if="cart1.type = 'SP' AND cart1.Serv_Line_Type LIKE 'ADDITIONAL' AND cart1.Is_Option != 1">
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1132,7 +1130,7 @@
     </table>
 
     <div data-repeat="cart2 in cart1.cartLines">
-      <table data-show-if="cart2.type = 'SP' AND cart2.Serv_Line_Type LIKE 'ADDITIONAL'">
+      <table data-show-if="cart2.type = 'SP' AND cart2.Serv_Line_Type LIKE 'ADDITIONAL' AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1187,7 +1185,7 @@
       </table>
 
       <div data-repeat="cart3 in cart2.cartLines">
-        <table data-show-if="cart3.type = 'SP' AND cart3.Serv_Line_Type LIKE 'ADDITIONAL'">
+        <table data-show-if="cart3.type = 'SP' AND cart3.Serv_Line_Type LIKE 'ADDITIONAL' AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1237,7 +1235,7 @@
           </tbody>
         </table>
         <div data-repeat="cart4 in cart3.cartLines">
-          <table data-show-if="cart4.type = 'SP' AND cart4.Serv_Line_Type LIKE 'ADDITIONAL'">
+          <table data-show-if="cart4.type = 'SP' AND cart4.Serv_Line_Type LIKE 'ADDITIONAL' AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1288,7 +1286,7 @@
           </table>
 
           <div data-repeat="cart5 in cart4.cartLines">
-            <table data-show-if="cart5.type = 'SP' AND cart5.Serv_Line_Type LIKE 'ADDITIONAL'">
+            <table data-show-if="cart5.type = 'SP' AND cart5.Serv_Line_Type LIKE 'ADDITIONAL' AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1338,7 +1336,7 @@
               </tbody>
             </table>
             <div data-repeat="cart6 in cart5.cartLines">
-              <table data-show-if="cart6.type = 'SP' AND cart6.Serv_Line_Type LIKE 'ADDITIONAL'">
+              <table data-show-if="cart6.type = 'SP' AND cart6.Serv_Line_Type LIKE 'ADDITIONAL' AND cart6.Is_Option != 1 AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
                 <tbody>
                   <tr style="height: 21.6563px;">
                     <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1406,7 +1404,7 @@
           </em>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
@@ -1416,14 +1414,14 @@
         <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
         <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
-        <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 11.8901%; height: 21px; text-align: right; "></td>
       </tr>
     </tbody>
   </table>
   <!-- start of repeating Manual Position as a Service table / rows -->
   <div data-repeat="cart1 in name.cart.cartLines">
-    <table data-show-if="cart1.type = 'SP' AND cart1.Serv_Line_Type LIKE 'MANUALPOSITION'">
+    <table data-show-if="cart1.type = 'SP' AND cart1.Serv_Line_Type LIKE 'MANUALPOSITION' AND cart1.Is_Option != 1">
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1474,7 +1472,7 @@
     </table>
 
     <div data-repeat="cart2 in cart1.cartLines">
-      <table data-show-if="cart2.type = 'SP' AND cart2.Serv_Line_Type LIKE 'MANUALPOSITION'">
+      <table data-show-if="cart2.type = 'SP' AND cart2.Serv_Line_Type LIKE 'MANUALPOSITION' AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1529,7 +1527,7 @@
       </table>
 
       <div data-repeat="cart3 in cart2.cartLines">
-        <table data-show-if="cart3.type = 'SP' AND cart3.Serv_Line_Type LIKE 'MANUALPOSITION'">
+        <table data-show-if="cart3.type = 'SP' AND cart3.Serv_Line_Type LIKE 'MANUALPOSITION' AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1579,7 +1577,7 @@
           </tbody>
         </table>
         <div data-repeat="cart4 in cart3.cartLines">
-          <table data-show-if="cart4.type = 'SP' AND cart4.Serv_Line_Type LIKE 'MANUALPOSITION'">
+          <table data-show-if="cart4.type = 'SP' AND cart4.Serv_Line_Type LIKE 'MANUALPOSITION' AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1630,7 +1628,7 @@
           </table>
 
           <div data-repeat="cart5 in cart4.cartLines">
-            <table data-show-if="cart5.type = 'SP' AND cart5.Serv_Line_Type LIKE 'MANUALPOSITION'">
+            <table data-show-if="cart5.type = 'SP' AND cart5.Serv_Line_Type LIKE 'MANUALPOSITION' AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1680,7 +1678,7 @@
               </tbody>
             </table>
             <div data-repeat="cart6 in cart5.cartLines">
-              <table data-show-if="cart6.type = 'SP' AND cart6.Serv_Line_Type LIKE 'MANUALPOSITION'">
+              <table data-show-if="cart6.type = 'SP' AND cart6.Serv_Line_Type LIKE 'MANUALPOSITION' AND cart6.Is_Option != 1 AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
                 <tbody>
                   <tr style="height: 21.6563px;">
                     <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1748,7 +1746,7 @@
           </em>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
@@ -1758,14 +1756,14 @@
         <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
         <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
-        <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 11.8901%; height: 21px; text-align: right; "></td>
       </tr>
     </tbody>
   </table>
   <!-- start of repeating Manual PositionS table / rows -->
   <div data-repeat="cart1 in name.cart.cartLines">
-    <table data-show-if="cart1.type = 'CP7' AND cart1.Conf_Id LIKE 'ManualPosition'">
+    <table data-show-if="cart1.type = 'CP7' AND cart1.Conf_Id LIKE 'ManualPosition' AND cart1.Is_Option != 1">
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1816,7 +1814,7 @@
     </table>
 
     <div data-repeat="cart2 in cart1.cartLines">
-      <table data-show-if="cart2.type = 'CP7' AND cart2.Conf_Id LIKE 'ManualPosition'">
+      <table data-show-if="cart2.type = 'CP7' AND cart2.Conf_Id LIKE 'ManualPosition' AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1871,7 +1869,7 @@
       </table>
 
       <div data-repeat="cart3 in cart2.cartLines">
-        <table data-show-if="cart3.type = 'CP7' AND cart3.Conf_Id LIKE 'ManualPosition'">
+        <table data-show-if="cart3.type = 'CP7' AND cart3.Conf_Id LIKE 'ManualPosition' AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1921,7 +1919,7 @@
           </tbody>
         </table>
         <div data-repeat="cart4 in cart3.cartLines">
-          <table data-show-if="cart4.type = 'CP7' AND cart4.Conf_Id LIKE 'ManualPosition'">
+          <table data-show-if="cart4.type = 'CP7' AND cart4.Conf_Id LIKE 'ManualPosition' AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -1972,7 +1970,7 @@
           </table>
 
           <div data-repeat="cart5 in cart4.cartLines">
-            <table data-show-if="cart5.type = 'CP7' AND cart5.Conf_Id LIKE 'ManualPosition'">
+            <table data-show-if="cart5.type = 'CP7' AND cart5.Conf_Id LIKE 'ManualPosition' AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2022,7 +2020,7 @@
               </tbody>
             </table>
             <div data-repeat="cart6 in cart5.cartLines">
-              <table data-show-if="cart6.type = 'CP7' AND cart6.Conf_Id LIKE 'ManualPosition'">
+              <table data-show-if="cart6.type = 'CP7' AND cart6.Conf_Id LIKE 'ManualPosition' AND cart6.Is_Option != 1 AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
                 <tbody>
                   <tr style="height: 21.6563px;">
                     <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2090,7 +2088,7 @@
           </em>
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
-          <span style="font-size: 10px;">
+          <span style="font-size: 9px;">
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
@@ -2100,14 +2098,14 @@
         <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">?</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
         <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Serv_Margin__c]</td>
-        <td style="width: 12.1%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
-        <td style="width: 11.8901%; height: 21px; text-align: right; border-right-color: #ffffff;"></td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.TC_Mat_Serv_Sales__c]</td>
+        <td style="width: 11.8901%; height: 21px; text-align: right; "></td>
       </tr>
     </tbody>
   </table>
   <!-- start of repeating Material Services table / rows -->
   <div data-repeat="cart1 in name.cart.cartLines">
-    <table data-show-if="cart1.type = 'CT7' AND cart1.Is_Service LIKE '1'">
+    <table data-show-if="cart1.type = 'CT7' AND cart1.Is_Service LIKE '1' AND cart1.Is_Option != 1">
       <tbody>
         <tr style="height: 21.6563px;">
           <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2158,7 +2156,7 @@
     </table>
 
     <div data-repeat="cart2 in cart1.cartLines">
-      <table data-show-if="cart2.type = 'CT7' AND cart2.Is_Service LIKE '1'">
+      <table data-show-if="cart2.type = 'CT7' AND cart2.Is_Service LIKE '1' AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
         <tbody>
           <tr style="height: 21.6563px;">
             <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2213,7 +2211,7 @@
       </table>
 
       <div data-repeat="cart3 in cart2.cartLines">
-        <table data-show-if="cart3.type = 'CT7' AND cart3.Is_Service LIKE '1'">
+        <table data-show-if="cart3.type = 'CT7' AND cart3.Is_Service LIKE '1' AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
           <tbody>
             <tr style="height: 21.6563px;">
               <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2263,7 +2261,7 @@
           </tbody>
         </table>
         <div data-repeat="cart4 in cart3.cartLines">
-          <table data-show-if="cart4.type = 'CT7' AND cart4.Is_Service LIKE '1'">
+          <table data-show-if="cart4.type = 'CT7' AND cart4.Is_Service LIKE '1' AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
             <tbody>
               <tr style="height: 21.6563px;">
                 <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2314,7 +2312,7 @@
           </table>
 
           <div data-repeat="cart5 in cart4.cartLines">
-            <table data-show-if="cart5.type = 'CT7' AND cart5.Is_Service LIKE '1'">
+            <table data-show-if="cart5.type = 'CT7' AND cart5.Is_Service LIKE '1' AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
               <tbody>
                 <tr style="height: 21.6563px;">
                   <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2364,7 +2362,7 @@
               </tbody>
             </table>
             <div data-repeat="cart6 in cart5.cartLines">
-              <table data-show-if="cart6.type = 'CT7' AND cart6.Is_Service LIKE '1'">
+              <table data-show-if="cart6.type = 'CT7' AND cart6.Is_Service LIKE '1' AND cart6.Is_Option != 1 AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1">
                 <tbody>
                   <tr style="height: 21.6563px;">
                     <td style="width: 25%; height: 21.6563px; text-align: left;">
@@ -2432,7 +2430,7 @@
             <span style="color: #ffffff;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Sub-Offer Riassunto calcolazione</span>
             <span style="color: #ffffff;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Vue Calculs Sous-Offre</span>
           </th>
-          <td style="width: 10%; height: 21px; border-top-color: #ffffff;"></td>
+          <td style="width: 10%; height: 21px; border-top-color: #ffffff; border-right-color: #ffffff;"></td>
           <th style="height: 21px; border-color: #000000; width: 28%;" colspan="3">
             <span style="color: #ffffff;">
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Printdate:
@@ -2573,7 +2571,7 @@
           </td>
         </tr>
         <tr style="border-color: #000000; height: 10.7358px;">
-          <td style="width: 18%; height: 10.7358px; border-color: #000000;">
+          <td style="width: 18%; height: 10.7358px; border-top-color: #000000; border-bottom-color: #000000; border-right-color: #ffffff; border-left-color: #ffffff;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Sub-Offer Description</span>
@@ -2630,7 +2628,7 @@
     <tbody>
       <tr style="height: 10px;">
         <td style="width: 36%; height: 10px; background-color: #ece9dc;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">SERVICES</span>
@@ -2641,11 +2639,11 @@
             </em>
           </span>
         </td>
-        <td style="width: 19.6159%; height: 10px; background-color: #ffffff; text-align: center; border-right-color: #ffffff; border-top-color: #ffffff;" colspan="3"></td>
+        <td style="width: 19.6159%; height: 10px; background-color: #ffffff; text-align: center;  border-top-color: #ffffff; border-right-color: #ffffff;" colspan="3"></td>
       </tr>
       <tr style="height: 10px;">
         <td style="width: 36%; height: 10px; background-color: #ece9dc;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Short Description</span>
@@ -2657,7 +2655,7 @@
           </span>
         </td>
         <td style="width: 19.6159%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;">UCS</span>
@@ -2666,7 +2664,7 @@
           </span>
         </td>
         <td style="width: 17.3841%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">HRS</span>
@@ -2678,7 +2676,7 @@
           </span>
         </td>
         <td style="width: 25%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total Cost</span>
@@ -2695,7 +2693,7 @@
   <!-- start of repeating services "rows"--->
   <!---cart 1--->
   <div data-repeat="cart1 in name.cart.cartLines">
-    <table data-show-if="cart1.type = 'SP'" style="width: 50%; height: 12px;">
+    <table data-show-if="cart1.type = 'SP' AND cart1.Is_Option != 1" style="width: 50%; height: 12px;">
       <tbody>
         <tr style="height: 12px; text-align: left;">
           <td style="width: 36%; height: 11px;">
@@ -2705,7 +2703,7 @@
             <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
           </td>
           <td style="width: 17.3841%; height: 11px; text-align: center;">
-            <span style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
+            <span class="integer" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 25%; height: 11px; text-align: right;">
             <span class="number" style="font-size: 9px;">[cart1.Mat_Serv_Cost]</span>
@@ -2715,7 +2713,7 @@
     </table>
     <!---cart 2--->
     <div data-repeat="cart2 in cart1.cartLines">
-      <table data-show-if="cart2.type = 'SP'" style="width: 50%; height: 12px;">
+      <table data-show-if="cart2.type = 'SP' AND cart2.Is_Option != 1 AND cart1.Is_Option != 1" style="width: 50%; height: 12px;">
         <tbody>
           <tr style="height: 12px; text-align: left;">
             <td style="width: 36%; height: 11px;">
@@ -2725,7 +2723,7 @@
               <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
             </td>
             <td style="width: 17.3841%; height: 11px; text-align: center;">
-              <span style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
+              <span class="integer" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
             <td style="width: 25%; height: 11px; text-align: right;">
               <span class="number" style="font-size: 9px;">[cart2.Mat_Serv_Cost]</span>
@@ -2736,7 +2734,7 @@
 
       <!---cart 3--->
       <div data-repeat="cart3 in cart2.cartLines">
-        <table data-show-if="cart3.type = 'SP'" style="width: 50%; height: 12px;">
+        <table data-show-if="cart3.type = 'SP' AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1" style="width: 50%; height: 12px;">
           <tbody>
             <tr style="height: 12px; text-align: left;">
               <td style="width: 36%; height: 11px;">
@@ -2746,7 +2744,7 @@
                 <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 17.3841%; height: 11px; text-align: center;">
-                <span class="number" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
+                <span class="integer" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 25%; height: 11px; text-align: right;">
                 <span class="number" style="font-size: 9px;">[cart3.Mat_Serv_Cost]</span>
@@ -2757,7 +2755,7 @@
 
         <!---cart 4 --->
         <div data-repeat="cart4 in cart3.cartLines">
-          <table data-show-if="cart4.type = 'SP'" style="width: 50%; height: 12px;">
+          <table data-show-if="cart4.type = 'SP' AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1" style="width: 50%; height: 12px;">
             <tbody>
               <tr style="height: 12px; text-align: left;">
                 <td style="width: 36%; height: 11px;">
@@ -2767,7 +2765,7 @@
                   <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
                 </td>
                 <td style="width: 17.3841%; height: 11px; text-align: center;">
-                  <span style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
+                  <span class="integer" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 25%; height: 11px; text-align: right;">
                   <span class="number" style="font-size: 9px;">[cart4.Mat_Serv_Cost]</span>
@@ -2778,7 +2776,7 @@
 
           <!---cart 5 --->
           <div data-repeat="cart5 in cart4.cartLines">
-            <table data-show-if="cart5.type = 'SP'" style="width: 50%; height: 12px;">
+            <table data-show-if="cart5.type = 'SP' AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1" style="width: 50%; height: 12px;">
               <tbody>
                 <tr style="height: 12px; text-align: left;">
                   <td style="width: 36%; height: 11px;">
@@ -2788,7 +2786,7 @@
                     <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
                   </td>
                   <td style="width: 17.3841%; height: 11px; text-align: center;">
-                    <span style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
+                    <span class="integer" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 25%; height: 11px; text-align: right;">
                     <span class="number" style="font-size: 9px;">[cart5.Mat_Serv_Cost]</span>
@@ -2798,7 +2796,7 @@
             </table>
             <!--cart 6-->
             <div data-repeat="cart6 in cart5.cartLines">
-              <table data-show-if="cart6.type = 'SP'" style="width: 50%; height: 12px;">
+              <table data-show-if="cart6.type = 'SP' AND cart6.Is_Option != 1 AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1" style="width: 50%; height: 12px;">
                 <tbody>
                   <tr style="height: 12px; text-align: left;">
                     <td style="width: 36%; height: 11px;">
@@ -2808,7 +2806,7 @@
                       <span style="font-size: 9px;">[cart6.Mat_UCS]</span>
                     </td>
                     <td style="width: 17.3841%; height: 11px; text-align: center;">
-                      <span style="font-size: 9px;">[cart6.Serv_Calc_Qty]</span>
+                      <span class="integer" style="font-size: 9px;">[cart6.Serv_Calc_Qty]</span>
                     </td>
                     <td style="width: 25%; height: 11px; text-align: right;">
                       <span class="number" style="font-size: 9px;">[cart6.Mat_Serv_Cost]</span>
@@ -2819,7 +2817,7 @@
 
               <!---cart 7--->
               <div data-repeat="cart7 in cart6.cartLines">
-                <table style="width: 50%; height: 12px;">
+                <table data-show-if="cart7.type = 'SP' AND cart7.Is_Option != 1 AND cart6.Is_Option != 1 AND cart5.Is_Option != 1 AND cart4.Is_Option != 1 AND cart3.Is_Option != 1 AND cart2.Is_Option != 1 AND cart1.Is_Option != 1" style="width: 50%; height: 12px;">
                   <tbody>
                     <tr style="height: 12px; text-align: left;">
                       <td style="width: 36%; height: 11px;">
@@ -2829,7 +2827,7 @@
                         <span style="font-size: 9px;">[cart7.Mat_UCS]</span>
                       </td>
                       <td style="width: 17.3841%; height: 11px; text-align: center;">
-                        <span style="font-size: 9px;">[cart7.Serv_Calc_Qty]</span>
+                        <span class="integer" style="font-size: 9px;">[cart7.Serv_Calc_Qty]</span>
                       </td>
                       <td style="width: 25%; height: 11px; text-align: right;">
                         <span class="number" style="font-size: 9px;">[cart7.Mat_Serv_Cost]</span>
@@ -2852,7 +2850,7 @@
       <tr style="height: 10px;">
         <td style="width: 25%; height: 10px; background-color: #ece9dc;" colspan="2">
           <span color="#0070c0" style="color: #0070c0;">
-            <span style="font-size: 11px;">
+            <span style="font-size: 9px;">
               <b>
                 <i>
                   <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Calculation Page Overview</span>
@@ -2864,11 +2862,11 @@
             </span>
           </span>
         </td>
-        <td style="width: 80%; height: 10px; background-color: #ffffff; text-align: center; border-right-color: #ffffff; border-top-color: #ffffff;" colspan="8"></td>
+        <td style="width: 80%; height: 10px; background-color: #ffffff; text-align: center;  border-top-color: #ffffff; border-right-color: #ffffff;" colspan="8"></td>
       </tr>
       <tr style="height: 10px;">
         <td style="width: 10%; height: 10px; background-color: #ece9dc;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">MFN</span>
@@ -2880,7 +2878,7 @@
           </span>
         </td>
         <td style="width: 15%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Description</span>
@@ -2892,7 +2890,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Unit Cost</span>
@@ -2904,7 +2902,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Unit Sales</span>
@@ -2916,7 +2914,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Mat Sales</span>
@@ -2928,7 +2926,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Qty</span>
@@ -2940,7 +2938,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Disc</span>
@@ -2952,7 +2950,7 @@
           </span>
         </td>
         <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">GM</span>
@@ -2964,20 +2962,20 @@
           </span>
         </td>
         <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-          <span style="font-size: 11px;">
+          <span style="font-size: 9px;">
             <em>
               <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Total Cost</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;">Total Kosten</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;">Totale costi</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Coût Total</br>
-                (Mat. + esta.)</span>
+                (Mat. + Presta.)</span>
             </strong>
           </em>
         </span>
       </td>
       <td style="width: 10%; height: 10px; background-color: #ece9dc; text-align: center;">
-        <span style="font-size: 11px;">
+        <span style="font-size: 9px;">
           <em>
             <strong>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;">Total Sales</span>
@@ -3006,16 +3004,20 @@
     <span style="font-size: 7px;">&nbsp;</span>
   </td>
   <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
-    <span style="font-size: 7px;">[folder1.Mat_Cost_Discount]</span>
+    <span class="number" style="font-size: 7px;">[folder1.Mat_Cost_Discount]</span>
   </td>
   <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
-    <span style="font-size: 7px;">[folder1.Mat_Marg_Pct]</span>
+    <span class="number" style="font-size: 7px;">[folder1.Mat_Marg_Pct]</span>
   </td>
   <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
-    <span style="font-size: 7px;">[folder1.Mat_Calc_Tot_Cost]</span>
+    <span data-show-if="folder1.Is_Option = 1" style="font-size: 7px;">(</span>
+    <span class="number" style="font-size: 7px;">[folder1.Tot_Mat_Serv_Cost]</span>
+    <span data-show-if="folder1.Is_Option = 1" style="font-size: 7px;">)</span>
   </td>
   <td class="number" style="width: 10%; height: 21px; background-color: #a1a1a1; text-align: right;">
-    <span style="font-size: 7px;">[folder1.Mat_Calc_Tot_Sales]</span>
+    <span data-show-if="folder1.Is_Option = 1" style="font-size: 7px;">(</span>
+    <span class="number" style="font-size: 7px;">[folder1.Tot_Mat_Serv_Sales]</span>
+    <span data-show-if="folder1.Is_Option = 1" style="font-size: 7px;">)</span>
   </td>
 </tr>
 </tbody>
@@ -3049,11 +3051,14 @@
     <td style="width: 10%; height: 21px; text-align: right;">
       <span class="number" style="font-size: 7px;">[material1.Mat_Marg_Pct]</span>
     </td>
+    <!--change necessary for all material levels -->
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span class="number" style="font-size: 7px;">[material1.Mat_Calc_Tot_Cost]</span>
+      <span data-show-if="material1.Mat_Calc_Tot_Cost gt 0" class="number" style="font-size: 7px;">[material1.Mat_Calc_Tot_Cost]</span>
+      <span data-show-if="material1.Mat_Calc_Tot_Cost lte 0" class="number" style="font-size: 7px;">[material1.Mat_Serv_Cost]</span>
     </td>
     <td style="width: 10%; height: 21px; text-align: right;">
-      <span class="number" style="font-size: 7px;">[material1.Mat_Calc_Tot_Sales]</span>
+      <span data-show-if="material1.Mat_Calc_Tot_Sales gt 0" class="number" style="font-size: 7px;">[material1.Mat_Calc_Tot_Sales]</span>
+      <span data-show-if="material1.Mat_Calc_Tot_Sales lte 0" class="number" style="font-size: 7px;">[material1.Mat_Serv_Sales]</span>
     </td>
   </tr>
 </tbody>
@@ -3080,7 +3085,7 @@
       <td style="width: 10%; height: 21px; text-align: right;"></td>
       <td style="width: 10%; height: 21px; text-align: right;"></td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+        <span class="number" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;"></td>
     </tr>
@@ -3100,16 +3105,20 @@
       <span style="font-size: 7px;">&nbsp;</span>
     </td>
     <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-      <span style="font-size: 7px;">[folder2.Mat_Cost_Discount]</span>
+      <span class="number" style="font-size: 7px;">[folder2.Mat_Cost_Discount]</span>
     </td>
     <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-      <span style="font-size: 7px;">[folder2.Mat_Marg_Pct]</span>
+      <span class="number" style="font-size: 7px;">[folder2.Mat_Marg_Pct]</span>
     </td>
     <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-      <span style="font-size: 7px;">[folder2.Mat_Calc_Tot_Cost]</span>
+<span data-show-if="folder2.Is_Option = 1" style="font-size: 7px;">(</span>
+      <span class="number" style="font-size: 7px;">[folder2.Tot_Mat_Serv_Cost]</span>
+<span data-show-if="folder2.Is_Option = 1" style="font-size: 7px;">)</span>
     </td>
     <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-      <span style="font-size: 7px;">[folder2.Mat_Calc_Tot_Sales]</span>
+<span data-show-if="folder2.Is_Option = 1" style="font-size: 7px;">(</span>
+      <span class="number" style="font-size: 7px;">[folder2.Tot_Mat_Serv_Sales]</span>
+<span data-show-if="folder2.Is_Option = 1" style="font-size: 7px;">)</span>
     </td>
   </tr>
 </tbody>
@@ -3144,16 +3153,18 @@
         <span class="number" style="font-size: 7px;">[material2.Mat_Marg_Pct]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span class="number" style="font-size: 7px;">[material2.Mat_Calc_Tot_Cost]</span>
+        <span data-show-if="material2.Mat_Calc_Tot_Cost gt 0" class="number" style="font-size: 7px;">[material2.Mat_Calc_Tot_Cost]</span>
+        <span data-show-if="material2.Mat_Calc_Tot_Cost lte 0" class="number" style="font-size: 7px;">[material2.Mat_Serv_Cost]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span class="number" style="font-size: 7px;">[material2.Mat_Calc_Tot_Sales]</span>
+        <span data-show-if="material2.Mat_Calc_Tot_Sales gt 0" class="number" style="font-size: 7px;">[material2.Mat_Calc_Tot_Sales]</span>
+        <span data-show-if="material2.Mat_Calc_Tot_Sales lte 0" class="number" style="font-size: 7px;">[material2.Mat_Serv_Sales]</span>
       </td>
     </tr>
   </tbody>
 </table>
 <!--- start of subfolder for material2 -->
-<div data-repeat="materials in material1.cartLines" data-filter="type != 'FO'">
+<div data-repeat="materials in material2.cartLines" data-filter="type != 'FO'">
   <table>
     <tbody>
       <tr style="height: 21px;">
@@ -3174,7 +3185,7 @@
         <td style="width: 10%; height: 21px; text-align: right;"></td>
         <td style="width: 10%; height: 21px; text-align: right;"></td>
         <td style="width: 10%; height: 21px; text-align: right;">
-          <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+          <span class="number" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
         </td>
         <td style="width: 10%; height: 21px; text-align: right;"></td>
       </tr>
@@ -3194,16 +3205,20 @@
         <span style="font-size: 7px;">&nbsp;</span>
       </td>
       <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-        <span style="font-size: 7px;">[folder3.Mat_Cost_Discount]</span>
+        <span class="number" style="font-size: 7px;">[folder3.Mat_Cost_Discount]</span>
       </td>
       <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-        <span style="font-size: 7px;">[folder3.Mat_Marg_Pct]</span>
+        <span class="number" style="font-size: 7px;">[folder3.Mat_Marg_Pct]</span>
       </td>
       <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-        <span style="font-size: 7px;">[folder3.Mat_Calc_Tot_Cost]</span>
+<span data-show-if="folder3.Is_Option = 1" style="font-size: 7px;">(</span>
+        <span class="number" style="font-size: 7px;">[folder3.Tot_Mat_Serv_Cost]</span>
+<span data-show-if="folder3.Is_Option = 1" style="font-size: 7px;">)</span>
       </td>
       <td class="number" style="width: 10%; height: 21px; background-color: #dddddd; text-align: right;">
-        <span style="font-size: 7px;">[folder3.Mat_Calc_Tot_Sales]</span>
+<span data-show-if="folder3.Is_Option = 1" style="font-size: 7px;">(</span>
+        <span class="number" style="font-size: 7px;">[folder3.Tot_Mat_Serv_Sales]</span>
+<span data-show-if="folder3.Is_Option = 1" style="font-size: 7px;">)</span>
       </td>
     </tr>
   </tbody>
@@ -3247,7 +3262,7 @@
     </tbody>
   </table>
   <!--- start of subfolder for material3 -->
-  <div data-repeat="materials in material1.cartLines" data-filter="type != 'FO'">
+  <div data-repeat="materials in material3.cartLines" data-filter="type != 'FO'">
     <table>
       <tbody>
         <tr style="height: 21px;">
@@ -3268,7 +3283,7 @@
           <td style="width: 10%; height: 21px; text-align: right;"></td>
           <td style="width: 10%; height: 21px; text-align: right;"></td>
           <td style="width: 10%; height: 21px; text-align: right;">
-            <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+            <span class="number" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
           </td>
           <td style="width: 10%; height: 21px; text-align: right;"></td>
         </tr>
@@ -3288,16 +3303,20 @@
           <span style="font-size: 7px;">&nbsp;</span>
         </td>
         <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
-          <span style="font-size: 7px;">[folder4.Mat_Cost_Discount]</span>
+          <span class="number" style="font-size: 7px;">[folder4.Mat_Cost_Discount]</span>
         </td>
         <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
-          <span style="font-size: 7px;">[folder4.Mat_Marg_Pct]</span>
+          <span class="number" style="font-size: 7px;">[folder4.Mat_Marg_Pct]</span>
         </td>
         <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
-          <span style="font-size: 7px;">[folder4.Mat_Calc_Tot_Cost]</span>
+<span data-show-if="folder4.Is_Option = 1" style="font-size: 7px;">(</span>
+          <span class="number" style="font-size: 7px;">[folder4.Tot_Mat_Serv_Cost]</span>
+<span data-show-if="folder4.Is_Option = 1" style="font-size: 7px;">)</span>
         </td>
         <td class="number" style="width: 10%; height: 21px; background-color: #eeeeee; text-align: right;">
-          <span style="font-size: 7px;">[folder4.Mat_Calc_Tot_Sales]</span>
+<span data-show-if="folder4.Is_Option = 1" style="font-size: 7px;">(</span>
+          <span class="number" style="font-size: 7px;">[folder4.Tot_Mat_Serv_Sales]</span>
+<span data-show-if="folder4.Is_Option = 1" style="font-size: 7px;">)</span>
         </td>
       </tr>
     </tbody>
@@ -3341,7 +3360,7 @@
       </tbody>
     </table>
     <!--- start of subfolder for material4 -->
-    <div data-repeat="materials in material1.cartLines" data-filter="type != 'FO'">
+    <div data-repeat="materials in material4.cartLines" data-filter="type != 'FO'">
       <table style="height: 21px;">
         <tbody>
           <tr style="height: 21px;">
@@ -3362,7 +3381,7 @@
             <td style="width: 10%; height: 21px; text-align: right;"></td>
             <td style="width: 10%; height: 21px; text-align: right;"></td>
             <td style="width: 10%; height: 21px; text-align: right;">
-              <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+              <span class="number" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
             </td>
             <td style="width: 10%; height: 21px; text-align: right;"></td>
           </tr>
@@ -3382,16 +3401,20 @@
             <span style="font-size: 7px;">&nbsp;</span>
           </td>
           <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
-            <span style="font-size: 7px;">[folder5.Mat_Cost_Discount]</span>
+            <span class="number" style="font-size: 7px;">[folder5.Mat_Cost_Discount]</span>
           </td>
           <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
-            <span style="font-size: 7px;">[folder5.Mat_Marg_Pct]</span>
+            <span class="number" style="font-size: 7px;">[folder5.Mat_Marg_Pct]</span>
           </td>
           <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
-            <span style="font-size: 7px;">[folder5.Mat_Calc_Tot_Cost]</span>
+<span data-show-if="folder5.Is_Option = 1" style="font-size: 7px;">(</span>
+            <span class="number" style="font-size: 7px;">[folder5.Tot_Mat_Serv_Cost]</span>
+<span data-show-if="folder5.Is_Option = 1" style="font-size: 7px;">)</span>
           </td>
           <td class="number" style="width: 10%; height: 21px; background-color: #f8f8f8; text-align: right;">
-            <span style="font-size: 7px;">[folder5.Mat_Calc_Tot_Sales]</span>
+<span data-show-if="folder5.Is_Option = 1" style="font-size: 7px;">(</span>
+            <span class="number" style="font-size: 7px;">[folder5.Tot_Mat_Serv_Sales]</span>
+<span data-show-if="folder5.Is_Option = 1" style="font-size: 7px;">)</span>
           </td>
         </tr>
       </tbody>
@@ -3435,7 +3458,7 @@
         </tbody>
       </table>
       <!--- start of subfolder for material5 -->
-      <div data-repeat="materials in material1.cartLines" data-filter="type != 'FO'">
+      <div data-repeat="materials in material5.cartLines" data-filter="type != 'FO'">
         <table>
           <tbody>
             <tr style="height: 21px;">
@@ -3456,7 +3479,7 @@
               <td style="width: 10%; height: 21px; text-align: right;"></td>
               <td style="width: 10%; height: 21px; text-align: right;"></td>
               <td style="width: 10%; height: 21px; text-align: right;">
-                <span class="html" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
+                <span class="number" style="font-size: 7px;">[materials.Mat_Calc_Tot_Cost]</span>
               </td>
               <td style="width: 10%; height: 21px; text-align: right;"></td>
             </tr>
