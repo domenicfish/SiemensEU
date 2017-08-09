@@ -96,7 +96,7 @@
         </em>
       </td>
       <td style="height: 21px; border-color: #000000; width: 30%;">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Resp_Sales_Rep__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Resp_Sales_Rep__c" data-id="1502306191130" data-type="string" data-textcase=""></span>
       </td>
     </tr>
     <tr style="border-color: #000000; height: 21px;">
@@ -222,7 +222,7 @@
         </em>
       </td>
       <td style="height: 21px; border-color: #000000; width: 30%;">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Submission_date__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Submission_date__c" data-id="1502306188859" data-type="string" data-textcase=""></span>
       </td>
     </tr>
     <tr style="border-color: #000000; height: 21px;">
@@ -250,7 +250,7 @@
         </em>
       </td>
       <td style="height: 21px; border-color: #000000; width: 30%;">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Follow_Up_Date__c" data-id="1498599199088" data-type="date" data-format="%d.%m.%Y"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Follow_Up_Date__c" data-id="1498599199088" data-type="date" data-format="%d.%m.%Y">Invalid date</span>
       </td>
     </tr>
   </tbody>
@@ -270,7 +270,7 @@
         </em>
       </td>
       <td style="width: 31%; height: 21px; border-color: #000000;" colspan="3">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_IFA__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_IFA__c" data-id="1502306158813" data-type="string" data-textcase="">COM-AEMA-PFZZC2</span>
       </td>
       <td style="width: 10%; height: 21px; border-color: #000000;">
         <em>
@@ -283,7 +283,7 @@
         </em>
       </td>
       <td style="height: 21px; border-color: #000000; width: 29%;" colspan="3">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_IFA__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_IFA__c" data-id="1502306179466" data-type="string" data-textcase="">0218151969</span>
       </td>
     </tr>
     <tr style="border-color: #000000; height: 21px;">
@@ -298,7 +298,7 @@
         </em>
       </td>
       <td style="width: 31%; height: 21px; border-color: #000000;" colspan="3">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_Short_name__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_Short_name__c" data-id="1502306171839" data-type="string" data-textcase="">ZZZ A DEFINIR ZZZ</span>
       </td>
       <td style="width: 10%; height: 21px; border-color: #000000;">
         <em>
@@ -311,7 +311,7 @@
         </em>
       </td>
       <td style="height: 21px; border-color: #000000; width: 29%;" colspan="3">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Short_name__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Short_name__c" data-id="1502306181168" data-type="string" data-textcase="">CHAMPAGNE PARC AUTO</span>
       </td>
     </tr>
     <tr style="border-color: #000000; height: 21px;">
@@ -326,7 +326,7 @@
         </em>
       </td>
       <td style="width: 31%; height: 21px; border-color: #000000;" colspan="3">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cont_First_name__c"></span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cont_Last_name__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cont_First_name__c" data-id="1502306175882" data-type="string" data-textcase="">Achille</span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cont_Last_name__c" data-id="1502306177410" data-type="string" data-textcase="">TALON</span>
       </td>
       <td style="width: 10%; height: 21px; border-color: #000000;">
         <em>
@@ -339,7 +339,7 @@
         </em>
       </td>
       <td style="height: 21px; border-color: #000000; width: 29%;" colspan="3">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_First_name__c"></span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_Last_name__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_First_name__c" data-id="1502306183079" data-type="string" data-textcase="">Eric</span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_Last_name__c" data-id="1502306184657" data-type="string" data-textcase="">GRIMONT</span>
       </td>
     </tr>
     <tr style="border-color: #000000; height: 21px;" data-repeat="customer in Accounts__r">
@@ -385,7 +385,7 @@
         </em>
       </td>
       <td style="width: 72%; height: 21px; border-color: #000000;" colspan="7">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_name__c"></span>
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_name__c" data-id="1502306219383" data-type="string" data-textcase="">TRAPIL ODC 1 CHALONS 2</span>
       </td>
     </tr>
   </tbody>
@@ -515,7 +515,7 @@
         </span>
       </td>
     </tr>
-    <tr style="height: 21px;">
+    <tr style="height: 21px;" data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
@@ -527,98 +527,34 @@
         </em>
       </td>
       <td style="width: 11%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_tot_salesprice_calc__c, :unit=&gt;'')"
-          data-number="custom1__c_tot_salesprice_calc__c"
-          data-name="custom1__c_tot_salesprice_calc__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">27,457.20</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_SalesPrice_Calc__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_tot_marginpercent_calc__c, :unit=&gt;'')"
-          data-number="custom1__c_tot_marginpercent_calc__c"
-          data-name="custom1__c_tot_marginpercent_calc__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">52.70</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_MarginPercent_Calc__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span class="inline-variable mceNonEditable" data-name="Custom1__c_Tot_DiscountPercent_Calc__c" data-id="1502198110590" data-type="number" data-precision="2" data-unit="" data-delimiter="">19.06</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_DiscountPercent_Calc__c]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_tot_cost_calc__c, :unit=&gt;'')"
-          data-number="custom1__c_tot_cost_calc__c"
-          data-name="custom1__c_tot_cost_calc__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">12,987.11</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_Cost_Calc__c]</span>
       </td>
       <td style="width: 11%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(mo_cost_price_own, :unit=&gt;'')"
-          data-number="mo_cost_price_own"
-          data-name="mo_cost_price_own"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">9,822.31</span>
+        <span class="number">[MO_Cost_Price_Own]</span>
       </td>
       <td style="width: 11%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(mo_lab_serv_sp, :unit=&gt;'')"
-          data-number="mo_lab_serv_sp"
-          data-name="mo_lab_serv_sp"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">2,426.00</span>
+        <span class="number">[MO_LAB_Serv_SP]</span>
       </td>
       <td style="width: 11%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(mo_cost_price_lab, :unit=&gt;'')"
-          data-number="mo_cost_price_lab"
-          data-name="mo_cost_price_lab"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">738.80</span>
+        <span class="number">[MO_Cost_Price_Lab]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(mo_sub_serv, :unit=&gt;'')"
-          data-number="mo_sub_serv"
-          data-name="mo_sub_serv"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">0.00</span>
+        <span class="number">[MO_SUB_Serv]</span>
       </td>
       <td style="width: 12%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_tot_cost_calc__c - mo_lab_serv_sp - mo_sub_serv - mo_cost_price_lab - mo_lab_serv_ct7 - (mo_cost_price_own - mo_project_promotion), :unit=&gt;'')"
-          data-number="custom1__c_tot_cost_calc__c - mo_lab_serv_sp - mo_sub_serv - mo_cost_price_lab - mo_lab_serv_ct7 - "
-          data-name="custom1__c_tot_cost_calc__c - mo_lab_serv_sp - mo_sub_serv - mo_cost_price_lab - mo_lab_serv_ct7 - "
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">-0.00</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_Cost_Calc__c - (MO_LAB_Serv_SP - MO_SUB_Serv - MO_Cost_Price_Lab - MO_LAB_Serv_CT7 - MO_Cost_Price_Own - MO_Project_Promotion)]</span>
       </td>
     </tr>
-    <tr style="height: 21px;">
+    <tr style="height: 21px;" data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
@@ -631,19 +567,11 @@
       </td>
       <td style="width: 11%; height: 21px; text-align: right;" colspan="3"></td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_project_promotion__c, :unit=&gt;'')"
-          data-number="custom1__c_project_promotion__c"
-          data-name="custom1__c_project_promotion__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2"></span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Project_Promotion__c]</span>
       </td>
       <td style="width: 11%; height: 21px; border-right-color: #ffffff; border-bottom-color: #ffffff;" colspan="5"></td>
     </tr>
-    <tr style="height: 21px;">
+    <tr style="height: 21px;" data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
@@ -655,41 +583,13 @@
         </em>
       </td>
       <td style="width: 11%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_mo_sales_price__c, :unit=&gt;'')"
-          data-number="custom1__c_mo_sales_price__c"
-          data-name="custom1__c_mo_sales_price__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2"></span>
+        <span class="number">[suboffer.Main_Offer_Name__r.MO_Sales_Price__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_project_margin__c, :unit=&gt;'')"
-          data-number="custom1__c_project_margin__c"
-          data-name="custom1__c_project_margin__c"
-          data-type="number"
-          data-delimiter=","
-          data-precision="2"
-          data-id="1502198304490"
-          data-unit=""></span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Project_Margin__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_project_discount__c, :unit=&gt;'')"
-          data-number="custom1__c_project_discount__c"
-          data-name="custom1__c_project_discount__c"
-          data-type="number"
-          data-delimiter=","
-          data-precision="2"
-          data-id="1502198121883"
-          data-unit=""></span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Project_Discount__c]</span>
       </td>
       <td style="width: 65%; height: 21px; border-right-color: #ffffff; border-bottom-color: #ffffff;" colspan="6"></td>
     </tr>
@@ -760,7 +660,7 @@
         </span>
       </td>
     </tr>
-    <tr style="height: 21px;">
+    <tr style="height: 21px;" data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
@@ -772,53 +672,19 @@
         </em>
       </td>
       <td style="width: 11%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_so_sales_price__c, :unit=&gt;'')"
-          data-number="custom1__c_so_sales_price__c"
-          data-name="custom1__c_so_sales_price__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">27,457.20</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.SO_Sales_Price__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_so_total_margin__c, :unit=&gt;'')"
-          data-number="custom1__c_so_total_margin__c"
-          data-name="custom1__c_so_total_margin__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">52.70</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.SO_Total_Margin__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_so_total_discount__c, :unit=&gt;'')"
-          data-number="custom1__c_so_total_discount__c"
-          data-name="custom1__c_so_total_discount__c"
-          data-type="number"
-          data-delimiter=","
-          data-precision="2"
-          data-id="1502198139573"
-          data-unit=""></span>
+        <span class="number">[suboffer.Main_Offer_Name__r.SO_Total_Discount__c]</span>
       </td>
-      <td style="width: 10%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_so_cost_price__c, :unit=&gt;'')"
-          data-number="custom1__c_so_cost_price__c"
-          data-name="custom1__c_so_cost_price__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">12,987.11</span>
+      <td style="width: 6%; height: 21px; text-align: right;">
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_Cost_Calc__c]</span>
       </td>
     </tr>
-    <tr style="height: 21px;">
+    <tr style="height: 21px;" data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
@@ -831,18 +697,10 @@
       </td>
       <td style="width: 11%; height: 21px;" colspan="3"></td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(mo_project_promotion, :unit=&gt;'')"
-          data-number="mo_project_promotion"
-          data-name="mo_project_promotion"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">0.00</span>
+        <span class="number">[MO_Project_Promotion]</span>
       </td>
     </tr>
-    <tr style="height: 21px;">
+    <tr style="height: 21px;" data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
@@ -854,50 +712,16 @@
         </em>
       </td>
       <td style="width: 11%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_so_sales_price__c, :unit=&gt;'')"
-          data-number="custom1__c_so_sales_price__c"
-          data-name="custom1__c_so_sales_price__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">27,457.20</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.SO_Sales_Price__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_tot_marginpercent_calc__c, :unit=&gt;'')"
-          data-number="custom1__c_tot_marginpercent_calc__c"
-          data-name="custom1__c_tot_marginpercent_calc__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">52.70</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_MarginPercent_Calc__c]</span>
       </td>
       <td style="width: 6%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_so_total_discount__c, :unit=&gt;'')"
-          data-number="custom1__c_so_total_discount__c"
-          data-name="custom1__c_so_total_discount__c"
-          data-type="number"
-          data-delimiter=","
-          data-precision="2"
-          data-unit=""
-          data-id="1502198150560"></span>
+        <span class="number">[suboffer.Main_Offer_Name__r.SO_Total_Discount__c]</span>
       </td>
       <td style="width: 10%; height: 21px; text-align: right;">
-        <span
-          class="inline-variable mceNonEditable"
-          data-method="number_to_currency"
-          data-expression="number_to_currency(custom1__c_tot_cost_calc__c, :unit=&gt;'')"
-          data-number="custom1__c_tot_cost_calc__c"
-          data-name="custom1__c_tot_cost_calc__c"
-          data-type="currency"
-          data-delimiter=","
-          data-precision="2">12,987.11</span>
+        <span class="number">[suboffer.Main_Offer_Name__r.Tot_Cost_Calc__c]</span>
       </td>
     </tr>
   </tbody>
