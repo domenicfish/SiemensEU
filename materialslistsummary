@@ -863,7 +863,11 @@ comment out--->
         </strong>
       </td>
     </tr>
-    <tr data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c" data-show-if="suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c gt 0 OR suboffer.Main_Offer_Name__r.Project_Discount__c gt 0" style="height: 21px; border-bottom: 1px solid #000000;">
+    <tr
+      data-repeat="suboffer in Sub_Offers__r"
+      data-group-by="Main_Offer_Name__c"
+      data-show-if="suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c gt 0 OR suboffer.Main_Offer_Name__r.Project_Discount__c gt 0"
+      style="height: 21px; border-bottom: 1px solid #000000;">
       <td style="height: 21px;" colspan="3">
         <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Projektrabatt</span>
         <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
@@ -885,7 +889,7 @@ comment out--->
           <span class="number" data-show-if="suboffer.Main_Offer_Name__r.Project_Discount__c IS NOT BLANK OR suboffer.Main_Offer_Name__r.Project_Discount__c gt 0">
             <!--will eventually use number to currency or persistent preview editor once fix to maintain correct delimiter has been fixed -->
             <!--{{number_to_currency(custom1__c_project_discount__c, :precision=&gt;2, :unit=&gt;'')}}-->
-              [suboffer.Main_Offer_Name__r.Project_Discount__c]
+            [suboffer.Main_Offer_Name__r.Project_Discount__c]
           </span>
         </span>
       </td>
@@ -893,14 +897,14 @@ comment out--->
         <span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
           <!--will eventually use number to currency or persistent preview editor once fix to maintain correct delimiter has been fixed -->
           <!--{{number_to_currency((custom1__c_so_sales_price__c - custom1__c_tot_salesprice_calc__c), :precision=&gt;2, :unit=&gt;'')}}-->
-            <span data-show-if="suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c gt 0">
-              <span class="number">[suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c]</span>
+          <span data-show-if="suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c gt 0">
+            <span class="number">[suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c]</span>
           </span>
         </span>
       </td>
       <td style="width: 110px; height: 21px; text-align: right;"></td>
     </tr>
-    <tr  style="height: 21px;">
+    <tr style="height: 21px;">
       <td style="height: 21px;" colspan="5">
         <strong>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total (exkl. MwSt)</span>
@@ -1016,15 +1020,17 @@ comment out--->
     </tr>
   </tbody>
 </table>
-
-<!-- Add three Optional statements after Joe has finished the Has_Option Xpath expression:
-<p data-show-if="has_option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'>
-  Die Preise in Klammern sind Optionen und/oder Varianten. Sie sind im Totalbetrag  nicht enthalten!
+<p></p>
+<div data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
+<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">
+  <em>Die Preise in Klammern sind Optionen und/oder Varianten. Sie sind im Totalbetrag nicht enthalten!</em>
 </p>
-<p data-show-if="has_option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'>
-  Prix des options et variantes entre parenthèses non compris dans le montant total!
+<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">
+  <em>Prix des options et variantes entre parenthèses non compris dans le montant total!</em>
 </p>
-<p data-show-if="has_option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'>
-  I prezzi nelle parentesi sono opzioni e/o varianti. Non sono compresi nel prezzo totale!
+<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">
+  <em>I prezzi nelle parentesi sono opzioni e/o varianti. Non sono compresi nel prezzo totale!</em>
 </p>
--->
+<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">
+</p>
+</div>
