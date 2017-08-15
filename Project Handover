@@ -8,7 +8,7 @@
         <span style="color: #ffffff; font-size: 13px;">Printdate</span>
       </th>
       <th style="width: 118px; background-color: #939393; height: 16px;">
-        <span class="inline-variable mceNonEditable" data-name="proposal_published_date" data-type="date" data-format="%d.%m.%Y" style="color: #ffffff;">25.05.2017</span>&nbsp;</th>
+        <span class="inline-variable mceNonEditable" data-name="proposal_published_date" data-type="date" data-format="%d.%m.%Y" style="color: #ffffff;"></span></th>
     </tr>
   </thead>
   <tbody>
