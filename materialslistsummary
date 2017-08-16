@@ -66,7 +66,7 @@
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Korting</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Alennus</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Rabatt</span>
-            %
+            </br>%
           </span>
 
           <!--discount % header for net -->
@@ -143,7 +143,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris i alt eksl. Moms</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum nettopris</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute; čist&aacute; cena</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. total Neto</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. total</br> Neto</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix total</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
@@ -188,21 +188,26 @@
         <!-- gross price column -->
         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 100px; height: 21px; text-align: right; vertical-align: middle; " class="number">
           <span data-hide-if="totalcells.TC_Mat_Tot_Org_Sales lte 0">
-            <span style="text-align: right; vertical-align: middle;" class="number" data-hide-if="Custom1__c_MO_Country_Origin__c LIKE 'CH' AND Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Gross'">[totalcells.TC_Mat_Tot_Org_Sales]</span>
+            <span style="text-align: right; vertical-align: middle;" class="number" data-hide-if="Custom1__c_MO_Country_Origin__c LIKE 'CH' OR Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Gross'">[totalcells.TC_Mat_Tot_Org_Sales]</span>
           </span>
         </td>
         <!--blank column -->
         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" style="width: 30px; height: 21px; text-align: right;"></td>
         <!--disc % column -->
-        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" style="width: 60px; height: 21px; text-align: right; vertical-align: middle; " class="number">
+        <td data-show-if="Custom1__c_eneric_DocGen__r_Price_Summary__c LIKE 'Extended'" style="width: 60px; height: 21px; text-align: right; vertical-align: middle; " class="number">
           <span data-hide-if="suboffer.TC_Mat_Disc_Pct__c lte 0">
             <span style="text-align: right; vertical-align: middle; " data-hide-if="Custom1__c_MO_Country_Origin__c LIKE 'CH'" class="number">[suboffer.TC_Mat_Disc_Pct__c]</span>
           </span>
         </td>
-        <!-- disc amount column -->
+        <!-- discount amount column -->
         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 80px; height: 21px; text-align: right;" class="number">
           <span data-hide-if="suboffer.TC_Mat_Disc_Pct__c lte 0">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended' AND Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number">[totalcells.TC_Mat_Tot_Org_Sales - suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
+<!--gross price discount amount-->
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number">[totalcells.TC_Mat_Tot_Org_Sales - suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
+<!--net price discount amount-->
+<span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
+<span data-show-if="suboffer.SQUserMatDiscountPercent__c IS NOT BLANK OR suboffer.SQUserMatDiscount__c IS NOT BLANK OR suboffer.SQTotalUserMatPrice__c IS NOT BLANK Custom1__c_Project_Discount__c gt 0 OR Custom1__c_MO_Sales_Price__c gt 0 OR Custom1__c_SO_Total_Margin__c gt 0">[totalcells.TC_Mat_Tot_Org_Sales - suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
+</span>
           </span>
         </td>
         <!-- total net price column -->
