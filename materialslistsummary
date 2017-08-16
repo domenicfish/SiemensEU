@@ -56,7 +56,7 @@
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Sleva</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__cq = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Rabatt</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso</span>
@@ -76,7 +76,7 @@
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Sleva</span>
-              <span data-show-if="Custom1__c_MO_Country_Origin__cq = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Rabatt</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso</span>
@@ -101,7 +101,7 @@
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Sleva</span>
-            <span data-show-if="Custom1__c_MO_Country_Origin__cq = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
+            <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Rabatt</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso</span>
@@ -122,7 +122,7 @@
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Rabat</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Rabatt</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Sleva</span>
-              <span data-show-if="Custom1__c_MO_Country_Origin__cq = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
+              <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Descuento</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Rabatt</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise</span>
               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Ribasso</span>
@@ -1022,15 +1022,14 @@ comment out--->
 </table>
 <p></p>
 <div data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
-<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">
-  <em>Die Preise in Klammern sind Optionen und/oder Varianten. Sie sind im Totalbetrag nicht enthalten!</em>
-</p>
-<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">
-  <em>Prix des options et variantes entre parenthèses non compris dans le montant total!</em>
-</p>
-<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">
-  <em>I prezzi nelle parentesi sono opzioni e/o varianti. Non sono compresi nel prezzo totale!</em>
-</p>
-<p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">
-</p>
+  <p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">
+    <em>Die Preise in Klammern sind Optionen und/oder Varianten. Sie sind im Totalbetrag nicht enthalten!</em>
+  </p>
+  <p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">
+    <em>Prix des options et variantes entre parenthèses non compris dans le montant total!</em>
+  </p>
+  <p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">
+    <em>I prezzi nelle parentesi sono opzioni e/o varianti. Non sono compresi nel prezzo totale!</em>
+  </p>
+  <p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'"></p>
 </div>
