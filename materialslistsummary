@@ -153,7 +153,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale netto prijs</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Netto yhteens&auml;</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt netto pris</span>
-          {{Custom1__c_CurrencyIsoCode}}</th>
+          </br>{{Custom1__c_CurrencyIsoCode}}</th>
       </tr>
     </thead>
   </table>
