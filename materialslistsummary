@@ -287,7 +287,11 @@
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Software/Lizenzen</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Logiciel/Licence</span>
             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Software/Licenza</span>
+<<<<<<< HEAD
 </td>
+=======
+          </td>
+>>>>>>> 514bd54ad97d717d80eedf926f7b188676d523c0
           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_SWL]</td>
           <td style="width: 30px; height: 21px; text-align: right;"></td>
           <td style="width: 60px; height: 21px; text-align: right; vertical-align: middle;"></td>
