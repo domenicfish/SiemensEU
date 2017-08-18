@@ -9,11 +9,35 @@
       <tr style="height: 25px; border-bottom: 1px solid #000000;">
         <!--position header-->
         <th style="height: 25px; width: 10%; background-color: #ffffff; vertical-align: top; text-align: left;" data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'">Position
-          <!-- commenting out extra languages because IO List only uses EN for now          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Position</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Position</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Posisjon</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Pozice</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Posici&oacute;n</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Position</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Posizione</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Kohta</span>          -->
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Position</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Position</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Posisjon</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Pozice</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Posici&oacute;n</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Position</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Posizione</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Position</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Positie</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Kohta</span>
         </th>
         <!--description header-->
         <th style="height: 25px; width: 34%; background-color: #ffffff; vertical-align: top; text-align: left;">Description
-          <!-- commenting out extra languages because IO List only uses EN for now          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Reference</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Materiale</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Referanse</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Odkaz</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Referencia</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'"></span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'"></span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'"></span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Référence</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Referentie</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Référence</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Referentie</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Viite</span>          -->
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Reference</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Materiale</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Referanse</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Odkaz</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Referencia</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'"></span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'"></span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'"></span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Référence</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Referentie</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Référence</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Referentie</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Viite</span>
         </th>
         <!-- AI header -->
         <th style="height: 25px; width: 4%; background-color: #ffffff; border-color: #000000; border-width: 1px; vertical-align: top; text-align: center;">AI</th>
@@ -29,15 +53,62 @@
         <th style="height: 25px; width: 14%; background-color: #ffffff; vertical-align: top; text-align: left; padding-left: 5px;" data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">Reference</th>
         <!--quantity header-->
         <th style="height: 25px; width: 4%; background-color: #ffffff; vertical-align: top; text-align: right;">Qty
-          <!-- commenting out extra languages because IO List only uses EN for now          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Qty</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Antal</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Antall</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Množstv&iacute;</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Cant.</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Stk.</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Qta</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Aantal</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Aantal</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lukumäärä</span>          -->
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Qty</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Antal</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Antall</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Množstv&iacute;</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Cant.</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Stk.</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Qta</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Aantal</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qté</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Aantal</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lukumäärä</span>
         </th>
         <!--net price header-->
         <th style="height: 25px; width: 9%; background-color: #ffffff; vertical-align: top; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">Net<br/>price
-          <!-- commenting out extra languages because IO List only uses EN for now          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Net<br/>          price</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris          <br/>eksl. Moms</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Nettopris</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Čist&aacute;          <br/>cena</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. unit<br/>          Neto</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Preis</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix unité</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prezzo</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix net</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Netto prijs</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix net</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Netto prijs</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Nettohinta</span><br/><span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class='inline-variable mceNonEditable' contenteditable='false' data-name='Custom1__c_CurrencyIsoCode'>EUR</span>)</span>          -->
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Net<br/>
+            price</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris
+            <br/>eksl. Moms</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Nettopris</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Čist&aacute;
+            <br/>cena</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. unit<br/>
+            Neto</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Preis</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix unité</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prezzo</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix net</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Netto prijs</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix net</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Netto prijs</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Nettohinta</span><br/>
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class='inline-variable mceNonEditable' contenteditable='false' data-name='Custom1__c_CurrencyIsoCode'>EUR</span>)</span>
         </th>
         <!--total net price header-->
         <th style="height: 25px; width: 9%; background-color: #ffffff; vertical-align: top; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">Total net<br/>price
-          <!-- temporary commenting out other languages          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total net          <br/>price</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris i alt          <br/>eksl. Moms</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum          <br/>nettopris</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute;          <br/>čist&aacute; cena</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. total          <br/>Neto</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix Total</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix<br/>total net</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale<br/>netto prijs</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix<br/>total net</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale<br/>netto prijs</span><span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Netto<br/>yhteensä</span><br/><span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class='inline-variable mceNonEditable' contenteditable='false' data-name='Custom1__c_CurrencyIsoCode'>EUR</span>)</span>          -->
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total net
+            <br/>price</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris i alt
+            <br/>eksl. Moms</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Sum
+            <br/>nettopris</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Celkov&aacute;
+            <br/>čist&aacute; cena</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">P. total
+            <br/>Neto</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix Total</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix<br/>total net</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale<br/>netto prijs</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix<br/>total net</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale<br/>netto prijs</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Netto<br/>yhteensä</span><br/>
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class='inline-variable mceNonEditable' contenteditable='false' data-name='Custom1__c_CurrencyIsoCode'>EUR</span>)</span>
         </th>
       </tr>
     </thead>
@@ -46,7 +117,7 @@
       <tr>
         <td colspan="11" style="margin: 0; padding: 0;">
           <!-- comment: the first data-repeat above will loop through Sub_Offers__r array. The data-repeat here is a folder1 data-repeat that will loop through the cartLines array associated to the affiliated cart -->
-          <div data-repeat="folder1 in first.cart.cartLines" data-filter="type = 'FO'" >
+          <div data-repeat="folder1 in first.cart.cartLines" data-filter="type = 'FO'">
             <table style="width: 100%; margin: 5px 0px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder1.Is_Service_Folder = 1">
               <tbody>
                 <tr>
@@ -398,7 +469,7 @@
               </div>
             </div>
             <!--start of folder2 -->
-            <div data-repeat="folder2 in folder1.cartLines" data-filter="type = 'FO'" >
+            <div data-repeat="folder2 in folder1.cartLines" data-filter="type = 'FO'">
               <table style="width: 100%; margin: 5px 0px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder2.Is_Service_Folder = 1">
                 <tbody>
                   <tr>
@@ -761,7 +832,7 @@
                 </div>
               </div>
               <!-- folder3 -->
-              <div data-repeat="folder3 in folder2.cartLines" data-filter="type = 'FO'" >
+              <div data-repeat="folder3 in folder2.cartLines" data-filter="type = 'FO'">
                 <table style="width: 100%; margin: 5px 0px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder3.Is_Service_Folder = 1">
                   <tbody>
                     <tr>
@@ -1132,7 +1203,7 @@
                   </div>
                 </div>
                 <!--folder 4-->
-                <div data-repeat="folder4 in folder3.cartLines" data-filter="type = 'FO'" >
+                <div data-repeat="folder4 in folder3.cartLines" data-filter="type = 'FO'">
                   <table style="width: 100%; margin: 5px 0px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder4.Is_Service_Folder = 1">
                     <tbody>
                       <tr>
@@ -1495,7 +1566,7 @@
                     </div>
                   </div>
                   <!--folder 5-->
-                  <div data-repeat="folder5 in folder4.cartLines" data-filter="type = 'FO'" >
+                  <div data-repeat="folder5 in folder4.cartLines" data-filter="type = 'FO'">
                     <table style="width: 100%; margin: 5px 0px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder5.Is_Service_Folder = 1">
                       <tbody>
                         <tr>
