@@ -8,7 +8,7 @@
     <thead style="margin-bottom: 100px;">
       <tr style="height: 25px; border-bottom: 1px solid #000000;">
         <!--position header-->
-        <th style="height: 25px; width: 10%; background-color: #ffffff; vertical-align: top; text-align: left;" data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'">Position
+        <th style="height: 25px; width: 10%; background-color: #ffffff; vertical-align: top; text-align: left;" data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Position</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Position</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Posisjon</span>
@@ -24,7 +24,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Kohta</span>
         </th>
         <!--description header-->
-        <th style="height: 25px; width: 34%; background-color: #ffffff; vertical-align: top; text-align: left;">Description
+        <th style="height: 25px; width: 34%; background-color: #ffffff; vertical-align: top; text-align: left;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Reference</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Materiale</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Referanse</span>
@@ -50,9 +50,24 @@
         <!-- COM header -->
         <th style="height: 25px; width: 4%; background-color: #ffffff; border-color: #000000; border-width: 1px; vertical-align: top; text-align: center;">COM</th>
         <!-- reference header -->
-        <th style="height: 25px; width: 14%; background-color: #ffffff; vertical-align: top; text-align: left; padding-left: 5px;" data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">Reference</th>
+        <th style="height: 25px; width: 14%; background-color: #ffffff; vertical-align: top; text-align: left; padding-left: 5px;" data-show-if="Custom1__c_Generic_DocGen__r_Item_Description__c LIKE 'MFN'">
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'"></span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'"></span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'"></span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Reference</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Materiale</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Referanse</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'">Odkaz</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'">Referencia</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Referentie</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">R&eacute;f&eacute;rence</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">R&eacute;f&eacute;rence</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Referentie</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Viite</span>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Referens</span>
+        </th>
         <!--quantity header-->
-        <th style="height: 25px; width: 4%; background-color: #ffffff; vertical-align: top; text-align: right;">Qty
+        <th style="height: 25px; width: 4%; background-color: #ffffff; vertical-align: top; text-align: right;">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Qty</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Antal</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'">Antall</span>
@@ -68,7 +83,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Lukumäärä</span>
         </th>
         <!--net price header-->
-        <th style="height: 25px; width: 9%; background-color: #ffffff; vertical-align: top; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">Net<br/>price
+        <th style="height: 25px; width: 9%; background-color: #ffffff; vertical-align: top; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Net<br/>
             price</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris
@@ -89,7 +104,7 @@
           <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class='inline-variable mceNonEditable' contenteditable='false' data-name='Custom1__c_CurrencyIsoCode'>EUR</span>)</span>
         </th>
         <!--total net price header-->
-        <th style="height: 25px; width: 9%; background-color: #ffffff; vertical-align: top; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">Total net<br/>price
+        <th style="height: 25px; width: 9%; background-color: #ffffff; vertical-align: top; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Total net
             <br/>price</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'">Pris i alt
