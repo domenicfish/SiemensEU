@@ -203,9 +203,9 @@ Neto
 </tr>
 
 <!--non Swiss material row-->
-<tr data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short' OR suboffer.TC_Mat_Disc_Pct__c lte 0 OR Custom1__c_MO_Country_Origin__c = 'CH' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'" style="height: 21px;">
+<tr data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c NLIKE 'Short' AND Custom1__c_MO_Country_Origin__c != 'CH'" >
 <!---material/reference column -->
-<td style="height: 21px;">
+<td data-hide-if="suboffer.SO_Tot_User_Change__c gte 0 AND suboffer.TC_Mat_Disc_Pct__c lte 0" style="height: 21px;">
 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Apparate</span>
 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Mat&eacute;riel</span>
 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Mat&eacute;riel</span>
@@ -222,28 +222,31 @@ Neto
 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Material</span>
 </td>
 <!-- gross price column -->
-<td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 100px; height: 21px; text-align: right; vertical-align: middle; " class="number">
+<td data-hide-if="suboffer.SO_Tot_User_Change__c gte 0 AND suboffer.TC_Mat_Disc_Pct__c lte 0" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 100px; height: 21px; text-align: right; vertical-align: middle; " class="number">
 <span data-hide-if="totalcells.TC_Mat_Tot_Org_Sales lte 0">
 <span style="text-align: right; vertical-align: middle;" class="number" data-hide-if="Custom1__c_MO_Country_Origin__c LIKE 'CH' OR Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Gross'">[totalcells.TC_Mat_Tot_Org_Sales]</span>
 </span>
 </td>
 <!--blank column -->
-<td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" style="width: 30px; height: 21px; text-align: right;"></td>
+<td data-hide-if="suboffer.SO_Tot_User_Change__c gte 0 AND suboffer.TC_Mat_Disc_Pct__c lte 0" style="width: 30px; height: 21px; text-align: right;"></td>
 <!--disc % column -->
-<td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" style="width: 60px; height: 21px; text-align: right; vertical-align: middle; " class="number">
+<td data-hide-if="suboffer.SO_Tot_User_Change__c gte 0 AND suboffer.TC_Mat_Disc_Pct__c lte 0" style="width: 60px; height: 21px; text-align: right; vertical-align: middle; " class="number">
 <span data-hide-if="suboffer.TC_Mat_Disc_Pct__c lte 0">
 <span style="text-align: right; vertical-align: middle;" class="number">[suboffer.TC_Mat_Disc_Pct__c]</span>
 </span>
 </td>
 <!-- discount amount column -->
-<td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 80px; height: 21px; text-align: right;" class="number">
+<td data-hide-if="suboffer.SO_Tot_User_Change__c gte 0 AND suboffer.TC_Mat_Disc_Pct__c lte 0" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 80px; height: 21px; text-align: right;" class="number">
 <span data-hide-if="suboffer.TC_Mat_Disc_Pct__c lte 0">
 <!--gross price discount amount-->
-<span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number">[totalcells.TC_Mat_Tot_Org_Sales - suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
+<span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'">
+-
+<span class="number">[totalcells.TC_Mat_Tot_Org_Sales - suboffer.TC_Mat_Calc_Tot_Sales__c]
+</span></span>
 </span>
 </td>
 <!-- total net price column -->
-<td style="width: 110px; height: 21px; text-align: right;" class="number" data-repeat="totalcells in suboffer.cart.totalCells">
+<td data-hide-if="suboffer.SO_Tot_User_Change__c gte 0 AND suboffer.TC_Mat_Disc_Pct__c lte 0" style="width: 110px; height: 21px; text-align: right;" class="number" data-repeat="totalcells in suboffer.cart.totalCells">
 
 <span class="number" data-show-if="suboffer.TC_Mat_Calc_Tot_Sales__c gt 0 AND Custom1__c_MO_Country_Origin__c NLIKE 'CH'">[suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
 
@@ -288,7 +291,7 @@ Neto
 </span>
 </td>
 <!-- discount amount column -->
-<td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 80px; height: 21px; text-align: right;" class="number">
+<td data-show-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Extended'" data-repeat="totalcells in suboffer.cart.totalCells" style="width: 80px; height: 21px; text-align: right;" class="number">-
 <span data-hide-if="suboffer.TC_Mat_Disc_Pct__c lte 0">
 <!--gross price discount amount-->
 <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number">[totalcells.TC_Mat_Tot_Org_Sales - suboffer.TC_Mat_Calc_Tot_Sales__c]</span>
@@ -684,7 +687,7 @@ Software Licenses</td>
 <!-- Start of User Changes (Overwrite Mat Discount %)-->
 <span data-show-if="suboffer.SQUserMatDiscountPercent__c gt 0" class="number" data-precision="2">[suboffer.SQUserMatDiscountPercent__c]</span>
 </td>
-<td class="number" style="width: 80px; height: 21px; text-align: right; vertical-align: middle;">
+<td class="number" style="width: 80px; height: 21px; text-align: right; vertical-align: middle;">-
 <!-- Start of User Changes (Overwrite Mat Sales Price)-->
 <span data-show-if="suboffer.SQTotalUserMatPrice__c gt 0" class="number" data-precision="2">[suboffer.TC_Mat_Calc_Tot_Sales__c - suboffer.SQTotalUserMatPrice__c]</span>
 <!-- Start of User Changes (Overwrite Mat Discount %)-->
@@ -792,7 +795,7 @@ comment out-->
 <!-- Start of User Changes (Overwrite Serv Discount %)-->
 <span data-show-if="suboffer.SQUserServDiscountPercent__c gt 0" class="number" data-precision="2">[suboffer.SQUserServDiscountPercent__c]</span>
 </td>
-<td class="number" data-precision="2" style="width: 80px; height: 21px; text-align: right;">
+<td class="number" data-precision="2" style="width: 80px; height: 21px; text-align: right;">-
 <!-- Start of User Changes (Overwrite Serv Sales Price)-->
 <span data-show-if="suboffer.SQTotalUserServPrice__c gt 0" class="number" data-precision="2">[suboffer.TC_Mat_Serv_Sales__c - suboffer.SQTotalUserServPrice__c]</span>
 <!-- Start of User Changes (Overwrite Serv Discount %)-->
@@ -957,11 +960,7 @@ comment out--->
 </strong>
 </td>
 </tr>
-<tr
-data-repeat="suboffer in Sub_Offers__r"
-data-group-by="Main_Offer_Name__c"
-data-show-if="suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c gt 0 OR suboffer.Main_Offer_Name__r.Project_Discount__c gt 0"
-style="height: 21px; border-bottom: 1px solid #000000;">
+<tr data-show-if="Custom1__c_MO_Tot_User_Change__c lt 0 OR Custom1__c_Project_Discount__c gt 0" style="height: 21px; border-bottom: 1px solid #000000;">
 <td style="height: 21px;" colspan="3">
 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Projektrabatt</span>
 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Remise projet</span>
@@ -979,22 +978,22 @@ style="height: 21px; border-bottom: 1px solid #000000;">
 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Projekt rabatt</span>
 </td>
 <td style="width: 60px; height: 21px; text-align: right;">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
-<span class="number" data-show-if="suboffer.Main_Offer_Name__r.Project_Discount__c IS NOT BLANK OR suboffer.Main_Offer_Name__r.Project_Discount__c gt 0">
+
+<span data-show-if="Custom1__c_Project_Discount__c IS NOT BLANK OR Custom1__c_Project_Discount__c gt 0">
 <!--will eventually use number to currency or persistent preview editor once fix to maintain correct delimiter has been fixed -->
 <!--{{number_to_currency(custom1__c_project_discount__c, :precision=&gt;2, :unit=&gt;'')}}-->
-[suboffer.Main_Offer_Name__r.Project_Discount__c]
+<span data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c" class="number">[suboffer.Main_Offer_Name__r.Project_Discount__c]</span>
 </span>
-</span>
+
 </td>
 <td style="width: 80px; height: 21px; text-align: right;">
-<span data-hide-if="Custom1__c_Generic_DocGen__r_Price_Summary__c LIKE 'Short'">
+
 <!--will eventually use number to currency or persistent preview editor once fix to maintain correct delimiter has been fixed -->
 <!--{{number_to_currency((custom1__c_so_sales_price__c - custom1__c_tot_salesprice_calc__c), :precision=&gt;2, :unit=&gt;'')}}-->
-<span data-show-if="suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c gt 0">
-<span class="number">[suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c]</span>
+<span data-show-if="Custom1__c_MO_Tot_User_Change__c lt 0">
+<span data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c" class="number">[suboffer.Main_Offer_Name__r.MO_Tot_User_Change__c]</span>
 </span>
-</span>
+
 </td>
 <td style="width: 110px; height: 21px; text-align: right;"></td>
 </tr>

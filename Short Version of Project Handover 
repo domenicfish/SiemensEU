@@ -1,0 +1,2715 @@
+<table style="height: 135.844px;">
+  <thead>
+    <tr style="height: 16px;">
+      <th style="width: 368px; background-color: #939393; text-align: left; height: 16px;" colspan="4">
+        <span style="color: #ffffff; font-size: 13px;">Project handover document</span>
+      </th>
+      <th style="width: 88px; background-color: #939393; height: 16px;">
+        <span style="color: #ffffff; font-size: 13px;">Printdate</span>
+      </th>
+      <th style="width: 118px; background-color: #939393; height: 16px;">
+        <span class="inline-variable mceNonEditable" data-name="proposal_published_date" data-type="date" data-format="%d.%m.%Y" style="color: #ffffff;"></span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="height: 34px;">
+      <td style="width: 124px; height: 34px;">
+        <span style="font-size: 11px;">
+          <em>
+            <span style="color: #0070c0;">
+              <i>
+                <strong>Opportunity Name</strong>
+              </i>
+            </span>
+          </em>
+        </span>
+      </td>
+      <td style="width: 244px; height: 34px;" colspan="3">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Manual_Name_c__c">Custom1__c_PH_Opp_Manual_Name_c__c</span>
+        </span>
+      </td>
+      <td style="width: 88px; height: 34px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Opp. Reference ID</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 118px; height: 34px;" colspan="3">
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_Document_Header__c" data-type="string" data-textcase="" style="font-size: 11px;"></span>&nbsp;</td>
+    </tr>
+    <tr style="height: 34px;">
+      <td style="width: 124px; height: 34px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Opportunity type</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 95px; height: 34px;">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Type__c">Custom1__c_PH_Opp_Type__c</span>
+        </span>
+      </td>
+      <td style="width: 58px; height: 34px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Sales type</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 91px; height: 34px;">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Sales_Type__c">Custom1__c_PH_Sales_Type__c</span>
+        </span>
+      </td>
+      <td style="width: 88px; height: 34px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Opportunity owner</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 118px; height: 34px;" colspan="3">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Number__c" data-type="string" data-textcase=""></span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 34.8438px;">
+      <td style="width: 124px; height: 34.8438px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Main-Offer name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 244px; height: 34.8438px;" colspan="3">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_Name">Custom1__c_Name</span>
+        </span>
+      </td>
+      <td style="width: 88px; height: 34.8438px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Resp. Employee</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 118px; height: 34.8438px;" colspan="3">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Owner_Resp_Sales_Rep__c">Custom1__c_MO_Owner_Resp_Sales_Rep__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 124px; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Main-Offer description</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 244px; height: 17px;" colspan="3">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Main_Offer_Description__c">Custom1__c_MO_Main_Offer_Description__c</span>
+        </span>
+      </td>
+      <td style="width: 206px; border-color: #ffffff; background-color: #ffffff; height: 17px;" colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="height: 235px;">
+  <tbody>
+    <tr style="height: 17px;">
+      <td style="width: 25%; height: 17px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Project categorization (LoA)</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 153px; height: 17px;" colspan="4"></td>
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Estimated OI / MO-Sales Price</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span>
+            <span
+              class="inline-variable mceNonEditable"
+              data-method="number_to_currency"
+              data-expression="number_to_currency(custom1__c_tot_salesprice_calc__c, :precision=&gt;2, :unit=&gt;'')"
+              data-number="custom1__c_tot_salesprice_calc__c"
+              data-precision="2"
+              data-name="custom1__c_tot_salesprice_calc__c"
+              data-type="currency"
+              data-delimiter=",">Custom1__c_Tot_SalesPrice_Calc__c</span>
+          </span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 25%; height: 17px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Business segment</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 153px; height: 17px;" colspan="4"></td>
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Est. OI date (PM070)</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_PM070__c" data-type="date" data-format="%d.%m.%Y"></span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 25%; height: 17px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>System type</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 153px; height: 17px;" colspan="4"></td>
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Est. Project closure (PM670)</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_PM670__c" data-type="date" data-format="%d.%m.%Y"></span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 33px;">
+      <td style="width: 25%; height: 33px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Sisic code</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 153px; height: 33px;" colspan="4"></td>
+      <td style="width: 138px; border-color: #000000; height: 33px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>PM070 Margin / MO-Total Margin</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 33px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_Tot_MarginPercent_Calc__c" data-type="number" data-precision="2" data-unit="" data-delimiter=""></span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 25%; height: 17px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Sales office code</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 153px; height: 17px;" colspan="4"></td>
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>PM100 Margin</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 33px;">
+      <td style="width: 25%; height: 33px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Payment terms</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 153px; height: 33px;" colspan="4">
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_SalesforceDocGenCH__r_Payment_Term__c" style="font-size: 11px;"></span>
+        <span style="font-size: 11px;">&nbsp;</span>
+      </td>
+      <td style="width: 138px; border-color: #000000; height: 33px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Vertical market code (Switzerland)</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 33px;" colspan="4">
+        <span style="font-size: 11px;" class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Vertical_market_code_Switzerland__c" data-type="string" data-textcase=""></span>&nbsp;</td>
+    </tr>
+    <tr style="height: 33px;">
+      <td style="width: 25%; height: 33px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Invoicing terms</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 153px; height: 33px;" colspan="4"></td>
+      <td style="width: 138px; border-color: #000000; height: 33px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Invoicing date &gt;PM670 (Switzerland)</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 33px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 25%; height: 17px;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Pricing agreements</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 38px; height: 17px;"></td>
+      <td style="width: 38px; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 38px; text-align: center; height: 17px;"></td>
+      <td style="width: 39px; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Distribution channel</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_DistributionChannel__c">Custom1__c_DistributionChannel__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 276px; border-color: #ffffff #000000 #ffffff #ffffff; background-color: #ffffff; height: 51px;" colspan="5" rowspan="3"></td>
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>FAGR (Switzerland)</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_FAGR__c">Custom1__c_FAGR__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>SD / POC numbers</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 160px; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 138px; border-color: #000000; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>&gt;One order in the same contract</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 38px; height: 17px;"></td>
+      <td style="width: 38px; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 38px; text-align: center; height: 17px;"></td>
+      <td style="width: 39px; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <thead>
+    <tr>
+      <th style="width: 100%; text-align: left;" colspan="10">
+        <span style="font-size: 13px;">
+          <strong>
+            <span style="color: #ffffff;">Site Information</span>
+          </strong>
+        </span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Site ID</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_ID__c">Custom1__c_MO_Site_ID__c</span>
+        </span>
+      </td>
+      <td style="width: 15%;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Street</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_Street__c">Custom1__c_MO_Site_Street__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Site name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_name__c">Custom1__c_MO_Site_name__c</span>
+        </span>
+      </td>
+      <td style="width: 15%;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Postal code</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_Postal_Code__c">Custom1__c_MO_Site_Postal_Code__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Site description</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_Description__c">Custom1__c_MO_Site_Description__c</span>
+        </span>
+      </td>
+      <td style="width: 15%;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>City</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Site_City__c">Custom1__c_MO_Site_City__c</span>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <thead>
+    <tr>
+      <th style="width: 100%; text-align: left;" colspan="10">
+        <span style="color: #ffffff; font-size: 13px;">Involved roles</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="width: 15%;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Project Manager</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>PEX involved in PM040</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Team Leader</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>PEX contact</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Project controller</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%; border-color: #ffffff;"></td>
+      <td style="width: 35%; border-color: #ffffff;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="color: #0070c0; font-size: 11px;">
+          <i>
+            <strong>Technician</strong>
+          </i>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%; border-color: #ffffff;"></td>
+      <td style="width: 35%; border-color: #ffffff;" colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%; height: 442px;">
+  <thead>
+    <tr style="height: 17px;">
+      <th style="background-color: #939393; border-color: #000000; text-align: left; height: 17px;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">Customer &amp; Involved Companies</span>
+      </th>
+      <td style="border-color: #ffffff #ffffff #000000 #000000; background-color: #ffffff; height: 17px;" colspan="5"></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="height: 17px;">
+      <td style="border-color: #000000; background-color: #b8b8b8; height: 17px;" colspan="5">
+        <span style="font-size: 13px;">
+          <strong>
+            <span style="color: #ffffff;">Customer</span>
+          </strong>
+        </span>
+      </td>
+      <td style="border-color: #000000; background-color: #b8b8b8; height: 17px;" colspan="5">
+        <span style="font-size: 13px;">
+          <strong>
+            <span style="color: #ffffff;">End Customer</span>
+          </strong>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>IFA number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_IFA__c">Custom1__c_MO_Cust_IFA__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>IFA number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_IFA__c">Custom1__c_MO_EndCust_IFA__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Debtor number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Debtor_nr__c">Custom1__c_MO_Debtor_nr__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Debtor number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Customer</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_Short_name__c">Custom1__c_MO_Cust_Short_name__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Customer</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Short_name__c">Custom1__c_MO_EndCust_Short_name__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Street/Number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_Number_Street__c">Custom1__c_MO_Cust_Number_Street__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Street/Number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Number_Street__c">Custom1__c_MO_EndCust_Number_Street__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Postal code</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_Post_Code__c">Custom1__c_MO_Cust_Post_Code__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Postal code</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Post_Code__c">Custom1__c_MO_EndCust_Post_Code__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>City</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_City__c">Custom1__c_MO_Cust_City__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>City</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_City__c">Custom1__c_MO_EndCust_City__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Phone number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Phone number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Email address</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Email address</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 50%; background-color: #b8b8b8; height: 17px;" colspan="5">
+        <span style="font-size: 13px;">
+          <strong>
+            <span style="color: #ffffff;">Role(s)</span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 50%; background-color: #b8b8b8; height: 17px;" colspan="5">
+        <span style="font-size: 13px;">
+          <strong>
+            <span style="color: #ffffff;">Role(s)</span>
+          </strong>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Payer</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Payer</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Bill to</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Bill to</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Document receiver</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Document receiver</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Ship to</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Ship to</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Sold to</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Sold to</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 17px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 17px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 50%; background-color: #b8b8b8; height: 17px;" colspan="5">
+        <span style="font-size: 13px;">
+          <strong>
+            <span style="color: #ffffff;">Contact</span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 50%; background-color: #b8b8b8; height: 17px;" colspan="5">
+        <span style="font-size: 13px;">
+          <strong>
+            <span style="color: #ffffff;">Contact</span>
+          </strong>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>First name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cont_First_name__c">Custom1__c_MO_Cont_First_name__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>First name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_First_name__c">Custom1__c_MO_EndCont_First_name__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Last name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cont_Last_name__c">Custom1__c_MO_Cont_Last_name__c</span>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Last name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4">
+        <span style="font-size: 11px;">
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_Last_name__c">Custom1__c_MO_EndCont_Last_name__c</span>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Phone number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Phone number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Email address</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Email address</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px; background-color: #b8b8b8;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Additional Contact</strong>
+        </span>
+      </td>
+      <td style="width: 15%; height: 17px; background-color: #b8b8b8;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Additional Contact</strong>
+        </span>
+      </td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>First name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>First name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Last name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Last name</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Phone number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Phone number</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center; height: 17px;" colspan="4"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Email address</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center; height: 17px;" colspan="4"></td>
+      <td style="width: 15%; height: 17px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Email address</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center; height: 17px;" colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<div data-repeat="company in Additional_Companies__r">
+  <table style="width: 100%; height: 168px;">
+    <thead>
+      <tr style="height: 21px;">
+        <td style="width: 39%; height: 21px; text-align: left;" colspan="2">
+          <strong>
+            <span style="color: #ffffff;">Involved Company</span>
+          </strong>
+        </td>
+        <td style="width: 25%; height: 21px;" colspan="2">
+          <strong>
+            <span style="color: #ffffff;">Role(s)</span>
+          </strong>
+        </td>
+        <td style="width: 25%; height: 21px; text-align: left;" colspan="2">
+          <strong>
+            <span style="color: #ffffff;">Contact</span>
+          </strong>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">IFA number</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 23%; height: 21px;">
+          <span style="font-size: 11px;">[company.MO_Cust_IFA__c]</span>
+        </td>
+        <td style="width: 10%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">Role(s)</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 15%; height: 21px;">
+          <span style="font-size: 11px;">[company.Role__c]</span>
+        </td>
+        <td style="width: 12.5661%; height: 21px;">
+          <span style="font-size: 11px;">
+            <strong>
+              <em>
+                <span style="color: #0070c0;">First name</span>
+              </em>
+            </strong>
+          </span>
+        </td>
+        <td style="width: 29.4339%; height: 21px;">
+          <span style="font-size: 11px;">[company.MO_Cont_First_name__c]</span>
+        </td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">Company Name</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 23%; height: 21px;">
+          <span style="font-size: 11px;">[company.MO_Cust_Short_name__c]</span>
+        </td>
+        <td style="width: 10%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 15%; height: 21px; border-color: #ffffff #000000 #ffffff #ffffff;"></td>
+        <td style="width: 12.5661%; height: 21px;">
+          <span style="font-size: 11px;">
+            <strong>
+              <em>
+                <span style="color: #0070c0;">Last name</span>
+              </em>
+            </strong>
+          </span>
+        </td>
+        <td style="width: 29.4339%; height: 21px;">
+          <span style="font-size: 11px;">[company.MO_Cont_Last_name__c]</span>
+        </td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">Street/Number</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 23%; height: 21px;">
+          <span style="font-size: 11px;">[company.MO_Cust_Number_Street__c]</span>
+        </td>
+        <td style="width: 10%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 15%; height: 21px; border-color: #ffffff #000000 #ffffff #ffffff;"></td>
+        <td style="width: 12.5661%; height: 21px;">
+          <span style="font-size: 11px;">
+            <strong>
+              <em>
+                <span style="color: #0070c0;">Phone number</span>
+              </em>
+            </strong>
+          </span>
+        </td>
+        <td style="width: 29.4339%; height: 21px;">
+          <span style="font-size: 11px;">[company.Phone_Contact__c]</span>
+        </td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">Postal code</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 23%; height: 21px;">
+          <span style="font-size: 11px;">[company.MO_Cust_Post_Code__c]</span>
+        </td>
+        <td style="width: 10%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 15%; height: 21px; border-color: #ffffff #000000 #ffffff #ffffff;"></td>
+        <td style="width: 12.5661%; height: 21px;">
+          <span style="font-size: 11px;">
+            <strong>
+              <em>
+                <span style="color: #0070c0;">Email address</span>
+              </em>
+            </strong>
+          </span>
+        </td>
+        <td style="width: 29.4339%; height: 21px;">
+          <span style="font-size: 11px;">[company.Email_Contact__c]</span>
+        </td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">City</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 23%; height: 21px;">
+          <span style="font-size: 11px;">[company.MO_Cust_City__c]</span>
+        </td>
+        <td style="width: 10%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 15%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 12.5661%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 29.4339%; height: 21px; border-color: #ffffff;"></td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">Phone number</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 23%; height: 21px;">
+          <span style="font-size: 11px;">[company.Phone__c]</span>
+        </td>
+        <td style="width: 10%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 15%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 12.5661%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 29.4339%; height: 21px; border-color: #ffffff;"></td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px;">
+          <span style="font-size: 11px;">
+            <em>
+              <strong>
+                <span style="color: #0070c0;">Email address</span>
+              </strong>
+            </em>
+          </span>
+        </td>
+        <td style="width: 23%; height: 21px;">
+          <span style="font-size: 11px;">[company.Email__c]</span>
+        </td>
+        <td style="width: 10%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 15%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 12.5661%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 29.4339%; height: 21px; border-color: #ffffff;"></td>
+      </tr>
+      <tr style="height: 21px;">
+        <td style="width: 16%; height: 21px; border-color: #ffffff;">
+          <span style="font-size: 11px;">
+            <span style="color: #0070c0;"></span>
+          </span>
+        </td>
+        <td style="width: 16%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 16%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 16%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 16%; height: 21px; border-color: #ffffff;"></td>
+        <td style="width: 16%; height: 21px; border-color: #ffffff;"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p></p>
+<table style="width: 100%; height: 378px;">
+  <tbody>
+    <tr style="height: 17px;">
+      <td style="width: 50%; background-color: #939393; height: 17px;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Risks &amp; Opportunities</strong>
+        </span>
+      </td>
+      <td style="width: 50%; background-color: #ffffff; border-color: #ffffff #ffffff #000000 #000000; height: 17px;" colspan="5"></td>
+    </tr>
+    <tr style="height: 43px;">
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>LOA ID</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center; height: 43px;" colspan="4"></td>
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Liability limited to Siemens standards</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 43px;">
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Penalties for execution delay</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Material selection needs vaidation</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 43px;">
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Contractual risks</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Manhour calculation needs validation</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 43px;">
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>PRR and boundary conditions</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Special working requirements</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 60px;">
+      <td style="width: 15%; height: 60px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Size of contractual risks</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center; height: 60px;" colspan="4"></td>
+      <td style="width: 15%; height: 60px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Special commissioning requirements</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 60px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 60px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 60px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 60px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 60px;">
+      <td style="width: 15%; height: 60px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Customer creditworthiness checked</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 60px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 60px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 60px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 60px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; height: 60px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Verbal agreements</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 60px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 60px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 60px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 60px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr style="height: 26px;">
+      <td style="width: 15%; height: 26px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Siemens solution</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 26px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 26px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 26px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 26px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%; text-align: center; height: 69px;" rowspan="2">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Exclusions</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center; height: 69px;" colspan="4" rowspan="2"></td>
+    </tr>
+    <tr style="height: 43px;">
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Quotation follows specifications</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center; height: 43px;"></td>
+      <td style="width: 8.75%; text-align: center; height: 43px;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 50%; background-color: #939393;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Special Details</strong>
+        </span>
+      </td>
+      <td style="width: 50%; border-color: #ffffff #ffffff #000000 #000000; background-color: #ffffff;" colspan="5"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Regulatioin information</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>GECC</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Fire detection site plan</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>RMS info rooms</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Registration building insurance</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Cost center engineering</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; text-align: center;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Registration safety institute</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Test / Pilot project</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 50%; background-color: #939393;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Documentation</strong>
+        </span>
+      </td>
+      <td style="width: 50%; border-color: #ffffff #ffffff #000000 #000000; background-color: #ffffff;" colspan="5"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Order document</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Order_document__c == 'false'">YES</span>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Order_document__c == 'true'">NO</span>
+        </span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Working program</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Contract</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Project promotion</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Last version of quotation</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Last_version_of_quotation__c == 'false'">YES</span>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Last_version_of_quotation__c == 'true'">NO</span>
+        </span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>EHS information</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Cost calculation</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Cost_calculation__c == 'false'">YES</span>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Cost_calculation__c == 'true'">NO</span>
+        </span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Quality plan</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Order confirmation to customer</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Order_confirmation_to_customer__c == 'false'">YES</span>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Order_confirmation_to_customer__c == 'true'">NO</span>
+        </span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Floorplan</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Framework agreement</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Integration approval</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Subcontractors / Providers quotations</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>PATAC</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Technical specifications</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Report (PMRT / LoA)</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Technical solution</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Other tender documents</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Drawings / Schemes</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Relevant correspondance</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Architecture</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Other administrative documents</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">YES</span>
+      </td>
+      <td style="width: 8.75%; text-align: center;"></td>
+      <td style="width: 8.75%; text-align: center;">
+        <span style="font-size: 11px;">NO</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 50%; background-color: #939393;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Deliveries</strong>
+        </span>
+      </td>
+      <td style="width: 50%; border-color: #ffffff #ffffff #000000 #000000;" colspan="5"></td>
+    </tr>
+    <tr>
+      <td style="width: 50%; background-color: #b8b8b8;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Material</strong>
+        </span>
+      </td>
+      <td style="width: 50%; background-color: #b8b8b8;" colspan="5">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Services</strong>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Field devices</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Architecture</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Controllers</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Cabling</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Management station</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Devices installation</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%; border-color: #ffffff;"></td>
+      <td style="width: 35%; border-color: #ffffff #000000 #ffffff #ffffff;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Engineering</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+    <tr style="height: 43px;">
+      <td style="width: 15%; height: 43px; border-color: #ffffff;"></td>
+      <td style="width: 35%; height: 43px; border-color: #ffffff #000000 #ffffff #ffffff;" colspan="4"></td>
+      <td style="width: 15%; height: 43px;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Engineering Workstation</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%; height: 43px;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%; border-color: #ffffff;"></td>
+      <td style="width: 35%; border-color: #ffffff #000000 #ffffff #ffffff;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Programming</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%; border-color: #ffffff;"></td>
+      <td style="width: 35%; border-color: #ffffff #000000 #ffffff #ffffff;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Commissioning</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%; border-color: #ffffff;"></td>
+      <td style="width: 35%; border-color: #ffffff #000000 #ffffff #ffffff;" colspan="4"></td>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Testing</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 35%;" colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 50%; background-color: #939393;" colspan="2">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Changes</strong>
+        </span>
+      </td>
+      <td style="width: 50%; border-color: #ffffff #ffffff #000000 #000000;" colspan="2"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Labor</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 85%;" colspan="3"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Material</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 85%;" colspan="3"></td>
+    </tr>
+    <tr>
+      <td style="width: 15%;">
+        <span style="font-size: 11px;">
+          <strong>
+            <span style="color: #0070c0;">
+              <i>Subcontracting</i>
+            </span>
+          </strong>
+        </span>
+      </td>
+      <td style="width: 85%;" colspan="3"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%; height: 34.2604px;">
+  <tbody>
+    <tr style="height: 17px;">
+      <td style="width: 50%; background-color: #939393; height: 17px;" colspan="2">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Notes/Comments</strong>
+        </span>
+      </td>
+      <td style="width: 50%; border-color: #ffffff #ffffff #000000 #000000; height: 17px;" colspan="2"></td>
+    </tr>
+    <tr style="height: 17.2604px;">
+      <td style="width: 25%; height: 17.2604px;" colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 50%; background-color: #939393;" colspan="2">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Minutes of Project Handover meeting</strong>
+        </span>
+      </td>
+      <td style="width: 50%; border-color: #ffffff #ffffff #000000 #000000;" colspan="2"></td>
+    </tr>
+    <tr>
+      <td style="width: 25%;" colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td style="width: 378px; background-color: #939393;" colspan="2">
+        <span style="color: #ffffff; font-size: 13px;">
+          <strong>Approvals</strong>
+        </span>
+      </td>
+      <td style="width: 377px; border-color: #ffffff #ffffff #000000 #000000;" colspan="2"></td>
+    </tr>
+    <tr>
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Name</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;"></td>
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Name</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Role</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;"></td>
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Role</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Date</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;">
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_PEX_App1_Date1__c" data-type="date" data-format="%d.%m.%Y"></span></td>
+
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Date</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;">
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_PEX_App3_Date3__c" data-type="date" data-format="%d.%m.%Y"></span></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Signature</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;"></td>
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Signature</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;"></td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+<table style="width: 100%;">
+  <tbody>
+    <tr style="height: 17px;">
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Name</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;"></td>
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Name</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Role</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;"></td>
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Role</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;"></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Date</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;">
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_PEX_App2_Date2__c" data-type="date" data-format="%d.%m.%Y"></span></td>
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Date</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;">
+        <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_PEX_App4_Date4__c" data-type="date" data-format="%d.%m.%Y"></span></td>
+    </tr>
+    <tr style="height: 17px;">
+      <td style="width: 114px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Signature</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 264px; height: 17px;"></td>
+      <td style="width: 113.188px; height: 17px;">
+        <span style="font-size: 11px;">
+          <em>
+            <strong>
+              <span style="color: #0070c0;">Signature</span>
+            </strong>
+          </em>
+        </span>
+      </td>
+      <td style="width: 263.812px; height: 17px;"></td>
+    </tr>
+  </tbody>
+</table>
