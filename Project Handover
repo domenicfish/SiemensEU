@@ -21,12 +21,12 @@
         <span style="font-size: 11px;">
           <em>
             <span style="color: #0070c0;">
-              <i>
+              <strong>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Opportunity Name</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Philos Oppt. Name</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Nom de l'opp PHILOS</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Nome oppt Philos</span>
-              </i>
+              </strong>
             </span>
           </em>
         </span>
