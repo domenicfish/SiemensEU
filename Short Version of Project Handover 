@@ -184,7 +184,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="height: 91px;">
   <tbody>
     <tr style="height: 12px;">
@@ -273,10 +273,12 @@
       </td>
       <td style="width: 38px; height: 31px; text-align: center;" colspan="4">
         <span style="font-size: 11px;">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">YES</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">JA</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" class="hide mceNonDeletable">OUI</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">SI</span>
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c == 'CH' AND Custom1__c_Generic_DocGen__r_Order_confirmation_to_customer__c == 'false'">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">YES</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">JA</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" class="hide mceNonDeletable">OUI</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">SI</span>
+          </span>
         </span>
       </td>
     </tr>
@@ -364,7 +366,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <thead>
     <tr>
@@ -515,7 +517,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <thead>
     <tr>
@@ -568,7 +570,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -742,7 +744,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -1027,7 +1029,9 @@
           </strong>
         </span>
       </td>
-      <td style="width: 20%;" colspan="4"></td>
+      <td style="width: 20%;" colspan="4">
+        <span data-repeat="company in Additional_Companies__r" data-filter="Active__c == true" style="font-size: 11px;">[company.Phone_Contact__c]</span>
+      </td>
       <td style="width: 30%;">
         <span style="font-size: 11px;">
           <strong>
@@ -1059,7 +1063,9 @@
           </strong>
         </span>
       </td>
-      <td style="width: 20%;" colspan="4"></td>
+      <td style="width: 20%;" colspan="4">
+        <span data-repeat="company in Additional_Companies__r" data-filter="Active__c == true" style="font-size: 11px;">[company.Email_Contact__c]</span>
+      </td>
       <td style="width: 30%;">
         <span style="font-size: 11px;">
           <strong>
@@ -1348,7 +1354,9 @@
           </strong>
         </span>
       </td>
-      <td style="width: 20%;" colspan="4"></td>
+      <td style="width: 20%;" colspan="4">
+        <span data-repeat="company in Additional_Companies__r" data-filter="Active__c == true" style="font-size: 11px;">[company.Phone__c]</span>
+      </td>
       <td style="width: 30%;">
         <span style="font-size: 11px;">
           <strong>
@@ -1380,7 +1388,9 @@
           </strong>
         </span>
       </td>
-      <td style="width: 20%;" colspan="4"></td>
+      <td style="width: 20%;" colspan="4">
+        <span data-repeat="company in Additional_Companies__r" data-filter="Active__c == true" style="font-size: 11px;">[company.Email__c]</span>
+      </td>
       <td style="width: 30%;">
         <span style="font-size: 11px;">
           <strong>
@@ -1595,7 +1605,7 @@
 </div>
 <!--hide company page-->
 <div data-repeat="company in Additional_Companies__r">
-  <p></p>
+  <p style="line-height: 8px;"></p>
   <table style="width: 100%;" data-show-if="Custom1__c_MO_Cust_IFA__c IS NOT BLANK">
     <thead>
       <tr style="height: 12px;">
@@ -1909,7 +1919,7 @@
     </tbody>
   </table>
 </div>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -1933,7 +1943,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <!---page break necessary along with top table wrapped in print-only--->
 <div style="page-break-after: always;">
   <span style="display: none;">&nbsp;</span>
@@ -2126,7 +2136,7 @@
     </tbody>
   </table>
 </div>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr style="height: 12px;">
@@ -2176,7 +2186,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -2335,7 +2345,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr style="height: 12px;">
@@ -2717,7 +2727,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%; height: 260.958px;">
   <tbody>
     <tr style="height: 31px;">
@@ -2791,7 +2801,7 @@
   <span style="display: none;">&nbsp;</span>
 </div>
 <div class="print-only">
-  <p></p>
+  <p style="line-height: 8px;"></p>
   <table>
     <thead>
       <tr style="height: 12px;">
@@ -2979,7 +2989,7 @@
     </tbody>
   </table>
 </div>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -2998,11 +3008,12 @@
     <tr style="height: 12px;">
       <td style="width: 25%; height: 12px;" colspan="4">
         <p></p>
+        <p></p>
       </td>
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -3026,7 +3037,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
@@ -3154,7 +3165,7 @@
     </tr>
   </tbody>
 </table>
-<p></p>
+<p style="line-height: 8px;"></p>
 <table style="width: 100%;">
   <tbody>
     <tr>
