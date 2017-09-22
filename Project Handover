@@ -197,17 +197,7 @@
       </td>
       <td style="width: 160px; height: 17px;" colspan="4">
         <span style="font-size: 11px;">
-          <span>
-            <span
-              class="inline-variable mceNonEditable"
-              data-method="number_to_currency"
-              data-expression="number_to_currency(custom1__c_tot_salesprice_calc__c, :precision=&gt;2, :unit=&gt;'')"
-              data-number="custom1__c_tot_salesprice_calc__c"
-              data-precision="2"
-              data-name="custom1__c_tot_salesprice_calc__c"
-              data-type="currency"
-              data-delimiter=","></span>
-          </span>
+          <span class="inline-variable mceNonEditable" data-name="Custom1__c_Tot_SalesPrice_Calc__c">1496.1</span>
         </span>
       </td>
     </tr>
