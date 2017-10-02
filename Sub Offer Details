@@ -11,7 +11,7 @@
         <td style="width: 10%; height: 21px; border-top-color: #ffffff;"></td>
         <th style="height: 21px; border-color: #000000; width: 28%;" colspan="3">
           <span style="color: #ffffff;">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Printdate:
+            <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Printdate:
             </span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Druckdatum:
             </span>
@@ -107,7 +107,7 @@
           <em>
             <strong>
               <span style="color: #0070c0;">
-                <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Main Offer Calculation Overview</span>
+                <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Main Offer Calculation Overview</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Main-Offer Kalkulations&uuml;bersicht</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Main-Offer Riassunto calcolazione</span>
                 <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Vue Calculs Offre Principale</span>
@@ -694,7 +694,7 @@
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Descrizione</span>
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Description</span>
         </td>
-        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;">UCS</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 9px;">UCS</td>
         <td style="width: 7%; height: 21px; text-align: right;">
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Ori. Qty</span>
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Ger. DL</span>
@@ -707,9 +707,9 @@
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prest.sup.</span>
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qt&eacute;. Ajout.</span>
         </td>
-        <td style="width: 6%; height: 21px; text-align: right; font-size: 10px;">Fact</td>
+        <td style="width: 6%; height: 21px; text-align: right; font-size: 9px;">Fact</td>
         <td style="width: 6%; height: 21px; text-align: right;">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Calc Qty</span>
+          <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Calc Qty</span>
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Kalk.</span>
           <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Somma</span>
           <span style="font-size: 8px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Qt&eacute;. Calc.</span>
@@ -765,16 +765,16 @@
         </td>
         <td style="width: 26%; height: 21px; text-align: center;">
           <span style="font-size: 9px;">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
           </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Cost_Calculated]</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Cost_Calculated]</td>
         <td style="width: 5%; height: 21px;"></td>
-        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_GM_Calculated]</td>
-        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Sales_Calculated]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_GM_Calculated]</td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Sales_Calculated]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right;"></td>
       </tr>
     </tbody>
@@ -1061,16 +1061,16 @@
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
           <span style="font-size: 9px;">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
           </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Cost_Additional]</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Cost_Additional]</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_GM_Additional]</td>
-        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Sales_Additional]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_GM_Additional]</td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Sales_Additional]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right;"></td>
       </tr>
     </tbody>
@@ -1096,7 +1096,7 @@
             <span class="number" style="font-size: 9px;"></span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span class="integer" style="font-size: 9px;">[cart1.Item_Qty]</span>
+            <span class="integer" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
             <span style="font-size: 9px;">
@@ -1146,7 +1146,7 @@
               <span class="number" style="font-size: 9px;"></span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span class="integer" style="font-size: 9px;">[cart2.Item_Qty]</span>
+              <span class="integer" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
             <td style="width: 9%; height: 21.6563px; text-align: right;">
               <span style="font-size: 9px;">
@@ -1200,7 +1200,7 @@
                 <span class="number" style="font-size: 9px;"></span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span class="integer" style="font-size: 9px;">[cart3.Item_Qty]</span>
+                <span class="integer" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
                 <span style="font-size: 9px;">
@@ -1250,7 +1250,7 @@
                   <span class="number" style="font-size: 9px;"></span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span class="integer" style="font-size: 9px;">[cart4.Item_Qty]</span>
+                  <span class="integer" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
                   <span style="font-size: 9px;">
@@ -1300,7 +1300,7 @@
                     <span class="number" style="font-size: 9px;"></span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span class="integer" style="font-size: 9px;">[cart5.Item_Qty]</span>
+                    <span class="integer" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
                     <span style="font-size: 9px;">
@@ -1350,7 +1350,7 @@
                       <span></span>
                     </td>
                     <td style="width: 6%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Item_Qty]</span>
+                      <span>[cart6.Serv_Calc_Qty]</span>
                     </td>
                     <td style="width: 9%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
@@ -1398,16 +1398,16 @@
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
           <span style="font-size: 9px;">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
           </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Cost_ManPosServices]</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Cost_ManPosServices]</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_GM_ManPosServices]</td>
-        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Sales_ManPosServices]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_GM_ManPosServices]</td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Sales_ManPosServices]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right;"></td>
       </tr>
     </tbody>
@@ -1427,13 +1427,13 @@
             <span class="integer" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
           </td>
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span class="integer" style="font-size: 9px;"></span>
+            <span class="integer" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
             <span class="number" style="font-size: 9px;"></span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span class="integer" style="font-size: 9px;">[cart1.Item_Qty]</span>
+            <span class="integer" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
             <span style="font-size: 9px;">
@@ -1477,13 +1477,13 @@
               <span class="integer" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span class="integer" style="font-size: 9px;"></span>
+              <span class="integer" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
               <span class="number" style="font-size: 9px;"></span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span class="integer" style="font-size: 9px;">[cart2.Item_Qty]</span>
+              <span class="integer" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
             </td>
             <td style="width: 9%; height: 21.6563px; text-align: right;">
               <span style="font-size: 9px;">
@@ -1531,13 +1531,13 @@
                 <span class="integer" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span class="integer" style="font-size: 9px;"></span>
+                <span class="integer" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
                 <span class="number" style="font-size: 9px;"></span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span class="integer" style="font-size: 9px;">[cart3.Item_Qty]</span>
+                <span class="integer" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
                 <span style="font-size: 9px;">
@@ -1581,13 +1581,13 @@
                   <span class="integer" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span class="integer" style="font-size: 9px;"></span>
+                  <span class="integer" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
                   <span class="number" style="font-size: 9px;"></span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span class="integer" style="font-size: 9px;">[cart4.Item_Qty]</span>
+                  <span class="integer" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
                   <span style="font-size: 9px;">
@@ -1631,13 +1631,13 @@
                     <span class="integer" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span class="integer" style="font-size: 9px;"></span>
+                    <span class="integer" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
                     <span class="number" style="font-size: 9px;"></span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span class="integer" style="font-size: 9px;">[cart5.Item_Qty]</span>
+                    <span class="integer" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
                     <span style="font-size: 9px;">
@@ -1681,13 +1681,13 @@
                       <span class="integer">[cart6.Serv_Origin_Qty]</span>
                     </td>
                     <td style="width: 7%; height: 21.6563px; text-align: right;">
-                      <span class="integer"></span>
+                      <span class="integer">[cart6.Serv_Calc_Qty]</span>
                     </td>
                     <td style="width: 6%; height: 21.6563px; text-align: right;">
                       <span></span>
                     </td>
                     <td style="width: 6%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Item_Qty]</span>
+                      <span>[cart6.Serv_Calc_Qty]</span>
                     </td>
                     <td style="width: 9%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
@@ -1735,16 +1735,16 @@
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
           <span style="font-size: 9px;">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
           </span>
         </td>
-        <td style="width: 9%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Cost_ManualPositions]</td>
+        <td style="width: 9%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Cost_ManualPositions]</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_GM_ManualPositions]</td>
-        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Sales_ManualPositions]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_GM_ManualPositions]</td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Sales_ManualPositions]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right;"></td>
       </tr>
     </tbody>
@@ -1770,7 +1770,7 @@
             <span class="number" style="font-size: 9px;"></span>
           </td>
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span class="integer" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
+            <span class="integer" style="font-size: 9px;">[cart1.Item_Qty]</span>
           </td>
           <td style="width: 9%; height: 21.6563px; text-align: right;">
             <span style="font-size: 9px;">
@@ -1820,7 +1820,7 @@
               <span class="number" style="font-size: 9px;"></span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span class="integer" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
+              <span class="integer" style="font-size: 9px;">[cart2.Item_Qty]</span>
             </td>
             <td style="width: 9%; height: 21.6563px; text-align: right;">
               <span style="font-size: 9px;">
@@ -1874,7 +1874,7 @@
                 <span class="number" style="font-size: 9px;"></span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span class="integer" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
+                <span class="integer" style="font-size: 9px;">[cart3.Item_Qty]</span>
               </td>
               <td style="width: 9%; height: 21.6563px; text-align: right;">
                 <span style="font-size: 9px;">
@@ -1924,7 +1924,7 @@
                   <span class="number" style="font-size: 9px;"></span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span class="integer" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
+                  <span class="integer" style="font-size: 9px;">[cart4.Item_Qty]</span>
                 </td>
                 <td style="width: 9%; height: 21.6563px; text-align: right;">
                   <span style="font-size: 9px;">
@@ -1974,7 +1974,7 @@
                     <span class="number" style="font-size: 9px;"></span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span class="integer" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
+                    <span class="integer" style="font-size: 9px;">[cart5.Item_Qty]</span>
                   </td>
                   <td style="width: 9%; height: 21.6563px; text-align: right;">
                     <span style="font-size: 9px;">
@@ -2024,7 +2024,7 @@
                       <span></span>
                     </td>
                     <td style="width: 6%; height: 21.6563px; text-align: right;">
-                      <span>[cart6.Serv_Calc_Qty]</span>
+                      <span>[cart6.Item_Qty]</span>
                     </td>
                     <td style="width: 9%; height: 21.6563px; text-align: right;">
                       <span data-show-if="cart6.Is_Option = '1'">(</span>
@@ -2072,16 +2072,16 @@
         </td>
         <td style="width: 26%; height: 21px; text-align: center;" colspan="4">
           <span style="font-size: 9px;">
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
+            <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Total</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">TOTAUX</span>
           </span>
         </td>
-        <td class="number" style="width: 9%; height: 21px; text-align: right; font-size: 10px;">[name.cart.SO_Cost_MatServices]</td>
+        <td class="number" style="width: 9%; height: 21px; text-align: right; font-size: 9px;">[name.cart.SO_Cost_MatServices]</td>
         <td style="width: 5%; height: 21px;" class="number"></td>
-        <td style="width: 5%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_GM_MatServices]</td>
-        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 10px;" class="number">[name.cart.SO_Sales_MatServices]</td>
+        <td style="width: 5%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_GM_MatServices]</td>
+        <td style="width: 12.1099%; height: 21px; text-align: right; font-size: 9px;" class="number">[name.cart.SO_Sales_MatServices]</td>
         <td style="width: 11.8901%; height: 21px; text-align: right;"></td>
       </tr>
     </tbody>
@@ -2410,7 +2410,7 @@
           <td style="width: 10%; height: 21px; border-top-color: #ffffff; border-right-color: #ffffff;"></td>
           <th style="height: 21px; border-color: #000000; width: 28%;" colspan="3">
             <span style="color: #ffffff;">
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Printdate:
+              <span style="font-size: 9px;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'">Printdate:
               </span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Druckdatum:
               </span>

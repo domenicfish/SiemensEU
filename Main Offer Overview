@@ -3,20 +3,20 @@
     <tr style="border-color: #000000; height: 21px;">
       <th style="width: 30%; height: 21px; border-color: #000000;" colspan="4">
         <span style="color: #ffffff;">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Main Offer Calculation Overview</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Main-Offer Kalkulations&uuml;bersicht</span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Main-Offer Riassunto calcolazione</span>
+          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Main Offer Calculation Overview</span>
+          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Main-Offer Kalkulations&uuml;bersicht</span>
+          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Main-Offer Riassunto calcolazione</span>
           <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Vue Calculs Offre Principale</span>
         </span>
       </th>
       <td style="width: 10%; height: 21px; border-top-color: #ffffff;"></td>
       <th style="height: 21px; border-color: #000000; width: 28%;" colspan="3">
         <span style="color: #ffffff;">
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Printdate:
+          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Printdate:
           </span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Druckdatum:
+          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Druckdatum:
           </span>
-          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Printdate:
+          <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Printdate:
           </span>
           <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Date impression:
           </span>
@@ -29,9 +29,9 @@
         <em>
           <strong>
             <span style="color: #0070c0;">
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Opportunity Name</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Opportunity Name</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Opportunity Name</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Opportunity Name</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Opportunity Name</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Opportunity Name</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Opportunit&eacute;</span>
             </span>
           </strong>
@@ -43,9 +43,9 @@
       <td style="height: 21px; border-color: #000000; width: 28%;" colspan="2">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Opp. Reference ID</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Opp. Reference ID</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Opp. Reference ID</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Opp. Reference ID</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Opp. Reference ID</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Opp. Reference ID</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">ID R&eacute;f&eacute;rence Oppt.</span>
           </strong>
         </em>
@@ -58,9 +58,9 @@
       <td style="width: 18%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Opportunity Type</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Opportunity Typ</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Opportunity Type</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Opportunity Type</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Opportunity Typ</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Opportunity Type</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Type de business</span>
           </strong>
         </em>
@@ -72,9 +72,9 @@
         <em>
           <strong>
             <span style="color: #0070c0;">
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Sales Type</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Verkaufstyp</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Tipo di vendita</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Sales Type</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Verkaufstyp</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Tipo di vendita</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Type de vente</span>
             </span>
           </strong>
@@ -87,9 +87,9 @@
         <em>
           <strong>
             <span style="color: #0070c0;">
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Opportunity Owner</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Verantwortlicher</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Responsabile</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Opportunity Owner</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Verantwortlicher</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Responsabile</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Responsable Oppt.</span>
             </span>
           </strong>
@@ -103,9 +103,9 @@
       <td style="width: 18%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Bid approval PM040</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Angebotsfreigabedatum PM040</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Data delibera offerta PM040</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Bid approval PM040</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Angebotsfreigabedatum PM040</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Data delibera offerta PM040</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Validation offre(PM040)</span>
           </strong>
         </em>
@@ -116,9 +116,9 @@
       <td style="width: 12%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Est. OI Date PM070</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Erw. Vergabedatum</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Previsione delibera (data)</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Est. OI Date PM070</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Erw. Vergabedatum</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Previsione delibera (data)</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Pr&egrave;v. EC</span>
           </strong>
         </em>
@@ -129,9 +129,9 @@
       <td style="height: 21px; border-color: #000000; width: 28%;" colspan="2">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Est. Project Closure</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Erw. Abschlussdatum</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Previsione ultimazione (data)</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Est. Project Closure</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Erw. Abschlussdatum</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Previsione ultimazione (data)</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">R&eacute;ception d&eacute;finitive</span>
           </strong>
         </em>
@@ -144,9 +144,9 @@
       <td style="width: 18%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Status</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Status</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Stato</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Status</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Status</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Stato</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Statut</span>
           </strong>
         </em>
@@ -157,9 +157,9 @@
       <td style="width: 12%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Chance of success</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Auftragswahrscheinlichkeit</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Probabilit&agrave; delibera (%)</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Chance of success</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Auftragswahrscheinlichkeit</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Probabilit&agrave; delibera (%)</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Succ&egrave;s</span>
           </strong>
         </em>
@@ -174,9 +174,9 @@
       <td style="width: 18%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Main-Offer Name</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Angebotsname</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Nome dell'offerta</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Main-Offer Name</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Angebotsname</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Nome dell'offerta</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Nom Offre Principale</span>
           </strong>
         </em>
@@ -187,9 +187,9 @@
       <td style="height: 21px; border-color: #000000; width: 28%;" colspan="2">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Resp. Employee</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Zust&auml;ndiger Mitarbeiter</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Collaboratore responsabile</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Resp. Employee</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Zust&auml;ndiger Mitarbeiter</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Collaboratore responsabile</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Responsable</span>
           </strong>
         </em>
@@ -202,9 +202,9 @@
       <td style="width: 18%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Main-Offer</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Angebotsbeschreibung</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Descrizione dell'offerta</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Main-Offer</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Angebotsbeschreibung</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Descrizione dell'offerta</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Description OP</span>
           </strong>
         </em>
@@ -214,9 +214,9 @@
       <td style="height: 21px; border-color: #000000; width: 28%;" colspan="2">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Submission Date</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Datum Submission</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Data appalto</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Submission Date</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Datum Submission</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Data appalto</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Date de remise</span>
           </strong>
         </em>
@@ -229,9 +229,9 @@
       <td style="width: 18%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Main-Offer Status</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Status Angebot</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Stato offerta</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Main-Offer Status</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Status Angebot</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Stato offerta</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Statut OP</span>
           </strong>
         </em>
@@ -242,9 +242,9 @@
       <td style="height: 21px; border-color: #000000; width: 28%;" colspan="2">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Follow Up date</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Wiedervorlagedatum</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Data di ripresa</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Follow Up date</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Wiedervorlagedatum</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Data di ripresa</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Date de suivi</span>
           </strong>
         </em>
@@ -262,9 +262,9 @@
       <td style="width: 15%; border-color: #000000; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">IFA number</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">IFA Nummer</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Numero IFA</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >IFA number</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >IFA Nummer</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Numero IFA</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">N&deg; IFA</span>
           </strong>
         </em>
@@ -275,9 +275,9 @@
       <td style="width: 10%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">IFA number</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">IFA Nummer</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Numero IFA</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >IFA number</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >IFA Nummer</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Numero IFA</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">N&deg; IFA</span>
           </strong>
         </em>
@@ -290,9 +290,9 @@
       <td style="width: 15%; border-color: #000000; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Customer</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kunde</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Cliente</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Customer</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kunde</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Cliente</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Client</span>
           </strong>
         </em>
@@ -303,9 +303,9 @@
       <td style="width: 10%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">End Customer</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Endkunde</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Cliente finale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >End Customer</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Endkunde</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Cliente finale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Client final</span>
           </strong>
         </em>
@@ -318,9 +318,9 @@
       <td style="width: 15%; border-color: #000000; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Contact</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kontakt</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Contatto</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Contact</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kontakt</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Contatto</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Contact</span>
           </strong>
         </em>
@@ -331,9 +331,9 @@
       <td style="width: 10%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">End Contact</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">End Kontakt</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Ultimo contatto</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >End Contact</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >End Kontakt</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Ultimo contatto</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Contact</span>
           </strong>
         </em>
@@ -346,7 +346,10 @@
       <td style="width: 15%; border-color: #000000; height: 21px;">
         <em>
           <strong>
-            <span style="color: #0070c0;">Recipient</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Recipient</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Empfänger</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Recipient</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Destinataire</span>
           </strong>
         </em>
       </td>
@@ -361,7 +364,10 @@
       <td style="width: 10%; height: 21px; border-color: #000000;">
         <em>
           <strong>
-            <span style="color: #0070c0;">Recipient Cont.</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Recipient Cont.</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Empfänger Kont</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Recipient Cont.</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Contact Dest.</span>
           </strong>
         </em>
       </td>
@@ -377,9 +383,9 @@
       <td style="width: 15%; border-color: #000000; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Site Name</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Anlagenort Beschreibung</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Descrizione luogo impianto</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Site Name</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Anlagenort Beschreibung</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Descrizione luogo impianto</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Nom du site</span>
           </strong>
         </em>
@@ -398,9 +404,9 @@
         <span style="font-size: 14px;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Main-Offer</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Hauptangebot (Main-Offer)</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Offerta principale (Main-Offer)</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Main-Offer</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Hauptangebot (Main-Offer)</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Offerta principale (Main-Offer)</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Offre Principale</span>
             </strong>
           </em>
@@ -410,9 +416,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Sales price</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Verkaufspreis</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Prezzo di vendita</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Sales price</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Verkaufspreis</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Prezzo di vendita</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Prix de vente</span>
             </strong>
           </em>
@@ -422,9 +428,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">GM</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">GM</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">GM</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >GM</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >GM</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >GM</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Marge</span>
             </strong>
           </em>
@@ -434,9 +440,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Disc</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Rabatt</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Ribasso</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Disc</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Rabatt</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Ribasso</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Remise</span>
             </strong>
           </em>
@@ -446,9 +452,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Cost price</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kosten</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Costi</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Cost price</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kosten</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Costi</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Co&ucirc;t</span>
             </strong>
           </em>
@@ -458,9 +464,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Cost price Own</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kosten Mat eigen</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Costi propri</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Cost price Own</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kosten Mat eigen</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Costi propri</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Co&ucirc;t Mat. Interne</span>
             </strong>
           </em>
@@ -470,9 +476,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Cost price Lab</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kosten DL eigen</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Costi di servizio</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Cost price Lab</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kosten DL eigen</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Costi di servizio</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Co&ucirc;t Presta. Interne</span>
             </strong>
           </em>
@@ -482,9 +488,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Cost price Thd</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kosten Mat fremd</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">&nbsp;Costi terzi</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Cost price Thd</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kosten Mat fremd</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >&nbsp;Costi terzi</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Co&ucirc;t Mat. Externe</span>
             </strong>
           </em>
@@ -494,9 +500,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Cost price Sub</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kosten DL fremd</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Costi appaltatore</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Cost price Sub</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kosten DL fremd</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Costi appaltatore</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Co&ucirc;t Presta. Externe</span>
             </strong>
           </em>
@@ -506,9 +512,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <em>
             <strong>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Cost price Other</span>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Kosten divers</span>
-              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Costi Diversi</span>
+              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Cost price Other</span>
+              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Kosten divers</span>
+              <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Costi Diversi</span>
               <span style="color: #0070c0;" data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Co&ucirc;t Autre</span>
             </strong>
           </em>
@@ -519,9 +525,9 @@
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Total</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Total</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Totale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">TOTAUX</span>
           </strong>
         </em>
@@ -558,9 +564,9 @@
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Project Promo</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Projekt Promotion</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Promotion progetto</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Project Promo</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Projekt Promotion</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Promotion progetto</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Subventions</span>
           </strong>
         </em>
@@ -575,9 +581,9 @@
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">User Changes</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">&Auml;nderungen User</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Modifica User</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >User Changes</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >&Auml;nderungen User</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Modifica User</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Modif. Utilisateur</span>
           </strong>
         </em>
@@ -603,9 +609,9 @@
         <span style="font-size: 12px;">
           <em>
             <strong>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Sub-Offers</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Sub-Offers</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Sub-Offers</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Sub-Offers</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Sub-Offers</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Sub-Offers</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Sous-Offres</span>
             </strong>
           </em>
@@ -615,9 +621,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <strong>
             <em>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Sales Price</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Verkaufspreis</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Prezzo di vendita</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Sales Price</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Verkaufspreis</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Prezzo di vendita</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Prix de vente</span>
             </em>
           </strong>
@@ -627,9 +633,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <strong>
             <em>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">GM</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">GM</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">GM</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >GM</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >GM</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >GM</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Marge</span>
             </em>
           </strong>
@@ -639,9 +645,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <strong>
             <em>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Disc</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Rabatt</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Ribasso</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Disc</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Rabatt</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Ribasso</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Remise</span>
             </em>
           </strong>
@@ -651,9 +657,9 @@
         <span style="font-size: 10px; color: #0070c0;">
           <strong>
             <em>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Cost Price</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Kosten</span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Costi</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Cost Price</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Kosten</span>
+              <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Costi</span>
               <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Co&ucirc;t</span>
             </em>
           </strong>
@@ -664,9 +670,9 @@
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Total</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Total</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Totale</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Total</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Totale</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">TOTAUX</span>
           </strong>
         </em>
@@ -688,9 +694,9 @@
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Project Promo</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Projekt Promotion</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Promotion progetto</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Project Promo</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Projekt Promotion</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Promotion progetto</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Subventions</span>
           </strong>
         </em>
@@ -704,9 +710,9 @@
       <td style="width: 12%; height: 21px;">
         <em>
           <strong>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" class="hide mceNonDeletable">Totals</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" class="hide mceNonDeletable">Total ohne Promo</span>
-            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" class="hide mceNonDeletable">Totale senza Promo</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" style="color: #0070c0;" >Totals</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" style="color: #0070c0;" >Total ohne Promo</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="color: #0070c0;" >Totale senza Promo</span>
             <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'" style="color: #0070c0;">Modif. Utilisateur</span>
           </strong>
         </em>
@@ -732,34 +738,34 @@
     <tr>
       <td style="width: 50%; height: 21px;"></td>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Signature</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Unterschrift</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Firma</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Signature</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Unterschrift</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Firma</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Signature</span>
       </td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Business Manager (TC)</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Verk&auml;ufer</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Venditore</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Business Manager (TC)</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Verk&auml;ufer</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Venditore</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Business Manager (TC)</span>
       </td>
       <td style="width: 50%; height: 21px;" rowspan="3"></td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Name</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Name</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Nome</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Name</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Name</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Nome</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Nom</span>
       </td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Title</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Title</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Titolo / Funzione</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Title</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Title</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Titolo / Funzione</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'"></span>Titre</td>
     </tr>
   </tbody>
@@ -770,34 +776,34 @@
     <tr>
       <td style="width: 50%; height: 21px;"></td>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Signature</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Unterschrift</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Firma</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Signature</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Unterschrift</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Firma</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Signature</span>
       </td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Business Manager (BA)</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Controlling (BA)</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Controlling (BA)</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Business Manager (BA)</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Controlling (BA)</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Controlling (BA)</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Business Manager (BA)</span>
       </td>
       <td style="width: 50%; height: 21px;" rowspan="3"></td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Name</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Name</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Nome</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Name</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Name</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Nome</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Nom</span>
       </td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Title</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Title</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Titolo / Funzione</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Title</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Title</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Titolo / Funzione</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Titre</span>
       </td>
     </tr>
@@ -809,26 +815,26 @@
     <tr>
       <td style="width: 50%; height: 21px;"></td>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Signature</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Unterschrift</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Firma</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Signature</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Unterschrift</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Firma</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Signature</span>
       </td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Project Manager</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Projektleiter</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Capo progetto</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Project Manager</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Projektleiter</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Capo progetto</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Project Manager</span>
       </td>
       <td style="width: 50%; height: 21px;" rowspan="2"></td>
     </tr>
     <tr>
       <td style="width: 50%; height: 21px;">
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" class="hide mceNonDeletable">Name</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" class="hide mceNonDeletable">Name</span>
-        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" class="hide mceNonDeletable">Nome</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c != 'DE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'IT' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'FR'" >Name</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'" >Name</span>
+        <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" >Nome</span>
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Nom</span>
       </td>
     </tr>
