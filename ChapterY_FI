@@ -1,4 +1,4 @@
-<div>Taulukon mukaiset yksikköhinnat pätevät enintään kymmenen prosentin (10%) suuruisissa määrämuutoksissa alkuperäiseen tarjoukseen nähden.</div>
+<p>Taulukon mukaiset yksikköhinnat pätevät enintään kymmenen prosentin (10%) suuruisissa määrämuutoksissa alkuperäiseen tarjoukseen nähden.</p>
 <div data-repeat="first in Sub_Offers__r" data-sort="SO_Sub_Offer_Sequence__c" data-reset-counter="material_counter">
   <table style="width: 100%; margin: 10px 0px; border-top: 1px solid #000000; height: 25px;">
     <thead style="margin-bottom: 5px;">
