@@ -1,0 +1,163 @@
+<div class="grid no-gutters">
+  <div class="unit half">
+    <table style="width: 100%;" data-repeat="customer in Accounts__r" data-filter="Send_Document__c == true">
+      <tbody>
+        <tr>
+          <td>
+            <span data-show-if="customer.MO_Cust_Short_name__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_Short_name__c]</span>
+            <span data-show-if="customer.MO_Cust_Short_name__c IS BLANK AND customer.MO_Cust_Legal_name1__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_Legal_name1__c]</span>
+            <span data-show-if="customer.MO_Cust_Short_name__c IS BLANK AND customer.MO_Cust_Legal_name1__c IS BLANK AND customer.MO_Cust_Legal_name2__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_Legal_name2__c]</span>
+            <span
+              data-show-if="customer.MO_Cust_Short_name__c IS BLANK AND customer.MO_Cust_Legal_name1__c IS BLANK AND customer.MO_Cust_Legal_name2__c IS BLANK AND customer.MO_Cust_Legal_name3__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_Legal_name3__c]</span>
+            <span data-show-if="Custom1__c_MO_EndCust_Short_name__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Short_name__c"></span>
+            </span>
+            <span data-show-if="Custom1__c_MO_EndCust_Short_name__c IS BLANK AND Custom1__c_MO_EndCust_Legal_name1__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Legal_name1__c"></span>
+            </span>
+            <span data-show-if="Custom1__c_MO_EndCust_Short_name__c IS BLANK AND Custom1__c_MO_EndCust_Legal_name1__c IS BLANK AND Custom1__c_MO_EndCust_Legal_name2__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Legal_name2__c"></span>
+            </span>
+            <span
+              data-show-if="Custom1__c_MO_EndCust_Short_name__c IS BLANK AND Custom1__c_MO_EndCust_Legal_name1__c IS BLANK AND Custom1__c_MO_EndCust_Legal_name2__c IS BLANK AND Custom1__c_MO_EndCust_Legal_name3__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Legal_name3__c"></span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cont_First_name__c]&nbsp;[customer.MO_Cont_Last_name__c]</span>
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_First_name__c"></span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_Last_name__c"></span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span data-show-if="customer.MO_Cont_Number_Street__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cont_Number_Street__c]</span>
+            <span data-show-if="customer.MO_Cont_Number_Street__c IS BLANK AND customer.MO_Cust_Central_PO_Box__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_Central_PO_Box__c]</span>
+            <span data-show-if="customer.MO_Cont_Number_Street__c IS BLANK AND customer.MO_Cust_Central_PO_Box__c IS BLANK AND customer.MO_Cust_Number_Street__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_Number_Street__c]</span>
+            <span data-show-if="Custom1__c_MO_EndCont_Number_Street__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_Number_Street__c"></span>
+            </span>
+            <span data-show-if="Custom1__c_MO_EndCont_Number_Street__c IS BLANK AND Custom1__c_MO_EndCust_Central_PO_Box__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Central_PO_Box__c"></span>
+            </span>
+            <span data-show-if="Custom1__c_MO_EndCont_Number_Street__c IS BLANK AND Custom1__c_MO_EndCust_Central_PO_Box__c IS BLANK AND Custom1__c_MO_EndCust_Number_Street__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Number_Street__c"></span>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span data-show-if="customer.MO_Cont_Postal_Code__c IS NOT BLANK AND customer.MO_Cont_City__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cont_Postal_Code__c]&nbsp;[customer.MO_Cont_City__c]</span>
+            <span
+              data-show-if="customer.MO_Cont_Postal_Code__c IS BLANK OR customer.MO_Cont_City__c IS BLANK AND customer.MO_Cust_PC_PO_Box__c IS NOT BLANK AND customer.MO_Cust_City_Postal_Box__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_PC_PO_Box__c]&nbsp;[customer.MO_Cust_City_Postal_Box__c]</span>
+            <span
+              data-show-if="customer.MO_Cont_Postal_Code__c IS BLANK OR customer.MO_Cont_City__c IS BLANK AND customer.MO_Cust_PC_PO_Box__c IS BLANK OR customer.MO_Cust_City_Postal_Box__c IS BLANK AND customer.MO_Cust_Post_Code__c IS NOT BLANK AND customer.MO_Cust_City__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c NLIKE 'End-Customer'">[customer.MO_Cust_Post_Code__c]&nbsp;[customer.MO_Cust_City__c]</span>
+            <span data-show-if="Custom1__c_MO_EndCont_Postal_Code__c IS NOT BLANK AND Custom1__c_MO_EndCont_City__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_Postal_Code__c"></span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCont_City__c" data-type="string" data-textcase=""></span>
+            </span>
+            <span
+              data-show-if="Custom1__c_MO_EndCont_Postal_Code__c IS BLANK OR Custom1__c_MO_EndCont_City__c IS BLANK AND Custom1__c_MO_EndCust_PC_PO_Box__c IS NOT BLANK AND Custom1__c_MO_EndCust_City_Postal_Box__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_PC_PO_Box__c"></span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_City_Postal_Box__c" data-type="string" data-textcase=""></span>
+            </span>
+            <span
+              data-show-if="Custom1__c_MO_EndCont_Postal_Code__c IS BLANK OR Custom1__c_MO_EndCont_City__c IS BLANK AND Custom1__c_MO_EndCust_PC_PO_Box__c IS BLANK OR Custom1__c_MO_EndCust_City_Postal_Box__c IS BLANK AND Custom1__c_MO_EndCust_Post_Code__c IS NOT BLANK AND Custom1__c_MO_EndCust_City__c IS NOT BLANK AND Custom1__c_Generic_DocGen__r_Send_To__c LIKE 'End-Customer'">
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_EndCust_Post_Code__c"></span>&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Cust_City__c">KAJAANI</span>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="unit half">
+    <table style="width: 100%;">
+      <tbody>
+        <tr>
+          <td style="width: 39%; vertical-align: top;">
+            <p>Nimi:<br/>
+              <span>Divisioona:</span>
+            </p>
+            <p>
+              <span>Puhelin</span>:<br/>
+              <span>S&auml;hk&ouml;posti</span>:</p>
+            <span>Matkapuhelin:</span><br/>
+            <p>
+              <span>Viitteenne:<br/>P&auml;iv&auml;ys</span>:</p>
+          </td>
+          <td style="width: 61%;">
+            <p>
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Resp_Sales_Rep__c">Kosamo, Tapani</span>&nbsp;<br/>Building Technologies</p>
+            <p>
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Name__r_PH_Opp_Work_Phone__c" data-type="string" data-textcase="">+358 10 5116916</span>&nbsp;<br/>
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Name__r_PH_Opp_User_Email__c" data-type="string" data-textcase="">tapani.kosamo@siemens.com</span>&nbsp;<br/>&nbsp;<br/>
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Name__r_PH_Opp_User_Phone__c" data-type="string" data-textcase="">+358 50 4695520</span>&nbsp;<br/>
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Customers_Reference__c" data-type="string" data-textcase=""></span><br/>
+              <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Offer_Date__c" data-type="date" data-format="%d.%m.%Y"></span>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<p></p>
+<p>
+  <strong>
+    <span data-show-if="Custom1__c_SalesforceDocGenFI__r_Offer_Type__c = 'Tarjous'" class="hide mceNonDeletable">Tarjous</span>
+    <span data-show-if="Custom1__c_SalesforceDocGenFI__r_Offer_Type__c = 'Budjettitarjous'">Budjettitarjous</span><br/>
+    <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Main_Offer_Description__c" data-type="string" data-textcase="">Testi1</span>&nbsp;</strong><br/>
+  <strong>
+    <span>Tarjousnumero
+    </span>:&nbsp;<span class="inline-variable mceNonEditable" data-name="Custom1__c_Document_Header__c" data-type="string" data-textcase="">2734701723_V1_R1</span>
+  </strong>
+</p>
+<p>
+  <strong>Tarjouksen sis&auml;lt&ouml;</strong>
+</p>
+<p style="padding-left: 30px;" data-show-if="Custom1__c_SalesforceDocGenFI__r_MSA_contract__c LIKE 'false'">Hyv&auml; Asiakkaamme,
+  <br/><br/>Kiit&auml;mme tarjouspyynn&ouml;st&auml;nne ja tarjoamme Teille saamiemme l&auml;ht&ouml;tietojen perusteella seuraavasti:
+  <br/><br/>T&auml;h&auml;n lyhyt kuvaus tarjotuista t&ouml;ist&auml;: Esim, Paloilmoittimen varaosat / Anturin lis&auml;ys, &hellip;.&nbsp;</p>
+<p style="padding-left: 30px;">
+  <span>Lis&auml;tietoja t&auml;h&auml;n asiakirjaan liittyviin kysymyksiin antaa
+    <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Resp_Sales_Rep__c">Custom1__c_PH_Opp_Resp_Sales_Rep__c</span>
+    puhelin
+    <span class="inline-variable mceNonEditable" data-name="Custom1__c_PH_Opp_Name__r_PH_Opp_Work_Phone__c">Custom1__c_PH_Opp_Name__r_PH_Opp_Work_Phone__c</span>.</span>
+</p>
+<p style="padding-left: 30px;">
+  <span></span>
+</p>
+<p style="padding-left: 30px;">
+  <span>Kunnioittavasti
+  </span>
+</p>
+<p style="padding-left: 30px;">
+  <span></span>
+</p>
+<p style="padding-left: 30px;">
+  <span>Siemens Osakeyhti&ouml;<br/>
+    Building Technologies</span>
+</p>
+<div class="grid">
+  <div class="unit half">
+    <p style="padding-left: 9px;">
+      <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Signature_left__c">Custom1__c_Generic_DocGen__r_Signature_left__c</span><br/>Myyntip&auml;&auml;llikk&ouml;</p>
+  </div>
+  <div class="unit half">
+    <p data-hide-if="Custom1__c_Generic_DocGen__r_Signature_Right__c IS BLANK OR Custom1__c_Generic_DocGen__r_Signature_Right__c LIKE '- NONE -'">
+      <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Signature_Right__c">Custom1__c_Generic_DocGen__r_Signature_Right__c</span><br/>Myyntijohtaja &nbsp;</p>
+  </div>
+</div>
+<p>
+  <span style="display: none;">&nbsp;</span>
+</p>
+<div>
+  <p style="padding-left: 30px;">
+    <span></span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<div style="page-break-after: always;">
+  <span style="display: none;">&nbsp;</span>
+</div>

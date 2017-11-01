@@ -1,0 +1,505 @@
+<!--content part 2-->
+<p>
+  <strong>Toimitusaika</strong>
+</p>
+<div>
+  <p style="padding-left: 30px;">
+    <span>Mik&auml;li toimitusajasta ei ole muuta sovittu, on toimitusaika nelj&auml; (4) viikkoa Ostajan tilauksesta. Palveluiden toimitusaika sovitaan yhdess&auml; erikseen. Myyj&auml; vahvistaa pyynn&ouml;st&auml; Ostajan tilaamien tuotteiden ja
+      palveluiden toimitusajat tilausvahvistuksessa.
+    </span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<p>
+  <strong>Tarjouksen voimassaolo
+  </strong>
+</p>
+<p style="padding-left: 30px;">Tarjouksemme on voimassa 3 kuukautta tarjouksen j&auml;tt&auml;misest&auml;.</p>
+<p>
+  <span style="display: none;">&nbsp;</span>
+</p>
+<!--Tarjouspyyntöasiakirjat-->
+<div>
+  <p>
+    <strong>Tarjouspyynt&ouml;asiakirjat
+    </strong>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Tarjous perustuu toimitettuihin l&auml;ht&ouml;tietoihin, niiden muuttuessa Myyj&auml; on oikeutettu muuttamaan tarjoushintaansa.</span>
+  </p>
+  <p data-show-if="Custom1__c_Generic_DocGen__r_List_of_Documents__c NLIKE 'Small Works'" style="padding-left: 30px;">
+    <span>Tarjouksen laadinnan perusteena ovat olleet seuraavat asiakirjat:
+    </span>
+  </p>
+  <p data-show-if="Custom1__c_Generic_DocGen__r_List_of_Documents__c NLIKE 'Small Works'" style="padding-left: 30px;">
+    <span>1) Asiakirja 1</span>
+  </p>
+  <p data-show-if="Custom1__c_Generic_DocGen__r_List_of_Documents__c NLIKE 'Small Works'" style="padding-left: 30px;">
+    <span>2) Asiakirja 2</span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_YSE_1998_terms__c == true AND Custom1__c_SalesforceDocGenFI__r_Customer_Category__c LIKE 'Private'">
+  <p>
+    <strong>Poikkeukset YSE 1998 ehtoihin</strong>
+  </p>
+  <p data-show-if="Custom1__c_MO_Total__c lt 50000" style="padding-left: 30px;">Tarjouspyynt&ouml;nne on annettu YSE 1998 ehdoilla. Hyv&auml;ksymme n&auml;iden ehtojen k&auml;ytt&auml;misen seuraavilla tarkennuksilla:
+    <br/><br/>25 &sect;, 1. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Riippumatta mist&auml;&auml;n muusta sopimusehdosta urakoitsijan yhteenlaskettu enimm&auml;isvastuu, mukaan lukien urakoitsijan maksettavaksi tulevat viiv&auml;styssakot, hinnanalennukset ja muut urakoitsijan
+    maksettavaksi tulevat hyvitykset ja korvaukset my&ouml;s tilanteessa, jossa sopimus puretaan, on kuitenkin kaikissa tilanteissa rajoitettu enint&auml;&auml;n sataan (100) prosenttiin arvonlis&auml;verottomasta urakkahinnasta. T&auml;m&auml;
+    vastuunrajoitus ei koske tilanteita, joissa urakoitsija on aiheuttanut vahingon tahallaan tai t&ouml;rke&auml;ll&auml; tuottamuksellaan".
+    <br/>25 &sect;, 2. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Riippumatta mist&auml;&auml;n muusta sopimusehdosta urakoitsija ei my&ouml;sk&auml;&auml;n vastaa liikevaihdon, voiton, k&auml;ytt&ouml;hy&ouml;dyn tai tietojen menett&auml;misest&auml;, vahingosta, joka
+    aiheutuu siit&auml;, ett&auml; sopimus sivullisen kanssa j&auml;&auml; t&auml;ytt&auml;m&auml;tt&auml; oikein, p&auml;&auml;omakustannuksista, kateostosta, muulle omaisuudelle kuin urakan kohteelle aiheutuneesta vahingosta tai mist&auml;&auml;n
+    v&auml;lillisest&auml; tai ep&auml;suorasta vahingosta. T&auml;m&auml; vastuunrajoitus ei koske tilanteita, joissa urakoitsija on aiheuttanut vahingon tahallaan tai t&ouml;rke&auml;ll&auml; tuottamuksellaan".
+    <br/>25 &sect;, 3 .kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti: "Urakoitsijan vastuu viiv&auml;styksest&auml; on rajoitettu 18 &sect;:n mukaisen viiv&auml;styssakon maksamiseen, jollei urakoitsija ole aiheuttanut vahinkoa tahallaan tai t&ouml;rke&auml;ll&auml;
+    tuottamuksellaan".
+    <br/>30 ja 31 &sect;<br/>
+    Ei sovelleta osapuolten v&auml;liseen sopimukseen.</p>
+  <p data-show-if="Custom1__c_MO_Total__c gte 50000 AND Custom1__c_MO_Total__c lt 300000" style="padding-left: 30px;">Tarjouspyynt&ouml;nne on annettu YSE 1998 ehdoilla. Hyv&auml;ksymme n&auml;iden ehtojen k&auml;ytt&auml;misen seuraavilla tarkennuksilla:<br/><br/>
+    1 &sect;, 2. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsija ei t&auml;m&auml;n sopimuksen perusteella ole kuitenkaan velvollinen toimittamaan sellaisia koneista tai laitteita, joita ei ole nimenomaisesti yksil&ouml;ity t&auml;ss&auml; sopimuksessa".<br/>
+    25 &sect;, 1. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Riippumatta mist&auml;&auml;n muusta sopimusehdosta urakoitsijan yhteenlaskettu enimm&auml;isvastuu, mukaan lukien urakoitsijan maksettavaksi tulevat viiv&auml;styssakot, hinnanalennukset ja muut urakoitsijan
+    maksettavaksi tulevat hyvitykset ja korvaukset my&ouml;s tilanteessa, jossa sopimus puretaan, on kuitenkin kaikissa tilanteissa rajoitettu enint&auml;&auml;n sataan (100) prosenttiin arvonlis&auml;verottomasta urakkahinnasta. T&auml;m&auml;
+    vastuunrajoitus ei koske tilanteita, joissa urakoitsija on aiheuttanut vahingon tahallaan tai t&ouml;rke&auml;ll&auml; tuottamuksellaan".
+    <br/>25 &sect;, 2. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Riippumatta mist&auml;&auml;n muusta sopimusehdosta urakoitsija ei my&ouml;sk&auml;&auml;n vastaa liikevaihdon, voiton, k&auml;ytt&ouml;hy&ouml;dyn tai tietojen menett&auml;misest&auml;, vahingosta, joka
+    aiheutuu siit&auml;, ett&auml; sopimus sivullisen kanssa j&auml;&auml; t&auml;ytt&auml;m&auml;tt&auml; oikein, p&auml;&auml;omakustannuksista, kateostosta, muulle omaisuudelle kuin urakan kohteelle aiheutuneesta vahingosta tai mist&auml;&auml;n
+    v&auml;lillisest&auml; tai ep&auml;suorasta vahingosta. T&auml;m&auml; vastuunrajoitus ei koske tilanteita, joissa urakoitsija on aiheuttanut vahingon tahallaan tai t&ouml;rke&auml;ll&auml; tuottamuksellaan".
+    <br/>25 &sect;, 3. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti: "Urakoitsijan vastuu viiv&auml;styksest&auml; on rajoitettu 18 &sect;:n mukaisen viiv&auml;styssakon maksamiseen, jollei urakoitsija ole aiheuttanut vahinkoa tahallaan tai t&ouml;rke&auml;ll&auml;
+    tuottamuksellaan".
+    <br/>29 &sect;, 2. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijan suoritukseen mahdollisesti sis&auml;ltyvien kolmansien osapuolten valmistamien tietokoneohjelmien osalta urakoitsijalla ei kuitenkaan ole tietokoneohjelmiston lisenssinantajan lisenssiehtojen
+    mukaista vastuuta ylitt&auml;v&auml;&auml; vastuuta tietokoneohjelman virheist&auml;".
+    <br/>30 &sect;<br/>
+    Muutetaan teksti kuulumaan seuraavalla tavalla:" Urakoitsija vastaa takuuajan j&auml;lkeenkin sellaisista virheist&auml;, joiden tilaajan n&auml;ytt&auml;&auml; aiheutuneen urakoitsijan t&ouml;rke&auml;st&auml; tuottamuksesta ja joita tilaaja ei ole
+    kohtuudella voinut havaita vastaanottotarkastuksessa eik&auml; takuuaikana. T&auml;st&auml;kin vastuustaan urakoitsija on vapaa, kun kymmenen vuotta on kulunut rakennuskohteen vastaanottamisesta tai, mik&auml;li vastaanottotarkastusta ei ole pidetty,
+    siit&auml; p&auml;iv&auml;st&auml;, jolloin rakennuskohde on otettu k&auml;ytt&ouml;&ouml;n".
+    <br/>31 &sect;<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijan t&auml;m&auml;n kohdan mukainen vastuu koskee ainoastaan luonnollisille henkil&ouml;ille ja yksityiseen k&auml;ytt&ouml;&ouml;n tarkoitetulle omaisuudelle aiheutuneita vahinkoja".
+    <br/>54 &sect;<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijan suoritukseen sis&auml;ltyviin tietokoneohjelmiin tilaaja saa ainoastaan tietokoneohjelman lisenssiehtojen mukaisen k&auml;ytt&ouml;oikeuden. Jollei ohjelmaan liity lisenssiehtoja,
+    k&auml;sitt&auml;&auml; tilaajan k&auml;ytt&ouml;oikeus ohjelman k&auml;ytt&auml;misen tilaajan sis&auml;isess&auml; liiketoiminnassa sill&auml; laitealustalla, jolla ohjelma on toimitettu, ilman oikeutta kopioida ohjelmaa, muokata sit&auml; tai
+    luovuttaa ohjelmaa tai k&auml;ytt&ouml;oikeutta siihen kolmannelle taholle".
+    <br/>78 &sect;, 2. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijalle virheen korjaamiseen varattava aika ei kuitenkaan saa olla lyhyempi kuin 30 p&auml;iv&auml;&auml;. Viiv&auml;stymisen osalta lis&auml;edellytyksen&auml; sopimuksen purkamiselle on, ett&auml;
+    tilaaja on oikeutettu viiv&auml;styssakkojen enimm&auml;ism&auml;&auml;r&auml;&auml;n".</p>
+  <p data-show-if="Custom1__c_MO_Total__c gte 300000" style="padding-left: 30px;">Tarjouspyynt&ouml;nne on annettu YSE 1998 ehdoilla. Hyv&auml;ksymme n&auml;iden ehtojen k&auml;ytt&auml;misen liitteen X mukaisesti:
+    <br/><br/>1 &sect;, 2. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsija ei t&auml;m&auml;n sopimuksen perusteella ole kuitenkaan velvollinen toimittamaan sellaisia koneista tai laitteita, joita ei ole nimenomaisesti yksil&ouml;ity t&auml;ss&auml; sopimuksessa".
+    <br/>3 &sect;, 1. kappale<br/>
+    Muutetaan teksti kuulumaan seuraavalla tavalla:" Kaupallisissa asiakirjoissa nimet&auml;&auml;n ty&ouml;maapalveluista vastaava urakoitsija sek&auml; ne urakat ja hankinnat, joita ty&ouml;maapalvelut koskevat. Ellei ty&ouml;maapalveluista vastaavaa
+    urakoitsijaa ole nimetty, tilaaja vastaa urakoitsijan tarvitsemista ty&ouml;maapalveluista".
+    <br/>13 &sect;, 1. Kappale<br/>
+    (kaksi ensimm&auml;ist&auml; kohtaa) Muutetaan teksti kuulumaan seuraavalla tavalla:" A: Kaupalliset asiakirjat
+    <br/>a) urakkasopimus;
+    <br/>b) urakkaneuvottelup&ouml;yt&auml;kirja;
+    <br/>c) tarjous;
+    <br/>d) n&auml;m&auml; yleiset sopimusehdot
+    <br/>e) urakkaohjelma tai muut sopimuskohtaiset urakkaehdot;
+    <br/>f) urakkarajaliite;
+    <br/>g) tarjouspyynt&ouml; ja ennen tarjouksen antamista annetut kirjalliset lis&auml;selvitykset;
+    <br/>h) m&auml;&auml;r&auml;- ja mittaluettelot;
+    <br/>i) muutost&ouml;iden yksikk&ouml;hintaluettelo".
+    <br/>13 &sect;, 2. kappale<br/>
+    Muutetaan teksti kuulumaan seuraavalla tavalla:" Jos jonkin edell&auml; mainitun yksitt&auml;isen sopimusasiakirjan tai -asiakirjaryhm&auml;n m&auml;&auml;r&auml;ykset ovat kesken&auml;&auml;n ristiriitaisia, p&auml;tee viimeksi laadittu
+    samanarvoinen asiakirja. Ellei p&auml;tevyysj&auml;rjestys t&auml;ll&auml; perusteella ratkea, ratkaistaan kysymys luvun 11 m&auml;&auml;r&auml;ysten mukaisesti".
+    <br/>20 &sect;, 4. kappale<br/>
+    Poistetaan 4. Kappale kokonaisuudessaan.
+    <br/>25 &sect;, 1. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Riippumatta mist&auml;&auml;n muusta sopimusehdosta urakoitsijan yhteenlaskettu enimm&auml;isvastuu, mukaan lukien urakoitsijan maksettavaksi tulevat viiv&auml;styssakot, hinnanalennukset ja muut urakoitsijan
+    maksettavaksi tulevat hyvitykset ja korvaukset my&ouml;s tilanteessa, jossa sopimus puretaan, on kuitenkin kaikissa tilanteissa rajoitettu enint&auml;&auml;n sataan (100) prosenttiin arvonlis&auml;verottomasta urakkahinnasta. T&auml;m&auml;
+    vastuunrajoitus ei koske tilanteita, joissa urakoitsija on aiheuttanut vahingon tahallaan tai t&ouml;rke&auml;ll&auml; tuottamuksellaan".
+    <br/>25 &sect;, 2. kappale<br/>
+    Lis&auml;t&auml;&auml;n seuraava teksti:" Riippumatta mist&auml;&auml;n muusta sopimusehdosta urakoitsija ei my&ouml;sk&auml;&auml;n vastaa liikevaihdon, voiton, k&auml;ytt&ouml;hy&ouml;dyn tai tietojen menett&auml;misest&auml;, vahingosta, joka
+    aiheutuu siit&auml;, ett&auml; sopimus sivullisen kanssa j&auml;&auml; t&auml;ytt&auml;m&auml;tt&auml; oikein, p&auml;&auml;omakustannuksista, kateostosta, muulle omaisuudelle kuin urakan kohteelle aiheutuneesta vahingosta tai mist&auml;&auml;n
+    v&auml;lillisest&auml; tai ep&auml;suorasta vahingosta. T&auml;m&auml; vastuunrajoitus ei koske tilanteita, joissa urakoitsija on aiheuttanut vahingon tahallaan tai t&ouml;rke&auml;ll&auml; tuottamuksellaan".
+    <br/>25 &sect;, 3. kappale Lis&auml;t&auml;&auml;n seuraava teksti: "Urakoitsijan vastuu viiv&auml;styksest&auml; on rajoitettu
+    <br/>18 &sect;:n mukaisen viiv&auml;styssakon maksamiseen, jollei urakoitsija ole aiheuttanut vahinkoa tahallaan tai t&ouml;rke&auml;ll&auml; tuottamuksellaan".
+    <br/>29 &sect;, 2. kappale Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijan suoritukseen mahdollisesti sis&auml;ltyvien kolmansien osapuolten valmistamien tietokoneohjelmien osalta urakoitsijalla ei kuitenkaan ole tietokoneohjelmiston
+      lisenssinantajan lisenssiehtojen mukaista vastuuta ylitt&auml;v&auml;&auml; vastuuta tietokoneohjelman virheist&auml;".
+    <br/>30 &sect; Muutetaan teksti kuulumaan seuraavalla tavalla:<br/>"Urakoitsija vastaa takuuajan j&auml;lkeenkin sellaisista virheist&auml;, joiden tilaajan n&auml;ytt&auml;&auml; aiheutuneen urakoitsijan t&ouml;rke&auml;st&auml; tuottamuksesta ja
+      joita tilaaja ei ole kohtuudella voinut havaita vastaanottotarkastuksessa eik&auml; takuuaikana. T&auml;st&auml;kin vastuustaan urakoitsija on vapaa, kun kymmenen vuotta on kulunut rakennuskohteen vastaanottamisesta tai, mik&auml;li
+      vastaanottotarkastusta ei ole pidetty, siit&auml; p&auml;iv&auml;st&auml;, jolloin rakennuskohde on otettu k&auml;ytt&ouml;&ouml;n".
+    <br/>31 &sect; Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijan t&auml;m&auml;n kohdan mukainen vastuu koskee ainoastaan luonnollisille henkil&ouml;ille ja yksityiseen k&auml;ytt&ouml;&ouml;n tarkoitetulle omaisuudelle aiheutuneita vahinkoja".
+    <br/>32 &sect; Poistetaan
+    <br/>32 &sect; kokonaisuudessaan.
+    <br/>42 &sect; Poistetaan
+    <br/>42 &sect; kokonaisuudessaan.
+    <br/>54 &sect; Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijan suoritukseen sis&auml;ltyviin tietokoneohjelmiin tilaaja saa ainoastaan tietokoneohjelman lisenssiehtojen mukaisen k&auml;ytt&ouml;oikeuden. Jollei ohjelmaan liity lisenssiehtoja,
+      k&auml;sitt&auml;&auml; tilaajan k&auml;ytt&ouml;oikeus ohjelman k&auml;ytt&auml;misen tilaajan sis&auml;isess&auml; liiketoiminnassa sill&auml; laitealustalla, jolla ohjelma on toimitettu, ilman oikeutta kopioida ohjelmaa, muokata sit&auml; tai
+      luovuttaa ohjelmaa tai k&auml;ytt&ouml;oikeutta siihen kolmannelle taholle".
+    <br/>78 &sect;, 2. kappale Lis&auml;t&auml;&auml;n seuraava teksti:" Urakoitsijalle virheen korjaamiseen varattava aika ei kuitenkaan saa olla lyhyempi kuin 30 p&auml;iv&auml;&auml;. Viiv&auml;stymisen osalta lis&auml;edellytyksen&auml; sopimuksen
+      purkamiselle on, ett&auml; tilaaja on oikeutettu viiv&auml;styssakkojen enimm&auml;ism&auml;&auml;r&auml;&auml;n".
+    <br/>83 &sect;, 1. kappale Muutetaan teksti kuulumaan seuraavalla tavalla: "Jos tilaaja edell&auml;
+    <br/>78-79 &sect;:ien tai
+    <br/>81 &sect;:n tarkoittamissa tapauksissa purkaa sopimuksen, suoritetaan tilisuhteiden selvitt&auml;minen siten kuin siit&auml; on t&auml;ss&auml; kohdassa
+    <br/>83 &sect; sovittu".
+    <br/>90 &sect; Poistetaan
+    <br/>90 &sect; kokonaisuudessaan.
+    <br/>92 &sect;, 1. kappale Muutetaan teksti kuulumaan seuraavalla tavalla: "T&auml;m&auml;n sopimuksen p&auml;tevyytt&auml;, tulkintaa ja soveltamista sek&auml; muutos- ja lis&auml;t&ouml;it&auml; ja niiden kustannuksia koskevat kaikki riitaisuudet,
+      joista asianosaiset eiv&auml;t p&auml;&auml;se kesken&auml;&auml;n sopimukseen ratkaistaan lopullisesti ja osapuolia sitovasti keskuskauppakamarin v&auml;lityslautakunnan s&auml;&auml;nt&ouml;jen mukaisessa v&auml;limiesmenettelyss&auml;
+      Helsingiss&auml;. Urakoitsijalla on edell&auml; mainitun est&auml;m&auml;tt&auml; oikeus peri&auml; er&auml;&auml;ntyneit&auml; saataviaan urakoitsijan tai tilaajan kotipaikan k&auml;r&auml;j&auml;oikeudessa".</p>
+</div>
+<!--tarjousasiakirjat-->
+<div>
+  <p>
+    <strong>Tarjousasiakirjat
+    </strong>
+  </p>
+  <p>Seuraavat liiteasiakirjat muodostavat kiinte&auml;n osan t&auml;t&auml; tarjousta:</p>
+  <ol>
+    <li style="padding-left: 30px;" data-show-if="Custom1__c_SalesforceDocGenFI__r_YSE_1998_terms__c == false AND Custom1__c_SalesforceDocGenFI__r_Siemens_Osakeyhti_Yleiset_toimitusehdo__c == true">
+      <span>Siemens Osakeyhti&ouml;, Yleiset toimitusehdot 10/2014</span>
+    </li>
+    <li style="padding-left: 30px;" data-show-if="Custom1__c_SalesforceDocGenFI__r_SBT_Huoltopalveluehdo__c == true">
+      <span>Siemens Building Technologies, Huoltopalveluehdot 10/2016</span>
+    </li>
+    <li style="padding-left: 30px;" data-show-if="Custom1__c_SalesforceDocGenFI__r_SBT_Digitaalisten_palveluiden_sopimusehd__c == true">
+      <span>Siemens Building Technologies, Digitaalisten palveluiden sopimusehdot 6/2016</span>
+    </li>
+    <li style="padding-left: 30px;" data-show-if="Custom1__c_SalesforceDocGenFI__r_Siemens_Talotekniikan_huoltopalvelut_Pa__c == true">
+      <span>Siemens Talotekniikan huoltopalvelut, Palveluhinnasto, 1.1.2017</span>
+    </li>
+    <li style="padding-left: 30px;" data-show-if="Custom1__c_SalesforceDocGenFI__r_YSE_1998_terms__c == true AND Custom1__c_SalesforceDocGenFI__r_Tilaajavastuuraportti__c == true">
+      <span>Tilaajavastuuraportti</span>
+    </li>
+    <li style="padding-left: 30px;" data-show-if="Custom1__c_SalesforceDocGenFI__r_YSE_1998_terms__c == true">
+      <span>YSE 1998 ehdot</span>
+    </li>
+  </ol>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_YSE_1998_terms__c == false" style="padding-left: 30px;">
+    <span>Jos tarjousasiakirjat ovat kesken&auml;&auml;n ristiriidassa, ratkaisee ensisijaisesti t&auml;m&auml;n tarjousasiakirjan sanamuoto ja sen j&auml;lkeen liitteet numeroj&auml;rjestyksess&auml;.</span>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_YSE_1998_terms__c == true " style="padding-left: 30px;">
+    <span>Jos tarjousasiakirjat ovat kesken&auml;&auml;n ristiriidassa, ratkaisee ensisijaisesti t&auml;m&auml;n tarjousasiakirjan sanamuoto ja sen j&auml;lkeen liitteet numeroj&auml;rjestyksess&auml;. YSE 1998 ehtojen 13 &sect;:st&auml; kohdasta
+      riippumatta Myyj&auml;n tarjous saa aina Ostajan tarjouspyynt&ouml;&auml; paremman etusijan sopimusasiakirjoja tulkittaessa.</span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<!--Maksuehto-->
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuehto__c IS NOT BLANK">
+  <p>
+    <strong>Maksuehto
+    </strong>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuehto__c LIKE '14 pv netto'" style="padding-left: 30px;">Maksuehto 14 p&auml;iv&auml;&auml; netto.</p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuehto__c LIKE '21 pv netto'" style="padding-left: 30px;">Maksuehto 21 p&auml;iv&auml;&auml; netto.</p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuehto__c LIKE '30 pv netto'" style="padding-left: 30px;">Maksuehto 30 p&auml;iv&auml;&auml; netto.</p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuehto__c LIKE '45 pv netto'" style="padding-left: 30px;">Maksuehto 45 p&auml;iv&auml;&auml; netto.</p>
+</div>
+<div>
+  <p>
+    <strong>Maksuer&auml;t
+    </strong>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuer_t__c LIKE '50/40/10'" style="padding-left: 30px;">
+    <span>Maksuer&auml;t: 50 % tilattaessa, 40 % laitteiden toimituksesta, 10 % t&ouml;iden vastaanotosta.
+    </span>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuer_t__c LIKE '30/30/30/10'" style="padding-left: 30px;">
+    <span>Maksuer&auml;t: 30 % tilattaessa, 30 % ensimm&auml;isten laitteiden toimituksesta tai t&ouml;iden aloituksesta kohteessa, 30% k&auml;ytt&ouml;&ouml;noton aikana, mutta viimeist&auml;&auml;n kolma kuukautta laitteiden toimituksesta ja 10 %
+      vastaanotosta.
+    </span>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Maksuer_t__c LIKE 'Erillinen maksuohjelma'" style="padding-left: 30px;">
+    <span>Maksuer&auml;t erikseen sovittavan maksuohjelman mukaan.
+    </span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<!--Toimitusehto-->
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Toimitusehto__c LIKE 'DAP' OR Custom1__c_SalesforceDocGenFI__r_Toimitusehto__c LIKE 'DPP'">
+  <p>
+    <strong>Toimitusehto
+    </strong>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Toimitusehto__c LIKE 'DAP'" style="padding-left: 30px;">
+    <span>Toimitusehto DAP XXXXXX.
+    </span>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Toimitusehto__c LIKE 'DPP'" style="padding-left: 30px;">
+    <span>Toimitusehto DPP XXXXXX.
+    </span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<!--Tarjoukseen sisältyvät työt-->
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Fire__c == true">
+  <p>
+    <strong>Tarjoukseen sis&auml;ltyv&auml;t ty&ouml;t</strong>
+  </p>
+  <p>J&auml;rjestelm&auml;n ohjelmointi ja k&auml;ytt&ouml;&ouml;nottoty&ouml;t:</p>
+  <ul>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_ohjelmointi__c == true">ohjelmointi</li>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_k_ytt_notto__c == true">k&auml;ytt&ouml;&ouml;notto</li>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_k_yt_nopastus__c == true">k&auml;yt&ouml;nopastus</li>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_matkakustannukset__c == true">matkakustannukset</li>
+  </ul>
+  <p>Paloilmoitusj&auml;rjestelm&auml;st&auml; vastaavan asennusliikkeen ty&ouml;t:</p>
+  <ul>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_projektinhoito__c == true">projektinhoito</li>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_suunnitelmien_tarkastus__c == true">suunnitelmien tarkastus</li>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_paikantamiskaavioiden_laatiminen__c == true">paikantamiskaavioiden laatiminen</li>
+    <li data-show-if="Custom1__c_SalesforceDocGenFI__r_asennustodistukset__c == true">asennustodistukset</li>
+  </ul>
+</div>
+<!--Hintamuutosehdot-->
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Fire__c == true">
+  <p>
+    <strong>Hintamuutosehdot</strong>
+  </p>
+  <p style="padding-left: 30px;">Edell&auml; mainitut hinnat ovat voimassa ainoastaan t&auml;m&auml;n tarjouksen kohdalla. Kaikki t&auml;ss&auml; hintaerittelyss&auml; ilmoitetut hinnat ovat arvonlis&auml;verottomia hintoja.<br/><br/>
+    Palautettavista tarvikkeista ja/tai toimittamatta j&auml;&auml;neist&auml; palveluista Myyj&auml; hyvitt&auml;&auml; enint&auml;&auml;n 80% myyntihinnasta. Myyj&auml; p&auml;&auml;tt&auml;&auml; mahdollisista hyvityksist&auml; tapauskohtaisesti.
+    <br/><br/>Palautettavan tarvikkeen tulee olla alkuper&auml;isess&auml; avaamattomassa pakkauksessa. Alle 200 &euro; palautuksia ei hyvitet&auml;. Kaikki palautuksiin liittyv&auml;t rahti- ym. kulut maksaa Ostaja. Myyj&auml; on oikeutettu veloittamaan
+      toimitussis&auml;lt&ouml;&ouml;n kuulumattomista t&ouml;ist&auml; ja tarvikkeista hintaerittelyn mukaisesti.</p>
+</div>
+<!--Muut ehdot-->
+<div>
+  <p>
+    <strong>Muut ehdot
+    </strong>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_YSE_1998_ehdot__c == true" style="padding-left: 30px;">
+    <span>Tarjouksen hyv&auml;ksyminen edellytt&auml;&auml; urakkaneuvotteluja.</span>
+  </p>
+  <p style="padding-left: 30px;">T&auml;m&auml; tarjous ei muodostu osapuolia sitovaksi sopimukseksi ilman kirjallista tilausta ja tilausvahvistusta tai erillist&auml; sopimusta.</p>
+  <p style="padding-left: 30px;">Tarjous edellytt&auml;&auml;, ett&auml; Ostaja hyv&auml;ksyy koko tarjouslaajuuden. Tarjousta ei n&auml;in voi hyv&auml;ksy&auml; vain joidenkin tarjottujen laitteiden tai palveluiden osalta.</p>
+  <p style="padding-left: 30px;">Myyj&auml;n osalta sopimuksen t&auml;yt&auml;nt&ouml;&ouml;npanon edellytyksen&auml; on, ettei Sopimuksen t&auml;yt&auml;nt&ouml;&ouml;npanolle ole estett&auml; kansallisesta tai kansainv&auml;lisest&auml; ulkomaan
+    kauppaa tai tullia koskevista m&auml;&auml;r&auml;yksist&auml; tai vaatimuksista eik&auml; vienti- tai tuontirajoituksista tai muista m&auml;&auml;r&auml;yksist&auml;.</p>
+  <p style="padding-left: 30px;">Tarjouksen mukaisten laitteiden ja t&ouml;iden takuuaika on kaksi (2) vuotta.</p>
+  <p style="padding-left: 30px;">Ty&ouml;t tehd&auml;&auml;n normaalina ty&ouml;aikana klo 7.00 &ndash; 16.00</p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Fire__c == true" style="padding-left: 30px;">
+    <span>Tarkastuslaitoksien tarkastusmaksut eiv&auml;t sis&auml;lly tarjoukseen.
+      <br/><br/>Tarjouksen tekohetkell&auml; ei k&auml;yt&ouml;ss&auml;mme ole ollut lain edellytt&auml;m&auml;&auml; paloilmoittimen toteutusp&ouml;yt&auml;kirjaa. Mik&auml;li siin&auml; m&auml;&auml;ritell&auml;&auml;n jotain l&auml;ht&ouml;tiedoista
+        poikkeavia vaatimuksia j&auml;rjestelm&auml;lle, varaamme itsellemme oikeuden vastaaviin muutoksiin.
+      <br/><br/>Nosturikulut eiv&auml;t sis&auml;lly tarjoukseemme</span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<div
+  data-show-if="Custom1__c_SalesforceDocGenFI__r_Siemens_Osakeyhti_Yleiset_toimitusehdo__c == true OR Custom1__c_SalesforceDocGenFI__r_SBT_Huoltopalveluehdo__c == true OR Custom1__c_SalesforceDocGenFI__r_SBT_Digitaalisten_palveluiden_sopimusehd__c == true OR Custom1__c_SalesforceDocGenFI__r_Siemens_Talotekniikan_huoltopalvelut_Pa__c == true">
+  <p>
+    <strong>Liitteet
+    </strong>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Siemens_Osakeyhti_Yleiset_toimitusehdo__c == true" style="padding-left: 30px;">
+    <span>Siemens Osakeyhti&ouml;, Yleiset toimitusehdot
+    </span>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_SBT_Huoltopalveluehdo__c == true" style="padding-left: 30px;">
+    <span>Siemens Building Technologies, Huoltopalveluehdot
+    </span>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_SBT_Digitaalisten_palveluiden_sopimusehd__c == true" style="padding-left: 30px;">
+    <span>Siemens Building Technologies, Digitaalisten palveluiden sopimusehdot
+    </span>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Siemens_Talotekniikan_huoltopalvelut_Pa__c == true" style="padding-left: 30px;">
+    <span>Siemens Talotekniikan huoltopalvelut, Palveluhinnasto</span>
+  </p>
+  <span style="display: none;">&nbsp;</span>
+</div>
+<!--subdisciplines-->
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Desigo_CC__c == true">
+  <p>
+    <strong>Desigo CC - Kiinteist&ouml;nhallinta-alusta kaikille kiinteist&ouml;n j&auml;rjestelmille</strong>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Desigo CC on markkinoiden laajin kiinteist&ouml;nhallintaj&auml;rjestelm&auml;, jolla k&auml;ytt&auml;j&auml; voi hallita ja optimoida kaikkia kiinteist&ouml;n j&auml;rjestelmi&auml;. J&auml;rjestelm&auml;&auml;n on mahdollista integroida mm.
+      l&auml;mmitys, ilmanvaihto, ilmastointi, valaistus, kaihdinten asento, huonekohtainen automaatio, energiankulutus ja paloturvallisuus sek&auml; turvaj&auml;rjestelm&auml;t, kuten videovalvonta ja murtoh&auml;lytykset.
+    </span>
+  </p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Desigo_PX__c == true">
+  <p>
+    <strong>Desigo PX (&amp; Touch &amp; Web) - Rakennusautomaation s&auml;&auml;timet ja k&auml;ytt&ouml;p&auml;&auml;tteet</strong>
+  </p>
+  <p style="padding-left: 30px;">Vapaasti ohjelmoitavat automaatioyksik&ouml;t LVI- ja rakennusautomaatiolaitoksia varten. &bull;Valvomotoiminnot (h&auml;lytysten k&auml;sittely, aikaohjelmat, trenditoiminnot, kaukok&auml;ytt&ouml;,
+    p&auml;&auml;sysuojaus jne.) &bull;Laite voi toimia itsen&auml;isesti tai se voidaan liitt&auml;&auml; osaksi j&auml;rjestelm&auml;&auml; &bull;PXM -k&auml;ytt&ouml;p&auml;&auml;tteen liit&auml;nt&auml; &bull;BTL testattu BACnet kommunikointi
+    LonTalk, PTP tai IP BACnet standardin mukaan (rev 1.5) sis&auml;lt&auml;&auml; B-BC profiilin K&auml;ytt&ouml; Automaatioyksik&ouml;t muodostavat infrastruktuurin j&auml;rjestelm&auml;- ja sovelluskohtaisten toimintojen asentamista ja
+    k&auml;sittely&auml; varten, ja ne voidaan ohjelmoida vapaasti. S&auml;&auml;t&ouml;- ja ohjaustoimintojen lis&auml;ksi niihin on integroitu my&ouml;s helppok&auml;ytt&ouml;isi&auml; valvomotoimintoja, kuten: &bull;H&auml;lytysten k&auml;sittely,
+    johon sis&auml;ltyy koko verkon laajuinen h&auml;lytysten reititys. H&auml;lytysten standardi-, perus- ja laajennettu k&auml;sittely, johon sis&auml;ltyy kontrolloitu ja turvallinen tiedonsiirto ja automaattinen tiedonsiirron valvonta
+    &bull;Aikaohjelmat &bull;Trenditoiminnot &bull;Kaukok&auml;ytt&ouml;toiminto &bull;Koko verkon laatuinen p&auml;&auml;sysuojaus, johon sis&auml;ltyy yksil&ouml;llisesti m&auml;&auml;ritelt&auml;v&auml;t k&auml;ytt&auml;j&auml;profiilit ja -luokat</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_TRA__c == true">
+  <p>
+    <strong>Desigo TRA (PXC3 &amp; DXR2) - Rakennusautomaation huones&auml;&auml;timet Total Room Automation</strong>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Huones&auml;&auml;dintuoteperhe huoneen kaikkien olosuhteisiin vaikuttavien tekij&ouml;iden
+    </span>
+    <span>hallintaan: LVI, valaistus ja varjostus
+    </span>
+  </p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Desigo_RX__c == true">
+  <p>
+    <strong>Desigo RX - Rakennusautomaation huones&auml;&auml;timet</strong>
+  </p>
+  <p style="padding-left: 30px;">Huoneautomaatios&auml;&auml;timet LON- ja KNX-v&auml;yl&auml;ss&auml;</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Sinteso__c == true">
+  <p>
+    <strong>Sinteso paloilmoitusj&auml;rjestelm&auml;</strong>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Sinteso paloilmoitusj&auml;rjestelm&auml; on uuden sukupolven moderni j&auml;rjestelm&auml; sek&auml; uusiin kohteisiin ett&auml; modernisointiin.
+    </span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Keskuksia l&ouml;ytyy eri kokoisiin kohteisiin pienist&auml; yksitt&auml;isen keskuksen kohteista suuriin usean keskuksen verkotettuun j&auml;rjestelm&auml;&auml;n.
+    </span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Keskuksissa on helppok&auml;ytt&ouml;inen k&auml;ytt&ouml;liittym&auml;, joka antaa tarkan tiedon h&auml;lytt&auml;v&auml;st&auml; pisteest&auml;.
+    </span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Tarkka tieto on l&auml;htett&auml;viss&auml; my&ouml;s tekstiviestill&auml; kiinteist&ouml;n turvaj&auml;rjestelmist&auml; vastaaville.
+    </span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Sinteso keskusten operointi voidaan suorittaa suoraan keskukselta, erilliselt&auml; k&auml;ytt&ouml;laitteelta tai tietokoneelta (SintesoView).
+    </span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Isomissa kohteissa tai kohteissa, jossa tarve on graaffiselle k&auml;ytt&ouml;liittym&auml;lle, Sinteso j&auml;rjestelm&auml; voidaan liitt&auml;&auml; Desigo CC valvomoalustaan.
+    </span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>Sinteso j&auml;rjestelm&auml;t voidaan liitt&auml;&auml; my&ouml;s et&auml;palveluun, jolloin ongelmatilanteissa Siemensin asiantuntijat voivat auttaa loppuk&auml;ytt&auml;j&auml;&auml;, analysoida vikatilanteita sek&auml; suorittaa
+      tarvittaessa muutoksia j&auml;rjestelm&auml;&auml;n. Muutokset voivat olla ilmaisimen/painikkeen lis&auml;&auml;minen, ilmaisimen parametrien muuttaminen, asiakaskohtaisten tekstien muokkaus. My&ouml;s j&auml;rjestelm&auml;n
+      k&auml;ytt&ouml;&ouml;notto voidaan suorittaa suurimalta osin et&auml;yhteydell&auml;.
+    </span>
+  </p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_FC120_jaCerberus_Pro__c == true">
+  <p>
+    <strong>FC120 ja CerberusPro - Kollektiiviset paloilmoituskeskukset</strong>
+  </p>
+  <p style="padding-left: 30px;">FC120 paloilmoituskeskukset<br/>
+    ​FC120-sarjan keskukset ovat esiohjelmoitu k&auml;ytt&ouml;&ouml;noton helpottamiseksi. Suomea varten tehtyyn esiohjelmointiin on valittu ominaisuudet, jotka t&auml;ytt&auml;v&auml;t kotimaiset vaatimukset ja tarpeet. Keskuksen
+    k&auml;ynnistyksess&auml; valitaan maa-/kieliasetuksien lis&auml;ksi p&auml;iv&auml;m&auml;&auml;r&auml; ja aika, jonka j&auml;lkeen se on valmiina k&auml;ytt&ouml;&ouml;n.Pitemm&auml;lle menev&auml;t ohjaukset voidaan ottaa k&auml;ytt&ouml;&ouml;
+    my&ouml;hemmin.Keskus on hyv&auml;ksytty paloilmoitink&auml;ytt&ouml;&ouml;n ja sit&auml; voidaan k&auml;ytt&auml;&auml; my&ouml;s s&auml;hk&ouml;verkkoon liitett&auml;v&auml;n&auml; palovaroitinkeskusena.
+    <br/>Esimerkkej&auml; k&auml;ytt&ouml;kohteista:<br/>
+    - asuintalojen ullakot,
+    <br/>- porrashuoneet ja yleiset tilat
+    <br/>- p&auml;iv&auml;kodit
+    <br/>- pienet tuotantotilat</p>
+  <p style="padding-left: 30px;">CerberusPro paloilmaisimet
+    <br/>CerberusPro paloilmaisimet ovat kollektiivisiin paloilmoitusj&auml;rjestelmiin tarkoitettuja ilmaisimia. Ilmaisinsarjasta l&ouml;ytyy monikriteeri-, savu- ja l&auml;mp&ouml;toimisia ilmaisimia. Ilmaisimen toimintaparametrit
+      m&auml;&auml;r&auml;ytyy k&auml;ytett&auml;v&auml;n asennuskannan mukaan, joita on valittavissa kaksi eri mallia.</p>
+  <p style="padding-left: 30px;">Paloilmoituspainikkeet
+    <br/>Paloilmoituspainikkeet FDM1101 ja FDM1101A ovat yksitoimisia kollektiivisiin j&auml;rjestelmiin tarkoittettuja painikkeita, jotka voidaan asentaa sek&auml; pinta- ja uppoasennuksessa.</p>
+  <p style="padding-left: 30px;">Roshni paloh&auml;lyttimet
+    <br/>Roshni h&auml;lyttimi&auml; k&auml;ytet&auml;&auml;n kollektiivisten paloilmoitusj&auml;rjestelmien yhteydess&auml;</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_FibroLaser__c == true">
+  <p>
+    <strong>FibroLaser - Linjal&auml;mp&ouml;ilmaisin, lineaarinen paloilmoitusj&auml;rjestelm&auml;, joka reagoi sek&auml; palosta syntyv&auml;&auml;n l&auml;mp&ouml;&ouml;n ett&auml; s&auml;teilyyn</strong>
+  </p>
+  <p style="padding-left: 30px;">FibroLaser&trade; -linjal&auml;mp&ouml;ilmaisin on vaativien tilojen ja alueiden &auml;lyk&auml;s linjal&auml;mp&ouml;ilmaisuj&auml;rjestelm&auml;. Valokuituun perustuvalla j&auml;rjestelm&auml;ll&auml; voidaan seurata
+    l&auml;mp&ouml;tiloja ja asettaa h&auml;lytysrajoja valvottavalle alalle. J&auml;rjestelm&auml; koostuu erillisest&auml; OTS-keskusyksik&ouml;st&auml; sek&auml; siihen liitett&auml;v&auml;st&auml; optisesta kuitukaapelista.
+    FibroLaser-j&auml;rjestelm&auml;&auml; k&auml;ytet&auml;&auml;n tunneleden, parkkihallien ja eri teollisuuskohteiden valvontaan. Lis&auml;ksi j&auml;rjestelm&auml;st&auml; voidaan v&auml;litt&auml;&auml; l&auml;mp&ouml;tilatietoja muihin
+    j&auml;rjestelmiin.</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_ASD__c == true" >
+  <p>
+    <strong>ASD - N&auml;ytteenottoj&auml;rjestelm&auml;, palonilmaisu korkean riskin tai hankalap&auml;&auml;syisten tilojen valvontaan</strong>
+  </p>
+  <p style="padding-left: 30px;">N&auml;ytteenottoj&auml;rjestelm&auml; imee ilmaa valvottavan tilaan asennetun putkiston kautta ja mittaa ilmassa esiintyv&auml;n savun m&auml;&auml;r&auml;&auml;. N&auml;ytteenottoj&auml;rjestelmi&auml; voidaan
+    k&auml;ytt&auml;&auml; luotettavasti tiloissa, joissa pisteilmaisu ei tule kysymykseen. N&auml;ytteenottoj&auml;rjestelm&auml; voidaan asentaa tarvittaessa valvottavan tilan ulkopuolelle, jolloin arkkitehtuurisesti merkitt&auml;viss&auml; tai
+    historiallisissa kohteissa katon pintaan tulee vain huomaamaton imupiste. N&auml;ytteenottoj&auml;rjestelmill&auml; voidaan valvoa my&ouml;s tiloja, joissa eritt&auml;in varhainen ilmaisu on t&auml;rke&auml;&auml;.</p>
+  <p style="padding-left: 30px;">Siemens FDA 221 ja 241
+    <br/>Siemensin n&auml;ytteenottoilmaisimet voidaan asentaa erillisin&auml; yksik&ouml;in&auml; tai kytke&auml; suoraan Sinteso FD-net linjaan. Ilmaisimille valitaan yksil&ouml;lliset ilmaisuparametrit k&auml;ytt&ouml;olosuhteiden mukaan.</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Novigo__c == true">
+  <p>
+    <strong>Novigo - Poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml;</strong>
+  </p>
+  <p style="padding-left: 30px;">Novigo &ndash; poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml; Novigo &ndash; poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml; on verkotettava, monikanavainen &auml;&auml;nij&auml;rjestelm&auml;
+    h&auml;lytt&auml;mist&auml;, evakuointia, musiikin toistoa ja l&auml;hetysten vastaanottamista varten.</p>
+  <p style="padding-left: 30px;">Novigo &ndash; poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml;ss&auml; on TCP/IP &ndash; pohjainen ohjelmointirajapinta valvomoj&auml;rjestelmiin (Desigo CC) sek&auml; rajapinnat eri
+    paloilmoitinj&auml;rjestelmiin integroimista varten (Sinteso).</p>
+  <p style="padding-left: 30px;">Novigo &ndash; poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml; mahdollistaa et&auml;huollon ja &ndash;ohjelmoinnin ilman, ett&auml; j&auml;rjestelm&auml;&auml; t&auml;ytyy ajaa alas. J&auml;rjestelm&auml;
+    on mahdollista toteuttaa hajautetusti, ja yht&auml;aikaisesti verkossa voi toimia 4000 laitetta ja 16 000 kaiutinlinjaa. J&auml;rjestelm&auml;&auml; voidaan ohjelmoida k&auml;yt&ouml;n aikana, ja kaikkien ohjelmointi- ja huoltot&ouml;iden ajan
+    kaiutinlinjojen impedanssi- ja linjavalvonta on toiminnassa. Novigo &ndash; poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml; EN 54-16 hyv&auml;ksytty.</p>
+  <p style="padding-left: 30px;">Novigo voidaan integroida osaksi kulunvalvontaa (SiPass), murtoh&auml;lytysj&auml;rjestelm&auml;&auml; (SPC) ja kameravalvontaa (Siveillance VMS).</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_XC10__c == true">
+  <p>
+    <strong>XC10 sammutuslaitteiston laukaisu-/ohjauskeskus
+    </strong>
+  </p>
+  <p style="padding-left: 30px;">XC10 laukaisukeskusta k&auml;ytet&auml;&auml;n erillaisten sammutusj&auml;rjestelmien ohjaukseen, jotka voivat olla joko vesi- tai kaasupohjaisia. Keskuksella voidaan hallita yht&auml; tai useampaa laukaisualuetta.
+    Keskuksen ohjelmointi voidaan tehd&auml; monipuolisesti ja se on paloilmoittimia koskevan EN54-2 standardin mukaan hyv&auml;ksytty. Keskukseen voidaan liitt&auml;&auml; automaattilaukaisun lis&auml;ksi laukaisu- ja laukaisunestopainikkeet.
+    Keskuksessa on kahden laukaisuryhm&auml;n lis&auml;ksi paloilmoitusryhm&auml; keskustilan valvontaa varten.</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Perimeter_protection__c == true">
+  <p>
+    <strong>Keh&auml;- ja aluevalvonta
+    </strong>
+  </p>
+  <p style="padding-left: 30px;">Keh&auml;- ja aluevalvonnalla tarkoitetaan rakennusten ulkopuolisten alueiden valvontaa. Kohteesta riippuen se voidaan toteuttaa hy&ouml;dynt&auml;en portteja, aitoja, kameravalvontaa, kulunvalvontaa,
+    murtoh&auml;lyttimen ulkotila- ja linjailmaisimia tai rakenteelisia ratkaisuja, kuten kaltereita tai ikkunalasien turvakalvoja. My&ouml;s aitah&auml;lyttimi&auml;, maavalvontatutkia, infrapuna-aitoja tai muita innovatiivisia ratkaisuja voidaan
+    hy&ouml;dynt&auml;&auml;.</p>
+  <p style="padding-left: 30px;">Keh&auml;- ja aluevalvonta on uloin kohdetta suojaava laitteisto ja valvonnan tarkoitus on est&auml;&auml; vapaa kulku alueelle, vaikeuttaa tunkeutumista ja varoittaa kohteeseen kohdistuvasta uhasta hyviss&auml; ajoin
+    ennen sis&auml;tiloihin kohdistuvaa tunkeutumista. Valvontaa suunniteltaessa tulee ottaa huomioon my&ouml;s ulkoalueiden anastus- ja ilkivaltaherkk&auml; materiaali. Valvontaan on mahdollista liitt&auml;&auml; my&ouml;s et&auml;valvontapalveluita, ja
+    t&auml;m&auml; tulee ottaa huomioon laitteiston ominaisuuksia ja sijoittelua suunniteltaessa.</p>
+  <p style="padding-left: 30px;">Keh&auml;- ja aluevalvonnan toteutuksessa voidaan hy&ouml;dynt&auml;&auml; Siemensin omia j&auml;rjestelmi&auml;, kulunvalvontaa (SiPass), kameravalvontaj&auml;rjestelm&auml;&auml; (Siveillance VMS) ja
+    murtoh&auml;lytysj&auml;rjestelm&auml;&auml; (SPC).</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_SiPass_Intergrated__c == true">
+  <p>
+    <strong>SiPass Integrated &ndash; kulunvalvontaj&auml;rjestelm&auml;
+    </strong>
+  </p>
+  <p style="padding-left: 30px;">SiPass Integrated on eritt&auml;in tehokas ja joustava kulunvalvontaj&auml;rjestelm&auml;, jonka ominaisuuksia ovat muun muassa helppo kortinhallinta, h&auml;lytysten hallinta, videovalvonnan
+    k&auml;ytt&ouml;liittym&auml; ja t&auml;ydelliset lokitiedot. SiPass Integrated tukee laajasti eri valmistajien lukijoita ja tekniikoita. Hallintaohjelmisto on helppok&auml;ytt&ouml;inen ja j&auml;rjestelm&auml; tukee offline komponentteja.</p>
+  <p style="padding-left: 30px;">SiPass Integrated on suunniteltu kaiken kokoisiin, yksitt&auml;isiin tai hajautettuihin kohteisiin. Se sopii joustavuutensa puolesta niin uudiskohteisiin kuin modernisoitaviin kohteisiinkin. SiPass toimii TCP/IP &ndash;
+    v&auml;yl&auml;ss&auml;, joten se kykenee hy&ouml;dynt&auml;m&auml;&auml;n olemassa olevaa IT-verkkoa. SiPass on integroitavissa suoraan murtoh&auml;lytysj&auml;rjestelm&auml;&auml;n (SPC) ja kameravalvontaj&auml;rjestelm&auml;&auml;n (Siveillance
+    VMS) ja sen toimintaa voidaan t&auml;ydent&auml;&auml; ja tukea Novigo poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml;ll&auml;.</p>
+  <p style="padding-left: 30px;">Sipass Integrated voidaan liitt&auml;&auml; my&ouml;s Desigo CC valvomoalustaan.</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_Siveillance_Viewpoint__c == true">
+  <p>
+    <strong>Siveillance VMS &ndash; kameravalvontaj&auml;rjestelm&auml;
+    </strong>
+  </p>
+  <p style="padding-left: 30px;">Siveillance VMS on tehokas ja avoin IP-pohjainen kameravalvontaj&auml;rjestelm&auml;, joka soveltuu kaiken kokoisiin kohteisiin. Siveillance VMS skaalautuu asiakkaan tarpeen mukaan yhden kameran kohteesta kymmenien
+    hajautettujen kiinteist&ouml;jen keskitetyksi tallenninohjelmistoksi, johon voidaan liitt&auml;&auml; rajaton m&auml;&auml;r&auml; valvontakameroita. Monipuoliset k&auml;ytt&auml;j&auml;asetukset tarjoavat selke&auml;t
+    k&auml;ytt&auml;j&auml;kohtaiset hallintaoikeudet yhdistettyn&auml; selke&auml;&auml;n ja helppok&auml;ytt&ouml;iseen hallintaohjelmistoon.</p>
+  <p style="padding-left: 30px;">Siveillance VMS on saatavissa nelj&auml;n&auml; versiona, VMS 50, VMS 100, VMS 200 ja VMS 300. Ohjelmisto mahdollistaa valvomoiden videoseinien rakentamisen, integroinnit kulunvalvontaan sek&auml;
+    murtoh&auml;lytysj&auml;rjestelm&auml;&auml;n, et&auml;hallintaominaisuudet ja vaativienkin kohteiden toteutuksen. Siveillance VMS tukee noin 5000 eri IP-kamera mallia. Siveillance VMS - kameravalvontaj&auml;rjestelm&auml; on mahdollista integroida
+    kulunvalvonnan kanssa (SiPass) ja murtoh&auml;lytysj&auml;rjestelm&auml;n kanssa (SPC). Siveillance VMS:n toiminnallisuudet voidaaan t&auml;ydent&auml;&auml; Novigo poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml;ll&auml;.</p>
+  <p style="padding-left: 30px;">Siveillance VMS voidaan liitt&auml;&auml; my&ouml;s Desigo CC valvomoalustaan.</p>
+</div>
+<div data-show-if="Custom1__c_SalesforceDocGenFI__r_SPC__c == true">
+  <p>
+    <strong>SPC - murtoh&auml;lytysj&auml;rjestelm&auml;</strong>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>SPC &ndash; murtoh&auml;lytysj&auml;rjestelm&auml; t&auml;ytt&auml;&auml; EN50131 luokan 3 vaatimukset ja modulaarinen rakenne mahdollistaa eritt&auml;in suurten kohteiden toteuttamisen, aina tuhanteen verkotettuun keskukseen saakka.
+      J&auml;rjestem&auml;&auml;n verkon yli kirjautuminen mahdollistaa helpon ohjelmoinnin paikallisesti tai et&auml;n&auml;, ja k&auml;ytt&auml;j&auml;yst&auml;v&auml;lliset k&auml;ytt&ouml;asetukset mahdollistavat hallinnan usealla eri kielell&auml;,
+      muun muassa suomeksi. Silmukat voidaan kohteesta riippuen rakentaa joko perinteisesti t&auml;hteen tai vaihtoehtoisesti v&auml;yl&auml;&auml;n.</span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>
+      SPC &ndash; murtoh&auml;lytysj&auml;rjestelm&auml; tukee IP-kamera pohjaista h&auml;lytystapahtumien varmennusta ja SPC &ndash; murtoh&auml;lytyskeskuksella on valmiuset toimia kevyen&auml; kulunvalvontaj&auml;rjestelm&auml;n&auml; 4:st&auml; aina 32
+      oveen saakka. J&auml;rjestelm&auml;ss&auml; on sis&auml;&auml;nrakennettu WEB &ndash; palvelin ja h&auml;lytysten v&auml;litys tapahtuu TCP/IP &ndash; v&auml;yl&auml;ll&auml; ja halutessa SMS viestill&auml; varmennettuna. SPC &ndash;
+      murtoh&auml;lytysj&auml;rjestelm&auml; on integroitavissa kulunvalvontaj&auml;rjestelm&auml;&auml;n (SiPass) ja kameravalvontaj&auml;rjestelm&auml;&auml;n (Siveillance VMS). SPC murtoh&auml;lytinj&auml;rjestelm&auml;n toiminnallisuudet voidaaan
+      t&auml;ydent&auml;&auml; Novigo poistumish&auml;lytys- ja turvakuulutusj&auml;rjestelm&auml;ll&auml;.
+    </span>
+  </p>
+  <p style="padding-left: 30px;">
+    <span>SPC Integrated voidaan liitt&auml;&auml; my&ouml;s Desigo CC valvomoalustaan.</span>
+  </p>
+</div>
+<p></p>
+<div style="page-break-after: always;">
+  <span style="display: none;">&nbsp;</span>
+</div>

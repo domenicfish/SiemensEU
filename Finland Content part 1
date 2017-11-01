@@ -1,0 +1,16 @@
+<!--content part 1-->
+<div>
+  <p style="padding-left: 30px;"></p>
+</div>
+<div>
+  <p>
+    <strong>Tarjouksen hinta
+    </strong>
+  </p>
+  <p data-show-if="Custom1__c_SalesforceDocGenFI__r_Offer_Type__c LIKE 'Budjettitarjous'" style="padding-left: 30px;">
+    <span>Budjettihinta on ei sitova arviohinta. Sitova tarjous voidaan tehd&auml; erikseen pyydett&auml;ess&auml;, kun kaikki tarvittavat l&auml;ht&ouml;tiedot ovat saatavilla.</span>
+  </p>
+</div>
+<div style="page-break-after: always;">
+  <span style="display: none;">&nbsp;</span>
+</div>
