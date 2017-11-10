@@ -327,13 +327,13 @@
                           </span>
                           <!--- Swiss specific services description -->
                           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
-                            <span class="html">
+                            <span data-show-if="material1.Is_Hide_Desc != 1" class="html">
                               <b>[material1.Short_Description]</b>
                             </span><br/>
-                            <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK">
+                            <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS NOT BLANK AND material1.Is_Hide_Sales_Text != 1">
                               [material1.Mat_Sales_Text_CP7]
                             </span>
-                            <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS BLANK">[material1.Mat_Sales_Text]</span>
+                            <span class="html" data-show-if="material1.Mat_Sales_Text_CP7 IS BLANK AND material1.Is_Hide_Sales_Text != 1">[material1.Mat_Sales_Text]</span>
                             <span><br/><br/></span>
                           </span>
                           <!--Start of Export Controls text -->
@@ -713,12 +713,12 @@
                             <!--- Swiss specific services description -->
                             <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                               <b>
-                                <span class="html">[material2.Short_Description]</span>
+                                <span data-show-if="material2.Is_Hide_Desc != 1" class="html">[material2.Short_Description]</span>
                               </b><br/>
-                              <span class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK">
+                              <span class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS NOT BLANK AND material2.Is_Hide_Sales_Text != 1">
                                 [material2.Mat_Sales_Text_CP7]
                               </span>
-                              <span class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK">[material2.Mat_Sales_Text]</span>
+                              <span class="html" class="html" data-show-if="material2.Mat_Sales_Text_CP7 IS BLANK AND material2.Is_Hide_Sales_Text != 1">[material2.Mat_Sales_Text]</span>
                               <span><br/><br/></span>
                             </span>
                             <!--Start of Export Controls text -->
@@ -1108,12 +1108,12 @@
                               <!--- Swiss specific services description -->
                               <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                 <b>
-                                  <span class="html">[material3.Short_Description]</span>
+                                  <span data-show-if="material3.Is_Hide_Desc != 1" class="html">[material3.Short_Description]</span>
                                 </b><br/>
-                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS NOT BLANK AND material3.Is_Hide_Sales_Text != 1">
                                   [material3.Mat_Sales_Text_CP7]
                                 </span>
-                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK">[material3.Mat_Sales_Text]</span>
+                                <span class="html" data-show-if="material3.Mat_Sales_Text_CP7 IS BLANK AND material3.Is_Hide_Sales_Text != 1">[material3.Mat_Sales_Text]</span>
                                 <span><br/><br/></span>
                               </span>
                               <!--Start of Export Controls text -->
@@ -1492,12 +1492,12 @@
                                 <!--- Swiss specific services description -->
                                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                   <b>
-                                    <span class="html">[material4.Short_Description]</span>
+                                    <span data-show-if="material4.Is_Hide_Desc != 1" class="html">[material4.Short_Description]</span>
                                   </b><br/>
-                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS NOT BLANK AND material4.Is_Hide_Sales_Text != 1">
                                     [material4.Mat_Sales_Text_CP7]
                                   </span>
-                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK">[material4.Mat_Sales_Text]</span>
+                                  <span class="html" data-show-if="material4.Mat_Sales_Text_CP7 IS BLANK AND material4.Is_Hide_Sales_Text != 1">[material4.Mat_Sales_Text]</span>
                                   <span><br/><br/></span>
                                 </span>
                                 <!--Start of Export Controls text -->
@@ -1876,12 +1876,12 @@
                                   <!--- Swiss specific services description -->
                                   <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
                                     <b>
-                                      <span class="html">[material5.Short_Description]</span>
+                                      <span data-show-if="material5.Is_Hide_Desc != 1" class="html">[material5.Short_Description]</span>
                                     </b><br/>
-                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK">
+                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS NOT BLANK AND material5.Is_Hide_Sales_Text != 1">
                                       [material5.Mat_Sales_Text_CP7]
                                     </span>
-                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK">[material5.Mat_Sales_Text]</span>
+                                    <span class="html" data-show-if="material5.Mat_Sales_Text_CP7 IS BLANK AND material5.Is_Hide_Sales_Text != 1">[material5.Mat_Sales_Text]</span>
                                     <span><br/><br/></span>
                                   </span>
                                   <!--Start of Export Controls text -->
