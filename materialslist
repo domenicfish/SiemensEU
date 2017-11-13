@@ -155,8 +155,8 @@
       <tr>
         <td colspan="8" style="margin: 0; padding: 0;">
           <!-- comment: the first data-repeat will loop through Sub_Offers__r array. This is then followed by a folder1 data-repeat that will loop through the cartLines array associated to the affiliated cart -->
-          <!--MuY: Added the filter: AND Short_Description != 'Yksikköhinnat' for Finnland. This folder needs to be displayed in FI Offer in separate chapter 'Yksikköhinnat'-->
-          <div data-repeat="folder1 in first.cart.cartLines" data-filter="type = 'FO' AND Short_Description != 'Yksikköhinnat'">
+          <!--MuY: Added the filter: AND Short_Description NLIKE 'Yksikköhinnat' for Finnland. This folder needs to be displayed in FI Offer in separate chapter 'Yksikköhinnat'-->
+          <div data-repeat="folder1 in first.cart.cartLines" data-filter="type = 'FO' AND Short_Description NLIKE 'Yksikköhinnat'">
             <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder1.Is_Service_Folder = 1">
               <tbody>
                 <tr style="height: 21px; vertical-align: middle;">
