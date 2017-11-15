@@ -784,21 +784,27 @@
     <table data-show-if="cart1.type = 'SP' AND cart1.Serv_Line_Type LIKE 'CALCULATED'">
       <tbody>
         <tr style="height: 21.6563px;">
+<!--short description-->
           <td style="width: 25%; height: 21.6563px; text-align: left;">
             <span style="font-size: 9px;" class="html">[cart1.Short_Description]</span>
           </td>
+<!--UCS-->
           <td style="width: 5%; height: 21.6563px; text-align: right;">
             <span style="font-size: 9px;">[cart1.Mat_UCS]</span>
           </td>
+<!--Ori qty-->
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span class="integer" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
+            <span class="decimal" style="font-size: 9px;">[cart1.Serv_Origin_Qty]</span>
           </td>
+<!--Add qty-->
           <td style="width: 7%; height: 21.6563px; text-align: right;">
-            <span class="integer" style="font-size: 9px;">[cart1.Serv_Calc_Qty - cart1.Serv_Origin_Qty]</span>
+            <span class="decimal" style="font-size: 9px;">[cart1.Serv_Calc_Qty - cart1.Serv_Origin_Qty]</span>
           </td>
+<!--Fact-->
           <td style="width: 6%; height: 21.6563px; text-align: right;">
-            <span class="number" style="font-size: 9px;">[cart1.Item_Qty]</span>
+            <span class="decimal" style="font-size: 9px;">[cart1.Item_Qty]</span>
           </td>
+<!--calc qty-->
           <td style="width: 6%; height: 21.6563px; text-align: right;">
             <span class="integer" style="font-size: 9px;">[cart1.Serv_Calc_Qty]</span>
           </td>
@@ -845,13 +851,13 @@
               <span style="font-size: 9px;">[cart2.Mat_UCS]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span class="integer" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
+              <span class="decimal" style="font-size: 9px;">[cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 7%; height: 21.6563px; text-align: right;">
-              <span class="integer" style="font-size: 9px;">[cart2.Serv_Calc_Qty - cart2.Serv_Origin_Qty]</span>
+              <span class="decimal" style="font-size: 9px;">[cart2.Serv_Calc_Qty - cart2.Serv_Origin_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
-              <span class="number" style="font-size: 9px;">[cart2.Item_Qty]</span>
+              <span class="decimal" style="font-size: 9px;">[cart2.Item_Qty]</span>
             </td>
             <td style="width: 6%; height: 21.6563px; text-align: right;">
               <span class="integer" style="font-size: 9px;">[cart2.Serv_Calc_Qty]</span>
@@ -899,13 +905,13 @@
                 <span style="font-size: 9px;">[cart3.Mat_UCS]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span class="integer" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
+                <span class="decimal" style="font-size: 9px;">[cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 7%; height: 21.6563px; text-align: right;">
-                <span class="integer" style="font-size: 9px;">[cart3.Serv_Calc_Qty - cart3.Serv_Origin_Qty]</span>
+                <span class="decimal" style="font-size: 9px;">[cart3.Serv_Calc_Qty - cart3.Serv_Origin_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
-                <span class="number" style="font-size: 9px;">[cart3.Item_Qty]</span>
+                <span class="decimal" style="font-size: 9px;">[cart3.Item_Qty]</span>
               </td>
               <td style="width: 6%; height: 21.6563px; text-align: right;">
                 <span class="integer" style="font-size: 9px;">[cart3.Serv_Calc_Qty]</span>
@@ -949,13 +955,13 @@
                   <span style="font-size: 9px;">[cart4.Mat_UCS]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span class="integer" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
+                  <span class="decimal" style="font-size: 9px;">[cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 7%; height: 21.6563px; text-align: right;">
-                  <span class="integer" style="font-size: 9px;">[cart4.Serv_Calc_Qty - cart4.Serv_Origin_Qty]</span>
+                  <span class="decimal" style="font-size: 9px;">[cart4.Serv_Calc_Qty - cart4.Serv_Origin_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
-                  <span class="number" style="font-size: 9px;">[cart4.Item_Qty]</span>
+                  <span class="decimal" style="font-size: 9px;">[cart4.Item_Qty]</span>
                 </td>
                 <td style="width: 6%; height: 21.6563px; text-align: right;">
                   <span class="integer" style="font-size: 9px;">[cart4.Serv_Calc_Qty]</span>
@@ -999,13 +1005,13 @@
                     <span style="font-size: 9px;">[cart5.Mat_UCS]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span class="integer" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
+                    <span class="decimal" style="font-size: 9px;">[cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 7%; height: 21.6563px; text-align: right;">
-                    <span class="integer" style="font-size: 9px;">[cart5.Serv_Calc_Qty - cart5.Serv_Origin_Qty]</span>
+                    <span class="decimal" style="font-size: 9px;">[cart5.Serv_Calc_Qty - cart5.Serv_Origin_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
-                    <span class="number" style="font-size: 9px;">[cart5.Item_Qty]</span>
+                    <span class="decimal" style="font-size: 9px;">[cart5.Item_Qty]</span>
                   </td>
                   <td style="width: 6%; height: 21.6563px; text-align: right;">
                     <span class="integer" style="font-size: 9px;">[cart5.Serv_Calc_Qty]</span>
