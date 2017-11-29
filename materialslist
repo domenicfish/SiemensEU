@@ -76,7 +76,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Prix brut</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Bruto prijs</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Listahinta</span>
-          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Brutto pris</span><br/>(<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode">EUR</span>)</th>
+          <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Brutto pris</span><br/>(<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode"></span>)</th>
         <!--discount % header-->
         <th style="height: 25px; width: 6.5%; background-color: #ffffff; vertical-align: middle; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'">
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'">Discount</span>
@@ -110,7 +110,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Netto <br />prijs</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Nettohinta</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Netto<br /> pris</span><br/>
-          <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode">EUR</span>)</span>
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode"></span>)</span>
         </th>
         <!--total net price header-->
         <th style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'">
@@ -129,7 +129,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale <br />netto prijs</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Netto <br />yhteens&auml;</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt <br />netto pris</span><br/>
-          <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode">EUR</span>)</span>
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode"></span>)</span>
         </th>
         <!--total gross price header-->
         <th style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'">
@@ -147,7 +147,7 @@
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'">Totale <br />bruto p</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'">Yhteens&auml;<br /> listahinta</span>
           <span data-show-if="Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'">Totalt <br />brutto pris</span>
-          (<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode">EUR</span>)</th>
+          (<span class="inline-variable mceNonEditable" data-name="Custom1__c_CurrencyIsoCode"></span>)</th>
       </tr>
     </thead>
     <!-- In order to have the header break across pages, we had to wrap the content of the materials list in a table. The tbody of this table begins below -->
