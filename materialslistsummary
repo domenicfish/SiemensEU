@@ -680,16 +680,15 @@
         <tbody data-show-if="suboffer.cart.Disc1_NULL = 0 OR suboffer.cart.Disc1_NULL IS BLANK">
           <tr style="height: 21px;" data-show-if="suboffer.cart.Disc2_NULL = 0 OR suboffer.cart.Disc2_NULL IS BLANK">
             <td style="height: 21px; padding-left: 35px;">
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Gross'">
+              <!--MuY: Not needed anymore, everything is Produkte Netto now.-->
+              <!--<span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Gross'">
                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Weiteres Material</span>
                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Autre mat&eacute;riel</span>
                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Materiale terzi</span>
-              </span>
-              <span data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'">
+              </span>-->
                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'">Produkte netto</span>
                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'">Mat&eacute;riel net</span>
                 <span data-show-if="Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'">Prodotti netto</span>
-              </span>
             </td>
             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'" class="number" style="width: 100px; height: 21px; text-align: right; vertical-align: middle;">[suboffer.cart.Mat_Tot_Org_Sales_NULL]</td>
             <td style="width: 30px; height: 21px; text-align: right;"></td>
