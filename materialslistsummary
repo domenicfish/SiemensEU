@@ -1,4 +1,11 @@
 <div data-repeat="suboffer in Sub_Offers__r" data-group-by="Main_Offer_Name__c">
+  <p data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'" class="print-only">
+    <span style="font-size: 20px;">
+      <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'"><strong>Ihre Investition</strong></span>
+      <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'"><strong>Votre investissement</strong></span>
+      <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'"><strong>Votro investimento</strong></span>
+    </span>
+  </p>
   <p data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
     <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Main_Offer_Description__c">Custom1__c_MO_Main_Offer_Description__c</span></p>
   <table style="width: 100%; margin: 10px 0px; border-bottom: 1px solid #000000; border-top: 1px solid #000000; height: 25px;">
@@ -679,3 +686,54 @@
   <p style="text-align: center;" data-show-if="suboffer.cart.Has_Option LIKE 'true' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'"></p>
 </div>
 <p></p>
+<div data-show-if="Custom1__c_MO_Country_Origin__c = 'CH'">
+  <div data-show-if="Custom1__c_Generic_DocGen__r_List_of_Documents__c NOT_LIKE 'Small'">
+    <p></p>
+    <table style="height: 34px;">
+      <tbody>
+        <tr style="height: 17px;">
+          <td width="50%" style="height: 17px;">
+            <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Signature_left__c"></span>&nbsp;</td>
+          <td width="50%" style="height: 17px;">
+            <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Signature_Right__c"></span>&nbsp;</td>
+        </tr>
+        <tr style="height: 17px;">
+          <td width="50%" style="height: 17px;">
+            <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Signature_Left_Title__c">Mitarbeiter Verkauf Innendienst</span>&nbsp;</td>
+          <td width="50%" style="height: 17px;">
+            <span class="inline-variable mceNonEditable" data-name="Custom1__c_Generic_DocGen__r_Signature_Right_Title__c">Project Manager Systems</span>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+    <p></p>
+  </div>
+  <div data-show-if="Custom1__c_Generic_DocGen__r_Offer_Type__c == 'Order Template' AND Custom1__c_Generic_DocGen__r_List_of_Documents__c LIKE 'Offer'">
+    <p></p>
+    <p></p>
+    <hr/>
+    <table>
+      <tbody>
+        <tr>
+          <td width="33%">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'DE'">Auftrag erteilt durch:</span><span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'FR'">Commande effectu&eacute;e par:</span><span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'IT'">Per accettazione Nome e Cognome:</span>
+            <p></p>
+            <p></p>
+            ..................................................</td>
+          <td width="33%">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'DE'">Datum:</span><span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'FR'">Date:</span><span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'IT'">Data:</span>
+            <p></p>
+            <p></p>
+            ..................................................</td>
+          <td width="34%">
+            <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'DE'">Unterschrift:</span><span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'FR'">Signature:</span><span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c == 'IT'">Firma:</span>
+            <p></p>
+            <p></p>
+            ..................................................</td>
+        </tr>
+      </tbody>
+    </table>
+    <p></p>
+  </div>
+  <div style="page-break-after: always;">
+    <span style="display: none;">&nbsp;</span></div>
+</div>
