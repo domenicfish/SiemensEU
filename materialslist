@@ -8,11 +8,19 @@
         <span data-show-if="Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'" style="font-size: 20px;"> <strong>Volume delle prestazioni</strong></span>
         <br /><br />
       </span>
-      <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
+      <!--INCLUDED IN HEADER NOW for Repetition (209788)<span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
         <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Main_Offer_Description__c">Total Security</span><br/></span>
-      <span data-hide-if="first.SO_Sub_Offer_Description__c IS BLANK">[first.SO_Sub_Offer_Description__c]<br/></span>
+      <span data-hide-if="first.SO_Sub_Offer_Description__c IS BLANK">[first.SO_Sub_Offer_Description__c]<br/></span>-->
     </caption>
     <thead style="margin-bottom: 5px;">
+      <tr style="height: 25px; border-bottom: 1px solid #000000; border-top: 1px solid #ffffff;">
+        <th style="text-align: left; background-color: #ffffff; font-weight:normal;" colspan="8">
+          <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">
+            <span class="inline-variable mceNonEditable" data-name="Custom1__c_MO_Main_Offer_Description__c">Total Security</span><br/>
+          </span>
+          <span data-hide-if="first.SO_Sub_Offer_Description__c IS BLANK">[first.SO_Sub_Offer_Description__c]<br/></span>
+        </th>
+      </tr>
       <tr style="height: 25px; border-bottom: 1px solid #000000;">
         <!--position header-->
         <th data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: left;">
