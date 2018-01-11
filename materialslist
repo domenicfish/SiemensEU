@@ -360,7 +360,7 @@
                             <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                               <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                 <span data-show-if="material1.Is_Option = 1">(</span>
-                                <span class="number" data-precision="0" data-show-if="material1.Serv_Calc_Qty gt 0">[material1.Serv_Calc_Qty]</span>
+                                <span class="number" data-precision="0" data-show-if="material1.Serv_Calc_Qty != 0">[material1.Serv_Calc_Qty]</span>
                                 <span data-show-if="material1.Is_Option = 1">)</span>
                               </span>
                             </span>
@@ -506,7 +506,7 @@
                         <span data-show-if="material1.Is_Hide_Qty = 0">
                           <span data-hide-if="material1.Conf_Id LIKE 'cp_FreeText'">
                             <span data-show-if="material1.Is_Option = 1">(</span>
-                            <span class="number" data-precision="0" data-show-if="material1.Item_Qty gt 0">[material1.Item_Qty]</span>
+                            <span class="number" data-precision="0" data-show-if="material1.Item_Qty != 0">[material1.Item_Qty]</span>
                             <span data-show-if="material1.Is_Option = 1">)</span>
                           </span>
                         </span>
@@ -745,7 +745,7 @@
                               <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                 <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                   <span data-show-if="material2.Is_Option = 1">(</span>
-                                  <span class="number" data-precision="0" data-show-if="material2.Serv_Calc_Qty gt 0">[material2.Serv_Calc_Qty]</span>
+                                  <span class="number" data-precision="0" data-show-if="material2.Serv_Calc_Qty != 0">[material2.Serv_Calc_Qty]</span>
                                   <span data-show-if="material2.Is_Option = 1">)</span>
                                 </span>
                               </span>
@@ -890,7 +890,7 @@
                           <span data-show-if="material2.Is_Hide_Qty = 0">
                             <span data-hide-if="material2.Conf_Id LIKE 'cp_FreeText'">
                               <span data-show-if="material2.Is_Option = 1">(</span>
-                              <span class="number" data-precision="0" data-show-if="material2.Item_Qty gt 0">[material2.Item_Qty]</span>
+                              <span class="number" data-precision="0" data-show-if="material2.Item_Qty != 0">[material2.Item_Qty]</span>
                               <span data-show-if="material2.Is_Option = 1">)</span>
                             </span>
                           </span>
@@ -1140,7 +1140,7 @@
                                 <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                   <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                     <span data-show-if="material3.Is_Option = 1">(</span>
-                                    <span class="number" data-precision="0" data-show-if="material3.Serv_Calc_Qty gt 0">[material3.Serv_Calc_Qty]</span>
+                                    <span class="number" data-precision="0" data-show-if="material3.Serv_Calc_Qty != 0">[material3.Serv_Calc_Qty]</span>
                                     <span data-show-if="material3.Is_Option = 1">)</span>
                                   </span>
                                 </span>
@@ -1285,7 +1285,7 @@
                             <span data-show-if="material3.Is_Hide_Qty = 0">
                               <span data-hide-if="material3.Conf_Id LIKE 'cp_FreeText'">
                                 <span data-show-if="material3.Is_Option = 1">(</span>
-                                <span class="number" data-precision="0" data-show-if="material3.Item_Qty gt 0">[material3.Item_Qty]</span>
+                                <span class="number" data-precision="0" data-show-if="material3.Item_Qty != 0">[material3.Item_Qty]</span>
                                 <span data-show-if="material3.Is_Option = 1">)</span>
                               </span>
                             </span>
@@ -1524,7 +1524,7 @@
                                   <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                     <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                       <span data-show-if="material4.Is_Option = 1">(</span>
-                                      <span class="number" data-precision="0" data-show-if="material4.Serv_Calc_Qty gt 0">[material4.Serv_Calc_Qty]</span>
+                                      <span class="number" data-precision="0" data-show-if="material4.Serv_Calc_Qty != 0">[material4.Serv_Calc_Qty]</span>
                                       <span data-show-if="material4.Is_Option = 1">)</span>
                                     </span>
                                   </span>
@@ -1669,7 +1669,7 @@
                               <span data-show-if="material4.Is_Hide_Qty = 0">
                                 <span data-hide-if="material4.Conf_Id LIKE 'cp_FreeText'">
                                   <span data-show-if="material4.Is_Option = 1">(</span>
-                                  <span class="number" data-precision="0" data-show-if="material4.Item_Qty gt 0">[material4.Item_Qty]</span>
+                                  <span class="number" data-precision="0" data-show-if="material4.Item_Qty != 0">[material4.Item_Qty]</span>
                                   <span data-show-if="material4.Is_Option = 1">)</span>
                                 </span>
                               </span>
@@ -1908,7 +1908,7 @@
                                     <span data-hide-if="Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                       <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false'">
                                         <span data-show-if="material5.Is_Option = 1">(</span>
-                                        <span class="number" data-precision="0" data-show-if="material5.Serv_Calc_Qty gt 0">[material5.Serv_Calc_Qty]</span>
+                                        <span class="number" data-precision="0" data-show-if="material5.Serv_Calc_Qty != 0">[material5.Serv_Calc_Qty]</span>
                                         <span data-show-if="material5.Is_Option = 1">)</span>
                                       </span>
                                     </span>
@@ -2053,7 +2053,7 @@
                                 <span data-show-if="material5.Is_Hide_Qty = 0">
                                   <span data-hide-if="material5.Conf_Id LIKE 'cp_FreeText'">
                                     <span data-show-if="material5.Is_Option = 1">(</span>
-                                    <span class="number" data-precision="0" data-show-if="material5.Item_Qty gt 0">[material5.Item_Qty]</span>
+                                    <span class="number" data-precision="0" data-show-if="material5.Item_Qty != 0">[material5.Item_Qty]</span>
                                     <span data-show-if="material5.Is_Option = 1">)</span>
                                   </span>
                                 </span>
