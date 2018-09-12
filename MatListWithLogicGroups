@@ -21,7 +21,7 @@ sweden_swedish Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_Doc
 danish_pricelist Custom1__c_Generic_DocGen__r_List_of_Documents__c LIKE 'Price List' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'
 gross_or_net Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'
 not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false' AND not_services_not_belgian
-
+net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'
 !-->
 <div data-repeat="first in Sub_Offers__r" data-sort="SO_Sub_Offer_Sequence__c" data-reset-counter="material_counter">
   <table style="width: 100%; margin: 10px 0px; border-top: 1px solid #000000; height: 25px;">
@@ -57,7 +57,7 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
             <span data-show-if="swiss_french">Position</span>
             <span data-show-if="swiss_italian">Posizione</span>
             <span data-show-if="france_french">Position</span>
-            <span data-show-if="france_french">Positie</span>
+            <span data-show-if="belgium_dutch">Positie</span>
             <span data-show-if="belgium_french">Position</span>
             <span data-show-if="nl_dutch">Positie</span>
             <span data-show-if="finland_finnish">Kohta</span>
@@ -91,7 +91,7 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
           <span data-show-if="swiss_french">Qt&eacute;</span>
           <span data-show-if="swiss_italian">Qta</span>
           <span data-show-if="france_french">Qt&eacute;</span>
-          <span data-show-if="france_french">Aantal</span>
+          <span data-show-if="belgium_dutch">Aantal</span>
           <span data-show-if="belgium_french">Qt&eacute;</span>
           <span data-show-if="nl_dutch">Aantal</span>
           <span data-show-if="finland_finnish">Lukum&auml;&auml;r&auml;</span>
@@ -99,32 +99,30 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
         <!--gross price header-->
         <th
           style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: right;"
-          data-hide-if="sweden_swedish"
-          data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Gross'">
-          <span data-show-if="belgium_english">Gross price</span><span data-show-if="denmark_danish">Bruttopris</span><span data-show-if="norway_norwegian">Listepris</span><span data-show-if="czech_czech">Hrub&aacute; cena</span><span data-show-if="spain_spanish">Tarifa</span><span data-show-if="swiss_german">brutto</span><span data-show-if="swiss_french">Prix<br/>Catalogue</span><span data-show-if="swiss_italian">Listino</span><span data-show-if="france_french">Prix brut</span><span data-show-if="france_french">Bruto prijs</span><span data-show-if="belgium_french">Prix brut</span><span data-show-if="nl_dutch">Bruto prijs</span><span data-show-if="finland_finnish">Listahinta</span><span data-show-if="sweden_swedish">Brutto pris</span><br/>(<span allowstyling="true" data-name="Custom1__c_CurrencyIsoCode" data-type="string" data-variable-content="inline" data-source="" data-raw-value="" class="inline-variable mceNonEditable" data-id="1048c9ed-9c29-4d95-8421-e66e15086db4"></span>)</th>
+          data-hide-if="sweden_swedish AND Custom1__c_Generic_DocGen__r_Price_Varient__c NLIKE 'Gross'">
+          <span data-show-if="belgium_english">Gross price</span><span data-show-if="denmark_danish">Bruttopris</span><span data-show-if="norway_norwegian">Listepris</span><span data-show-if="czech_czech">Hrub&aacute; cena</span><span data-show-if="spain_spanish">Tarifa</span><span data-show-if="swiss_german">brutto</span><span data-show-if="swiss_french">Prix<br/>Catalogue</span><span data-show-if="swiss_italian">Listino</span><span data-show-if="france_french">Prix brut</span><span data-show-if="belgium_dutch">Bruto prijs</span><span data-show-if="belgium_french">Prix brut</span><span data-show-if="nl_dutch">Bruto prijs</span><span data-show-if="finland_finnish">Listahinta</span><span data-show-if="sweden_swedish">Brutto pris</span><br/>(<span allowstyling="true" data-name="Custom1__c_CurrencyIsoCode" data-type="string" data-variable-content="inline" data-source="" data-raw-value="" class="inline-variable mceNonEditable" data-id="1048c9ed-9c29-4d95-8421-e66e15086db4"></span>)</th>
         <!--discount % header-->
         <th
           style="height: 25px; width: 6.5%; background-color: #ffffff; vertical-align: middle; text-align: right;"
-          data-hide-if="sweden_swedish"
-          data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'">
-          <span data-show-if="belgium_english">Discount</span><span data-show-if="denmark_danish">Rabat</span><span data-show-if="norway_norwegian">Rabatt</span><span data-show-if="czech_czech">Sleva</span><span data-show-if="spain_spanish">Descuento</span><span data-show-if="swiss_german">Rabatt</span><span data-show-if="swiss_french">Remise</span><span data-show-if="swiss_italian">Ribasso</span><span data-show-if="france_french">Remise</span><span data-show-if="france_french">Korting</span><span data-show-if="belgium_french">Remise</span><span data-show-if="nl_dutch">Korting</span><span data-show-if="finland_finnish">Alennus</span><span data-show-if="sweden_swedish">Rabatt</span><br/>(%)</th>
+          data-hide-if="sweden_swedish AND Custom1__c_Generic_DocGen__r_Price_Varient__c != 'Gross Price'">
+          <span data-show-if="belgium_english">Discount</span><span data-show-if="denmark_danish">Rabat</span><span data-show-if="norway_norwegian">Rabatt</span><span data-show-if="czech_czech">Sleva</span><span data-show-if="spain_spanish">Descuento</span><span data-show-if="swiss_german">Rabatt</span><span data-show-if="swiss_french">Remise</span><span data-show-if="swiss_italian">Ribasso</span><span data-show-if="france_french">Remise</span><span data-show-if="belgium_dutch">Korting</span><span data-show-if="belgium_french">Remise</span><span data-show-if="nl_dutch">Korting</span><span data-show-if="finland_finnish">Alennus</span><span data-show-if="sweden_swedish">Rabatt</span><br/>(%)</th>
         <!--net price header-->
         <th
           style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: right;"
           data-hide-if="sweden_swedish"
-          data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'">
-          <span data-show-if="belgium_english">Net<br/>price</span><span data-show-if="denmark_danish">Pris ekskl. Moms</span><span data-show-if="norway_norwegian">Nettopris</span><span data-show-if="czech_czech">Čist&aacute;<br/>cena</span><span data-show-if="spain_spanish">P. unit Neto</span><span data-show-if="swiss_german">Preis</span><span data-show-if="swiss_french">Prix<br/>unit&eacute;</span><span data-show-if="swiss_italian">Prezzo</span><span data-show-if="france_french">Prix<br/>net</span><span data-show-if="france_french">Netto<br/>prijs</span><span data-show-if="belgium_french">Prix<br/>net</span><span data-show-if="nl_dutch">Netto<br/>prijs</span><span data-show-if="finland_finnish">Nettohinta</span><span data-show-if="sweden_swedish">Netto<br/>pris</span><br/>
+          data-show-if="net_or_gross">
+          <span data-show-if="belgium_english">Net<br/>price</span><span data-show-if="denmark_danish">Pris ekskl. Moms</span><span data-show-if="norway_norwegian">Nettopris</span><span data-show-if="czech_czech">Čist&aacute;<br/>cena</span><span data-show-if="spain_spanish">P. unit Neto</span><span data-show-if="swiss_german">Preis</span><span data-show-if="swiss_french">Prix<br/>unit&eacute;</span><span data-show-if="swiss_italian">Prezzo</span><span data-show-if="france_french">Prix<br/>net</span><span data-show-if="belgium_dutch">Netto<br/>prijs</span><span data-show-if="belgium_french">Prix<br/>net</span><span data-show-if="nl_dutch">Netto<br/>prijs</span><span data-show-if="finland_finnish">Nettohinta</span><span data-show-if="sweden_swedish">Netto<br/>pris</span><br/>
           <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span allowstyling="true" data-name="Custom1__c_CurrencyIsoCode" data-type="string" data-variable-content="inline" data-source="" data-raw-value="" class="inline-variable mceNonEditable" data-id="6f9773f1-de55-477d-8ef2-e18720c90ff7"></span>)</span></th>
         <!--total net price header-->
-        <th style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: right;" data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'">
-          <span data-show-if="belgium_english">Total net<br/>price</span><span data-show-if="denmark_danish">Pris i alt<br/>ekskl. Moms</span><span data-show-if="norway_norwegian">Sum<br/>nettopris</span><span data-show-if="czech_czech">Celkov&aacute;<br/>čist&aacute; cena</span><span data-show-if="spain_spanish">P. total<br/>Neto</span><span data-show-if="swiss_german">Total</span><span data-show-if="swiss_french">Prix<br/>Total</span><span data-show-if="swiss_italian">Totale</span><span data-show-if="france_french">Prix total net</span><span data-show-if="france_french">Totale<br/>netto prijs</span><span data-show-if="belgium_french">Prix<br/>total net</span><span data-show-if="nl_dutch">Totale<br/>netto prijs</span><span data-show-if="finland_finnish">Netto<br/>yhteens&auml;</span><span data-show-if="sweden_swedish">Totalt<br/>netto pris</span><br/>
+        <th style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: right;" data-show-if="net_or_gross">
+          <span data-show-if="belgium_english">Total net<br/>price</span><span data-show-if="denmark_danish">Pris i alt<br/>ekskl. Moms</span><span data-show-if="norway_norwegian">Sum<br/>nettopris</span><span data-show-if="czech_czech">Celkov&aacute;<br/>čist&aacute; cena</span><span data-show-if="spain_spanish">P. total<br/>Neto</span><span data-show-if="swiss_german">Total</span><span data-show-if="swiss_french">Prix<br/>Total</span><span data-show-if="swiss_italian">Totale</span><span data-show-if="france_french">Prix total net</span><span data-show-if="belgium_dutch">Totale<br/>netto prijs</span><span data-show-if="belgium_french">Prix<br/>total net</span><span data-show-if="nl_dutch">Totale<br/>netto prijs</span><span data-show-if="finland_finnish">Netto<br/>yhteens&auml;</span><span data-show-if="sweden_swedish">Totalt<br/>netto pris</span><br/>
           <span data-hide-if="Custom1__c_MO_Country_Origin__c = 'CH'">(<span allowstyling="true" data-name="Custom1__c_CurrencyIsoCode" data-type="string" data-variable-content="inline" data-source="" data-raw-value="" class="inline-variable mceNonEditable" data-id="cf2dab78-36c6-4765-8e37-8d0b0a83dc09"></span>)</span></th>
         <!--total gross price header-->
         <th
           style="height: 25px; width: 9.5%; background-color: #ffffff; vertical-align: middle; text-align: right;"
           data-hide-if="sweden_swedish"
           data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'">
-          <span data-show-if="belgium_english">Total<br/>gross price</span><span data-show-if="denmark_danish">Bruttopris<br/>i alt</span><span data-show-if="norway_norwegian">Sum<br/>listepris</span><span data-show-if="czech_czech">Celkov&aacute;<br/>hrub&aacute; cena</span><span data-show-if="spain_spanish">Tarifa<br/>total</span><span data-show-if="swiss_german">Total<br/>brutto</span><span data-show-if="swiss_french">Prix total<br/>Catalogue</span><span data-show-if="swiss_italian">Totale<br/>Listino</span><span data-show-if="france_french">Prix<br/>total brut</span><span data-show-if="france_french">Totale<br/>bruto prijs</span><span data-show-if="belgium_french">Prix<br/>total brut</span><span data-show-if="nl_dutch">Totale<br/>bruto p</span><span data-show-if="finland_finnish">Yhteens&auml;<br/>listahinta</span><span data-show-if="sweden_swedish">Totalt<br/>brutto pris</span>
+          <span data-show-if="belgium_english">Total<br/>gross price</span><span data-show-if="denmark_danish">Bruttopris<br/>i alt</span><span data-show-if="norway_norwegian">Sum<br/>listepris</span><span data-show-if="czech_czech">Celkov&aacute;<br/>hrub&aacute; cena</span><span data-show-if="spain_spanish">Tarifa<br/>total</span><span data-show-if="swiss_german">Total<br/>brutto</span><span data-show-if="swiss_french">Prix total<br/>Catalogue</span><span data-show-if="swiss_italian">Totale<br/>Listino</span><span data-show-if="france_french">Prix<br/>total brut</span><span data-show-if="belgium_dutch">Totale<br/>bruto prijs</span><span data-show-if="belgium_french">Prix<br/>total brut</span><span data-show-if="nl_dutch">Totale<br/>bruto p</span><span data-show-if="finland_finnish">Yhteens&auml;<br/>listahinta</span><span data-show-if="sweden_swedish">Totalt<br/>brutto pris</span>
           (<span allowstyling="true" data-name="Custom1__c_CurrencyIsoCode" data-type="string" data-variable-content="inline" data-source="" data-raw-value="" class="inline-variable mceNonEditable" data-id="9bb9b6e0-0399-4316-b0a1-681bca823b01"></span>)</th>
       </tr>
     </thead>
@@ -278,10 +276,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                             <!-- Discount not applicable for Service Items-->
                           </td>
                           <!--net price column material1 services-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material1.Is_Option = 1">(</span><span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span><span data-show-if="material1.Is_Option = 1">)</span></span></span></td>
+                          <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material1.Is_Option = 1">(</span><span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales / material1.Serv_Calc_Qty]</span><span data-show-if="material1.Is_Option = 1">)</span></span></span></td>
                           <!---total net price column material1 services-->
                           <td
-                            data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                            data-show-if="net_or_gross"
                             style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                             class="number"><span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material1.Is_Option = 1">(</span><span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span><span data-show-if="material1.Is_Option = 1">)</span></span></span></td>
                           <!--total gross price column material1 services-->
@@ -329,11 +327,11 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material1.Is_Option = 1">(</span><span class="number" data-show-if="material1.Mat_Disc_Pct1 gt 0">[material1.Mat_Disc_Pct1]</span>
                             <span data-show-if="material1.Mat_Disc_Pct1 lte 0"></span><span data-show-if="material1.Is_Option = 1">)</span></span></td>
                         <!--net price column material1-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material1.Is_Option = 1">(</span><span class="number" data-show-if="material1.Mat_Calc_Unit_Sales != 0">[material1.Mat_Calc_Unit_Sales]</span>
+                        <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material1.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material1.Is_Option = 1">(</span><span class="number" data-show-if="material1.Mat_Calc_Unit_Sales != 0">[material1.Mat_Calc_Unit_Sales]</span>
                             <span data-show-if="material1.Mat_Calc_Unit_Sales = 0"></span><span data-show-if="material1.Is_Option = 1">)</span></span></td>
                         <!---total net price column material1-->
                         <td
-                          data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                          data-show-if="net_or_gross"
                           style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                           class="number"><span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material1.Is_Option = 1">(</span>
                             <span data-show-if="material1.Mat_Calc_Unit_Sales_hidden = 0"></span><span class="number" data-show-if="material1.Mat_Calc_Unit_Sales_hidden != 0">[material1.Mat_Calc_Unit_Sales_hidden]</span><span data-show-if="material1.Is_Option = 1">)</span></span></td>
@@ -376,10 +374,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                       </span>
                     </td>
                     <!--net price column folder2-->
-                    <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;"><span data-hide-if="folder2.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder2.Is_Option = 1">(</span><span class="number">[folder2.Tot_Mat_Serv_Sales / folder2.Text_Qty]</span><span data-show-if="folder2.Is_Option = 1">)</span></span></td>
+                    <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;"><span data-hide-if="folder2.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder2.Is_Option = 1">(</span><span class="number">[folder2.Tot_Mat_Serv_Sales / folder2.Text_Qty]</span><span data-show-if="folder2.Is_Option = 1">)</span></span></td>
                     <!--total net price column folder2-->
                     <td
-                      data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                      data-show-if="net_or_gross"
                       style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;"
                       class="number"><span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder2.Is_Option = 1">(</span><span data-hide-if="folder2.Tot_Mat_Serv_Sales IS BLANK OR folder2.Tot_Mat_Serv_Sales lte 0" class="number">[folder2.Tot_Mat_Serv_Sales]</span><span data-show-if="folder2.Is_Option = 1">)</span></span></td>
                     <!--total gross price column folder2-->
@@ -433,10 +431,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                               <!-- Discount not applicable for Service Items-->
                             </td>
                             <!--net price column material2 services-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material2.Is_Option = 1">(</span><span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span><span data-show-if="material2.Is_Option = 1">)</span></span></span></span></td>
+                            <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material2.Is_Option = 1">(</span><span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales / material2.Serv_Calc_Qty]</span><span data-show-if="material2.Is_Option = 1">)</span></span></span></span></td>
                             <!---total net price column material2 services-->
                             <td
-                              data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                              data-show-if="net_or_gross"
                               style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                               class="number"><span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material2.Is_Option = 1">(</span><span class="number" data-show-if="material2.Mat_Serv_Sales != 0">[material2.Mat_Serv_Sales]</span><span data-show-if="material2.Is_Option = 1">)</span></span></span></td>
                             <!--total gross price column material2 services-->
@@ -500,11 +498,11 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material2.Is_Option = 1">(</span><span class="number" data-show-if="material2.Mat_Disc_Pct1 gt 0">[material2.Mat_Disc_Pct1]</span>
                               <span data-show-if="material2.Mat_Disc_Pct1 lte 0"></span><span data-show-if="material2.Is_Option = 1">)</span></span></td>
                           <!--net price column material2-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material2.Is_Option = 1">(</span><span class="number" data-show-if="material2.Mat_Calc_Unit_Sales != 0">[material2.Mat_Calc_Unit_Sales]</span>
+                          <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material2.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material2.Is_Option = 1">(</span><span class="number" data-show-if="material2.Mat_Calc_Unit_Sales != 0">[material2.Mat_Calc_Unit_Sales]</span>
                               <span data-show-if="material2.Mat_Calc_Unit_Sales = 0"></span><span data-show-if="material2.Is_Option = 1">)</span></span></td>
                           <!---total net price column material2-->
                           <td
-                            data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                            data-show-if="net_or_gross"
                             style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                             class="number"><span data-show-if="material2.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material2.Is_Option = 1">(</span>
                               <span data-show-if="material2.Mat_Calc_Unit_Sales_hidden = 0"></span><span class="number" data-show-if="material2.Mat_Calc_Unit_Sales_hidden != 0">[material2.Mat_Calc_Unit_Sales_hidden]</span><span data-show-if="material2.Is_Option = 1">)</span></span></td>
@@ -623,10 +621,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                                 <!-- Discount not applicable for Service Items-->
                               </td>
                               <!--net price column material3 services-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material3.Is_Option = 1">(</span><span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span><span data-show-if="material3.Is_Option = 1">)</span></span></span></span></td>
+                              <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material3.Is_Option = 1">(</span><span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales / material3.Serv_Calc_Qty]</span><span data-show-if="material3.Is_Option = 1">)</span></span></span></span></td>
                               <!---total net price column material3 services-->
                               <td
-                                data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                                data-show-if="net_or_gross"
                                 style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                 class="number"><span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material3.Is_Option = 1">(</span><span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span><span data-show-if="material3.Is_Option = 1">)</span></span></span></td>
                               <!--total gross price column material3 services-->
@@ -682,11 +680,11 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material3.Is_Option = 1">(</span><span class="number" data-show-if="material3.Mat_Disc_Pct1 gt 0">[material3.Mat_Disc_Pct1]</span>
                                 <span data-show-if="material3.Mat_Disc_Pct1 lte 0"></span></span><span data-show-if="material3.Is_Option = 1">)</span></td>
                             <!--net price column material3-->
-                            <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material3.Is_Option = 1">(</span><span class="number" data-show-if="material3.Mat_Calc_Unit_Sales != 0">[material3.Mat_Calc_Unit_Sales]</span>
+                            <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material3.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material3.Is_Option = 1">(</span><span class="number" data-show-if="material3.Mat_Calc_Unit_Sales != 0">[material3.Mat_Calc_Unit_Sales]</span>
                                 <span data-show-if="material3.Mat_Calc_Unit_Sales = 0"></span><span data-show-if="material3.Is_Option = 1">)</span></span></td>
                             <!---total net price column material3-->
                             <td
-                              data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                              data-show-if="net_or_gross"
                               style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                               class="number"><span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material3.Is_Option = 1">(</span>
                                 <span data-show-if="material3.Mat_Calc_Unit_Sales_hidden = 0"></span><span class="number" data-show-if="material3.Mat_Calc_Unit_Sales_hidden != 0">[material3.Mat_Calc_Unit_Sales_hidden]</span><span data-show-if="material3.Is_Option = 1">)</span></span></td>
@@ -729,10 +727,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                           </span>
                         </td>
                         <!--net price column folder4-->
-                        <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;"><span data-hide-if="folder4.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder4.Is_Option = 1">(</span><span class="number">[folder4.Tot_Mat_Serv_Sales / folder4.Text_Qty]</span><span data-show-if="folder4.Is_Option = 1">)</span></span></td>
+                        <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;"><span data-hide-if="folder4.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder4.Is_Option = 1">(</span><span class="number">[folder4.Tot_Mat_Serv_Sales / folder4.Text_Qty]</span><span data-show-if="folder4.Is_Option = 1">)</span></span></td>
                         <!--total net price column folder4-->
                         <td
-                          data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                          data-show-if="net_or_gross"
                           style="width: 9.5%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;"
                           class="number"><span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder4.Is_Option = 1">(</span><span data-hide-if="folder4.Tot_Mat_Serv_Sales IS BLANK OR folder4.Tot_Mat_Serv_Sales lte 0" class="number">[folder4.Tot_Mat_Serv_Sales]</span><span data-show-if="folder4.Is_Option = 1">)</span></span></td>
                         <!--total gross price column folder4-->
@@ -744,8 +742,7 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                   <!---start of material4 services--->
                   <div data-repeat="material4 in folder4.cartLines" data-filter="type != 'FO' AND material4.Is_Hide_Item_nr = 0">
                     <div data-show-if="material4.type = 'SP' OR material4.Is_Service = 1">
-                      <div data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-                        <div data-hide-if="sweden_swedish">
+                      <div data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND != 'sweden_swedish'">
                           <table style="width: 100%; margin: 5px 0px; height: 21px;">
                             <tbody>
                               <tr style="height: 21px; vertical-align: middle;">
@@ -795,10 +792,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                                   <!-- Discount not applicable for Service Items-->
                                 </td>
                                 <!--net price column material4 services-->
-                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material4.Is_Option = 1">(</span><span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span><span data-show-if="material4.Is_Option = 1">)</span></span></span></td>
+                                <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material4.Is_Option = 1">(</span><span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales / material4.Serv_Calc_Qty]</span><span data-show-if="material4.Is_Option = 1">)</span></span></span></td>
                                 <!---total net price column material4 services-->
                                 <td
-                                  data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                                  data-show-if="net_or_gross"
                                   style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                   class="number"><span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material4.Is_Option = 1">(</span><span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span><span data-show-if="material4.Is_Option = 1">)</span></span></span></td>
                                 <!--total gross price column material4 services-->
@@ -806,7 +803,7 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                               </tr>
                             </tbody>
                           </table>
-                        </div>
+
                       </div>
                     </div>
                     <!--start of material4 non-services-->
@@ -864,11 +861,11 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material4.Is_Option = 1">(</span><span class="number" data-show-if="material4.Mat_Disc_Pct1 gt 0">[material4.Mat_Disc_Pct1]</span>
                                   <span data-show-if="material4.Mat_Disc_Pct1 lte 0"></span><span data-show-if="material4.Is_Option = 1">)</span></span></td>
                               <!--net price column material4-->
-                              <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material4.Is_Option = 1">(</span><span class="number" data-show-if="material4.Mat_Calc_Unit_Sales != 0">[material4.Mat_Calc_Unit_Sales]</span>
+                              <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material4.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material4.Is_Option = 1">(</span><span class="number" data-show-if="material4.Mat_Calc_Unit_Sales != 0">[material4.Mat_Calc_Unit_Sales]</span>
                                   <span data-show-if="material4.Mat_Calc_Unit_Sales = 0"></span><span data-show-if="material4.Is_Option = 1">)</span></span></td>
                               <!---total net price column material4-->
                               <td
-                                data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                                data-show-if="net_or_gross"
                                 style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                 class="number"><span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material4.Is_Option = 1">(</span>
                                   <span data-show-if="material4.Mat_Calc_Unit_Sales_hidden = 0"></span><span class="number" data-show-if="material4.Mat_Calc_Unit_Sales_hidden != 0">[material4.Mat_Calc_Unit_Sales_hidden]</span><span data-show-if="material4.Is_Option = 1">)</span></span></td>
@@ -911,10 +908,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                             </span>
                           </td>
                           <!--net price column folder5-->
-                          <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;"><span data-hide-if="folder5.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder5.Is_Option = 1">(</span><span class="number">[folder5.Tot_Mat_Serv_Sales / folder5.Text_Qty]</span><span data-show-if="folder5.Is_Option = 1">)</span></span></td>
+                          <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;"><span data-hide-if="folder5.Text_Qty IS BLANK OR Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder5.Is_Option = 1">(</span><span class="number">[folder5.Tot_Mat_Serv_Sales / folder5.Text_Qty]</span><span data-show-if="folder5.Is_Option = 1">)</span></span></td>
                           <!--total net price column folder5-->
                           <td
-                            data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                            data-show-if="net_or_gross"
                             style="width: 9.5%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;"
                             class="number"><span data-hide-if="Custom1__c_Generic_DocGen__r_Price_levels__c NLIKE 'Folder'"><span data-show-if="folder5.Is_Option = 1">(</span><span data-hide-if="folder5.Tot_Mat_Serv_Sales IS BLANK OR folder5.Tot_Mat_Serv_Sales lte 0" class="number">[folder5.Tot_Mat_Serv_Sales]</span><span data-show-if="folder5.Is_Option = 1">)</span></span></td>
                           <!--total gross price column folder5-->
@@ -968,10 +965,10 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                                     <!-- Discount not applicable for Service Items-->
                                   </td>
                                   <!--net price column material5 services-->
-                                  <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material5.Is_Option = 1">(</span><span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span><span data-show-if="material5.Is_Option = 1">)</span></span></span></td>
+                                  <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material5.Is_Option = 1">(</span><span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales / material5.Serv_Calc_Qty]</span><span data-show-if="material5.Is_Option = 1">)</span></span></span></td>
                                   <!---total net price column material5 services-->
                                   <td
-                                    data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                                    data-show-if="net_or_gross"
                                     style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                     class="number"><span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material5.Is_Option = 1">(</span><span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span><span data-show-if="material5.Is_Option = 1">)</span></span></span></td>
                                   <!--total gross price column material5 services-->
@@ -1027,11 +1024,11 @@ not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 6.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material5.Is_Option = 1">(</span><span class="number" data-show-if="material5.Mat_Disc_Pct1 gt 0">[material5.Mat_Disc_Pct1]</span>
                                     <span data-show-if="material5.Mat_Disc_Pct1 lte 0"></span><span data-show-if="material5.Is_Option = 1">)</span></span></td>
                                 <!--net price column material5-->
-                                <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material5.Is_Option = 1">(</span><span class="number" data-show-if="material5.Mat_Calc_Unit_Sales != 0">[material5.Mat_Calc_Unit_Sales]</span>
+                                <td data-show-if="net_or_gross" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"><span data-show-if="material5.Is_Hide_Unit_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-show-if="material5.Is_Option = 1">(</span><span class="number" data-show-if="material5.Mat_Calc_Unit_Sales != 0">[material5.Mat_Calc_Unit_Sales]</span>
                                     <span data-show-if="material5.Mat_Calc_Unit_Sales = 0"></span><span data-show-if="material5.Is_Option = 1">)</span></span></td>
                                 <!---total net price column material5-->
                                 <td
-                                  data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'"
+                                  data-show-if="net_or_gross"
                                   style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;"
                                   class="number">
                                   <span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'">
