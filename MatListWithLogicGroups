@@ -22,6 +22,16 @@ danish_pricelist Custom1__c_Generic_DocGen__r_List_of_Documents__c LIKE 'Price L
 gross_or_net Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'
 not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false' AND not_services_not_belgian
 net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'
+material1_services material1.type = 'SP' OR material1.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material1_nonservices material1.type != 'SP' AND material1.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material2_services material2.type = 'SP' OR material2.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material2_nonservices material2.type != 'SP' AND material2.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material3_services material3.type = 'SP' OR material3.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material3_nonservices material3.type != 'SP' AND material3.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material4_services material4.type = 'SP' OR material4.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material4_nonservices material4.type != 'SP' AND material4.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material5_services material5.type = 'SP' OR material5.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+material5_nonservices material5.type != 'SP' AND material5.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
 !-->
 <div data-repeat="first in Sub_Offers__r" data-sort="SO_Sub_Offer_Sequence__c" data-reset-counter="material_counter">
   <table style="width: 100%; margin: 10px 0px; border-top: 1px solid #000000; height: 25px;">
@@ -126,15 +136,16 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
           (<span allowstyling="true" data-name="Custom1__c_CurrencyIsoCode" data-type="string" data-variable-content="inline" data-source="" data-raw-value="" class="inline-variable mceNonEditable" data-id="9bb9b6e0-0399-4316-b0a1-681bca823b01"></span>)</th>
       </tr>
     </thead>
-    <!-- In order to have the header break across pages, we had to wrap the content of the materials list in a table. The tbody of this table begins below -->
     <tbody>
       <tr>
         <td colspan="8" style="margin: 0; padding: 0;">
           <!-- comment: the first data-repeat will loop through Sub_Offers__r array. This is then followed by a folder1 data-repeat that will loop through the cartLines array associated to the affiliated cart -->
           <!--MuY: Added the filter: AND Short_Description NLIKE 'Yksikköhinnat' for Finnland. This folder needs to be displayed in FI Offer in separate chapter 'Yksikköhinnat'-->
+
           <div data-repeat="folder1 in first.cart.cartLines" data-filter="type = 'FO' AND Short_Description NLIKE 'Yksikk&ouml;hinnat'">
-            <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder1.Is_Service_Folder = 1">
-              <tbody>
+
+            <table style="width: 100%; margin: 5px 0px; height: 21px;" >
+              <thead data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder1.Is_Service_Folder = 1">
                 <tr style="height: 21px; vertical-align: middle;">
                   <!--position column folder1-->
                   <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #a1a1a1; text-align: left; vertical-align: middle;">
@@ -188,17 +199,11 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                     </div>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-            <!--start of material1 services-->
-            <div data-repeat="material1 in folder1.cartLines" data-filter="type != 'FO' AND material1.Is_Hide_Item_nr = 0">
-              <div data-show-if="material1.type = 'SP' OR material1.Is_Service = 1">
-                <!--note: can the two below be combined??-->
-                <div data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-                  <div data-hide-if="sweden_swedish">
-                    <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                      <tbody>
-                        <tr style="height: 21px; vertical-align: middle;">
+              </thead>
+              <!-- BEGINNING OF MATERIAL1-->
+                      <tbody data-repeat="material1 in folder1.cartLines" data-filter="type != 'FO' AND material1.Is_Hide_Item_nr = 0">
+                        <!--start of material1 services-->
+                        <tr style="height: 21px; vertical-align: middle;" data-show-if="material1_services">
                           <!-- position column material1 -->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <span data-show-if="material1.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material1.Is_Option = 1">)</span></td>
@@ -285,17 +290,8 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                           <!--total gross price column material1 services-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number"><span data-show-if="material1.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material1.Is_Option = 1">(</span><span class="number" data-show-if="material1.Mat_Serv_Sales != 0">[material1.Mat_Serv_Sales]</span><span data-show-if="material1.Is_Option = 1">)</span></span></span></td>
                         </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
               <!--start of material1 non-services-->
-              <div data-show-if="material1.type != 'SP' AND material1.Is_Service = 0">
-                <div data-hide-if="sweden_swedish">
-                  <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                    <tbody>
-                      <tr style="height: 21px; vertical-align: middle;">
+                      <tr data-show-if="material1_nonservices" style="height: 21px; vertical-align: middle;">
                         <!-- position column material1 -->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                           <span data-show-if="material1.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material1.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material1.Is_Option = 1">)</span></td>
@@ -341,13 +337,10 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                       </tr>
                     </tbody>
                   </table>
-                </div>
-              </div>
-            </div>
             <!--start of folder2 -->
             <div data-repeat="folder2 in folder1.cartLines" data-filter="type = 'FO'">
-              <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder2.Is_Service_Folder = 1">
-                <tbody>
+              <table style="width: 100%; margin: 5px 0px; height: 21px;" >
+                <thead data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder2.Is_Service_Folder = 1">
                   <tr style="height: 21px; vertical-align: middle;">
                     <!--position column folder2-->
                     <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: left; vertical-align: middle;">
@@ -384,16 +377,12 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                     <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #bfbfbf; text-align: right; vertical-align: middle;" class="number">
                       <span class="number" data-show-if="folder2.Is_Option = 1">(</span><span class="number">[folder2.Mat_Serv_Sales + folder2.Mat_Tot_Org_Sales]</span><span class="number" data-show-if="folder2.Is_Option = 1">)</span></td>
                   </tr>
-                </tbody>
-              </table>
-              <!--material2 in folder2 services-->
-              <div data-repeat="material2 in folder2.cartLines" data-filter="type != 'FO' AND material2.Is_Hide_Item_nr = 0">
-                <div data-show-if="material2.type = 'SP' OR material2.Is_Service = 1">
-                  <div data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-                    <div data-hide-if="sweden_swedish">
-                      <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                        <tbody>
-                          <tr style="height: 21px; vertical-align: middle;">
+                </thead>
+
+                <!-- BEGINNING OF MATERIAL2-->
+                        <tbody data-repeat="material2 in folder2.cartLines" data-filter="type != 'FO' AND material2.Is_Hide_Item_nr = 0">
+                          <!--material2 in folder2 services-->
+                          <tr style="height: 21px; vertical-align: middle;" data-show-if="material2_services">
                             <!-- position column material2 services-->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <span data-show-if="material2.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material2.Is_Option = 1">)</span></td>
@@ -448,17 +437,8 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                               </span>
                           </td>
                           </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
                 <!--start of material2 non-services-->
-                <div data-show-if="material2.type != 'SP' AND material2.Is_Service = 0">
-                  <div data-hide-if="sweden_swedish">
-                    <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                      <tbody>
-                        <tr style="height: 21px; vertical-align: middle;">
+                        <tr style="height: 21px; vertical-align: middle;" data-show-if="material2_nonservices">
                           <!-- position column material2 -->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                             <span data-show-if="material2.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material2.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material2.Is_Option = 1">)</span></td>
@@ -512,14 +492,11 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </div>
-              </div>
-              <!-- folder3 -->
+  <!-- FOLDER3 -->
               <div data-repeat="folder3 in folder2.cartLines" data-filter="type = 'FO'">
-                <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder3.Is_Service_Folder = 1">
-                  <tbody>
-                    <tr style="height: 21px; vertical-align: middle;">
+                <table style="width: 100%; margin: 5px 0px; height: 21px;" >
+                  <thead data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder3.Is_Service_Folder = 1">
+                    <tr style="height: 21px; vertical-align: middle;" >
                       <!--position column folder3-->
                       <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #dddddd; text-align: left; vertical-align: middle;">
                         <span data-show-if="folder3.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[folder3.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span>[outline_number]</span><span>[suboffer.Name]</span></span><span data-show-if="folder3.Is_Option = 1">)</span></td>
@@ -565,16 +542,11 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                         </div>
                       </td>
                     </tr>
-                  </tbody>
-                </table>
-                <!---start of material3 services--->
-                <div data-repeat="material3 in folder3.cartLines" data-filter="type != 'FO' AND material3.Is_Hide_Item_nr = 0">
-                  <div data-show-if="material3.type = 'SP' OR material3.Is_Service = 1">
-                    <div data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-                      <div data-hide-if="sweden_swedish">
-                        <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                          <tbody>
-                            <tr style="height: 21px; vertical-align: middle;">
+                  </thead>
+                  <!--BEGINNING OF MATERIAL3-->
+                          <tbody data-repeat="material3 in folder3.cartLines" data-filter="type != 'FO' AND material3.Is_Hide_Item_nr = 0">
+                            <!---start of material3 services--->
+                            <tr style="height: 21px; vertical-align: middle;" data-show-if="material3_services">
                               <!-- position column material3 -->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <span data-show-if="material3.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material3.Is_Option = 1">)</span></td>
@@ -630,17 +602,8 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                               <!--total gross price column material3 services-->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number"><span data-show-if="material3.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material3.Is_Option = 1">(</span><span class="number" data-show-if="material3.Mat_Serv_Sales != 0">[material3.Mat_Serv_Sales]</span><span data-show-if="material3.Is_Option = 1">)</span></span></span></td>
                             </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
                   <!--start of material3 non-services-->
-                  <div data-show-if="material3.type != 'SP' AND material3.Is_Service = 0">
-                    <div data-hide-if="sweden_swedish">
-                      <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                        <tbody>
-                          <tr style="height: 21px; vertical-align: middle;">
+                          <tr style="height: 21px; vertical-align: middle;" data-show-if="material3_nonservices">
                             <!-- position column material3 -->
                             <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                               <span data-show-if="material3.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material3.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material3.Is_Option = 1">)</span></td>
@@ -694,13 +657,10 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                           </tr>
                         </tbody>
                       </table>
-                    </div>
-                  </div>
-                </div>
-                <!--folder 4--->
+            <!--FOLDER4--->
                 <div data-repeat="folder4 in folder3.cartLines" data-filter="type = 'FO'">
-                  <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder4.Is_Service_Folder = 1">
-                    <tbody>
+                  <table style="width: 100%; margin: 5px 0px; height: 21px;" >
+                    <thead data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder4.Is_Service_Folder = 1">
                       <tr style="height: 21px; vertical-align: middle;">
                         <!--position column folder4-->
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #eeeeee; text-align: left; vertical-align: middle;">
@@ -737,15 +697,11 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                         <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #eeeeee; text-align: right; vertical-align: middle;" class="number">
                           <span class="number" data-show-if="folder4.Is_Option = 1">(</span><span class="number">[folder4.Mat_Serv_Sales + folder4.Mat_Tot_Org_Sales]</span><span class="number" data-show-if="folder4.Is_Option = 1">)</span></td>
                       </tr>
-                    </tbody>
-                  </table>
-                  <!---start of material4 services--->
-                  <div data-repeat="material4 in folder4.cartLines" data-filter="type != 'FO' AND material4.Is_Hide_Item_nr = 0">
-                    <div data-show-if="material4.type = 'SP' OR material4.Is_Service = 1">
-                      <div data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND != 'sweden_swedish'">
-                          <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                            <tbody>
-                              <tr style="height: 21px; vertical-align: middle;">
+                    </thead>
+                  <!--BEGINNING OF MATERIAL4 -->
+                            <tbody data-repeat="material4 in folder4.cartLines" data-filter="type != 'FO' AND material4.Is_Hide_Item_nr = 0">
+                              <!---start of material4 services--->
+                              <tr style="height: 21px; vertical-align: middle;" data-show-if="material4_services">
                                 <!-- position column material4 services-->
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                   <span data-show-if="material4.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material4.Is_Option = 1">)</span></td>
@@ -801,17 +757,8 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                                 <!--total gross price column material4 services-->
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number"><span data-show-if="material4.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material4.Is_Option = 1">(</span><span class="number" data-show-if="material4.Mat_Serv_Sales != 0">[material4.Mat_Serv_Sales]</span><span data-show-if="material4.Is_Option = 1">)</span></span></span></td>
                               </tr>
-                            </tbody>
-                          </table>
-
-                      </div>
-                    </div>
                     <!--start of material4 non-services-->
-                    <div data-show-if="material4.type != 'SP' AND material4.Is_Service = 0">
-                      <div data-hide-if="sweden_swedish">
-                        <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                          <tbody>
-                            <tr style="height: 21px; vertical-align: middle;">
+                            <tr style="height: 21px; vertical-align: middle;" data-show-if="material4_nonservices">
                               <!-- position column material4 -->
                               <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                 <span data-show-if="material4.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material4.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material4.Is_Option = 1">)</span></td>
@@ -875,13 +822,10 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </div>
-                  </div>
-                  <!---folder 5--->
+                  <!---FOLDER5--->
                   <div data-repeat="folder5 in folder4.cartLines" data-filter="type = 'FO'">
-                    <table style="width: 100%; margin: 5px 0px; height: 21px;" data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder5.Is_Service_Folder = 1">
-                      <tbody>
+                    <table style="width: 100%; margin: 5px 0px; height: 21px;" >
+                      <thead data-hide-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'false' AND folder5.Is_Service_Folder = 1">
                         <tr style="height: 21px; vertical-align: middle;">
                           <!--position column folder5-->
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #f8f8f8; text-align: left; vertical-align: middle;">
@@ -918,16 +862,11 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                           <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #f8f8f8; text-align: right; vertical-align: middle;" class="number">
                             <span class="number" data-show-if="folder5.Is_Option = 1">(</span><span class="number">[folder5.Mat_Serv_Sales + folder5.Mat_Tot_Org_Sales]</span><span class="number" data-show-if="folder5.Is_Option = 1">)</span></td>
                         </tr>
-                      </tbody>
-                    </table>
-                    <!---materials 5 in folder 5 services--->
-                    <div data-repeat="material5 in folder5.cartLines" data-filter="type != 'FO' AND material5.Is_Hide_Item_nr = 0">
-                      <div data-show-if="material5.type = 'SP' OR material5.Is_Service = 1">
-                        <div data-show-if="Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true'">
-                          <div data-hide-if="sweden_swedish">
-                            <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                              <tbody>
-                                <tr style="height: 21px; vertical-align: middle;">
+                      </thead>
+<!--BEGINNING OF MATERIAL5-->
+                              <tbody data-repeat="material5 in folder5.cartLines" data-filter="type != 'FO' AND material5.Is_Hide_Item_nr = 0">
+                                <!---materials 5 in folder 5 services--->
+                                <tr style="height: 21px; vertical-align: middle;" data-show-if="material5_services">
                                   <!-- position column material5 services-->
                                   <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                     <span data-show-if="material5.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material5.Is_Option = 1">)</span></td>
@@ -974,17 +913,8 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                                   <!--total gross price column material5 services-->
                                   <td data-show-if="Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Only Total Gross Price'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: right; vertical-align: top;" class="number"><span data-show-if="material5.Is_Hide_Tot_Sales != 1 AND Custom1__c_Generic_DocGen__r_Price_levels__c LIKE 'Item'"><span data-hide-if="not_services_not_belgian"><span data-show-if="material5.Is_Option = 1">(</span><span class="number" data-show-if="material5.Mat_Serv_Sales != 0">[material5.Mat_Serv_Sales]</span><span data-show-if="material5.Is_Option = 1">)</span></span></span></td>
                                 </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
                       <!--start of material5 non-services-->
-                      <div data-show-if="material5.type != 'SP' AND material5.Is_Service = 0">
-                        <div data-hide-if="sweden_swedish">
-                          <table style="width: 100%; margin: 5px 0px; height: 21px;">
-                            <tbody>
-                              <tr style="height: 21px; vertical-align: middle;">
+                              <tr style="height: 21px; vertical-align: middle;" data-show-if="material5_nonservices">
                                 <!-- position column material5 -->
                                 <td data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'No Numbering'" style="width: 9.5%; height: 21px; background-color: #ffffff; text-align: left; vertical-align: top;">
                                   <span data-show-if="material5.Is_Option = 1">(</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c LIKE 'Special'">[material5.Special_Number]</span><span data-show-if="Custom1__c_Generic_DocGen__r_Position__c NLIKE 'Special'"><span data-counter-format="000">[INDEX(first)].[INCREMENT(material_counter)]</span></span><span data-show-if="material5.Is_Option = 1">)</span></td>
@@ -1050,9 +980,6 @@ net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1
                               </tr>
                             </tbody>
                           </table>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
