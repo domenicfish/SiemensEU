@@ -1,37 +1,35 @@
 <!--
 
-** unfortunately can't join logic from data-repeats at this time **
-** take a look at the short text section, that's where I'd really like to consolidate **
-
 Logic Groups:
-swiss_german Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'
-swiss_french Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'
-swiss_italian Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'
-norway_norwegian  Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'
-belgium_english  Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'
-denmark_danish Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'
-czech_czech Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'
-spain_spanish Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'
-france_french Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'
-belgium_dutch Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'
-belgium_french Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'
-nl_dutch Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'
-finland_finnish Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'
-sweden_swedish Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'
-danish_pricelist Custom1__c_Generic_DocGen__r_List_of_Documents__c LIKE 'Price List' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'
-gross_or_net Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'
-not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false' AND not_services_not_belgian
-net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'
-material1_services material1.type = 'SP' OR material1.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material1_nonservices material1.type != 'SP' AND material1.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material2_services material2.type = 'SP' OR material2.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material2_nonservices material2.type != 'SP' AND material2.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material3_services material3.type = 'SP' OR material3.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material3_nonservices material3.type != 'SP' AND material3.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material4_services material4.type = 'SP' OR material4.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material4_nonservices material4.type != 'SP' AND material4.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material5_services material5.type = 'SP' OR material5.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
-material5_nonservices material5.type != 'SP' AND material5.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  swiss_german Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DE'
+  swiss_french Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'
+  swiss_italian Custom1__c_MO_Country_Origin__c = 'CH' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'IT'
+  norway_norwegian  Custom1__c_MO_Country_Origin__c = 'NO' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NO'
+  belgium_english  Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'EN'
+  denmark_danish Custom1__c_MO_Country_Origin__c = 'DK' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'
+  czech_czech Custom1__c_MO_Country_Origin__c = 'CZ' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'CZ'
+  spain_spanish Custom1__c_MO_Country_Origin__c = 'ES' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'ES'
+  france_french Custom1__c_MO_Country_Origin__c = 'FR' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'
+  belgium_dutch Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'
+  belgium_french Custom1__c_MO_Country_Origin__c = 'BE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FR'
+  nl_dutch Custom1__c_MO_Country_Origin__c = 'NL' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'NL'
+  finland_finnish Custom1__c_MO_Country_Origin__c = 'FI' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'FI'
+  sweden_swedish Custom1__c_MO_Country_Origin__c = 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'SE'
+  danish_pricelist Custom1__c_Generic_DocGen__r_List_of_Documents__c LIKE 'Price List' AND Custom1__c_Generic_DocGen__r_Report_Language__c = 'DK'
+  gross_or_net Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price' OR Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net'
+  not_services_not_belgian Custom1__c_Generic_DocGen__r_With_service_hours__c LIKE 'false' AND not_services_not_belgian
+  net_or_gross Custom1__c_Generic_DocGen__r_Price_Varient__c LIKE 'Net' OR Custom1__c_Generic_DocGen__r_Price_Varient__c = 'Gross Price'
+  material1_services material1.type = 'SP' OR material1.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material1_nonservices material1.type != 'SP' AND material1.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material2_services material2.type = 'SP' OR material2.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material2_nonservices material2.type != 'SP' AND material2.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material3_services material3.type = 'SP' OR material3.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material3_nonservices material3.type != 'SP' AND material3.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material4_services material4.type = 'SP' OR material4.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material4_nonservices material4.type != 'SP' AND material4.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material5_services material5.type = 'SP' OR material5.Is_Service = 1 AND Custom1__c_Generic_DocGen__r_With_services__c LIKE 'true' AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+  material5_nonservices material5.type != 'SP' AND material5.Is_Service = 0 AND Custom1__c_MO_Country_Origin__c != 'SE' AND Custom1__c_Generic_DocGen__r_Report_Language__c != 'SE'
+
 !-->
 <div data-repeat="first in Sub_Offers__r" data-sort="SO_Sub_Offer_Sequence__c" data-reset-counter="material_counter">
   <table style="width: 100%; margin: 10px 0px; border-top: 1px solid #000000; height: 25px;">
